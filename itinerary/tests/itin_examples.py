@@ -34,6 +34,6 @@
 # where each end is an int that represent minutes from midnight
 
 
-#####################
-# valid itineraries #
-#####################
+######################
+# manual itineraries #
+######################

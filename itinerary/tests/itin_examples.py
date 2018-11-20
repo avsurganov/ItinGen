@@ -17,6 +17,30 @@
 #     "tags": (list),
 #     "price": (float)
 # }
+# OR
+# {
+#     event_id: string
+#     event_name: string
+#     venue_id: str
+#     mon_start
+#     mon_end
+#     tues_start
+#     tues_end
+#     wed_start
+#     wed_end
+#     thurs_start
+#     thurs_end
+#     fri_start
+#     fri_end
+#     sat_start
+#     sat_end
+#     sun_start
+#     sun_end
+#     : ints (in minutes from midnight)
+#     time_spent: int in minutes
+#     tags: list of strings
+#     price: float (dollars)
+# }
 # where each venue is:
 # {
 #     "venue_id": (str),
@@ -166,5 +190,14 @@ itin6 = [(event1, venue1, 660, 780),
 itin7 = [(event1, venue1, 660, 780),
         (event2, venue2, 830, 920)]
 
+# used to:
+#   validate date
+#   validate price
 itin8 = [(event1, venue1, 660, 780),
         (event3, venue3, 830, 920)]
+
+# duplicate events
+itin9 = [(event1, venue1, 660, 780),
+        (event1, venue1, 660, 780)]
+# venue_id does not match
+itin10 = [(event2, venue1, 660, 780)]

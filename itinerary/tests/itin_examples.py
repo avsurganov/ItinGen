@@ -190,5 +190,14 @@ itin6 = [(event1, venue1, 660, 780),
 itin7 = [(event1, venue1, 660, 780),
         (event2, venue2, 830, 920)]
 
+# used to:
+#   validate date
+#   validate price
 itin8 = [(event1, venue1, 660, 780),
         (event3, venue3, 830, 920)]
+
+# duplicate events
+itin9 = [(event1, venue1, 660, 780),
+        (event1, venue1, 660, 780)]
+# venue_id does not match
+itin10 = [(event2, venue1, 660, 780)]

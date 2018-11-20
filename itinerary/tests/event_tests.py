@@ -1,4 +1,5 @@
 # tests for events in an itinerary
+from itin_examples import *
 
 def validate_no_duplicates(itinerary):
     '''
@@ -104,5 +105,16 @@ def validate_event_price(itinerary, price):
         else:
             if p > price:
                 return 1
-                
+
     return 0
+
+
+# examples of unit tests
+assert validate_no_duplicates(itin9) == 1
+assert validate_no_duplicates(itin10) == 0
+assert validate_venue_id_match(itin10) == 1
+assert validate_venue_id_match(itin8) == 0
+assert validate_event_date(itin8, '02-16-2018') == 1
+assert validate_event_date(itin8, '02-16-2019') == 0
+assert validate_event_price(itin8, 0) == 1
+assert validate_event_price(itin8, 100000) == 0

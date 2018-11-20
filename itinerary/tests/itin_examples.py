@@ -115,5 +115,56 @@ venue2 = {
           "zip_code": "60610"
          }
 
+event3 = {
+          "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
+          "event_name": "Elton John: Farewell Yellow Brick Road",
+          "venue_id": "TMAPIKovZpa2MCe",
+          "start": 1200,
+          "end": -10,
+          "date": "02-16-2019",
+          "tags": [
+            "Music",
+            "Rock",
+            "Pop",
+            "Undefined",
+            "Undefined"
+          ],
+          "price": 59.5
+         }
+
+venue3 = {
+          "venue_id": "TMAPIKovZpa2MCe",
+          "venue_name": "Allstate Arena",
+          "latitude": 42.00499247,
+          "longitude": -87.88750024,
+          "address1": "6920 North Mannheim Road",
+          "address2": "",
+          "address3": "",
+          "city": "Rosemont",
+          "state": "IL",
+          "zip_code": "60018"
+}
+
 itin1 = [(event1, venue1, 660, 780),
+        (event2, venue2, 785, 920)]
+
+itin2 = [(event1, venue1, 660, 780),
+        (event2, venue2, 790, 920)]
+
+itin3 = [(event1, venue1, 660, 780),
+        (event2, venue2, 795, 920)]
+
+itin4 = [(event1, venue1, 660, 780),
+        (event2, venue2, 800, 920)]
+
+itin5 = [(event1, venue1, 660, 780),
+        (event2, venue2, 810, 920)]
+
+itin6 = [(event1, venue1, 660, 780),
         (event2, venue2, 820, 920)]
+
+itin7 = [(event1, venue1, 660, 780),
+        (event2, venue2, 830, 920)]
+
+itin8 = [(event1, venue1, 660, 780),
+        (event3, venue3, 830, 920)]

@@ -51,7 +51,11 @@
     });
   </script>
   <script>
-    // $('#myModal').modal('show')
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+    $('#myModal').modal({backdrop: false, keyboard: true, focus : false}) 
+</script>
   </script>
   <script id="__bs_script__">//<![CDATA[
       document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));

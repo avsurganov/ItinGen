@@ -1,41 +1,26 @@
 <!-- Introductory Modal -->
-<div class="modal hide fade" id="myModal">
-  <div class="modal-header">
-    <a class="close" data-dismiss="myModal" data-toggle="modal" aria-hidden="true" onclick='hide_modal()'>X</a>
-  </div>
-  <div class="modal-body">
-    <h2>Welcome to ItinGen! An application that automatically generates itineraries for you! On the left side, your first itinerary is split into different activities and meals. The locations are mapped out on the map in the center of the screen. By clicking the red thumb near the bottom, you can generate a new itinerary. By clicking the green thumb, you can add the current itinerary to you list of saved itineraries. Your liked itineraries can be viewed by clicking the link within the hamburger menu on the top left of the page.</h2>
-  </div>
-  <div class="modal-footer">
-    <a href="#bottomOfPage" class="btn">Close</a>
-    <!--    <a href="#" class="btn btn-primary">Save changes</a> -->
-  </div>
-</div>
-<!-- End of Introductory Modal -->
-
-<!-- Help Modal -->
-
-<div class="w3-container">
-  <div id="id02" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span style display='static' class="w3-button w3-display-topright">&times;</span>
-        <p>Welcome to ItinGen! An application that automatically generates itineraries for you! On the left side, your first itinerary is split into different activities and meals. The locations are mapped out on the map in the center of the screen. By clicking the red thumb near the bottom, you can generate a new itinerary. By clicking the green thumb, you can add the current itinerary to you list of saved itineraries. Your liked itineraries can be viewed by clicking the link within the hamburger menu on the top left of the page.</p>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Welcome to ItinGen! Your first itinerary is waiting for you. Click help in the menu bar in the top left for more instructions.</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
+<!-- End of Introductory Modal -->
 
-<!-- End of Help Modal -->
 
 <!-- Modal for Information -->
-
 <div class="w3-container">
   <div id="id00" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <p>Welcome to ItinGen! An application that automatically generates itineraries for you! On the left side, your first itinerary is split into different activities and meals. The locations are mapped out on the map in the center of the screen. By clicking the red thumb near the bottom, you can generate a new itinerary. By clicking the green thumb, you can add the current itinerary to you list of saved itineraries. Your liked itineraries can be viewed by clicking the link within the hamburger menu on the top left of the page.</p>
+        <span onclick="document.getElementById('id00').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h3>Welcome to ItinGen! An application that automatically generates itineraries for you! On the left side, your first itinerary is split into different activities and meals. The locations are mapped out on the map in the center of the screen. By clicking the red thumb near the bottom, you can generate a new itinerary. By clicking the green thumb, you can add the current itinerary to you list of saved itineraries. Your liked itineraries can be viewed by clicking the link within the hamburger menu on the top left of the page.</h3>
       </div>
     </div>
   </div>
@@ -72,8 +57,8 @@
   <div id="map-btn-container" class="container">
     <div id="map" style='width: 100%; height: 100%; right: 0;' class="map-pos"></div>
     <div class="rate rate-btn-container">
-      <%= link_to '', root_path, class: "btn btn-sm rate-btn btn-link", id: "like", :method => :get %>
-      <%= link_to '', root_path, class: "btn btn-sm rate-btn btn-link", id: "dislike", :method => :get %>
+      <%= link_to '', root_path, class: "btn btn-sm rate-btn btn-link", id: "like" %>
+      <%= link_to '', root_path, class: "btn btn-sm rate-btn btn-link", id: "dislike" %>
     </div>
   </div>
 
@@ -87,7 +72,7 @@
           <button class="btn-outline-info">Liked Itineraries</button>
           <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Login</button>
           <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Register</button>
-           <%#<button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Help</button> %>
+          <button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Help</button>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark">
@@ -98,6 +83,8 @@
     </div>
 
     <!-- <button class="btn-sidebar-right w3-bar-item w3-button w3-large">Close &times;</button> -->
+
+    <!-- End sidebar header -->
 
     <!-- sidebar body cards -> these need to be dynamically generated with Ruby-->
     <% @locs.each_with_index do |loc, i| %>
@@ -119,4 +106,5 @@
     <% end %>
     <!--sidebar body-->
   </div>
+</div>
 

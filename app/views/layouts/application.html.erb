@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ItinGen</title>
+    <title>ItinGen - Itinerary Generator</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,9 +11,10 @@
     <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
     <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>
     <script src='//underscorejs.org/underscore-min.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
-  <body>
+  <body id="home" style="padding-top: 0px;">
     <%= yield %>
   </body>
   <script type="text/javascript">
@@ -21,12 +22,12 @@
     let directionsService = new google.maps.DirectionsService();
 
     function calcRoute() {
-      let origin      = new google.maps.LatLng(<%= @pts[0][:lat] %>, <%= @pts[0][:lng] %>);
-      let destination = new google.maps.LatLng(<%= @pts[1][:lat] %>, <%= @pts[1][:lng] %>);
+      let origin      = new google.maps.LatLng(<%= @locs.first[:latitude] %>, <%= @locs.first[:longitude] %>);
+      let destination = new google.maps.LatLng(<%= @locs.last[:latitude] %>, <%= @locs.last[:longitude] %>);
       let events = [];
       let event;
-      <% @locs.each do |loc| %>
-        event = new google.maps.LatLng(<%= loc[:lat] %>, <%= loc[:lng] %>);
+      <% @locs[1..-2].each do |loc| %>
+        event = new google.maps.LatLng(<%= loc[:latitude] %>, <%= loc[:longitude] %>);
         events.push({location: event, stopover: true});
       <% end %>
       let request = {

@@ -37,4 +37,5 @@ are returning correctly
 *structure subject to change*
 
 ## Main Database Pipeline
-Run master_data_pipeline.py to generate json files for all APIs to their respective folders 
+Run master_data_pipeline.py to generate json files for all APIs to their respective folders.
+This should also be run for all validation tests. 

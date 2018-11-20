@@ -1,14 +1,10 @@
-class Venue
-  include Mongoid::Document
-  field :venue_id, type: String
-  field :venue_name, type: String
-  field :venue_alia, type: String
-  field :latitude, type: Float
-  field :longitude, type: Float
-  field :address1, type: String
-  field :address2, type: String
-  field :address3, type: String
-  field :city, type: String
-  field :state, type: String
-  field :zip_code, type: String
+class Venue < ApplicationRecord
+    #validates :venue_id, presence: true
+    #validates :venue_name, presence: true
+    #validates :latitude, presence: true
+    #validates :longitude, presence: true
+    #validates :address1, presence: true
+    #validates :city, presence: true
+    #validates :state, presence: true
+    #validates :zip_code, presence: true
 end

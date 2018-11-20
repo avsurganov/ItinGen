@@ -248,8 +248,8 @@ def main():
     try:
         query_api(input_values.categories, input_values.location, input_values.offset)
 
-        venuesfile = open(venuefname,"a+")
-        eventsfile = open(eventfname, "a+")
+        venuesfile = open(venuefname,"w")
+        eventsfile = open(eventfname, "w")
 
         #print("hello, pls work")
         #print(venuelist)

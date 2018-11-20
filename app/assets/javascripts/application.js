@@ -14,5 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require gmaps/google
-//= require maps
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
 //= require_tree .

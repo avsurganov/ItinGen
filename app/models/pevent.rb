@@ -1,0 +1,22 @@
+class Pevent < ApplicationRecord
+    #validates :venue_id, presence: true
+    #validates :event_name, presence: true
+    #validates :event_alias, presence: true
+    #validates :event_id, presence: true
+    #validates :mon_start, presence: true
+    #validates :mon_end, presence: true
+    #validates :tues_start, presence: true
+    #validates :tues_end, presence: true
+    #validates :wed_start, presence: true
+    #validates :wed_end, presence: true
+    #validates :thurs_start, presence: true
+    #validates :thurs_end, presence: true
+    #validates :fri_start, presence: true
+    #validates :fri_end, presence: true
+    #validates :sat_start, presence: true
+    #validates :sat_end, presence: true
+    #validates :sun_start, presence: true
+    #validates :sun_end, presence: true
+    #validates :tags, presence: true
+    #validates :price, presence: true
+end

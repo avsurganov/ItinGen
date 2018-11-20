@@ -1,0 +1,201 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *
+ */
+@import "bootstrap";
+@import "main";
+
+
+/* Variables */
+
+/* Mixins*/
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+/* Style tweaks */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  height: 100%;
+}
+body {
+  padding-top: 70px;
+}
+
+
+/* Off Canvas */
+
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    right: 25%;
+    @include transition(all, .3s, ease-out);
+       right: 0; /* 3 columns */
+    &.active {
+      .content {
+        width: 100%; /* 12 columns */
+      }
+    }
+    .content {
+      width: 75%; /* 9 columns */
+      float: right;
+      @include transition(all, .3s, ease-out);
+    }
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 25%; /* 3 columns */
+      right: -25%; /* 3 columns */
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    right: 0;
+    position: relative;
+    @include transition(all, .3s, ease-out);
+    &.active {
+      right: 50%; /* 6 columns */
+    }
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+    right: -50%; /* 6 columns */
+  }
+}
+
+/* styling the sidebar and the toggle button */
+
+.content {
+  position: relative;
+}
+
+#header {
+  z-index: 1000;
+  left: 50%;
+}
+.sidebar {
+  background: rgba(51, 122, 183, 0.09);
+  padding: 10px 15px;
+  margin-top:-20px;
+  border-radius: 0 0 0 5px;
+  z-index: 50;
+}
+
+.btn-collapse {
+  position: absolute;
+  padding: 8px 12px;
+  border-radius: 5px 5px 0 0;
+  top: 20px;
+  right: 0;
+  margin-right: -24px;
+  background: rgba(51, 122, 183, 0.09);
+  transform: rotate(-90deg);
+  @include transition(all, .3s, ease-out);
+}
+.row-offcanvas.active .btn-collapse {
+  right: 0;
+  margin-right: -8px;
+  @include transition(all, .3s, ease-out);
+
+  i {
+    transform: rotate(180deg);
+  }
+}
+
+
+#map-btn-container {
+  height: 100%;
+  position: relative;
+  float: right;
+  min-width:80%;
+  
+}
+
+.map-pos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.rate-btn-container {
+  width: 50%; 
+  display:inline-block;
+  left: 50%;
+
+}
+
+.rate {
+  position: absolute;
+  bottom: 20px;
+
+}
+.rate {
+  z-index: 10;
+}
+
+.rate-btn {
+  width: 30%;
+}
+
+
+#like{
+  height: 80px;
+  background-image: url("https://i.imgur.com/MvzsVKy.png");
+  background-repeat: no-repeat;
+}
+
+
+#dislike {
+  height: 80px;
+  background-image: url("https://i.imgur.com/IPlQVpg.png");
+  background-repeat: no-repeat;
+}
+
+form {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width  : 740px;
+  height : 300px;
+  margin : 0 auto;
+  border: 10px;
+
+  background: #FFF url(background.jpg);
+}
+
+input[type=search] {
+  border: 1px dotted #999;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+}
+
+input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+
+
+

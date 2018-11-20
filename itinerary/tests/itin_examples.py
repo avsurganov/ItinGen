@@ -201,3 +201,25 @@ itin9 = [(event1, venue1, 660, 780),
         (event1, venue1, 660, 780)]
 # venue_id does not match
 itin10 = [(event2, venue1, 660, 780)]
+
+valid_itin = [(event1, venue1, 720, 840),
+			  (event2, venue2, 870, 930),
+			  (event3, venue3, 1215, 1305)]
+
+out_of_order_itin = [(event1, venue1, 875, 935),
+					 (event2, venue2, 725, 845),
+					 (event3, venue3, 1220, 1310)]
+
+duplicate_itin = [(event1, venue1, 715, 845),
+				  (event1, venue1, 865, 925)]
+
+overlap_itin = [(event1, venue1, 717, 837),
+				(event2, venue2, 823, 883)]
+
+bad_venue_itin = [(event1, venue2, 720, 840),
+				  (event2, venue3, 870, 930),
+				  (event3, venue1, 1215, 1305)]
+
+venue_not_open_itin = [(event1, venue1, 721, 841),
+					   (event2, venue2, 871, 931),
+					   (event3, venue3, 1015, 1150)]

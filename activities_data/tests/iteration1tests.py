@@ -9,26 +9,81 @@ def converttime_yelp(milittime):
 def validate_dictlength(bizdict):
     return False
 
-# validate the name field of a business dict
-def validate_name(bizdict):
+# validate the name field of a dict
+def validate_event_name(bizdict):
+    if ('event_name' not in bizdict):
+        return False
+    name = bizdict['event_name']
+    if (isinstance(name, str)):
+        if (name.strip()):
+            return True
     return False
 
-# validate the opening time field of a business dict
+def validate_venue_name(bizdict):
+    if ('venue_name' not in bizdict):
+        return False
+    name = bizdict['venue_name']
+    if (isinstance(name, str)):
+        if (name.strip()):
+            return True
+    return False
+
+# validate the opening time field of a dict
 def validate_open_hour(bizdict):
-    return False
+    days = ['mon_start', 'tues_start', 'wed_start', 'thurs_start', 'fri_start',
+        'sat_start', 'sun_start']
+    for day in days:
+        if (day not in bizdict):
+            return False
+        hour = bizdict[day]
+        if (not isinstance(hour, int)):
+            return False
+        if (hour < 0 or hour > 1440):
+            return False
+    return True
 
-# validate the closing time field of a business dict
+# validate the closing time field of a dict
 def validate_close_hour(bizdict):
-    return False
+    days = ['mon_end', 'tues_end', 'wed_end', 'thurs_end', 'fri_end',
+        'sat_end', 'sun_end']
+    for day in days:
+        if (day not in bizdict):
+            return False
+        hour = bizdict[day]
+        if (not isinstance(hour, int)):
+            return False
+        if (hour < 0 or hour > 1440):
+            return False
+    return True
 
 # validate the relationship between the opening
-# and closing hour fields of a business dict
+# and closing hour fields of a dict
 def validate_hours(bizdict):
-    return False
+    if (not validate_open_hour(bizdict) or not validate_close_hour(bizdict)):
+        return False
+    open_hours = ['mon_start', 'tues_start', 'wed_start', 'thurs_start', 'fri_start',
+        'sat_start', 'sun_start']
+    close_hours = ['mon_end', 'tues_end', 'wed_end', 'thurs_end', 'fri_end',
+        'sat_end', 'sun_end']
+    for day in range(7):
+        start = open_hours[day]
+        end = close_hours[day]
+        if (start >= end):
+            return False
+    return True
 
-# validate the category field of a business dict
+# validate the category field of a dict
 def validate_category(bizdict):
-    return False
+    if ('tags' not in bizdict):
+        return False
+    if (not isinstance('tags', list)):
+        return False
+    for tag in tags:
+        if (not isinstance(tag, str)):
+            return False
+        if (not tag.strip()):
+            return False
+    return True
 
 # validate the coordinates field of a business dict
 def validate_coordinates(bizdict):

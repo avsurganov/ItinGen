@@ -68,4 +68,38 @@ No longer using Vue.js frontend framework. Instead only working with pure javasc
 
 We switched from collecting data by type of event to collecting data by API to reduce data overlap and the number of API calls needed. This also allowed each member of the data aggregation team to focus on a single API.
 
+## Addressing Specific Questions for Milestone 4A:
+
+1. A brief description about what you plan to implement in the 2nd iteration.
+
+For our iteration two, we plan to boost our application to production level by implementing user accounts, automatic itinerary generation, user defined settings, and a liked itineraries page. These features build upon the first in that they add to the core functionality of the application, or, the true value add to users of ItinGen. As before, we leave the development of the user interface to the frontend team, the development of the data model to the backend team, and the implementation of the itinerary generation algorithm to the algorithm and data team. We elaborate on what each subteam will do specifically below.
+
 Due to time constraints and unforseen complications, we are decreasing the amount of inputs we will accept from the user. We will no longer allow users to specify their budget, but we will allow them to specify whether they only want to attend free or not free events. We will no longer allow them to specify an ending location as we will assume the ending location is the same as the starting location. We will allow them to specify a maximum radius for the itinerary instead of a distance they are willing to travel. We will also not allow them to specify types of activities they are interested in. Therefore, our settings window will only accept start location, time frame, amd travel radius as possible inputs from a user.
+
+2. A brief description about how the work will be divided among all pairs of people in your team.
+
+  Front End [Leslie, Tyler]
+  Integrate Angular.js frontend framework (previously decided against) to handle increase frontend complexity
+  Build setting window where user can define parameters that affect the result itineraries
+  Build liked itineraries page where users can view all of their previously liked itineraries at once with the ability to focus on a particular itinerary
+  Insert login button and functionality
+
+  Back End [Anthony, Omar]
+  Populate Database with models
+  Create associations between models
+  Integrate OAuth and User Accounts
+  Integrate itinerary generation algorithm
+  Convert Rails MVC to Rails API and add Angular.js integration
+
+  Algorithms [Clare, Eli, Masha, Max]
+  a) We will implement an algorithm to randomly generate an itinerary, which will contain events from our database and will be constrained by (optional) parameters set by the user. Prior to itinerary generation, the user will be able to:
+  specify starting and ending time
+  specify starting location
+  specify the distance radius they are willing to travel
+  Specify if itinerary should only be free events
+  Additionally, users will be able to like or dislike each itinerary and future itineraries will be optimized to take into account the user’s history of likes and dislikes. The user inputs have changed from the design document in order to simplify the itinerary generation algorithm.
+
+  b) The algorithm and data team will work together to implement an itinerary generation algorithm based on user inputs. The team will work with the backend and frontend teams to ensure smooth transition from user input, database querying, generation, to displaying.
+
+
+

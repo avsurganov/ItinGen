@@ -169,30 +169,42 @@ venue3 = {
           "zip_code": "60018"
 }
 
+# invalid travel time (driving)
+# valid travel distance (default dist)
+# invalid travel distance (user dist)
 itin1 = [(event1, venue1, 660, 780),
         (event2, venue2, 785, 920)]     #using this as right for all time tests
 
+# valid travel time (driving)
 itin2 = [(event1, venue1, 660, 780),
         (event2, venue2, 790, 920)]
 
+# invalid travel time (biking)
 itin3 = [(event1, venue1, 660, 780),
         (event2, venue2, 795, 920)]
 
+# valid travel time (biking)
+# invalid travel time (transit)
 itin4 = [(event1, venue1, 660, 780),
         (event2, venue2, 800, 920)]
 
+# valid travel time (transit)
 itin5 = [(event1, venue1, 660, 780),
         (event2, venue2, 810, 920)]
 
+# invalid travel time (walking)
 itin6 = [(event1, venue1, 660, 780),
         (event2, venue2, 820, 920)]
 
+# valid travel time (walking)
 itin7 = [(event1, venue1, 660, 780),
         (event2, venue2, 830, 920)]
 
 # used to:
 #   validate date
 #   validate price
+# valid travel distance (user dist)
+# invalid travel distance (default dist)
 itin8 = [(event1, venue1, 660, 780),
         (event3, venue3, 830, 920)]
 
@@ -205,6 +217,12 @@ itin9 = [(event1, venue1, 660, 780),
 # venue_id does not match
 #chronologically valid
 itin10 = [(event2, venue1, 660, 780)]
+
+# invalid travel time overall
+itin11 = [(event2, venue2, 660, 780),
+          (event1, venue1, 810, 830),
+          (event3, venue3, 850, 900)]
+
 
 # itins for time testing specifically
 

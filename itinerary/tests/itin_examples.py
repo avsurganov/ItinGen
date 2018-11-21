@@ -172,8 +172,9 @@ venue3 = {
 # invalid travel time (driving)
 # valid travel distance (default dist)
 # invalid travel distance (user dist)
+# valid for all time tests
 itin1 = [(event1, venue1, 660, 780),
-        (event2, venue2, 785, 920)]     #using this as right for all time tests
+        (event2, venue2, 785, 920)]
 
 # valid travel time (driving)
 itin2 = [(event1, venue1, 660, 780),
@@ -200,22 +201,21 @@ itin6 = [(event1, venue1, 660, 780),
 itin7 = [(event1, venue1, 660, 780),
         (event2, venue2, 830, 920)]
 
-# used to:
-#   validate date
-#   validate price
+# used for date validation
+# used for price validation
 # valid travel distance (user dist)
 # invalid travel distance (default dist)
 itin8 = [(event1, venue1, 660, 780),
         (event3, venue3, 830, 920)]
 
 # duplicate events
-#same time periods
-#chronologically invalid
+# same time periods
+# chronologically invalid
 itin9 = [(event1, venue1, 660, 780),
         (event1, venue1, 660, 780)]
 
 # venue_id does not match
-#chronologically valid
+# chronologically valid
 itin10 = [(event2, venue1, 660, 780)]
 
 # invalid travel time overall
@@ -226,15 +226,15 @@ itin11 = [(event2, venue2, 660, 780),
 
 # itins for time testing specifically
 
-#overlaps
+# overlaps
 itin12 = [(event1, venue1, 660, 795),
         (event2, venue2, 790, 920)]
 
-#time period includes another
+# time period includes another
 itin13 = [(event1, venue1, 660, 925),
         (event2, venue2, 795, 920)]
 
-#wrong chrono order and overlap
+# wrong chrono order and overlap
 itin14 = [(event1, venue1, 800, 920),
         (event2, venue2, 660, 805)]
 

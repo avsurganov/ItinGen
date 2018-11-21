@@ -61,30 +61,6 @@ def validate_no_duplicates(itinerary):
 
     return 0
 
-
-def validate_restaurants(itinerary):
-    '''
-    check that there are is at least 1 restaurant if the itinerary goes on for
-    more than 4 hours (we can change this later)
-
-    inputs:
-        itinerary (list of dicts)
-
-    outputs:
-        0 for success
-        1 for failure
-    '''
-    start = itinerary[2]
-    end = itinerary[3]
-    if (end - start) >= (4 * 60):
-        for event in itinerary:
-            if 'food' in event[0]['tags']:
-                return 0
-        return 1
-
-    return 0
-
-
 def validate_venue_id_match(itinerary):
     '''
     check that the events and the venues have the same venue id
@@ -147,8 +123,20 @@ def validate_event_price(itinerary, price):
             if p > price:
                 return 1
 
-<<<<<<< HEAD
     return 0
-=======
-    return 0    
->>>>>>> clare
+
+
+''' OVERALL VALIDATION FUNCTION '''
+
+def validate_itin(itin,day,start_location,price,date,user_times=0,dist=0,transport=0):
+    return (validate_nooverlap(itin,user_times) and
+            validate_chrono(itin) and
+            validate_isopen(itin,day) and
+            validate_within_usertime(itin,user_times) and
+            validate_max_distance(itin,start_location,dist) and
+            validate_event_distance(itin,dist) and
+            validate_travel_time(itin,transport) and
+            validate_no_duplicates(itin) and
+            validate_venue_id_match(itin) and
+            validate_event_date(itin,date) and
+            validate_event_price(itin,price))

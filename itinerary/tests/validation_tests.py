@@ -81,6 +81,10 @@ class TestEventValidation(unittest.TestCase):
         self.assertTrue(validate_event_price(itin8, 0))
         self.assertFalse(validate_event_price(itin8, 100000))
 
+class TestItinValidation(unittest.TestCase):
+    def test_validate_itin(self):
+        self.assertTrue(validate_itin(itin1,"mon",[41.792210, -87.599940],"11-20-2018",0.0))
+
 
 if __name__ == '__main__':
     unittest.main()

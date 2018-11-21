@@ -170,6 +170,8 @@ venue3 = {
 }
 
 # invalid travel time (driving)
+# valid travel distance (default dist)
+# invalid travel distance (user dist)
 itin1 = [(event1, venue1, 660, 780),
         (event2, venue2, 785, 920)]
 
@@ -201,6 +203,8 @@ itin7 = [(event1, venue1, 660, 780),
 # used to:
 #   validate date
 #   validate price
+# valid travel distance (user dist)
+# invalid travel distance (default dist)
 itin8 = [(event1, venue1, 660, 780),
         (event3, venue3, 830, 920)]
 
@@ -211,7 +215,7 @@ itin9 = [(event1, venue1, 660, 780),
 # venue_id does not match
 itin10 = [(event2, venue1, 660, 780)]
 
-# invalid travel time overall 
+# invalid travel time overall
 itin11 = [(event2, venue2, 660, 780),
           (event1, venue1, 810, 830),
           (event3, venue3, 850, 900)]

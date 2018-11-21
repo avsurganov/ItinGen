@@ -146,9 +146,5 @@ def validate_event_price(itinerary, price):
         else:
             if p > price:
                 return 1
-
-<<<<<<< HEAD
+            
     return 0
-=======
-    return 0    
->>>>>>> clare

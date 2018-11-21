@@ -62,29 +62,6 @@ def validate_no_duplicates(itinerary):
     return 0
 
 
-def validate_restaurants(itinerary):
-    '''
-    check that there are is at least 1 restaurant if the itinerary goes on for
-    more than 4 hours (we can change this later)
-
-    inputs:
-        itinerary (list of dicts)
-
-    outputs:
-        0 for success
-        1 for failure
-    '''
-    start = itinerary[2]
-    end = itinerary[3]
-    if (end - start) >= (4 * 60):
-        for event in itinerary:
-            if 'food' in event[0]['tags']:
-                return 0
-        return 1
-
-    return 0
-
-
 def validate_venue_id_match(itinerary):
     '''
     check that the events and the venues have the same venue id

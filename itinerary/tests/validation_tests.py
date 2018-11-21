@@ -84,6 +84,11 @@ class TestEventValidation(unittest.TestCase):
 class TestItinValidation(unittest.TestCase):
     def test_validate_itin(self):
         self.assertTrue(validate_itin(itin1,"mon",[41.792210, -87.599940],"11-20-2018",0.0))
+        self.assertEqual(validate_itin(itin1,"tue",[41.792210, -87.599940],"02-16-2019",0.0),1)
+        self.assertEqual(validate_itin(itin10,"tue",[41.792210, -87.599940],"02-16-2019",0.0),1)
+        self.assertEqual(validate_itin(itin1,"tue",[41.792210, -87.599940],"02-16-2018",0.0),1)
+        self.assertEqual(validate_itin(itin8,"tue",[41.792210, -87.599940],"02-16-2019",0.0),0)
+
 
 
 if __name__ == '__main__':

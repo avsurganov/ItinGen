@@ -127,7 +127,7 @@ def validate_event_price(itinerary, price):
 
 
 ''' OVERALL VALIDATION FUNCTION '''
-
+# wrapper for all of the above validation functions
 def validate_itin(itin,day,start_location,price,date,user_times=0,dist=0,transport=0):
     return (validate_nooverlap(itin,user_times) and
             validate_chrono(itin) and

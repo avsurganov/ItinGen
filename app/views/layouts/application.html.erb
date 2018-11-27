@@ -15,45 +15,51 @@
   </head>
 
   <body id="home" style="padding-top: 0px;">
+    <div class="row">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
     <%= yield %>
   </body>
-  <script type="text/javascript">
-    let directionsDisplay = new google.maps.DirectionsRenderer();
-    let directionsService = new google.maps.DirectionsService();
+  <% if current_page?(root_path) %>
+    <script type="text/javascript">
+      let directionsDisplay = new google.maps.DirectionsRenderer();
+      let directionsService = new google.maps.DirectionsService();
 
-    function calcRoute() {
-      let origin      = new google.maps.LatLng(<%= @locs.first[:latitude] %>, <%= @locs.first[:longitude] %>);
-      let destination = new google.maps.LatLng(<%= @locs.last[:latitude] %>, <%= @locs.last[:longitude] %>);
-      let events = [];
-      let event;
-      <% @locs[1..-2].each do |loc| %>
-        event = new google.maps.LatLng(<%= loc[:latitude] %>, <%= loc[:longitude] %>);
-        events.push({location: event, stopover: true});
-      <% end %>
-      let request = {
-        origin:      origin,
-        destination: destination,
-        waypoints: events,
-        travelMode:  google.maps.TravelMode.DRIVING
-      };
-      directionsService.route(request, function(response, status) {
-        if (status == google.maps.DirectionsStatus.OK) {
-          directionsDisplay.setDirections(response);
-        }
+      function calcRoute() {
+        let origin      = new google.maps.LatLng(<%= @locs.first[:latitude] %>, <%= @locs.first[:longitude] %>);
+        let destination = new google.maps.LatLng(<%= @locs.last[:latitude] %>, <%= @locs.last[:longitude] %>);
+        let events = [];
+        let event;
+        <% @locs[1..-2].each do |loc| %>
+          event = new google.maps.LatLng(<%= loc[:latitude] %>, <%= loc[:longitude] %>);
+          events.push({location: event, stopover: true});
+        <% end %>
+        let request = {
+          origin:      origin,
+          destination: destination,
+          waypoints: events,
+          travelMode:  google.maps.TravelMode.DRIVING
+        };
+        directionsService.route(request, function(response, status) {
+          if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+          }
+        });
+      }
+
+      calcRoute();
+
+      let handler = Gmaps.build('Google');
+      handler.buildMap({ internal: {id: 'map'}}, function(){
+        directionsDisplay.setMap(handler.getMap());
       });
-    }
-
-    calcRoute();
-
-    let handler = Gmaps.build('Google');
-    handler.buildMap({ internal: {id: 'map'}}, function(){
-      directionsDisplay.setMap(handler.getMap());
-    });
-  </script>
-  <script>
-     $(window).on('load',function(){
-       $('#myModal').modal('show');
-    });
-    $('#myModal').modal({backdrop: false, keyboard: true, focus : false})
-  </script>
+    </script>
+    <script>
+       $(window).on('load',function(){
+         $('#myModal').modal('show');
+      });
+      $('#myModal').modal({backdrop: false, keyboard: true, focus : false})
+    </script>
+  <% end %>
 </html>

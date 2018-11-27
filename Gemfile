@@ -16,6 +16,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'gmaps4rails'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
+gem 'devise'
+gem 'simple_form'
 
 
 group :development, :test do

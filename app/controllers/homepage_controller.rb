@@ -1,5 +1,6 @@
 class HomepageController < ApplicationController
   def index
+    @user = User.new
     @locs = get_locs.shuffle[0..4]
   end
 

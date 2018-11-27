@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-7">
+      <div class="featured-boxes mt-none mb-none">
+        <div class="featured-box featured-box-primary mt-xl">
+          <div class="box-content">
+            <h4 class="mb-none">Contact Us</h4>
+            <%= simple_form_for(@rush_message, :url => rush_messages_path) do |f| %>
+              <div class="row">
+                <div class="form-group">
+                  <div class="col-md-6">
+                    <%= f.label :name %>
+                    <%= f.text_field :name, class: "form-control", autofocus: true %>
+                  </div>
+                  <div class="col-md-6">
+                    <%= f.label :email %>
+                    <%= f.email_field :email, class: "form-control" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <%= f.label :subject %>
+                    <%= f.text_field :subject, class: "form-control" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <%= f.label :content %>
+                    <%= f.text_area :content, class: "form-control" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <%= f.submit 'Send', class: 'btn btn-primary mb-xl' %>
+                </div>
+                <div class="col-md-8">
+                  <% if @rush_message.errors.any? %>
+                    <div id="error_explanation">
+                      <h2><%= "#{pluralize(rush_message.errors.count, "error")} prohibited this message from being sent:" %></h2>
+                      <ul>
+                        <% @rush_message.errors.full_messages.each do |msg| %>
+                          <li><%= msg %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+" Press ? for help
+
+.. (up a dir)
+</Rails/ItinGen/app/views/
+▾ homepage/
+    index.html.erb
+    index.html.erb.1
+▾ layouts/
+    application.html.erb
+    mailer.html.erb
+    mailer.text.erb
+▸ partials/

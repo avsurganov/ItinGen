@@ -122,6 +122,20 @@ class Venue(Query):
 		EB_tests.venue_valid(self.json)
 		return self.json
 
+#class for generating tags
+class Category(Query):
+	def get_category(self):
+		category = self.all_data.get('name')
+		return category
+			
+	def get_subcategory(self, s_id):
+		subcategories = self.all_data.get('subcategories')
+		for sub in subcategories:
+			id = sub.get('id')
+			if (id == s_id):
+				return sub.get('name')
+		return ''
+
 
 #class for creating json object for single event
 class Event:
@@ -141,7 +155,15 @@ class Event:
 		self.json['start'] = Utility.check_null(Utility.time_to_mins(s_split[1]), -10)
 		self.json['end'] = Utility.check_null(Utility.time_to_mins(e_split[1])+1440*Utility.compare_dates(s_split[0], e_split[0]), -10)
 		self.json['date'] = Utility.check_null(Utility.format_date(s_split[0]), '')
-		self.json['tags'] = ''
+		c_id = self.event.get('category_id')
+		s_id = self.event.get('subcategory_id')
+		if c_id is None:
+			self.json['tags'] = []
+		else:
+			categories = Category('categories/' + c_id + '/?token=')
+			category = categories.get_category()
+			subcategory = categories.get_subcategory(s_id)
+			self.json['tags'] = [category, subcategory]
 		self.json['price'] = self.price
 		EB_tests.event_valid(self.json)
 		return self.json

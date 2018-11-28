@@ -19,10 +19,7 @@
     "express": "^4.16.4",
     "g": "^2.0.1",
     "html5-boilerplate": "0.0.1",
-<<<<<<< HEAD
-=======
     "jsonwebtoken": "^8.4.0",
->>>>>>> 8975493313e7c5b110171eddf0f2a82aa3b74c79
     "mongoose": "^5.3.14",
     "morgan": "^1.9.1",
     "ngmap": "^1.18.5",

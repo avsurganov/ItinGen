@@ -1,0 +1,80 @@
+[
+	{
+		"venue_id": "yelprjiRnjJ3UAtWnslCzY6OHg",
+		"event_name": "KOVAL Distillery",
+		"event_id": "yelprjiRnjJ3UAtWnslCzY6OHg",
+		"mon_start": 840,
+		"mon_end": 1140,
+		"tues_start": 840,
+		"tues_end": 1140,
+		"wed_start": 840,
+		"wed_end": 1140,
+		"thurs_start": 840,
+		"thurs_end": 1140,
+		"fri_start": 840,
+		"fri_end": 1140,
+		"sat_start": 780,
+		"sat_end": 1110,
+		"sun_start": 840,
+		"sun_end": 1020,
+		"tags": [
+			"distilleries",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelp7ITzyNC7zvFi2fFG_g9ANg",
+		"event_name": "Rhine Hall Distillery",
+		"event_id": "yelp7ITzyNC7zvFi2fFG_g9ANg",
+		"mon_start": 1020,
+		"mon_end": 1260,
+		"tues_start": 1020,
+		"tues_end": 1260,
+		"wed_start": 1020,
+		"wed_end": 1260,
+		"thurs_start": 840,
+		"thurs_end": 1140,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"cocktailbars",
+			"nightlife",
+			"distilleries",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpXRS2VK4wBanmYFHeITTc4A",
+		"event_name": "The Barrel Run",
+		"event_id": "yelpXRS2VK4wBanmYFHeITTc4A",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"bustours",
+			"nightlife",
+			"breweries",
+			"nightlife",
+			"distilleries",
+			"nightlife"
+		],
+		"price": -2
+	}
+]

@@ -5,8 +5,7 @@
         <button class="btn-outline-info">Home </button>
         <button class="btn-outline-info" ng-click="$ctrl.drawLikedItineraries()">Liked Itineraries</button>
         <button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Settings</button>
-        <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Login</button>
-        <button onclick="document.getElementById('id02').style.display='block'" class="btn-outline-info">Register</button>
+        <button class="btn btn-outline-info" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
       </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">
@@ -107,28 +106,25 @@
 <!-- Modal for Settings / Search Parameters -->
 
 <!-- Modal for Logging in -->
-     <div class="w3-container">
-        <div id="id01" class="w3-modal">
-          <div class="w3-modal-content">
-            <div class="w3-container">
-              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Please Enter your Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Please Enter a Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+
+<div class="modal fade" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginTitle">Log in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
           </div>
-        </div>
-</div>
-<!-- End Modal for Logging in -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!-- End Modal for Logging in -->
 
 <!-- Modal for Register -->
      <div class="w3-container">

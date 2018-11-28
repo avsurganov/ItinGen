@@ -18,6 +18,8 @@ angular.module('ItinGen', [
 	  console.log(res);
   });
 
+  console.log(itineraryFactory.getNewItinerary())
+
 }])
 
 

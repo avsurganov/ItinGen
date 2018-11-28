@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelpB_04jjMZjeGGKjaPcR3Kig",
+		"venue_name": "Three Dots and a Dash",
+		"latitude": 41.8904391303273,
+		"longitude": -87.6306027367742,
+		"address1": "435 N Clark St",
+		"address2": "Back alley on Hubbard St",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpccbKqyfLj9PUgPJBX1tn_A",
+		"venue_name": "Lost Lake",
+		"latitude": 41.9321549,
+		"longitude": -87.7071975,
+		"address1": "3154 W Diversey",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelp93MU_JuGHgfbljSHyFUK4A",
+		"venue_name": "Island Party Hut",
+		"latitude": 41.8880460476892,
+		"longitude": -87.6185882930542,
+		"address1": "355 E Riverwalk S",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpIkNfJFHsaqwTji8j0eXB9A",
+		"venue_name": "Coconutz",
+		"latitude": 41.9039019286545,
+		"longitude": -87.6293209152592,
+		"address1": "13 W Division St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelpfVnCICdniUFBp5sgDoob3Q",
+		"venue_name": "Hala Kahiki Tiki Bar & Lounge",
+		"latitude": 41.93136,
+		"longitude": -87.84804,
+		"address1": "2834 River Rd",
+		"address2": "",
+		"address3": "",
+		"city": "River Grove",
+		"state": "IL",
+		"zip_code": "60171"
+	}
+]

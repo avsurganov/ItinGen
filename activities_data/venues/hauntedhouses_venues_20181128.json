@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelpSYYFJrNwimzHefX8z9KVZw",
+		"venue_name": "Saint Pascal's Haunted House",
+		"latitude": 41.9521637,
+		"longitude": -87.7814951,
+		"address1": "3935 N Melvina",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	},
+	{
+		"venue_id": "yelpvu-OdvI_DXGbkbmxM3SqiA",
+		"venue_name": "Haunted Sanitarium",
+		"latitude": 41.9280606,
+		"longitude": -87.6321331,
+		"address1": "2400 N Lake Shore Dr",
+		"address2": "",
+		"address3": "Theater on the Lake",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpGqs_aeROl2iBQNId56LJ9Q",
+		"venue_name": "The Fear Haunted House",
+		"latitude": 41.89169,
+		"longitude": -87.60834,
+		"address1": "600 E Grand Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60686"
+	},
+	{
+		"venue_id": "yelpMHBwADXvZdhDXp0oZ3WYQg",
+		"venue_name": "Twisted House of Horrors",
+		"latitude": 41.9336449,
+		"longitude": -87.653527,
+		"address1": "966 W Wolfram",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpMhAn4rEZsR0yBqnWv3S8Gg",
+		"venue_name": "The Cicero Town Hall House Of Horrors",
+		"latitude": 41.8456920236349,
+		"longitude": -87.7485517412424,
+		"address1": "4937 W 25th St",
+		"address2": "",
+		"address3": "",
+		"city": "Cicero",
+		"state": "IL",
+		"zip_code": "60804"
+	}
+]

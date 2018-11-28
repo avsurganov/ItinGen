@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpesdbP3ict5RGXsZndhRrcg",
+		"venue_name": "360 Chicago",
+		"latitude": 41.8986806,
+		"longitude": -87.6239087,
+		"address1": "875 N Michigan Ave",
+		"address2": "Fl 94",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpekUjqMrGrvw4y8vSfOIzOg",
+		"venue_name": "Skydeck Chicago",
+		"latitude": 41.8782943067863,
+		"longitude": -87.6358897421028,
+		"address1": "233 S Wacker Dr",
+		"address2": "Fl 103",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	}
+]

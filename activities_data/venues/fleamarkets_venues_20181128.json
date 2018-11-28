@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelpxwpn12Lz1eyOfrLWsb_7SQ",
+		"venue_name": "Vintage Garage Chicago",
+		"latitude": 41.974166,
+		"longitude": -87.659194,
+		"address1": "5051 N Broadway",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelp5OyWjHapQGzLYQWuZRL8SA",
+		"venue_name": "Retro on Roscoe",
+		"latitude": 41.94349,
+		"longitude": -87.67862,
+		"address1": "2000 W Roscoe St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpeqSabf9X09auFhp7UZlZEQ",
+		"venue_name": "Swap-O-Rama",
+		"latitude": 41.81756,
+		"longitude": -87.66558,
+		"address1": "4200 S Ashland Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60609"
+	},
+	{
+		"venue_id": "yelpMbv48bMAKtbTl7gIu2945g",
+		"venue_name": "Buyers Flea Market",
+		"latitude": 41.90193,
+		"longitude": -87.7405,
+		"address1": "4545 W Division St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60651"
+	},
+	{
+		"venue_id": "yelpYpJaCuyIgcVxNFut-vHCWQ",
+		"venue_name": "Devon Avenue Weekly Market",
+		"latitude": 42.0105286,
+		"longitude": -87.6926257,
+		"address1": "2700 W Devon Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60645"
+	}
+]

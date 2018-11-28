@@ -98,16 +98,16 @@ router.post('/getuser', function(req, res) {
 });
 
 // Route to get users liked itineraries
-router.get('/liked', function(req, res) {
-	User.findOne({ email: req.body.email}).exec(function(err, user) {
-		if (err) {
-			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
-		} else {
-			if (!user) {
-				res.json({ success: false, message: 'No user was found' }); // Return error
-			}
-	})
-});
+// router.get('/liked', function(req, res) {
+// 	User.findOne({ email: req.body.email}).exec(function(err, user) {
+// 		if (err) {
+// 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
+// 		} else {
+// 			if (!user) {
+// 				res.json({ success: false, message: 'No user was found' }); // Return error
+// 			}
+// 	})
+
 
 // Route to provide the user with a new token to renew session
 router.get('/renewToken', function(req, res) {

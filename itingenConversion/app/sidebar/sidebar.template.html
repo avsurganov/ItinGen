@@ -1,0 +1,38 @@
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block; width: 20%;" id="sidebar">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <button class="btn-outline-info">Home </button>
+          <button class="btn-outline-info" ng-click="$ctrl.drawLikedItineraries()">Liked Itineraries</button>
+          <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Settings</button>
+          <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Login</button>
+          <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Register</button>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- <button class="btn-sidebar-right w3-bar-item w3-button w3-large">Close &times;</button> -->
+
+    <!-- sidebar body cards -> TODO: add angular directives-->
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="card-title">Location A</h3>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Durty Nellies</h5>
+          <p class="card-text">180 N Smith</p>
+          <p class="card-text"></p>
+          <p class="card-text"></p>
+          <p class="card-text">Palatine, IL. 60067</p>
+          <p class="card-text">IL</p>
+          <!-- link below could also be part of dynamically generate-->
+          <a href="#" class="btn btn-primary">See Venue</a>
+        </div>
+      </div>
+    <!--sidebar body-->
+  </div>

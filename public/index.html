@@ -67,15 +67,40 @@
   <script src="core/itineraryFactory/itineraryFactory.factory.js"></script>
   <script>
      var map;
-     function initMap() {
+     function initMap(x, y) {
         map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: {lat: x, lng: y},
+        zoom: 13
       });
-        console.log(map);
+    }
+    function onPositionRecieved(position){
+      var coords = position.coords;
+      initMap(coords.latitude, coords.longitude);
+    }
+    // error if initial position not recieved
+    function locationNotRecieved(positionError){
+      console.log(positionError);
+    }
+
+    // set position on map when position tracking coords received
+    function watchCoordinatesRecieved(pos) {
+      var coords = pos.coords
+      marker.setPosition({lat: coords.latitude, lng: coords.longitude})
+    }
+
+    // begin watch position for movement tracking
+    function beginPositionWatch() {
+      navigator.geolocation.watchPosition(watchCoordinatesRecieved, locationTrackNotRecieved, options)
+    }
+
+    // Check if DOM navigator object exists
+    function init() {
+      if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onPositionRecieved, locationNotRecieved);
+      }
     }
 </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFUgxmwei_B8JH28wypn0I-l3ZfNQ1DSk&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFUgxmwei_B8JH28wypn0I-l3ZfNQ1DSk&callback=init"
       async defer></script>
   
   <script src="core/version/version.js"></script>

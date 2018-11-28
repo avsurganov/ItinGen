@@ -72,35 +72,8 @@ router.post('/authenticate', function(req, res) {
 	});
 });
 
-
-
-// Middleware for Routes that checks for token - Place all routes after this route that require the user to already be logged in
-router.use(function(req, res, next) {
-	var token = req.body.token || req.body.query || req.headers['x-access-token']; // Check for token in body, URL, or headers
-
-	// Check if token is valid and not expired  
-	if (token) {
-		// Function to verify token
-		jwt.verify(token, secret, function(err, decoded) {
-			if (err) {
-				res.json({ success: false, message: 'Token invalid' }); // Token has expired or is invalid
-			} else {
-				req.decoded = decoded; 
-				next(); // Required to leave middleware
-			}
-		});
-	} else {
-		res.json({ success: false, message: 'No token provided' }); // Return error if no token was provided in the request
-	}
-});
-
-// Route to get the currently logged in user    
-router.post('/getuser', function(req, res) {
-	res.send(req.decoded); // Return the token acquired from middleware
-});
-
 // Route to get users liked itineraries
-router.get('/liked', function(req, res) {
+router.get('/getliked', function(req, res) {
 	User.findOne({ email: req.body.email}).exec(function(err, user) {
 		if (err) {
 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
@@ -128,7 +101,38 @@ router.get('/liked', function(req, res) {
 		}
 	});
 });
-	
+
+// // Route to append to a users like itineraries
+// router.post('/addliked', (req, res) => {
+// 	var itins = req.body.itineraries;
+// 	var username = req.body.username;
+
+// })
+// Middleware for Routes that checks for token - Place all routes after this route that require the user to already be logged in
+router.use(function(req, res, next) {
+	var token = req.body.token || req.body.query || req.headers['x-access-token']; // Check for token in body, URL, or headers
+
+	// Check if token is valid and not expired  
+	if (token) {
+		// Function to verify token
+		jwt.verify(token, secret, function(err, decoded) {
+			if (err) {
+				res.json({ success: false, message: 'Token invalid' }); // Token has expired or is invalid
+			} else {
+				req.decoded = decoded; 
+				next(); // Required to leave middleware
+			}
+		});
+	} else {
+		res.json({ success: false, message: 'No token provided' }); // Return error if no token was provided in the request
+	}
+});
+
+// Route to get the currently logged in user    
+router.post('/getuser', function(req, res) {
+	res.send(req.decoded); // Return the token acquired from middleware
+});
+
 
 
 // Route to provide the user with a new token to renew session

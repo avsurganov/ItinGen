@@ -1,4 +1,6 @@
 var User = require("../models/user");
+var Itinerary = require("../models/itinerary");
+var mongoose = require("mongoose");
 var app = require("express");
 var router = app.Router();
 
@@ -105,9 +107,29 @@ router.get('/liked', function(req, res) {
 		} else {
 			if (!user) {
 				res.json({ success: false, message: 'No user was found' }); // Return error
-			}
-	})
+			} else {
+				if(users.liked.length > 0){
+					let liked = user.liked.map(itinerary_id => new mongoose.Types.ObjectId(itinerary_id));
+					Itinerary.find({'_id': {$in: liked}}).exec((err, itins) => {
+						if (err) {
+							res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
+						} else {
+							if (!itins) {
+								res.json({success: false, message: 'No itineraries were found'});
+							} else {
+								res.json({ success: true, message: 'found itineraries', itineraries: itins});
+							}
+						}
+					});
+				} else {
+					res.json({success: false, message: 'No itineraries were found'});	
+					}
+			}	
+		}
+	});
 });
+	
+
 
 // Route to provide the user with a new token to renew session
 router.get('/renewToken', function(req, res) {

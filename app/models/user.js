@@ -5,7 +5,7 @@ var bcrypt = require('bcrypt-nodejs');
 var UserSchema = new Schema({
 	password: {type: String, required: true},
 	email: {type: String, required: true, unique: true},
-	tag: String
+	liked: [{type: String}]
 });
 
 UserSchema.methods.generateHash = function(password) {

@@ -50,7 +50,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 <div id="map-btn-container">
-  <div id="map" ng-bind="map"></div>
+  <div id="map"></div>
   <ld-buttons></ld-buttons>
 </div>
 <side-bar></side-bar>
@@ -73,7 +73,7 @@
   <script src="sidebar/sidebar.component.js"></script>
   <script src="core/itineraryFactory/itineraryFactory.module.js"></script>
   <script src="core/itineraryFactory/itineraryFactory.factory.js"></script>
-  <script>
+  <!-- <script>
      var map;
      function initMap(x, y) {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -107,8 +107,8 @@
         navigator.geolocation.getCurrentPosition(onPositionRecieved, locationNotRecieved);
       }
     }
-</script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFUgxmwei_B8JH28wypn0I-l3ZfNQ1DSk&callback=init"
+</script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0&callback=init"
       async defer></script>
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>

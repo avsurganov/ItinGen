@@ -4,9 +4,9 @@
         <div class="bg-dark p-4">
           <button class="btn-outline-info">Home </button>
           <button class="btn-outline-info" ng-click="$ctrl.drawLikedItineraries()">Liked Itineraries</button>
-          <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Settings</button>
+          <button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Settings</button>
           <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Login</button>
-          <button onclick="document.getElementById('id01').style.display='block'" class="btn-outline-info">Register</button>
+          <button onclick="document.getElementById('id02').style.display='block'" class="btn-outline-info">Register</button>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark">
@@ -36,3 +36,118 @@
       </div>
     <!--sidebar body-->
   </div>
+
+
+
+  <!-- Modal for Settings / Search Parameters -->
+       <div class="w3-container">
+          <div id="id00" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id00').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <form>
+                    <div class="form-inline">
+                      <label for="example-time-input" class="col-2 col-form-label">Start Time</label>
+                      <div class="col-10">
+                        <input class="form-control" type="time" value="06:00:00" id="example-time-input">
+                      </div>
+                    </div>
+                    <div class="form-inline">
+                      <label for="formGroupExampleInput">Start Location &nbsp;</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location">
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Check this box to restrict to free events<br>
+                      </label>
+                      <br>
+                    </div>
+                      <div class="form-group">
+                        <legend>Maximum Radius</legend>
+                        <input type="range" class="form-control-range" id="formControlRange" min="1" max = "100" name ="foo">
+                        <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                      </div>
+                    <!-- Radio Buttons for Transportation -->
+                    <fieldset class="form-inline">
+                        <legend>Transportation</legend>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Car &nbsp; 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Public Transportation &nbsp;
+                          </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Walk &nbsp;
+                          </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Bike &nbsp;
+                          </label>
+                        </div>
+                      </fieldset>
+                    <!-- End of Radio Buttons -->
+                  </form>
+              </div>
+            </div>
+          </div>
+</div>
+<!-- Modal for Settings / Search Parameters -->
+
+<!-- Modal for Logging in -->
+       <div class="w3-container">
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Please Enter your Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Please Enter a Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+</div>
+<!-- End Modal for Logging in -->
+
+<!-- Modal for Register -->
+       <div class="w3-container">
+          <div id="id02" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Please Enter your Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Please Enter a Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+</div>
+<!-- End Modal for Register -->

@@ -93,8 +93,20 @@ router.use(function(req, res, next) {
 });
 
 // Route to get the currently logged in user    
-router.post('/getlikeditineraries', function(req, res) {
+router.post('/getuser', function(req, res) {
 	res.send(req.decoded); // Return the token acquired from middleware
+});
+
+// Route to get users liked itineraries
+router.get('/liked', function(req, res) {
+	User.findOne({ email: req.body.email}).exec(function(err, user) {
+		if (err) {
+			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
+		} else {
+			if (!user) {
+				res.json({ success: false, message: 'No user was found' }); // Return error
+			}
+	})
 });
 
 // Route to provide the user with a new token to renew session

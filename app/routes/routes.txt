@@ -1,0 +1,5 @@
+##backend routes
+
+$http.post('/api/register', userParams) -> userParams is an object: {email: string, password: string}
+response from api consists of {success: boolean, message: string}
+

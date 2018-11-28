@@ -42,6 +42,22 @@ def get_date():
 # You can find it on https://www.yelp.com/developers/v3/manage_app
 API_KEY = "txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIEg5aOUSzJHHggKDT53tQ-Frtd-sZoTlXscG3U_IVAwJ_p6fqeCJlvqW3Yx"
 
+keys = ["txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIEg5aOUSzJHHggKDT53tQ-Frtd-sZoTlXscG3U_IVAwJ_p6fqeCJlvqW3Yx",
+        "Xnp-xCH_EyHt_QCgvcBCqJklS-AvMSvqcfBZFOdeElGxaMUNrvQV7h9bt2MuaOr5T-5kjcJsm22uCyOxgtaXR4Vm5fbxGe9BuSqRWSppi8TIedkoX23kQ9e77CjiW3Yx",
+        "M9S8kSyLzLf3y8jtO1f2G9YwCUsYZ0jhONdGYkaaV-MbvmjkoTKmJ2ujHeBNwqYLx8nO4N1Ui6lLhl4UftOuL7n0NaNgRIAS3R5v9P-x2wOspOz6BRrNfHhEJhn-W3Yx",
+        "9_5vnCP7kfYbVwsIPW29k6u-XcMC0aY0XA92dDOaRPJeJIrJwBudLTIfqWsBRsKZngFdnen9FiG7J2E6RH0V73WOIaEt3BWj0okyaM4vToY9urtHb11ZyE0rshn-W3Yx",
+        "sp3v1oG59W3WrviOCMpj6X38FhYOpZKB7VIpkFqQT9Q63vxLOo78XsNrUNTWtM6xgSDNWN5FVzonizPlTEZFoUegCrmyOXpftdPw4sj06aIuWz_bOJTR0JUEqhv-W3Yx",
+        "LfDN02IOr4ATEedypFAxyOx9ux0VabEv2mmlizqWpms1LshQidkyZUg0Sl_cFoPRf7W1AfLPuZXgUKHTv5mP306p-Fv9A-h6vKbZOMnvjqDFd6aaDDxImNR8UTrrW3Yx"
+]
+
+def switch_api(API_KEY):
+    i = 0
+    while keys[i] != API_KEY:
+        next
+        i++
+    API_KEY = keys[i+1]
+
+
 # API constants
 API_HOST = 'https://api.yelp.com'
 SEARCH_PATH = '/v3/businesses/search'
@@ -89,7 +105,12 @@ def request(host, path, api_key, url_params=None):
         'Authorization': 'Bearer %s' % api_key,
     }
     print(u'Querying {0} ...'.format(url))
-    response = requests.request('GET', url, headers=headers, params=url_params)
+    try:
+        response = requests.request('GET', url, headers=headers, params=url_params)
+    except HTTPError as error:
+        if (error.code == "ACCESS_LIMIT_REACHED"):
+            switch_api(API_KEY)
+            response = requests.request('GET', url, headers=headers, params=url_params)
     return response.json()
 
 
@@ -148,6 +169,206 @@ def construct_venue(business_details):
     venue['zip_code'] = business_details['location']['zip_code']
     return venue
 
+def tag_as_catgeory(input_category):
+    # (food,) nightlife, museums, publicattractions, misc
+    # sports and music i think are all ticketmaster and eventbrite
+    museums = ["aquariums", "culturalcenter", "galleries", "museums",
+                "observatories", "planetarium", "zoos",
+                ]
+    publicattractions = ["gardens", "landmarks", "localflavor"]
+    nightlife = ["adultentertainment", "barcrawl", "beerbar", "champagnebars",
+                    "cigarbars", "cocktailbars", "divebars", "drivethrubars",
+                    "gaybars", "hookah_bars", "irish_pubs", "lounges",
+                    "pubs", "speakeasies", "sportsbars", "tikibars",
+                    "vermouthbars", "whiskeybars", "wine_bars", "beergardens",
+                    "clubcrawl", "comedyclubs", "countrydancehalls", "danceclubs",
+                    "jazzandblues", "karaoke", "pianobars", "poolhalls",
+                    "cabaret", "casinos", "wineries", "breweries",
+                    "distilleries"
+                    ]
+    misc = ["farms", "fleamarkets", "paintandsip", "publicmarkets",
+            "trampoline", "bowling", "escapegames", "golf",
+            "minigolf", "paintball", "lasertag", "scavengerhunts",
+            "waterparks", "arcades", "hauntedhouses", "saunas",
+            "amusementparks", "psychic_astrology", "virtualrealitycenters"
+            ]
+    food = ["acaibowls",
+	           "bagels",
+               "bakeries",
+               "bento",
+               "bubbletea",
+               "chimneycakes",
+               "churros",
+               "cideries",
+               "coffee",
+               "cupcakes",
+               "delicatessen",
+               "desserts",
+               "diyfood",
+               "donuts",
+               "empanadas",
+               "farmersmarket",
+               "foodtrucks",
+               "gelato",
+               "icecream",
+               "jpsweets",
+               "juicebars",
+               "cakeshop",
+               "poke",
+               "pretzels",
+               "streetvendors",
+               "tea",
+
+               "afghan",
+                "african",
+                "newamerican",
+                "tradamerican",
+                "arabian",
+                "argentine",
+                "armenian",
+                "asianfusion",
+                "australian",
+                "austrian",
+                "bangladeshi",
+                "bbq",
+                "basque",
+                "belgian",
+                "brasseries",
+                "brazilian",
+                "breakfast_brunch",
+                "british",
+                "buffets",
+                "bulgarian",
+                "burgers",
+                "burmese",
+                "cafes",
+                "cafeteria",
+                "cajun",
+                "cambodian",
+                "newcanadian",
+                "carribean",
+                "cheesesteaks",
+                "chickenshop",
+                "chicken_wings",
+                "chinese",
+                "comfortfood",
+                "creperies",
+                "cuban",
+                "czech",
+                "delis",
+                "diners",
+                "ethiopian",
+                "hotdogs",
+                "filipino",
+                "fishnchips",
+                "fondue",
+                "food_court",
+                "french",
+                "gastropubs",
+                "georgian",
+                "german",
+                "gluten_free",
+                "greek",
+                "guamanian",
+                "halal",
+                "hawaiian",
+                "himalayan",
+                "honduran",
+                "hkcafe",
+                "hotdog",
+                "hotpot",
+                "hungarian",
+                "iberian",
+                "indpak",
+                "indonesian",
+                "italian",
+                "calabrian",
+                "sardinian",
+                "sicilian",
+                "tuscan",
+                "venetian",
+                "japanese",
+                "conveyorsushi",
+                "japacurry",
+                "ramen",
+                "kebab",
+                "korean",
+                "kosher",
+                "laotian",
+                "latin",
+                "colombian",
+                "salvadoran",
+                "venezuelan",
+                "raw_food",
+                "malaysian",
+                "mediterranean",
+                "falafel",
+                "mexican",
+                "tacos",
+                "mideastern",
+                "egyptian",
+                "lebanese",
+                "modern_european",
+                "mongolian",
+                "moroccan",
+                "newmexican",
+                "nicaraguan",
+                "noodles",
+                "pakistani",
+                "panasian",
+                "persian",
+                "peruvian",
+                "pizza",
+                "polish",
+                "polynesian",
+                "popuprestaurants",
+                "portuguese",
+                "poutineries",
+                "russian",
+                "salad",
+                "sandwiches",
+                "scandinavian",
+                "scottish",
+                "seafood",
+                "singaporean",
+                "slovakian",
+                "soulfood",
+                "soup",
+                "southern",
+                "spanish",
+                "srilankan",
+                "steak",
+                "supperclubs",
+                "sushi",
+                "syrian",
+                "taiwanese",
+                "tapas",
+                "tapasmallplates",
+                "tex-mex",
+                "thai",
+                "turkish",
+                "ukrainian",
+                "uzbek",
+                "vegan",
+                "vegetarian",
+                "vietnamese",
+                "waffles",
+                "wraps"
+                ]
+        if input_category in museums:
+            return "museums"
+        if input_category in publicattractions:
+            return "publicattractions"
+        if input_category in nightlife:
+            return "nightlife"
+        if input_category in misc:
+            return "misc"
+        if input_category in food:
+            return "food"
+        #if input_category in restaurants:
+        #    return "restaurants"
+
+
 def construct_event(business_details):
     event = {}
     event['venue_id'] =  "yelp" + business_details['id']
@@ -170,6 +391,8 @@ def construct_event(business_details):
     event['tags'] = []
     for item in business_details['categories']:
         event['tags'].append(item['alias'])
+        category_tag = tag_as_category(input_values.categories)
+        event['tags'].append(catgeory_tag)
     if 'price' in business_details:
         event['price'] = 0 - len(business_details['price'])
     else:
@@ -243,29 +466,23 @@ def query_api(categories, location, offset):
 
 def main():
 
-    #input_values.limit = 50
-
     try:
         query_api(input_values.categories, input_values.location, input_values.offset)
 
         venuesfile = open(venuefname,"w")
         eventsfile = open(eventfname, "w")
 
-        #print("hello, pls work")
-        #print(venuelist)
-        #print(eventlist)
-
         json.dump(venuelist,venuesfile,indent="\t")
         json.dump(eventlist,eventsfile,indent='\t')
 
     except HTTPError as error:
-        sys.exit(
-            'Encountered HTTP error {0} on {1}:\n {2}\nAbort program.'.format(
-                error.code,
-                error.url,
-                error.read(),
+            sys.exit(
+                'Encountered HTTP error {0} on {1}:\n {2}\nAbort program.'.format(
+                    error.code,
+                    error.url,
+                    error.read(),
+                )
             )
-        )
 
 
 if __name__ == '__main__':

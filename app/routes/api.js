@@ -1,4 +1,6 @@
 var User = require("../models/user");
+var Itinerary = require("../models/itinerary");
+var mongoose = require("mongoose");
 var app = require("express");
 var router = app.Router();
 
@@ -70,8 +72,42 @@ router.post('/authenticate', function(req, res) {
 	});
 });
 
+// Route to get users liked itineraries
+router.get('/getliked', function(req, res) {
+	User.findOne({ email: req.body.email}).exec(function(err, user) {
+		if (err) {
+			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
+		} else {
+			if (!user) {
+				res.json({ success: false, message: 'No user was found' }); // Return error
+			} else {
+				if(users.liked.length > 0){
+					let liked = user.liked.map(itinerary_id => new mongoose.Types.ObjectId(itinerary_id));
+					Itinerary.find({'_id': {$in: liked}}).exec((err, itins) => {
+						if (err) {
+							res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
+						} else {
+							if (!itins) {
+								res.json({success: false, message: 'No itineraries were found'});
+							} else {
+								res.json({ success: true, message: 'found itineraries', itineraries: itins});
+							}
+						}
+					});
+				} else {
+					res.json({success: false, message: 'No itineraries were found'});	
+					}
+			}	
+		}
+	});
+});
 
+// // Route to append to a users like itineraries
+// router.post('/addliked', (req, res) => {
+// 	var itins = req.body.itineraries;
+// 	var username = req.body.username;
 
+// })
 // Middleware for Routes that checks for token - Place all routes after this route that require the user to already be logged in
 router.use(function(req, res, next) {
 	var token = req.body.token || req.body.query || req.headers['x-access-token']; // Check for token in body, URL, or headers
@@ -97,16 +133,6 @@ router.post('/getuser', function(req, res) {
 	res.send(req.decoded); // Return the token acquired from middleware
 });
 
-// Route to get users liked itineraries
-// router.get('/liked', function(req, res) {
-// 	User.findOne({ email: req.body.email}).exec(function(err, user) {
-// 		if (err) {
-// 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
-// 		} else {
-// 			if (!user) {
-// 				res.json({ success: false, message: 'No user was found' }); // Return error
-// 			}
-// 	})
 
 
 // Route to provide the user with a new token to renew session

@@ -1,0 +1,143 @@
+[
+	{
+		"venue_id": "yelpdhARtxP1uiYMe-XaP0R01w",
+		"event_name": "Sky High Sports Niles",
+		"event_id": "yelpdhARtxP1uiYMe-XaP0R01w",
+		"mon_start": 960,
+		"mon_end": 1260,
+		"tues_start": 960,
+		"tues_end": 1260,
+		"wed_start": 960,
+		"wed_end": 1260,
+		"thurs_start": 960,
+		"thurs_end": 1260,
+		"fri_start": 960,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1380,
+		"sun_start": 600,
+		"sun_end": 1260,
+		"tags": [
+			"eventplanning",
+			"trampoline"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelp-alE2VM30fJ0LjQwY2LT7g",
+		"event_name": "Rockin' Jump Ultimate Trampoline Park",
+		"event_id": "yelp-alE2VM30fJ0LjQwY2LT7g",
+		"mon_start": 540,
+		"mon_end": 720,
+		"tues_start": 960,
+		"tues_end": 1200,
+		"wed_start": 540,
+		"wed_end": 720,
+		"thurs_start": 960,
+		"thurs_end": 1200,
+		"fri_start": 540,
+		"fri_end": 720,
+		"sat_start": 960,
+		"sat_end": 1200,
+		"sun_start": 540,
+		"sun_end": 1380,
+		"tags": [
+			"trampoline",
+			"kids_activities"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpANsI7SkL7xLo0w0m6tkfig",
+		"event_name": "Altitude Trampoline Park - Skokie",
+		"event_id": "yelpANsI7SkL7xLo0w0m6tkfig",
+		"mon_start": 600,
+		"mon_end": 1260,
+		"tues_start": 600,
+		"tues_end": 1260,
+		"wed_start": 600,
+		"wed_end": 1260,
+		"thurs_start": 600,
+		"thurs_end": 1260,
+		"fri_start": 600,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1380,
+		"sun_start": 600,
+		"sun_end": 1260,
+		"tags": [
+			"trampoline"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpR_uf9u0YlhlIhPqEcmjXXw",
+		"event_name": "Sky Zone Trampoline Park",
+		"event_id": "yelpR_uf9u0YlhlIhPqEcmjXXw",
+		"mon_start": 960,
+		"mon_end": 1200,
+		"tues_start": 960,
+		"tues_end": 1200,
+		"wed_start": 960,
+		"wed_end": 1200,
+		"thurs_start": 960,
+		"thurs_end": 1230,
+		"fri_start": 1260,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1380,
+		"sun_start": 720,
+		"sun_end": 1200,
+		"tags": [
+			"trampoline"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelprDG9oQpQuB6bCapsRZmz0g",
+		"event_name": "Sky Zone Trampoline Park",
+		"event_id": "yelprDG9oQpQuB6bCapsRZmz0g",
+		"mon_start": 960,
+		"mon_end": 1200,
+		"tues_start": 960,
+		"tues_end": 1200,
+		"wed_start": 960,
+		"wed_end": 1200,
+		"thurs_start": 960,
+		"thurs_end": 1200,
+		"fri_start": 900,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1320,
+		"sun_start": 720,
+		"sun_end": 1200,
+		"tags": [
+			"trampoline",
+			"venues"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpix0f_QctMi8dNUqAsSwMjw",
+		"event_name": "Urban Air",
+		"event_id": "yelpix0f_QctMi8dNUqAsSwMjw",
+		"mon_start": 960,
+		"mon_end": 1200,
+		"tues_start": 960,
+		"tues_end": 1200,
+		"wed_start": 960,
+		"wed_end": 1200,
+		"thurs_start": 960,
+		"thurs_end": 1200,
+		"fri_start": 960,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1380,
+		"sun_start": 660,
+		"sun_end": 1200,
+		"tags": [
+			"trampoline"
+		],
+		"price": -10
+	}
+]

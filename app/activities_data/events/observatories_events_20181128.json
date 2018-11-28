@@ -1,0 +1,56 @@
+[
+	{
+		"venue_id": "yelpesdbP3ict5RGXsZndhRrcg",
+		"event_name": "360 Chicago",
+		"event_id": "yelpesdbP3ict5RGXsZndhRrcg",
+		"mon_start": 540,
+		"mon_end": 1380,
+		"tues_start": 540,
+		"tues_end": 1380,
+		"wed_start": 540,
+		"wed_end": 1380,
+		"thurs_start": 540,
+		"thurs_end": 1380,
+		"fri_start": 540,
+		"fri_end": 1380,
+		"sat_start": 540,
+		"sat_end": 1380,
+		"sun_start": 540,
+		"sun_end": 1380,
+		"tags": [
+			"landmarks",
+			"museums",
+			"observatories",
+			"museums"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpekUjqMrGrvw4y8vSfOIzOg",
+		"event_name": "Skydeck Chicago",
+		"event_id": "yelpekUjqMrGrvw4y8vSfOIzOg",
+		"mon_start": 540,
+		"mon_end": 1320,
+		"tues_start": 540,
+		"tues_end": 1320,
+		"wed_start": 540,
+		"wed_end": 1320,
+		"thurs_start": 540,
+		"thurs_end": 1320,
+		"fri_start": 540,
+		"fri_end": 1320,
+		"sat_start": 540,
+		"sat_end": 1320,
+		"sun_start": 540,
+		"sun_end": 1320,
+		"tags": [
+			"observatories",
+			"museums",
+			"venues",
+			"museums",
+			"landmarks",
+			"museums"
+		],
+		"price": -10
+	}
+]

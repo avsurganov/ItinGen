@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelpNkx7F26POjwLS8anXy7iCA",
+		"venue_name": "Zebra Lounge",
+		"latitude": 41.90452,
+		"longitude": -87.62908,
+		"address1": "1220 N State Pkwy",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelpRbrIMRq0ekh4_yz6lyfp_g",
+		"venue_name": "Tack Room",
+		"latitude": 41.857633622772,
+		"longitude": -87.6572770441824,
+		"address1": "1807 S Allport St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
+		"venue_id": "yelpKPblL_UbpgEwUbZEUscTvA",
+		"venue_name": "Redhead Piano Bar",
+		"latitude": 41.89353,
+		"longitude": -87.6287399,
+		"address1": "16 W Ontario St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpcguG2NAQeK-Cq6HsMJeXOA",
+		"venue_name": "Big Shot Piano Lounge & Restaurant",
+		"latitude": 42.0826531711903,
+		"longitude": -87.9842735025458,
+		"address1": "2 S Vail Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Arlington Heights",
+		"state": "IL",
+		"zip_code": "60005"
+	},
+	{
+		"venue_id": "yelp3onKRG1fxPYuESYOjt0A9w",
+		"venue_name": "Le Piano",
+		"latitude": 42.0086688,
+		"longitude": -87.6663522,
+		"address1": "6970 N Glenwood Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60626"
+	}
+]

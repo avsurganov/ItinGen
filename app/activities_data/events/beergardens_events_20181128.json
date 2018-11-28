@@ -1,0 +1,30 @@
+[
+	{
+		"venue_id": "yelpaGbrvG-oxzsIFfA0QJHLaA",
+		"event_name": "The Spoke & Bird",
+		"event_id": "yelpaGbrvG-oxzsIFfA0QJHLaA",
+		"mon_start": 420,
+		"mon_end": 1080,
+		"tues_start": 420,
+		"tues_end": 1080,
+		"wed_start": 420,
+		"wed_end": 1080,
+		"thurs_start": 420,
+		"thurs_end": 1080,
+		"fri_start": 420,
+		"fri_end": 1080,
+		"sat_start": 420,
+		"sat_end": 1080,
+		"sun_start": 420,
+		"sun_end": 1080,
+		"tags": [
+			"coffee",
+			"nightlife",
+			"beergardens",
+			"nightlife",
+			"newamerican",
+			"nightlife"
+		],
+		"price": -2
+	}
+]

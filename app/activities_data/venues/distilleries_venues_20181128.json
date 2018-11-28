@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpTphN-KFZErtq2w9CrrCS-Q",
+		"venue_name": "CH Distillery",
+		"latitude": 41.8846370998956,
+		"longitude": -87.6422654490474,
+		"address1": "564 W Randolph St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelprjiRnjJ3UAtWnslCzY6OHg",
+		"venue_name": "KOVAL Distillery",
+		"latitude": 41.9750299,
+		"longitude": -87.67401,
+		"address1": "5121 N Ravenswood Ave",
+		"address2": null,
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelpOi5yUedbYruHH58pq0zvZw",
+		"venue_name": "Maplewood Brewery & Distillery",
+		"latitude": 41.9308,
+		"longitude": -87.6911,
+		"address1": "2717 N Maplewood Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelp7ITzyNC7zvFi2fFG_g9ANg",
+		"venue_name": "Rhine Hall Distillery",
+		"latitude": 41.8872146774598,
+		"longitude": -87.677706175897,
+		"address1": "2010 W Fulton St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	},
+	{
+		"venue_id": "yelpquWyGStXyhAHpFBZAd0dEw",
+		"venue_name": "Chicago Distilling Company",
+		"latitude": 41.92427,
+		"longitude": -87.699,
+		"address1": "2359 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpXRS2VK4wBanmYFHeITTc4A",
+		"venue_name": "The Barrel Run",
+		"latitude": 41.8928448806887,
+		"longitude": -87.63122072047,
+		"address1": "",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	}
+]

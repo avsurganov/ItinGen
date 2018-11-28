@@ -4,9 +4,8 @@ var morgan = require('morgan');
 var mongoose = require('mongoose');
 var User = require('./app/models/user');
 var bodyParser = require('body-parser');
-var router = express.Router();
 var path = require('path');
-var appRoutes = require('./app/routes/api')(router);
+var appRoutes = require('./app/routes/api');
 port = process.env.PORT || 8080;
 
 app.use(morgan('dev'));

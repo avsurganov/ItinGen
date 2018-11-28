@@ -1,15 +1,16 @@
 var User = require("../models/user");
+var app = require("express");
+var router = app.Router();
 
-module.exports = (router) => {
-	router.post('/users', (req, res) => {
-		console.log(req.body.username);
-		var user = new User();
-		user.username = req.body.username;
-		user.email = req.body.email;
-		user.tag = req.body.tag;
-		user.password = req.body.password;
-		user.save();
-		res.send("user created");
-	}); 
-	return router;
-}
+router.post('/users', (req, res) => {
+	console.log(req.query);
+	var user = new User();
+	user.username = req.query.username;
+	user.email = req.query.email;
+	user.tag = req.query.tag;
+	user.password = user.generateHash(req.query.password);
+	user.save();
+	res.send("user created");
+}); 
+
+module.exports = router;

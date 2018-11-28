@@ -9,13 +9,17 @@ var UserSchema = new Schema({
 	tag: String
 });
 
-UserSchema.pre('save', (next) => {
-	var user = this;
-	bcrypt.hash(user.password, null, null, (err, hash) => {
-		if (err) return next(err);
-		user.password = hash;
-		next();
-	});
-});
+// UserSchema.pre('save', (next) => {
+// 	var user = this;
+// 	bcrypt.hash(user.password, null, null, (err, hash) => {
+// 		if (err) return next(err);
+// 		user.password = hash;
+// 		next();
+// 	});
+// });
+
+UserSchema.methods.generateHash = function(password) {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
 
 module.exports = mongoose.model('User', UserSchema);

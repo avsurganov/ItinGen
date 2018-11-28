@@ -10,10 +10,13 @@ angular.module('ItinGen', [
 
 
 
-.controller('itinGenController', ['$scope', 'itineraryFactory', function($scope, itineraryFactory) {
+.controller('itinGenController', ['$scope', '$http', 'itineraryFactory', function($scope, $http, itineraryFactory) {
   
+  var test_params = {"username" : "test_username", "password" : "test_password", "tag" : "test_tag", "email" : "test_email"};
   $scope.test = "We got it!"
-
+  $http({url: '/api/users', method: 'POST', params: test_params}).then((res) => {
+	  console.log(res);
+  });
 
 }])
 

@@ -3,7 +3,7 @@
 categories = ["misc","museums","music","nightlife","publicattractions","sports"]
 numcat = 6
 //user_weight_default = [1 for x in range(numcat)]
-numev = 50 // number of events you want to pull from each category
+nevents = 50 // number of events you want to pull from each category
           // maybe make bigger if only free? bc you'll throw out a lot
 
 function day_to_str(dayint){
@@ -147,6 +147,15 @@ user_inputs = { "user_start_time" : 1200
 
 */
 
+// catsize = total number of events in that category
+// numev = how many events you want to get from each category, default 50
+function get_random_indexes(catsize,numev) {
+  for (var indexes=[],i=0;i<catsize;++i) indexes[i]=i;
+  indexes = shuffle(indexes);
+  indexes = indexes.slice(0,numev);
+  return indexes;
+}
+
 function get_events(ordered_categories, user_inputs){ //user inputs formatted as a dict?
     var i = 0;
     var evindexes = []  //indexes of events to pull from the database, randomly generated
@@ -156,8 +165,7 @@ function get_events(ordered_categories, user_inputs){ //user inputs formatted as
         var catname = str(category);
         pool[catname] = [];
         var cattotalevents = 1000   //number of events in the category overall - will need to calculate
-        // gotta find way in js to generate a list of length x with random numbers between y and z
-        evindexes.push(random.sample(range(ntotalevents),numev)) //generate the random indexes
+        evindexes = get_random_indexes(cattotalevents,nevents); // generates list of length nevents of random indices
         for (var j = 0; j < evindexes.length(); j++) {
             //GET the event at that index from the database
             //checks that event makes sense depending on type

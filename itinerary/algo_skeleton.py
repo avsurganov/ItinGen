@@ -64,7 +64,7 @@ def create_itinerary(user_args):
     #         location to create [event, venue, distance] and the sort the  #
     #         events by that distance in decreasing distance order          #
     #########################################################################
-    events = []
+    events = sort_distances(events)
 
     ########################################################
     # Step 4: Go through the steps to create the itinerary #

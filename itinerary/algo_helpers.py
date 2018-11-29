@@ -1,5 +1,6 @@
 import random
 from math import sin, cos, sqrt, atan2, radians, acos, fabs, pi
+from operator import itemgetter
 import googlemaps
 
 ############################
@@ -176,8 +177,11 @@ def find_angle(coords1, center, coords2):
     c = find_distance(coords1, coords2)/(2*pi*earth_radius)
     num = cos(c)-cos(a)*cos(b)
     den = sin(a)*sin(b)
-    if (den == 0):
-        return 0
+    if (fabs(den) < 0.001):
+		if (a+b-c < 0.001):
+			return 180.0
+		else:
+			return 0.0
     return acos(num/den)
 
 
@@ -188,6 +192,15 @@ def validate_angle(coords1, center, coords2, limit=0.5):
         return True
     else:
         return False
+
+def sort_distances(events, center):
+	event_distances = []
+	for event in events:
+		venue = event[1]
+		distance = find_distance(venue_to_lat_long(venue), center)
+		event_distances.append(event+(distance,))
+	event_distances.sort(key=itemgetter(2), reverse=True)
+	return event_distances
 
 #########################
 # TIME HELPER FUNCTIONS #

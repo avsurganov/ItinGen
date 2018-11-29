@@ -21,6 +21,8 @@ def find_angle(coords1, center, coords2):
 	c = find_distance(coords1, coords2)/(2*pi*earth_radius)
 	num = cos(c)-cos(a)*cos(b)
 	den = sin(a)*sin(b)
+	print(num)
+	print(den)
 	if (den == 0):
 		return 0
 	return acos(num/den)
@@ -43,3 +45,5 @@ def decrement_radius(prev_rad, dA):
 def increment_radius(prev_rad, dA):
 	new_rad = sqrt((dA/5+pi*prev_rad**2)/pi)
 	return new_rad
+
+print(find_angle([0,1], [0,0], [0, -1]))

@@ -97,12 +97,14 @@ router.use(function(req, res, next) {
 
 // Route to get the currently logged in user    
 router.post('/me', function(req, res) {
+	console.log("in /me");
+	console.log(req.decoded);
 	res.send(req.decoded); // Return the token acquired from middleware
 });
 
 // Route to get users liked itineraries
 router.get('/getliked', function(req, res) {
-	User.findOne({ email: req.body.email}).exec(function(err, user) {
+	User.findOne({ email: req.decoded.email}).exec(function(err, user) {
 		if (err) {
 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
 		} else {

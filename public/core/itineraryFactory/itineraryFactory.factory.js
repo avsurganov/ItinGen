@@ -129,9 +129,12 @@ angular.module('itineraryFactory')
 	service.getCurrentItinerary = function() {
 		return itin1
 	}
-	service.getLikedItineraries = function () {
-		return likedItineraries
-	}
+	// service.getLikedItineraries = function () {
+	// 	$http.get('/getliked').then((data) => {
+	// 		console.log("IN liked itineraries");
+	// 		console.log(data);
+	// 	});
+	// }
 
 	service.addToLikedItineraries = function (itineraryObj) {
 		likedItineraries.push(itineraryObj)

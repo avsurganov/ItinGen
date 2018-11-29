@@ -1,3 +1,6 @@
+import googlemaps
+import pull_events
+
 def create_itinerary(user_args):
     '''
     this is the master function that will generate an itinerary given the
@@ -27,7 +30,7 @@ def create_itinerary(user_args):
     start_location = (0.0, 0.0) # should be (lat, lon)
     distance_radius = 0.0 # float miles
     only_free = False # boolean
-    transportation = 'car' # str can be ['car', 'public', 'walk']
+    transport = 'driving' # str can be ['driving', 'transit', 'walking']
 
     ####################################################################
     # Step 1: Estimate the number of events that we will likely select #
@@ -72,7 +75,7 @@ def create_itinerary(user_args):
     cont = True
     while cont:
         # try to increment the itinerary
-        increment_itinerary(itinerary, valid_events)
+        increment_itinerary(itinerary, valid_events, transport)
         # check if itinerary is finished
         if check_finished(itinerary):
             cont = False
@@ -97,11 +100,12 @@ def create_itinerary(user_args):
 
 
 
-def increment_itinerary(itinerary, valid_events):
+def increment_itinerary(itinerary, valid_events, transport):
     '''
     given an itinerary and a list of events try to add on another event to the
     itinerary
     '''
+    #start_time = determine_start_time(itinerary, event, transport)
     return 0
 
 
@@ -144,3 +148,50 @@ def increment_radius(radius, est_num_events):
     increment the given radius
     '''
     return 0
+
+def determine_start_time(itinerary, event, transport):
+    '''
+    find the start time of the next event
+    '''
+    last_venue = itinerary[-1][1]
+    next_event = event[0]
+    next_venue = event[1]
+    last_venue_coords = {"lat": last_venue["latitude"], "lng": last_venue["longitude"]}
+    next_venue_coords = {"lat": next_venue["latitude"], "lng": next_venue["longitude"]}
+    end_time_in_mins = itinerary[-1][3]
+    # convert end_time to format acceptable for gmaps.directions
+
+    # query directions between previous and next venues
+    gmaps = googlemaps.Client(key="AIzaSyCGtRkePdbwkM6UsXdsvlwwplKvh5rruYk")
+    directions_result = gmaps.directions(last_venue_coords,
+                                         next_venue_coords,
+                                         mode=transport,
+                                         departure_time=end_time)
+
+    # find travel time between the venues in minutes
+    travel_time_str = directions_result[0]['legs'][0]['duration']['text'].split(" ")
+    list_len = len(travel_time_str)
+    if list_len == 4:
+        travel_time = int(travel_time_str[0])*60+int(travel_time_str[2])
+    elif list_len == 2:
+        if travel_time_str[1] == 'hours' or travel_time_str[1] == 'hour':
+            travel_time = int(travel_time_str[0])*60
+        else:
+            travel_time = int(travel_time_str[0])
+
+    # validate start time of the next event
+    start_time = end_time_in_mins + travel_time
+    if 'start' in next_event:
+        if start_time + 30 > next_event['end'] and next_event['end'] != -10:
+            return 0
+        if start_time < next_event['start']:
+            return next_event['start']
+    else:
+        weekday = day_to_str(datetime.today().weekday())
+        start = next_event[weekday + '_start']
+        end = next_event[weekday + '_end']
+        if start_time + 30 > end:
+            return 0
+        if start_time < start:
+            return start
+    return start_time

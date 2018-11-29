@@ -7,6 +7,8 @@ var mongoose = require('mongoose');
 var User = require('./app/models/user');
 var bodyParser = require('body-parser');
 var path = require('path');
+var passport = require('passport');
+var social = require('./app/passport/passport')(app, passport);
 var appRoutes = require('./app/routes/api');
 port = process.env.PORT || 8080;
 console.log(port)

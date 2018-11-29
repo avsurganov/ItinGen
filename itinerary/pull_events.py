@@ -108,43 +108,4 @@ def check_free(event):
     return True
 
 
-'''
-assuming user_inputs = formatted like:
-
-user_inputs = { "user_start_time" : 1200
-                "user_start_location" : {"lat" : whatever, "long" = whatever}
-                "user_transport" : "car"
-                "user_radius" : 10
-                "user_cost" : 0         #0 or 1, 0 = free, 1 = not free
-}
-
-'''
-
-def get_events(ordered_categories, user_inputs): #user inputs formatted as a dict?
-    i = 0
-    evindexes = [] # indexes of events to pull from the database, randomly generated
-    pool = {} # the entire pool from which events will be pulled to generate itin
-    for category in ordered_categories:
-        catname = str(category)
-        pool[catname] = []
-        cattotalevents = 1000  # number of events in the category overall - will need to calculate
-        evindexes.append(random.sample(range(ntotalevents),numev)) # generate the random indexes
-        for index in evindexes:
-            #GET the event at that index from the database
-            #check that event is sensical - depends on event type
-            f = True
-            if user_inputs[user_cost] == 0:
-                f = check_free(event)
-            if event == temp:
-                t = time_check_temp(event)
-                d = date_check_temp(event)
-                m = check_meal_overlap_temp(event)
-                if t and d and m and f:
-                    #GET venue, put in tuple
-                    pool[catname].append(tuple)
-            if event == perm:
-                td = time_date_check_perm(event)
-                if td and f:
-                    #get venue, put in tuple
-                    pool[catname].append(tuple)
-    return pool
+ 

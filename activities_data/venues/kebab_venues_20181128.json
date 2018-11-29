@@ -1,1 +1,74 @@
-[]
+[
+	{
+		"venue_id": "yelpNacF8xe7jmW1fDLtw8vt5g",
+		"venue_name": "D\u00f6nerMen",
+		"latitude": 41.9391676,
+		"longitude": -87.699739,
+		"address1": "2849 W Belmont",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpxeNT_b0EzcC_gJm0rMnV_A",
+		"venue_name": "Siunik Armenian Grill",
+		"latitude": 42.08695,
+		"longitude": -87.79895,
+		"address1": "1707 Chestnut Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Glenview",
+		"state": "IL",
+		"zip_code": "60025"
+	},
+	{
+		"venue_id": "yelpGLyYRi_Z5ED56j4i9xtIlg",
+		"venue_name": "Kebab House",
+		"latitude": 41.93159,
+		"longitude": -87.94919,
+		"address1": "229 W Grand Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Bensenville",
+		"state": "IL",
+		"zip_code": "60106"
+	},
+	{
+		"venue_id": "yelpMGyvFZdXS4rvKoFVSyknFA",
+		"venue_name": "Shish Kabob & Grill",
+		"latitude": 42.0084191,
+		"longitude": -87.8870851,
+		"address1": "7118 Mannheim Rd",
+		"address2": null,
+		"address3": "",
+		"city": "Rosemont",
+		"state": "IL",
+		"zip_code": "60018"
+	},
+	{
+		"venue_id": "yelpp90wZb-852r0CUlDcpLyzA",
+		"venue_name": "Kabul Kabob",
+		"latitude": 41.7333161,
+		"longitude": -87.8013908,
+		"address1": "7265 W 87th St",
+		"address2": "",
+		"address3": null,
+		"city": "Bridgeview",
+		"state": "IL",
+		"zip_code": "60455"
+	},
+	{
+		"venue_id": "yelp_T_sghY1Xo6_Yy6qTsXIFA",
+		"venue_name": "Kababjees",
+		"latitude": 42.04063,
+		"longitude": -87.77775,
+		"address1": "6037 Dempster St",
+		"address2": "",
+		"address3": null,
+		"city": "Morton Grove",
+		"state": "IL",
+		"zip_code": "60053"
+	}
+]

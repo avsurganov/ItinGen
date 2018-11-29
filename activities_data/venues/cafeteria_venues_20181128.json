@@ -1,1 +1,122 @@
-[]
+[
+	{
+		"venue_id": "yelpoH4xoEhpMRJwHQOQVSxCcA",
+		"venue_name": "Cafe 300",
+		"latitude": 41.8892756299904,
+		"longitude": -87.6324462890625,
+		"address1": "300 N LaSalle St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpVj9hVDLfRNJZGts8Q_nXSw",
+		"venue_name": "UBS Tower Cafeteria",
+		"latitude": 41.88226,
+		"longitude": -87.63639,
+		"address1": "1 N Wacker Dr",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelpyAi7XuTwddOSdTshHP68pA",
+		"venue_name": "Rustle + Roux",
+		"latitude": 41.8802719116211,
+		"longitude": -87.6347274780273,
+		"address1": "227 W Monroe St",
+		"address2": "Fl 2",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelp6enfbVg9wXepdf1W_6mBTA",
+		"venue_name": "Rush University Medical Center Cafeteria",
+		"latitude": 41.873283,
+		"longitude": -87.6693633,
+		"address1": "600 S Paulina St",
+		"address2": "2nd Flr",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	},
+	{
+		"venue_id": "yelpwJHWz_JxHifBLuRBwHJRBQ",
+		"venue_name": "Prentice Women's Hospital Cafeteria",
+		"latitude": 41.8959006,
+		"longitude": -87.6210377,
+		"address1": "250 E Superior St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpGPFcB8jm-AdIuR3RsFkGAg",
+		"venue_name": "213 Cafe",
+		"latitude": 41.8784556257977,
+		"longitude": -87.6322664550781,
+		"address1": "Lasalle & Jackson",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60604"
+	},
+	{
+		"venue_id": "yelpc2YbcxkKguHrdhWFgQ6NvA",
+		"venue_name": "Mercato at Rustle+Roux",
+		"latitude": 41.880272,
+		"longitude": -87.634727,
+		"address1": "227 W Monroe St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelpGJT25n-92oOTtP-HnYGyzA",
+		"venue_name": "University Of Illinois Hospital Cafeteria And Coffee Shop",
+		"latitude": 41.8693161,
+		"longitude": -87.6704788,
+		"address1": "1740 W Taylor St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	},
+	{
+		"venue_id": "yelpLL1cAwlwmRMIgqsle-Kjbg",
+		"venue_name": "Rendezvous Cafe",
+		"latitude": 41.9369680335342,
+		"longitude": -87.6521001756191,
+		"address1": "Advocate Illinois Masonic Hospital",
+		"address2": "W Wellington Ave",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": ""
+	},
+	{
+		"venue_id": "yelpp3e911X1oH1HBPqTyh44Tw",
+		"venue_name": "SAIC Columbus Cafeteria",
+		"latitude": 41.878649,
+		"longitude": -87.6209049,
+		"address1": "280 S Columbus Dr",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	}
+]

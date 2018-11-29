@@ -1,1 +1,26 @@
-[]
+[
+	{
+		"venue_id": "yelpGvU2TIDK0deL_xbPfIkezA",
+		"venue_name": "Chicago Diplomat Cafe",
+		"latitude": 41.9385,
+		"longitude": -87.66752,
+		"address1": "3134 N Lincoln Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpZgGqk1aPRGJb4jv4H8WtoA",
+		"venue_name": "Aragvi Georgian Bakery Caf\u00e9",
+		"latitude": 42.15631,
+		"longitude": -87.95995,
+		"address1": "136 McHenry Rd",
+		"address2": "",
+		"address3": null,
+		"city": "Buffalo Grove",
+		"state": "IL",
+		"zip_code": "60089"
+	}
+]

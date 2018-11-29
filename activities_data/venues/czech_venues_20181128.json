@@ -1,1 +1,62 @@
-[]
+[
+	{
+		"venue_id": "yelpei10kWqOyW-GyJRqQgmt7A",
+		"venue_name": "Cafe Prague",
+		"latitude": 41.93845,
+		"longitude": -87.79385,
+		"address1": "6710 W Belmont Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	},
+	{
+		"venue_id": "yelpfY3fK2kj7j6cENF3A3zG6A",
+		"venue_name": "Czech Plaza Restaurant",
+		"latitude": 41.85073,
+		"longitude": -87.79935,
+		"address1": "7016 W Cermak Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Berwyn",
+		"state": "IL",
+		"zip_code": "60402"
+	},
+	{
+		"venue_id": "yelpCv-I_tcWaIhjif8NgHA0pQ",
+		"venue_name": "Riverside  Restaurant",
+		"latitude": 41.8294799,
+		"longitude": -87.80322,
+		"address1": "3422 S Harlem Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Riverside",
+		"state": "IL",
+		"zip_code": "60546"
+	},
+	{
+		"venue_id": "yelpaessrxDu8LQO8zKp4pz97Q",
+		"venue_name": "Bistro Grand",
+		"latitude": 41.9229251,
+		"longitude": -87.8043862,
+		"address1": "2362 N Neva Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60707"
+	},
+	{
+		"venue_id": "yelpj6mjqhFWwBiKGM8ei3OEXw",
+		"venue_name": "Josie's Dumplings",
+		"latitude": 41.82106,
+		"longitude": -87.79179,
+		"address1": "6733 W Pershing Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Stickney",
+		"state": "IL",
+		"zip_code": "60402"
+	}
+]

@@ -1,1 +1,74 @@
-[]
+[
+	{
+		"venue_id": "yelp4wmRu3bpaSpW999SHGK34g",
+		"venue_name": "Revival Food Hall",
+		"latitude": 41.87979,
+		"longitude": -87.63051,
+		"address1": "125 S Clark St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelpvirVNDeTu6oo7sXVvxJwjw",
+		"venue_name": "Wells Street Market",
+		"latitude": 41.886455,
+		"longitude": -87.634293,
+		"address1": "205 W Wacker Dr",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelplxKHPPeSdgqOnx3uCmyG4g",
+		"venue_name": "Marketplace Foods Macy's Food Court",
+		"latitude": 41.883497,
+		"longitude": -87.627867,
+		"address1": "111 N State St",
+		"address2": "",
+		"address3": "Lowel Level",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60602"
+	},
+	{
+		"venue_id": "yelp-MsQ8XtwVkJqpdQuAW0mog",
+		"venue_name": "Forum 55",
+		"latitude": 41.88004,
+		"longitude": -87.6253,
+		"address1": "55 E Monroe St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelphvLmaKHOizr-mtJ4O_n54A",
+		"venue_name": "Izakaya yume",
+		"latitude": 41.87774,
+		"longitude": -87.64471,
+		"address1": "711 W Jackson Blvd",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelpHTqwVIY3CUyCmTdy62sLGw",
+		"venue_name": "Cafe 330",
+		"latitude": 41.8886496,
+		"longitude": -87.6275583,
+		"address1": "330 N Wabash Ave",
+		"address2": "Fl 16",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	}
+]

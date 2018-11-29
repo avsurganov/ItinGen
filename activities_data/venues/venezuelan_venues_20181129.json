@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpfPlA_n18OTA09KiF8j0qXg",
+		"venue_name": "11 Degrees North",
+		"latitude": 41.9400605,
+		"longitude": -87.6503407,
+		"address1": "824 W Belmont Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpiw1_4RySfJpOMvuZ73XAvw",
+		"venue_name": "Bienmesabe",
+		"latitude": 41.9614551,
+		"longitude": -87.670454,
+		"address1": "1637 W Montrose Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpH1Bs27aRoY5X3UyJEm_Q0Q",
+		"venue_name": "Rica Arepa",
+		"latitude": 41.9168,
+		"longitude": -87.73347,
+		"address1": "4253 West Armitage Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60639"
+	},
+	{
+		"venue_id": "yelp6lPODX1d7mfuXmhwdor-jA",
+		"venue_name": "Bienmesabe",
+		"latitude": 41.87937,
+		"longitude": -87.62675,
+		"address1": "29 E Adams St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelpq5e5xjQJTrisTRkqwoiPew",
+		"venue_name": "Sweet Pepper",
+		"latitude": 41.968784,
+		"longitude": -87.694158,
+		"address1": "2604 W Lawrence Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpsNUV-1OAGBefwSROuKQvZw",
+		"venue_name": "La Cocinita Restaurant",
+		"latitude": 42.0469939,
+		"longitude": -87.6790813,
+		"address1": "1625 Chicago Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Evanston",
+		"state": "IL",
+		"zip_code": "60201"
+	}
+]

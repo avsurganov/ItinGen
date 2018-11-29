@@ -1,1 +1,78 @@
-[]
+[
+	{
+		"venue_id": "yelpqsfzywqiToEaeCYusyz0yQ",
+		"event_name": "North Shore Cider Company",
+		"event_id": "yelpqsfzywqiToEaeCYusyz0yQ",
+		"mon_start": 1020,
+		"mon_end": 1260,
+		"tues_start": 960,
+		"tues_end": 1260,
+		"wed_start": 720,
+		"wed_end": 1260,
+		"thurs_start": 720,
+		"thurs_end": 960,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"cideries",
+			"food"
+		],
+		"price": -1
+	},
+	{
+		"venue_id": "yelp0XHTSBm6jR0x9dn8nLMscg",
+		"event_name": "2 Fools Cider",
+		"event_id": "yelp0XHTSBm6jR0x9dn8nLMscg",
+		"mon_start": 900,
+		"mon_end": 1320,
+		"tues_start": 900,
+		"tues_end": 1320,
+		"wed_start": 900,
+		"wed_end": 1320,
+		"thurs_start": 900,
+		"thurs_end": 1320,
+		"fri_start": 720,
+		"fri_end": 1380,
+		"sat_start": 720,
+		"sat_end": 1380,
+		"sun_start": 720,
+		"sun_end": 1200,
+		"tags": [
+			"cideries",
+			"food"
+		],
+		"price": -1
+	},
+	{
+		"venue_id": "yelpCvTnRaqzLvh8KF-ZMlt5Vw",
+		"event_name": "Aftermath Cidery & Winery",
+		"event_id": "yelpCvTnRaqzLvh8KF-ZMlt5Vw",
+		"mon_start": 720,
+		"mon_end": 1320,
+		"tues_start": 720,
+		"tues_end": 1320,
+		"wed_start": 720,
+		"wed_end": 1320,
+		"thurs_start": 720,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1380,
+		"sat_start": 660,
+		"sat_end": 1380,
+		"sun_start": 720,
+		"sun_end": 1080,
+		"tags": [
+			"cideries",
+			"food",
+			"wineries",
+			"food",
+			"tapasmallplates",
+			"food"
+		],
+		"price": -2
+	}
+]

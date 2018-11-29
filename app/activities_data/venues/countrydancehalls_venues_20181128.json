@@ -1,0 +1,50 @@
+[
+	{
+		"venue_id": "yelpQjoCo5y9aQUq17EuwHnl9w",
+		"venue_name": "Lucky Star",
+		"latitude": 42.010669,
+		"longitude": -88.212193,
+		"address1": "1175 W Lake St",
+		"address2": null,
+		"address3": "",
+		"city": "Bartlett",
+		"state": "IL",
+		"zip_code": "60103"
+	},
+	{
+		"venue_id": "yelpXkLgx7HMBPOB5ZvptcyKtA",
+		"venue_name": "Saddle Up Saloon & Dancehall",
+		"latitude": 41.753234,
+		"longitude": -88.20845,
+		"address1": "4440 W Ogden Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Aurora",
+		"state": "IL",
+		"zip_code": "60504"
+	},
+	{
+		"venue_id": "yelpbIPT1k2JMy8nK3pqpFOOxg",
+		"venue_name": "T-Bar Ranch",
+		"latitude": 42.2629991951997,
+		"longitude": -88.1986940310884,
+		"address1": "4500 Roberts Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Island Lake",
+		"state": "IL",
+		"zip_code": "60042"
+	},
+	{
+		"venue_id": "yelpBXMnRHd6reLmDuGU2WHLwA",
+		"venue_name": "Dance With Janet",
+		"latitude": 41.85545,
+		"longitude": -88.2006,
+		"address1": "1764 Kresswood Dr",
+		"address2": null,
+		"address3": "",
+		"city": "West Chicago",
+		"state": "IL",
+		"zip_code": "60185"
+	}
+]

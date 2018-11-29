@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelplYKn_TKwzudoIYplL2tGDg",
+		"venue_name": "Chicago French Market",
+		"latitude": 41.884136,
+		"longitude": -87.640976,
+		"address1": "131 N Clinton St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelpHx0Ge_i9uuYUZEmxwnG5_g",
+		"venue_name": "Kane County Country Market",
+		"latitude": 41.9285755,
+		"longitude": -88.4791568,
+		"address1": "4n250 Il-47",
+		"address2": "",
+		"address3": null,
+		"city": "Maple Park",
+		"state": "IL",
+		"zip_code": "60151"
+	}
+]

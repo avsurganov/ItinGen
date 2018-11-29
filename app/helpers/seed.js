@@ -1,7 +1,12 @@
 const mongoose = require('mongoose');
-const { port, db, secret }    = require('../config/env');
-//mongoose.Promise = require('bluebird');
-mongoose.connect(db);
+mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
+	if (err){
+		console.log("Not connected to database" + err);
+	}
+	else {
+		console.log("Successfully connected to database");
+	}
+});
 
 const User = require('../models/user');
 const Pevent = require('../models/pevent');
@@ -81,37 +86,43 @@ function seedVenues(data, venues) {
 }
 
 // PEVENTS JSON
-fetch('JSON PATH')
-  .then(response => response.json)
-  .then(data => seedEvents(data, 'pevents', pevents_array));
-
-// TEVENTS JSON
-fetch('JSON PATH')
-  .then(response => response.json)
-  .then(data => seedEvents(data, 'tevents', tevents_array));
+//fetch('JSON PATH')
+  //.then(response => response.json)
+  //.then(data => seedEvents(data, 'tevents', tevents_array));
 
 // VENUES JSON
-fetch('JSON PATH')
-  .then(response => response.json)
-  .then(data => seedVenues(data, venues_array));
+const venues1 = require('../activities_data/venues/EB_venues.json');
+seedVenues(venues1, venues_array)
 
-Pevent.create(pevents_array)
-  .then(pevent => {
-    console.log(`${pevent.length} pevents created`);
-  })
-  .catch((err) => {
-    console.log(err);
-  })
+const venues2 = require('../activities_data/venues/eb_venues_20181114.json');
+seedVenues(venues2, venues_array)
 
-Tevent.create(tevents_array)
-  .then(tevent => {
-    console.log(`${tevent.length} tevents created`);
-  })
-  .catch((err) => {
-    console.log(err);
-  })
+const venues3 = require('../activities_data/venues/museums_venues_20181114.json');
+seedVenues(venues3, venues_array)
 
-Venue.create(venuess_array)
+const venues4 = require('../activities_data/venues/tm_venues_20181114.json');
+seedVenues(venues4, venues_array)
+
+const venues5 = require('../activities_data/venues/venues_11122018.json');
+seedVenues(venues5, venues_array)
+
+//Pevent.create(pevents_array)
+  //.then(pevent => {
+    //console.log(`${pevent.length} pevents created`);
+  //})
+  //.catch((err) => {
+    //console.log(err);
+  //})
+
+//Tevent.create(tevents_array)
+  //.then(tevent => {
+    //console.log(`${tevent.length} tevents created`);
+  //})
+  //.catch((err) => {
+    //console.log(err);
+  //})
+
+Venue.create(venues_array)
   .then(venue => {
     console.log(`${venue.length} venues created`);
   })

@@ -1,5 +1,6 @@
 import googlemaps
 import pull_events
+import datetime
 
 def create_itinerary(user_args):
     '''
@@ -105,7 +106,7 @@ def increment_itinerary(itinerary, valid_events, transport):
     given an itinerary and a list of events try to add on another event to the
     itinerary
     '''
-    #start_time = determine_start_time(itinerary, event, transport)
+    # start_time = determine_start_time(itinerary, event, transport)
     return 0
 
 
@@ -152,6 +153,9 @@ def increment_radius(radius, est_num_events):
 def determine_start_time(itinerary, event, transport):
     '''
     find the start time of the next event
+
+    return start time in minutes from midnight
+    return -10 if event ends within 30 mins of arrival time
     '''
     last_venue = itinerary[-1][1]
     next_event = event[0]
@@ -159,39 +163,55 @@ def determine_start_time(itinerary, event, transport):
     last_venue_coords = {"lat": last_venue["latitude"], "lng": last_venue["longitude"]}
     next_venue_coords = {"lat": next_venue["latitude"], "lng": next_venue["longitude"]}
     end_time_in_mins = itinerary[-1][3]
-    # convert end_time to format acceptable for gmaps.directions
+    is_past_midnight = end_time_in_mins // 1440
+    end_time = end_time_in_mins - 1440 * is_past_midnight
+    hours = end_time // 60
+    mins = end_time % 60
+    date = datetime.datetime.today() + datetime.timedelta(days=is_past_midnight)
+    time = datetime.datetime(date.year, date.month, date.day, hours, mins)
 
     # query directions between previous and next venues
     gmaps = googlemaps.Client(key="AIzaSyCGtRkePdbwkM6UsXdsvlwwplKvh5rruYk")
     directions_result = gmaps.directions(last_venue_coords,
                                          next_venue_coords,
                                          mode=transport,
-                                         departure_time=end_time)
+                                         departure_time=time)
 
     # find travel time between the venues in minutes
     travel_time_str = directions_result[0]['legs'][0]['duration']['text'].split(" ")
     list_len = len(travel_time_str)
     if list_len == 4:
+        # format: 'x hours y mins'
         travel_time = int(travel_time_str[0])*60+int(travel_time_str[2])
     elif list_len == 2:
+        # format: 'x hours'
         if travel_time_str[1] == 'hours' or travel_time_str[1] == 'hour':
             travel_time = int(travel_time_str[0])*60
+        # format: 'x mins'
         else:
             travel_time = int(travel_time_str[0])
+    # travel time within Illinois cannot exceed 24 hours
+    # so other formats are not considered
 
     # validate start time of the next event
     start_time = end_time_in_mins + travel_time
     if 'start' in next_event:
         if start_time + 30 > next_event['end'] and next_event['end'] != -10:
-            return 0
+            return -10
         if start_time < next_event['start']:
             return next_event['start']
     else:
-        weekday = day_to_str(datetime.today().weekday())
+        # implementation depends on how we store permanent events that close after midnight
+        # this implementation assumes that all times stored are below 1440
+        is_past_midnight = start_time // 1440
+        date = datetime.datetime.today() + datetime.timedelta(days=is_past_midnight)
+        time = start_time - 1440 * is_past_midnight
+        weekday = day_to_str(date.weekday())
         start = next_event[weekday + '_start']
         end = next_event[weekday + '_end']
-        if start_time + 30 > end:
-            return 0
-        if start_time < start:
-            return start
+        if time + 30 > end:
+            return -10
+        if time < start:
+            return start + 1440 * is_past_midnight
+
     return start_time

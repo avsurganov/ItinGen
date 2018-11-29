@@ -94,7 +94,7 @@ def create_itinerary(user_args):
         else:
             # the given itinerary is not done, we need to get a new radius
             # and find the new valid itins based on distance
-            if determine_radius(itinerary, itin_mem, radius_mem):
+            if determine_radius(itinerary, itin_mem, radius_mem, user_data):
                 cont = False
             else:
                 # find first index within that radius

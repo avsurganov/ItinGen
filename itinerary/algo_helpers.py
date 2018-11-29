@@ -95,7 +95,7 @@ def check_finished(itinerary):
 # RADIUS FUNCTIONS #
 ####################
 
-def determine_radius(itinerary, itin_mem, radius_mem):
+def determine_radius(itinerary, itin_mem, radius_mem, user_data):
     '''
     determine what the new search radius should be
     '''
@@ -104,12 +104,12 @@ def determine_radius(itinerary, itin_mem, radius_mem):
         itin_mem = len(itinerary)
         radius_mem[0] == radius_mem[1]
         # now we need to decrement the radius by some amount
-        d_area = decrement_helper(radius_mem, itinerary)
+        d_area = decrement_helper(radius_mem, itinerary, user_data['distance_radius'])
         radius_mem[1] = decrement_radius(radius_mem[0], d_area)
         return 0
     elif len(itinerary) == itin_mem:
         # an item was not added successfully
-        d_area = decrement_helper(radius_mem, itinerary)
+        d_area = decrement_helper(radius_mem, itinerary, user_data['distance_radius'])
         radius_mem[1] = increment_radius(radius_mem[1], d_area)
         if radius_mem[1] >= radius_mem[0]:
             # no more possible moves
@@ -137,7 +137,7 @@ def increment_radius(radius, dA):
     return new_rad
 
 
-def decrement_helper(radius_mem, itinerary):
+def decrement_helper(radius_mem, itinerary, user_radius):
     '''
     calculate the area that we want to move
 
@@ -145,7 +145,7 @@ def decrement_helper(radius_mem, itinerary):
     take in global variables
     '''
     n = ((24 * 60) - itinerary[-1][-1]) / 120
-    d_area = (pi * (radius_mem[0] ** 2)) - (pi * (7 ** 2))
+    d_area = (pi * (radius_mem[0] ** 2)) - (pi * ((user_radius / 2) ** 2))
     d_area = d_area / n
 
     return d_area
@@ -178,10 +178,10 @@ def find_angle(coords1, center, coords2):
     num = cos(c)-cos(a)*cos(b)
     den = sin(a)*sin(b)
     if (fabs(den) < 0.001):
-		if (a+b-c < 0.001):
-			return 180.0
-		else:
-			return 0.0
+        if (a+b-c < 0.001):
+            return 180.0
+        else:
+            return 0.0
     return acos(num/den)
 
 
@@ -194,13 +194,13 @@ def validate_angle(coords1, center, coords2, limit=0.5):
         return False
 
 def sort_distances(events, center):
-	event_distances = []
-	for event in events:
-		venue = event[1]
-		distance = find_distance(venue_to_lat_long(venue), center)
-		event_distances.append(event+(distance,))
-	event_distances.sort(key=itemgetter(2), reverse=True)
-	return event_distances
+    event_distances = []
+    for event in events:
+        venue = event[1]
+        distance = find_distance(venue_to_lat_long(venue), center)
+        event_distances.append(event+(distance,))
+    event_distances.sort(key=itemgetter(2), reverse=True)
+    return event_distances
 
 #########################
 # TIME HELPER FUNCTIONS #

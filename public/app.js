@@ -7,21 +7,32 @@ angular.module('ItinGen', [
 	'ldButtons',
 	'itineraryFactory',
 	'sideBar',
-	'introduction'
+  'introduction',
+  'authServices'
 ])
 
-
-
-.controller('itinGenController', ['$scope', '$http', 'itineraryFactory', function($scope, $http, itineraryFactory) {
+.controller('itinGenController', ['$scope', '$http', 'itineraryFactory', 'Auth', function($scope, $http, itineraryFactory, Auth) {
   
   var currentItinerary = {}
   var directionsService 
   var directionsDisplay
-  var test_params = {"username" : "test_username", "password" : "test_password", "tag" : "test_tag", "email" : "test_email"};
   $scope.test = "We got it!"
-  $http({url: '/api/users', method: 'POST', params: test_params}).then((res) => {
-	  console.log(res);
-  });
+  var app = this;
+
+  if (Auth.isLoggedIn()) {
+    // Check if a the token expired
+    Auth.getUser().then(function(data) {
+        // Check if the returned user is undefined (expired)
+        console.log("HERE");
+        console.log(data.data);
+        if (data.data.email === undefined) {
+            Auth.logout(); // Log the user out
+            app.isLoggedIn = false; // Set session to false
+            $location.path('/'); // Redirect to home page
+        }
+    });
+}
+
 
   
      var map;
@@ -89,14 +100,16 @@ angular.module('ItinGen', [
 	  	await drawNewItinerary()
 	  	$scope.$broadcast('update')
 	  }
-
-
-
-
 }])
 
-.controller('facebookCtrl', function($routeParams) {
+.controller('facebookCtrl', function($routeParams, Auth, $location) {
   console.log($routeParams.token);
+  Auth.socialMedia($routeParams.token);
+  $location.path('/'); 
+})
+
+.config(function($httpProvider) {
+  $httpProvider.interceptors.push('AuthInterceptors');
 })
 
 

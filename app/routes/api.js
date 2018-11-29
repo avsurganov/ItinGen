@@ -2,7 +2,9 @@ var User = require("../models/user");
 var Itinerary = require("../models/itinerary");
 var mongoose = require("mongoose");
 var app = require("express");
+var jwt = require('jsonwebtoken'); // Import JWT Package
 var router = app.Router();
+var secret = 'itingen'; // Create custom secret to use with JWT
 
 // Route to register new users  
 router.post('/users', function(req, res) {
@@ -129,7 +131,7 @@ router.use(function(req, res, next) {
 });
 
 // Route to get the currently logged in user    
-router.post('/getuser', function(req, res) {
+router.post('/me', function(req, res) {
 	res.send(req.decoded); // Return the token acquired from middleware
 });
 

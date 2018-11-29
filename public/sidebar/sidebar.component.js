@@ -6,9 +6,18 @@ angular.module('sideBar')
 	templateUrl: 'sidebar/sidebar.template.html',
 	controller: ['$scope', 'itineraryFactory', function sideBarController($scope, itineraryFactory) {
 		
-		this.drawLikedItineraries = function() {
-			console.log($scope.$parent.test)
-		}
+    this.itinerary = []
+  
+    $scope.$on('update', function(e) {
+       this.itinerary = itineraryFactory.getCurrentItinerary();
+       console.log(this.itinerary)
+       $scope.$apply()
+    }.bind(this))
+
+
+
+
+
 	}]
 })
 

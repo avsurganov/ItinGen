@@ -60,32 +60,33 @@ angular.module('ItinGen', [
     })()
 
 
-  function drawNewItinerary() {
-  	var waypoints = []
-  	for (event in currentItinerary) {
-  		var index = parseInt(event) + 1
-  		if (index != currentItinerary.length)
-  			waypoints.push({location: currentItinerary[index].venue.latlng}) 
-  	}
+	function drawNewItinerary() {
+	  	var waypoints = []
+	  	for (event in currentItinerary) {
+	  		var index = parseInt(event) + 1
+	  		if (index != currentItinerary.length)
+	  			waypoints.push({location: currentItinerary[index].venue.latlng}) 
+	  	}
 
-  	var directionRequest = {
-		origin: currentItinerary[0].venue.latlng,
-		destination: currentItinerary[currentItinerary.length - 1].venue.latlng,
-		travelMode: 'DRIVING',
-		waypoints: waypoints
-  	}
-  	directionsService.route(directionRequest, function(result, status) {
-  		if (status == 'OK') {
-  			directionsDisplay.setDirections(result)
-  		}
-  	})
-  	
-  }
+	  	var directionRequest = {
+			origin: currentItinerary[0].venue.latlng,
+			destination: currentItinerary[currentItinerary.length - 1].venue.latlng,
+			travelMode: 'DRIVING',
+			waypoints: waypoints
+	  	}
+	  	directionsService.route(directionRequest, function(result, status) {
+	  		if (status == 'OK') {
+	  			directionsDisplay.setDirections(result)
+	  		}
+	  	})
+	  	
+	  }
 
-  $scope.updateMapWithNewItinerary = function() {
-  	currentItinerary = itineraryFactory.getNewItinerary()
-  	drawNewItinerary()
-  }
+	  $scope.updateMapWithNewItinerary = async function() {
+	  	currentItinerary = itineraryFactory.getNewItinerary()
+	  	await drawNewItinerary()
+	  	$scope.$broadcast('update')
+	  }
 
 
 

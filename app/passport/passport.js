@@ -39,11 +39,14 @@ module.exports = function(app, passport) {
                     return;
                 } else {
                     if (user && user != null){
-                        console.log("FOUND ME");
+                        //Found user
                         done(null, user);
                     } else {
-                        console.log("NO USER EXISTS IN DB");
-                        done(err);
+                        //No user, create a new one
+                        var newUser = new User();
+                        newUser.email = profile._json.email;
+                        newUser.save();
+                        done(null, user);
                         // return;
                     }
                 }

@@ -332,7 +332,7 @@ def tag_as_category(input_category):
                 "scandinavian",
                 "scottish",
                 "seafood",
-                "singaporean",
+                "singaporean", 
                 "slovakian",
                 "soulfood",
                 "soup",

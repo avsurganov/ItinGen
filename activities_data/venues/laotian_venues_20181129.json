@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpPSKOt1kwYm6_PiCS2oHONQ",
+		"venue_name": "White Pearl Restaurant",
+		"latitude": 42.02707,
+		"longitude": -88.31147,
+		"address1": "265 S Mclean Blvd",
+		"address2": "",
+		"address3": "",
+		"city": "Elgin",
+		"state": "IL",
+		"zip_code": "60123"
+	},
+	{
+		"venue_id": "yelpQv79Hd0a9Yzm-k7a5nofJA",
+		"venue_name": "Lao & Thai Spicy Noodle",
+		"latitude": 41.9722718,
+		"longitude": -88.3408343,
+		"address1": "612 Randall Rd",
+		"address2": "",
+		"address3": null,
+		"city": "South Elgin",
+		"state": "IL",
+		"zip_code": "60177"
+	}
+]

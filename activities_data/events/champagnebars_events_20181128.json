@@ -1424,6 +1424,30 @@
 		"price": -2
 	},
 	{
+		"venue_id": "yelp5D5GiHm67V4thed30Etzhg",
+		"event_name": "Summer House Santa Monica",
+		"event_id": "yelp5D5GiHm67V4thed30Etzhg",
+		"mon_start": 660,
+		"mon_end": 1320,
+		"tues_start": 660,
+		"tues_end": 1320,
+		"wed_start": 660,
+		"wed_end": 1320,
+		"thurs_start": 660,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1380,
+		"sat_start": 480,
+		"sat_end": 1380,
+		"sun_start": 480,
+		"sun_end": 1320,
+		"tags": [
+			"tradamerican",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
 		"venue_id": "yelpDn23mAnWMquipOt4b76fOQ",
 		"event_name": "TWO Restaurant",
 		"event_id": "yelpDn23mAnWMquipOt4b76fOQ",
@@ -1448,30 +1472,6 @@
 			"nightlife"
 		],
 		"price": -3
-	},
-	{
-		"venue_id": "yelp5D5GiHm67V4thed30Etzhg",
-		"event_name": "Summer House Santa Monica",
-		"event_id": "yelp5D5GiHm67V4thed30Etzhg",
-		"mon_start": 660,
-		"mon_end": 1320,
-		"tues_start": 660,
-		"tues_end": 1320,
-		"wed_start": 660,
-		"wed_end": 1320,
-		"thurs_start": 660,
-		"thurs_end": 1320,
-		"fri_start": 660,
-		"fri_end": 1380,
-		"sat_start": 480,
-		"sat_end": 1380,
-		"sun_start": 480,
-		"sun_end": 1320,
-		"tags": [
-			"tradamerican",
-			"nightlife"
-		],
-		"price": -2
 	},
 	{
 		"venue_id": "yelpO6uWHgJzylSjWjPSJKGhnQ",
@@ -2770,6 +2770,30 @@
 		"price": -2
 	},
 	{
+		"venue_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
+		"event_name": "Pierogi Heaven",
+		"event_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
+		"mon_start": 660,
+		"mon_end": 1020,
+		"tues_start": 660,
+		"tues_end": 1140,
+		"wed_start": 660,
+		"wed_end": 1140,
+		"thurs_start": 660,
+		"thurs_end": 1140,
+		"fri_start": 660,
+		"fri_end": 1140,
+		"sat_start": 660,
+		"sat_end": 1020,
+		"sun_start": 660,
+		"sun_end": 1020,
+		"tags": [
+			"polish",
+			"nightlife"
+		],
+		"price": -1
+	},
+	{
 		"venue_id": "yelp14dFm81gm4Kb8C0nd7wcmQ",
 		"event_name": "Doc B's Fresh Kitchen",
 		"event_id": "yelp14dFm81gm4Kb8C0nd7wcmQ",
@@ -2818,30 +2842,6 @@
 			"nightlife"
 		],
 		"price": -3
-	},
-	{
-		"venue_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
-		"event_name": "Pierogi Heaven",
-		"event_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
-		"mon_start": 660,
-		"mon_end": 1020,
-		"tues_start": 660,
-		"tues_end": 1140,
-		"wed_start": 660,
-		"wed_end": 1140,
-		"thurs_start": 660,
-		"thurs_end": 1140,
-		"fri_start": 660,
-		"fri_end": 1140,
-		"sat_start": 660,
-		"sat_end": 1020,
-		"sun_start": 660,
-		"sun_end": 1020,
-		"tags": [
-			"polish",
-			"nightlife"
-		],
-		"price": -1
 	},
 	{
 		"venue_id": "yelpO_l0yHp_Lh5YqoOPVs16Og",
@@ -3162,32 +3162,6 @@
 		"price": -1
 	},
 	{
-		"venue_id": "yelpFgscTtEHFNqnVGjubIvLXw",
-		"event_name": "Lotus Cafe & B\u00e1nh M\u00ec Sandwiches",
-		"event_id": "yelpFgscTtEHFNqnVGjubIvLXw",
-		"mon_start": 630,
-		"mon_end": 1200,
-		"tues_start": 630,
-		"tues_end": 1200,
-		"wed_start": 630,
-		"wed_end": 1200,
-		"thurs_start": 630,
-		"thurs_end": 1200,
-		"fri_start": 630,
-		"fri_end": 1200,
-		"sat_start": 660,
-		"sat_end": 1200,
-		"sun_start": 0,
-		"sun_end": 0,
-		"tags": [
-			"vietnamese",
-			"nightlife",
-			"sandwiches",
-			"nightlife"
-		],
-		"price": -1
-	},
-	{
 		"venue_id": "yelpUQuKBMJcvcGN9kN2Fs0vxQ",
 		"event_name": "Katherine Anne Confections",
 		"event_id": "yelpUQuKBMJcvcGN9kN2Fs0vxQ",
@@ -3214,6 +3188,32 @@
 			"nightlife"
 		],
 		"price": -2
+	},
+	{
+		"venue_id": "yelpFgscTtEHFNqnVGjubIvLXw",
+		"event_name": "Lotus Cafe & B\u00e1nh M\u00ec Sandwiches",
+		"event_id": "yelpFgscTtEHFNqnVGjubIvLXw",
+		"mon_start": 630,
+		"mon_end": 1200,
+		"tues_start": 630,
+		"tues_end": 1200,
+		"wed_start": 630,
+		"wed_end": 1200,
+		"thurs_start": 630,
+		"thurs_end": 1200,
+		"fri_start": 630,
+		"fri_end": 1200,
+		"sat_start": 660,
+		"sat_end": 1200,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"vietnamese",
+			"nightlife",
+			"sandwiches",
+			"nightlife"
+		],
+		"price": -1
 	},
 	{
 		"venue_id": "yelpRxHAdNiJ8jPUQDvLz6mDwg",
@@ -5086,34 +5086,6 @@
 		"price": -1
 	},
 	{
-		"venue_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
-		"event_name": "Cozy Noodles & Rice",
-		"event_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
-		"mon_start": 645,
-		"mon_end": 1320,
-		"tues_start": 645,
-		"tues_end": 1320,
-		"wed_start": 645,
-		"wed_end": 1320,
-		"thurs_start": 645,
-		"thurs_end": 1320,
-		"fri_start": 645,
-		"fri_end": 1350,
-		"sat_start": 645,
-		"sat_end": 1350,
-		"sun_start": 645,
-		"sun_end": 1320,
-		"tags": [
-			"thai",
-			"nightlife",
-			"noodles",
-			"nightlife",
-			"desserts",
-			"nightlife"
-		],
-		"price": -1
-	},
-	{
 		"venue_id": "yelp0LxN36awD48RfrBJGl2BYg",
 		"event_name": "Imperial Lamian",
 		"event_id": "yelp0LxN36awD48RfrBJGl2BYg",
@@ -5140,6 +5112,34 @@
 			"nightlife"
 		],
 		"price": -2
+	},
+	{
+		"venue_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
+		"event_name": "Cozy Noodles & Rice",
+		"event_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
+		"mon_start": 645,
+		"mon_end": 1320,
+		"tues_start": 645,
+		"tues_end": 1320,
+		"wed_start": 645,
+		"wed_end": 1320,
+		"thurs_start": 645,
+		"thurs_end": 1320,
+		"fri_start": 645,
+		"fri_end": 1350,
+		"sat_start": 645,
+		"sat_end": 1350,
+		"sun_start": 645,
+		"sun_end": 1320,
+		"tags": [
+			"thai",
+			"nightlife",
+			"noodles",
+			"nightlife",
+			"desserts",
+			"nightlife"
+		],
+		"price": -1
 	},
 	{
 		"venue_id": "yelpBstNoM1kPic54_eLCPLDiQ",
@@ -5802,32 +5802,6 @@
 		"price": -3
 	},
 	{
-		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
-		"event_name": "Ethiopian Diamond",
-		"event_id": "yelpSQbqAi053aFOfQhtPAC3mw",
-		"mon_start": 660,
-		"mon_end": 1320,
-		"tues_start": 660,
-		"tues_end": 1320,
-		"wed_start": 660,
-		"wed_end": 1320,
-		"thurs_start": 660,
-		"thurs_end": 1320,
-		"fri_start": 660,
-		"fri_end": 1380,
-		"sat_start": 660,
-		"sat_end": 1380,
-		"sun_start": 660,
-		"sun_end": 1320,
-		"tags": [
-			"ethiopian",
-			"nightlife",
-			"bars",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
 		"venue_id": "yelpWM2JQP4yzQHPbIh-wNdK6g",
 		"event_name": "Cumin",
 		"event_id": "yelpWM2JQP4yzQHPbIh-wNdK6g",
@@ -5880,6 +5854,32 @@
 			"nightlife"
 		],
 		"price": -1
+	},
+	{
+		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"event_name": "Ethiopian Diamond",
+		"event_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"mon_start": 660,
+		"mon_end": 1320,
+		"tues_start": 660,
+		"tues_end": 1320,
+		"wed_start": 660,
+		"wed_end": 1320,
+		"thurs_start": 660,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1380,
+		"sat_start": 660,
+		"sat_end": 1380,
+		"sun_start": 660,
+		"sun_end": 1320,
+		"tags": [
+			"ethiopian",
+			"nightlife",
+			"bars",
+			"nightlife"
+		],
+		"price": -2
 	},
 	{
 		"venue_id": "yelpxjZ9eqYrzMrl2v6_1Kv6hA",
@@ -7536,6 +7536,32 @@
 		"price": -2
 	},
 	{
+		"venue_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
+		"event_name": "La Gondola",
+		"event_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
+		"mon_start": 690,
+		"mon_end": 1260,
+		"tues_start": 690,
+		"tues_end": 1260,
+		"wed_start": 690,
+		"wed_end": 1260,
+		"thurs_start": 690,
+		"thurs_end": 1260,
+		"fri_start": 690,
+		"fri_end": 1320,
+		"sat_start": 690,
+		"sat_end": 1320,
+		"sun_start": 690,
+		"sun_end": 1260,
+		"tags": [
+			"pizza",
+			"nightlife",
+			"italian",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
 		"venue_id": "yelplncS2kRoXSJ7unM-TaBZCw",
 		"event_name": "Rollapalooza",
 		"event_id": "yelplncS2kRoXSJ7unM-TaBZCw",
@@ -7580,32 +7606,6 @@
 		"sun_start": 960,
 		"sun_end": 1260,
 		"tags": [
-			"italian",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
-		"venue_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
-		"event_name": "La Gondola",
-		"event_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
-		"mon_start": 690,
-		"mon_end": 1260,
-		"tues_start": 690,
-		"tues_end": 1260,
-		"wed_start": 690,
-		"wed_end": 1260,
-		"thurs_start": 690,
-		"thurs_end": 1260,
-		"fri_start": 690,
-		"fri_end": 1320,
-		"sat_start": 690,
-		"sat_end": 1320,
-		"sun_start": 690,
-		"sun_end": 1260,
-		"tags": [
-			"pizza",
-			"nightlife",
 			"italian",
 			"nightlife"
 		],
@@ -9798,30 +9798,6 @@
 		"price": -3
 	},
 	{
-		"venue_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
-		"event_name": "Francesca's on Taylor",
-		"event_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
-		"mon_start": 690,
-		"mon_end": 1260,
-		"tues_start": 690,
-		"tues_end": 1260,
-		"wed_start": 690,
-		"wed_end": 1260,
-		"thurs_start": 690,
-		"thurs_end": 1290,
-		"fri_start": 690,
-		"fri_end": 1320,
-		"sat_start": 690,
-		"sat_end": 1320,
-		"sun_start": 960,
-		"sun_end": 1260,
-		"tags": [
-			"italian",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
 		"venue_id": "yelpkEaW60jpNInK1MzFJMIC7A",
 		"event_name": "Harry Caray's Italian Steakhouse - River North",
 		"event_id": "yelpkEaW60jpNInK1MzFJMIC7A",
@@ -9848,6 +9824,30 @@
 			"nightlife"
 		],
 		"price": -3
+	},
+	{
+		"venue_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
+		"event_name": "Francesca's on Taylor",
+		"event_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
+		"mon_start": 690,
+		"mon_end": 1260,
+		"tues_start": 690,
+		"tues_end": 1260,
+		"wed_start": 690,
+		"wed_end": 1260,
+		"thurs_start": 690,
+		"thurs_end": 1290,
+		"fri_start": 690,
+		"fri_end": 1320,
+		"sat_start": 690,
+		"sat_end": 1320,
+		"sun_start": 960,
+		"sun_end": 1260,
+		"tags": [
+			"italian",
+			"nightlife"
+		],
+		"price": -2
 	},
 	{
 		"venue_id": "yelpmGnNer7raiilgF0JWCpGtw",
@@ -10972,30 +10972,6 @@
 		"price": -10
 	},
 	{
-		"venue_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
-		"event_name": "Sabroso! Mexican Grill",
-		"event_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
-		"mon_start": 960,
-		"mon_end": 1320,
-		"tues_start": 960,
-		"tues_end": 1320,
-		"wed_start": 960,
-		"wed_end": 1320,
-		"thurs_start": 960,
-		"thurs_end": 1320,
-		"fri_start": 660,
-		"fri_end": 1320,
-		"sat_start": 540,
-		"sat_end": 1320,
-		"sun_start": 540,
-		"sun_end": 1320,
-		"tags": [
-			"mexican",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
 		"venue_id": "yelpwXp__hdga76Lkc6vX_O8dQ",
 		"event_name": "Amitabul",
 		"event_id": "yelpwXp__hdga76Lkc6vX_O8dQ",
@@ -11072,6 +11048,30 @@
 		"tags": [
 			"seafood",
 			"nightlife",
+			"mexican",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
+		"event_name": "Sabroso! Mexican Grill",
+		"event_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
+		"mon_start": 960,
+		"mon_end": 1320,
+		"tues_start": 960,
+		"tues_end": 1320,
+		"wed_start": 960,
+		"wed_end": 1320,
+		"thurs_start": 960,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1320,
+		"sat_start": 540,
+		"sat_end": 1320,
+		"sun_start": 540,
+		"sun_end": 1320,
+		"tags": [
 			"mexican",
 			"nightlife"
 		],
@@ -14118,6 +14118,32 @@
 		"price": -2
 	},
 	{
+		"venue_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
+		"event_name": "Hot Dog Station",
+		"event_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
+		"mon_start": 630,
+		"mon_end": 1260,
+		"tues_start": 630,
+		"tues_end": 1260,
+		"wed_start": 630,
+		"wed_end": 1260,
+		"thurs_start": 630,
+		"thurs_end": 1260,
+		"fri_start": 630,
+		"fri_end": 1260,
+		"sat_start": 630,
+		"sat_end": 1260,
+		"sun_start": 630,
+		"sun_end": 1140,
+		"tags": [
+			"hotdog",
+			"nightlife",
+			"burgers",
+			"nightlife"
+		],
+		"price": -1
+	},
+	{
 		"venue_id": "yelptzP7xNT7OokI6JKgtINTlA",
 		"event_name": "Antico",
 		"event_id": "yelptzP7xNT7OokI6JKgtINTlA",
@@ -14218,32 +14244,6 @@
 			"nightlife"
 		],
 		"price": -4
-	},
-	{
-		"venue_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
-		"event_name": "Hot Dog Station",
-		"event_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
-		"mon_start": 630,
-		"mon_end": 1260,
-		"tues_start": 630,
-		"tues_end": 1260,
-		"wed_start": 630,
-		"wed_end": 1260,
-		"thurs_start": 630,
-		"thurs_end": 1260,
-		"fri_start": 630,
-		"fri_end": 1260,
-		"sat_start": 630,
-		"sat_end": 1260,
-		"sun_start": 630,
-		"sun_end": 1140,
-		"tags": [
-			"hotdog",
-			"nightlife",
-			"burgers",
-			"nightlife"
-		],
-		"price": -1
 	},
 	{
 		"venue_id": "yelp_pvjspuIWHbdkWLPiX9QRQ",
@@ -15340,30 +15340,6 @@
 		"price": -2
 	},
 	{
-		"venue_id": "yelp3NViikBJwbjvq1ensGYRcw",
-		"event_name": "Pasta D'Arte Trattoria Italiana",
-		"event_id": "yelp3NViikBJwbjvq1ensGYRcw",
-		"mon_start": 960,
-		"mon_end": 1260,
-		"tues_start": 690,
-		"tues_end": 1260,
-		"wed_start": 690,
-		"wed_end": 1260,
-		"thurs_start": 690,
-		"thurs_end": 1260,
-		"fri_start": 690,
-		"fri_end": 1320,
-		"sat_start": 690,
-		"sat_end": 1320,
-		"sun_start": 960,
-		"sun_end": 1260,
-		"tags": [
-			"italian",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
 		"venue_id": "yelp34C7qV4KzeOyRWZId6pl_g",
 		"event_name": "Smith & Wollensky",
 		"event_id": "yelp34C7qV4KzeOyRWZId6pl_g",
@@ -15549,6 +15525,30 @@
 			"seafood",
 			"nightlife",
 			"scandinavian",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelp3NViikBJwbjvq1ensGYRcw",
+		"event_name": "Pasta D'Arte Trattoria Italiana",
+		"event_id": "yelp3NViikBJwbjvq1ensGYRcw",
+		"mon_start": 960,
+		"mon_end": 1260,
+		"tues_start": 690,
+		"tues_end": 1260,
+		"wed_start": 690,
+		"wed_end": 1260,
+		"thurs_start": 690,
+		"thurs_end": 1260,
+		"fri_start": 690,
+		"fri_end": 1320,
+		"sat_start": 690,
+		"sat_end": 1320,
+		"sun_start": 960,
+		"sun_end": 1260,
+		"tags": [
+			"italian",
 			"nightlife"
 		],
 		"price": -2
@@ -16096,6 +16096,30 @@
 		"price": -1
 	},
 	{
+		"venue_id": "yelphdEpBdmDqKGgodcPyegh4Q",
+		"event_name": "HaiSous Vietnamese Kitchen",
+		"event_id": "yelphdEpBdmDqKGgodcPyegh4Q",
+		"mon_start": 1020,
+		"mon_end": 1380,
+		"tues_start": 1020,
+		"tues_end": 1380,
+		"wed_start": 1020,
+		"wed_end": 1380,
+		"thurs_start": 1020,
+		"thurs_end": 1380,
+		"fri_start": 1020,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 900,
+		"sun_start": 1020,
+		"sun_end": 1380,
+		"tags": [
+			"vietnamese",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
 		"venue_id": "yelpc3DGLqz31UbLapOYoRJJiw",
 		"event_name": "Asian Outpost",
 		"event_id": "yelpc3DGLqz31UbLapOYoRJJiw",
@@ -16145,30 +16169,6 @@
 			"mediterranean",
 			"nightlife",
 			"turkish",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
-		"venue_id": "yelphdEpBdmDqKGgodcPyegh4Q",
-		"event_name": "HaiSous Vietnamese Kitchen",
-		"event_id": "yelphdEpBdmDqKGgodcPyegh4Q",
-		"mon_start": 1020,
-		"mon_end": 1380,
-		"tues_start": 1020,
-		"tues_end": 1380,
-		"wed_start": 1020,
-		"wed_end": 1380,
-		"thurs_start": 1020,
-		"thurs_end": 1380,
-		"fri_start": 1020,
-		"fri_end": 1380,
-		"sat_start": 600,
-		"sat_end": 900,
-		"sun_start": 1020,
-		"sun_end": 1380,
-		"tags": [
-			"vietnamese",
 			"nightlife"
 		],
 		"price": -2
@@ -16906,32 +16906,6 @@
 		"price": -2
 	},
 	{
-		"venue_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
-		"event_name": "Chicken & Farm Shop",
-		"event_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
-		"mon_start": 690,
-		"mon_end": 1380,
-		"tues_start": 690,
-		"tues_end": 1380,
-		"wed_start": 690,
-		"wed_end": 1380,
-		"thurs_start": 690,
-		"thurs_end": 1380,
-		"fri_start": 690,
-		"fri_end": 1380,
-		"sat_start": 600,
-		"sat_end": 1380,
-		"sun_start": 600,
-		"sun_end": 1260,
-		"tags": [
-			"tradamerican",
-			"nightlife",
-			"cocktailbars",
-			"nightlife"
-		],
-		"price": -2
-	},
-	{
 		"venue_id": "yelpnlzCOQG-8oKBOGMMtbreTg",
 		"event_name": "Nando's PERi-PERi",
 		"event_id": "yelpnlzCOQG-8oKBOGMMtbreTg",
@@ -16979,6 +16953,32 @@
 		"sun_end": 840,
 		"tags": [
 			"french",
+			"nightlife"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
+		"event_name": "Chicken & Farm Shop",
+		"event_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
+		"mon_start": 690,
+		"mon_end": 1380,
+		"tues_start": 690,
+		"tues_end": 1380,
+		"wed_start": 690,
+		"wed_end": 1380,
+		"thurs_start": 690,
+		"thurs_end": 1380,
+		"fri_start": 690,
+		"fri_end": 1380,
+		"sat_start": 600,
+		"sat_end": 1380,
+		"sun_start": 600,
+		"sun_end": 1260,
+		"tags": [
+			"tradamerican",
+			"nightlife",
+			"cocktailbars",
 			"nightlife"
 		],
 		"price": -2

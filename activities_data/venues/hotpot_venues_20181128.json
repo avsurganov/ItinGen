@@ -1,1 +1,62 @@
-[]
+[
+	{
+		"venue_id": "yelp9WqiX6CdZxg1ju8EjReVkQ",
+		"venue_name": "Little Sheep Mongolian Hot Pot",
+		"latitude": 41.8498034592167,
+		"longitude": -87.6320048336464,
+		"address1": "2342 S Wentworth Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	},
+	{
+		"venue_id": "yelpLoyzW0e61aUdgY0wQVrETw",
+		"venue_name": "Little Lamb Hot Pot",
+		"latitude": 41.8525993240592,
+		"longitude": -87.6318716257811,
+		"address1": "2201 S Wentworth Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	},
+	{
+		"venue_id": "yelpXAuKRNLRgdy9AWyzIQ3TdQ",
+		"venue_name": "Chatime - TTNoodle",
+		"latitude": 41.854751,
+		"longitude": -87.632598,
+		"address1": "2017 S Wells St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	},
+	{
+		"venue_id": "yelpCOhmkMcsgDGm3dQCNE5h-w",
+		"venue_name": "Mandarin Kitchen",
+		"latitude": 41.8535,
+		"longitude": -87.633372,
+		"address1": "2143 S Archer Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	},
+	{
+		"venue_id": "yelpFeejTCQoirTZAjxid5nBFA",
+		"venue_name": "House Of Fortune",
+		"latitude": 41.8488354,
+		"longitude": -87.6317295,
+		"address1": "2407 S Wentworth Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	}
+]

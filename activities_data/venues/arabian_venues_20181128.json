@@ -1,1 +1,62 @@
-[]
+[
+	{
+		"venue_id": "yelp61ZW2zyuzjAxt8K12UM3sg",
+		"venue_name": "Hala In Restaurant",
+		"latitude": 41.9682049,
+		"longitude": -87.74394,
+		"address1": "4624 W Lawrence Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60630"
+	},
+	{
+		"venue_id": "yelpDYZG-bTAOwNZzxhxkhfPeg",
+		"venue_name": "Al Bawadi Grill",
+		"latitude": 41.733828,
+		"longitude": -87.801211,
+		"address1": "7216 W 87th St",
+		"address2": "",
+		"address3": "",
+		"city": "Bridgeview",
+		"state": "IL",
+		"zip_code": "60455"
+	},
+	{
+		"venue_id": "yelpuhgvf6yD2P334IrzfgozwA",
+		"venue_name": "Fattoush",
+		"latitude": 41.69675,
+		"longitude": -87.79808,
+		"address1": "10700 S Harlem Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Worth",
+		"state": "IL",
+		"zip_code": "60482"
+	},
+	{
+		"venue_id": "yelpmSrInXM_CwGI9drVsbRBKQ",
+		"venue_name": "Taste Of The Middle East",
+		"latitude": 42.2526426182657,
+		"longitude": -87.9013029506772,
+		"address1": "Tri-State Tollway",
+		"address2": "",
+		"address3": "",
+		"city": "Lake Forest",
+		"state": "IL",
+		"zip_code": "60045"
+	},
+	{
+		"venue_id": "yelp_ERh7907JXYz-TLXo2r5Hw",
+		"venue_name": "Al-Quds RESTAURANT",
+		"latitude": 41.75421,
+		"longitude": -88.2056999,
+		"address1": "944 IL-59",
+		"address2": "",
+		"address3": null,
+		"city": "Naperville",
+		"state": "IL",
+		"zip_code": "60540"
+	}
+]

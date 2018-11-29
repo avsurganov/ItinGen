@@ -1,1 +1,84 @@
-[]
+[
+	{
+		"venue_id": "yelp1ujpo6di-VHGmf1kZnRtpQ",
+		"event_name": "Cochon Volant Brasserie",
+		"event_id": "yelp1ujpo6di-VHGmf1kZnRtpQ",
+		"mon_start": 390,
+		"mon_end": 1380,
+		"tues_start": 390,
+		"tues_end": 1380,
+		"wed_start": 390,
+		"wed_end": 1380,
+		"thurs_start": 390,
+		"thurs_end": 1380,
+		"fri_start": 390,
+		"fri_end": 1380,
+		"sat_start": 390,
+		"sat_end": 1380,
+		"sun_start": 390,
+		"sun_end": 1380,
+		"tags": [
+			"french",
+			"food",
+			"brasseries",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpoFpi7EtXFUbzb1QfDLk2JA",
+		"event_name": "Le Sud",
+		"event_id": "yelpoFpi7EtXFUbzb1QfDLk2JA",
+		"mon_start": 1020,
+		"mon_end": 1320,
+		"tues_start": 1020,
+		"tues_end": 1320,
+		"wed_start": 1020,
+		"wed_end": 1320,
+		"thurs_start": 1020,
+		"thurs_end": 1320,
+		"fri_start": 1020,
+		"fri_end": 1380,
+		"sat_start": 1020,
+		"sat_end": 1380,
+		"sun_start": 960,
+		"sun_end": 1260,
+		"tags": [
+			"mediterranean",
+			"food",
+			"french",
+			"food",
+			"brasseries",
+			"food"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpN7X03pDN0vqxKkCX9SYfRg",
+		"event_name": "The Little Gem Cafe",
+		"event_id": "yelpN7X03pDN0vqxKkCX9SYfRg",
+		"mon_start": 1020,
+		"mon_end": 1320,
+		"tues_start": 660,
+		"tues_end": 1320,
+		"wed_start": 660,
+		"wed_end": 1320,
+		"thurs_start": 660,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1320,
+		"sat_start": 660,
+		"sat_end": 1320,
+		"sun_start": 660,
+		"sun_end": 1320,
+		"tags": [
+			"newamerican",
+			"food",
+			"bars",
+			"food",
+			"brasseries",
+			"food"
+		],
+		"price": -2
+	}
+]

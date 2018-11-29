@@ -1104,18 +1104,6 @@
 		"zip_code": "60622"
 	},
 	{
-		"venue_id": "yelpDn23mAnWMquipOt4b76fOQ",
-		"venue_name": "TWO Restaurant",
-		"latitude": 41.89133,
-		"longitude": -87.65613,
-		"address1": "1132 W Grand Ave",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60642"
-	},
-	{
 		"venue_id": "yelp5D5GiHm67V4thed30Etzhg",
 		"venue_name": "Summer House Santa Monica",
 		"latitude": 41.9174315,
@@ -1126,6 +1114,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpDn23mAnWMquipOt4b76fOQ",
+		"venue_name": "TWO Restaurant",
+		"latitude": 41.89133,
+		"longitude": -87.65613,
+		"address1": "1132 W Grand Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60642"
 	},
 	{
 		"venue_id": "yelpO6uWHgJzylSjWjPSJKGhnQ",
@@ -1584,18 +1584,6 @@
 		"zip_code": "60657"
 	},
 	{
-		"venue_id": "yelpqbpo-OPav2tv4TV5C8BFKw",
-		"venue_name": "Homeslice",
-		"latitude": 41.922,
-		"longitude": -87.65249,
-		"address1": "938 W Webster",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60614"
-	},
-	{
 		"venue_id": "yelpBmqLmgX7i-pM-0h_xzbwMA",
 		"venue_name": "Maude's Liquor Bar",
 		"latitude": 41.88466,
@@ -1606,6 +1594,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpqbpo-OPav2tv4TV5C8BFKw",
+		"venue_name": "Homeslice",
+		"latitude": 41.922,
+		"longitude": -87.65249,
+		"address1": "938 W Webster",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
 	},
 	{
 		"venue_id": "yelpgSMAmIma0SWC0qJnZeggnA",
@@ -2004,6 +2004,18 @@
 		"zip_code": "60642"
 	},
 	{
+		"venue_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
+		"venue_name": "Pierogi Heaven",
+		"latitude": 41.8848892663734,
+		"longitude": -87.633853211969,
+		"address1": "169 N Wells St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
 		"venue_id": "yelp14dFm81gm4Kb8C0nd7wcmQ",
 		"venue_name": "Doc B's Fresh Kitchen",
 		"latitude": 41.900246,
@@ -2026,18 +2038,6 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60611"
-	},
-	{
-		"venue_id": "yelpTdy6sDnyu7Od2kBvlzduAA",
-		"venue_name": "Pierogi Heaven",
-		"latitude": 41.8848892663734,
-		"longitude": -87.633853211969,
-		"address1": "169 N Wells St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60606"
 	},
 	{
 		"venue_id": "yelpO_l0yHp_Lh5YqoOPVs16Og",
@@ -2256,18 +2256,6 @@
 		"zip_code": "60622"
 	},
 	{
-		"venue_id": "yelpFgscTtEHFNqnVGjubIvLXw",
-		"venue_name": "Lotus Cafe & B\u00e1nh M\u00ec Sandwiches",
-		"latitude": 41.86457,
-		"longitude": -87.64583,
-		"address1": "719 W Maxwell St",
-		"address2": null,
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60607"
-	},
-	{
 		"venue_id": "yelpUQuKBMJcvcGN9kN2Fs0vxQ",
 		"venue_name": "Katherine Anne Confections",
 		"latitude": 41.91724,
@@ -2278,6 +2266,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpFgscTtEHFNqnVGjubIvLXw",
+		"venue_name": "Lotus Cafe & B\u00e1nh M\u00ec Sandwiches",
+		"latitude": 41.86457,
+		"longitude": -87.64583,
+		"address1": "719 W Maxwell St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
 	},
 	{
 		"venue_id": "yelpRxHAdNiJ8jPUQDvLz6mDwg",
@@ -2868,18 +2868,6 @@
 		"zip_code": "60614"
 	},
 	{
-		"venue_id": "yelp8asUBBy_fFlqLgNQoqQaIw",
-		"venue_name": "Taco Joint",
-		"latitude": 41.91791,
-		"longitude": -87.648371,
-		"address1": "1969 N Halsted St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60614"
-	},
-	{
 		"venue_id": "yelpii7M01X0XTYEz28cDSd6MQ",
 		"venue_name": "Sprinkles Cupcakes",
 		"latitude": 41.90021,
@@ -2890,6 +2878,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelp8asUBBy_fFlqLgNQoqQaIw",
+		"venue_name": "Taco Joint",
+		"latitude": 41.91791,
+		"longitude": -87.648371,
+		"address1": "1969 N Halsted St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
 	},
 	{
 		"venue_id": "yelpENfiSGbuKEI0UUKPWPJqtQ",
@@ -3456,18 +3456,6 @@
 		"zip_code": "60602"
 	},
 	{
-		"venue_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
-		"venue_name": "Cozy Noodles & Rice",
-		"latitude": 41.9452487,
-		"longitude": -87.654386,
-		"address1": "3456 N Sheffield Ave",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60657"
-	},
-	{
 		"venue_id": "yelp0LxN36awD48RfrBJGl2BYg",
 		"venue_name": "Imperial Lamian",
 		"latitude": 41.8901808541776,
@@ -3478,6 +3466,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpGl3QRXeJI8JGtGdCfHp8Dg",
+		"venue_name": "Cozy Noodles & Rice",
+		"latitude": 41.9452487,
+		"longitude": -87.654386,
+		"address1": "3456 N Sheffield Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
 	},
 	{
 		"venue_id": "yelpBstNoM1kPic54_eLCPLDiQ",
@@ -3912,18 +3912,6 @@
 		"zip_code": "60654"
 	},
 	{
-		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
-		"venue_name": "Ethiopian Diamond",
-		"latitude": 41.9930056,
-		"longitude": -87.6605436,
-		"address1": "6120 N Broadway St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60660"
-	},
-	{
 		"venue_id": "yelpWM2JQP4yzQHPbIh-wNdK6g",
 		"venue_name": "Cumin",
 		"latitude": 41.9074789,
@@ -3946,6 +3934,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"venue_name": "Ethiopian Diamond",
+		"latitude": 41.9930056,
+		"longitude": -87.6605436,
+		"address1": "6120 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60660"
 	},
 	{
 		"venue_id": "yelpxjZ9eqYrzMrl2v6_1Kv6hA",
@@ -4944,6 +4944,18 @@
 		"zip_code": "60602"
 	},
 	{
+		"venue_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
+		"venue_name": "La Gondola",
+		"latitude": 41.9345793,
+		"longitude": -87.6686589,
+		"address1": "2914 N Ashland Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
 		"venue_id": "yelplncS2kRoXSJ7unM-TaBZCw",
 		"venue_name": "Rollapalooza",
 		"latitude": 41.94314,
@@ -4966,18 +4978,6 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60622"
-	},
-	{
-		"venue_id": "yelp_Y32xG_NYG0R1IRn9EccAg",
-		"venue_name": "La Gondola",
-		"latitude": 41.9345793,
-		"longitude": -87.6686589,
-		"address1": "2914 N Ashland Ave",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60657"
 	},
 	{
 		"venue_id": "yelprHCQkxQ5WZ5qbDg0XeKibA",
@@ -6396,18 +6396,6 @@
 		"zip_code": "60647"
 	},
 	{
-		"venue_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
-		"venue_name": "Francesca's on Taylor",
-		"latitude": 41.869426,
-		"longitude": -87.6617842,
-		"address1": "1400 W Taylor St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60607"
-	},
-	{
 		"venue_id": "yelpkEaW60jpNInK1MzFJMIC7A",
 		"venue_name": "Harry Caray's Italian Steakhouse - River North",
 		"latitude": 41.8890226258691,
@@ -6418,6 +6406,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelp18hcO-EU7f1ENU4m1tbIBA",
+		"venue_name": "Francesca's on Taylor",
+		"latitude": 41.869426,
+		"longitude": -87.6617842,
+		"address1": "1400 W Taylor St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
 	},
 	{
 		"venue_id": "yelpmGnNer7raiilgF0JWCpGtw",
@@ -6948,6 +6948,18 @@
 		"zip_code": "60613"
 	},
 	{
+		"venue_id": "yelpnTL9tlTqGr5-J68W-3Szww",
+		"venue_name": "Taqueria Traspasada",
+		"latitude": 41.89633,
+		"longitude": -87.66705,
+		"address1": "811 N Ashland Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
 		"venue_id": "yelpqfv0rYo8rAY0DgmL18hZTg",
 		"venue_name": "Cuba 312",
 		"latitude": 41.943481,
@@ -6982,18 +6994,6 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60614"
-	},
-	{
-		"venue_id": "yelpnTL9tlTqGr5-J68W-3Szww",
-		"venue_name": "Taqueria Traspasada",
-		"latitude": 41.89633,
-		"longitude": -87.66705,
-		"address1": "811 N Ashland Ave",
-		"address2": null,
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60622"
 	},
 	{
 		"venue_id": "yelpzH7lgLLw0FVfA6HrwV4pTw",
@@ -7284,18 +7284,6 @@
 		"zip_code": "60657"
 	},
 	{
-		"venue_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
-		"venue_name": "Sabroso! Mexican Grill",
-		"latitude": 41.8988214105907,
-		"longitude": -87.6769693891957,
-		"address1": "941 N Damen Ave",
-		"address2": "",
-		"address3": null,
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60622"
-	},
-	{
 		"venue_id": "yelp2HCUc0_ALwpoyrZjblrg5A",
 		"venue_name": "Pinstripes",
 		"latitude": 41.8908475350465,
@@ -7363,6 +7351,18 @@
 		"address1": "1024 N Ashland Ave",
 		"address2": "",
 		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpo98kicIhRgBjoMqQr2SzTQ",
+		"venue_name": "Sabroso! Mexican Grill",
+		"latitude": 41.8988214105907,
+		"longitude": -87.6769693891957,
+		"address1": "941 N Damen Ave",
+		"address2": "",
+		"address3": null,
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60622"
@@ -8628,18 +8628,6 @@
 		"zip_code": "60610"
 	},
 	{
-		"venue_id": "yelpzcMR0uDgshgPA0rauDlekA",
-		"venue_name": "Uncommon Ground",
-		"latitude": 41.95125,
-		"longitude": -87.66007,
-		"address1": "3800 N Clark St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60613"
-	},
-	{
 		"venue_id": "yelp_n3OmwreEGPQmiHKklsD8w",
 		"venue_name": "San Soo Gab San",
 		"latitude": 41.9775897881067,
@@ -8650,6 +8638,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpzcMR0uDgshgPA0rauDlekA",
+		"venue_name": "Uncommon Ground",
+		"latitude": 41.95125,
+		"longitude": -87.66007,
+		"address1": "3800 N Clark St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
 	},
 	{
 		"venue_id": "yelpPFg_W14UFHXtwHOxquirIA",
@@ -9408,6 +9408,18 @@
 		"zip_code": "60607"
 	},
 	{
+		"venue_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
+		"venue_name": "Hot Dog Station",
+		"latitude": 41.9679886090324,
+		"longitude": -87.7134617808249,
+		"address1": "4742 N Kimball",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
 		"venue_id": "yelptzP7xNT7OokI6JKgtINTlA",
 		"venue_name": "Antico",
 		"latitude": 41.91746,
@@ -9466,18 +9478,6 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60611"
-	},
-	{
-		"venue_id": "yelpgFQ-NcVxqAb4S29S7DLehA",
-		"venue_name": "Hot Dog Station",
-		"latitude": 41.9679886090324,
-		"longitude": -87.7134617808249,
-		"address1": "4742 N Kimball",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60625"
 	},
 	{
 		"venue_id": "yelptCBKjclvCuiuSkiNz1fOjw",
@@ -9684,18 +9684,6 @@
 		"zip_code": "60625"
 	},
 	{
-		"venue_id": "yelpqizzFBua15kSbWB48T8XGg",
-		"venue_name": "Public House",
-		"latitude": 41.8893653140557,
-		"longitude": -87.6282758306885,
-		"address1": "400 N State St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60654"
-	},
-	{
 		"venue_id": "yelpTP8zxYve1T4_xq7mLAT-1g",
 		"venue_name": "Ceres Cafe",
 		"latitude": 41.8780574,
@@ -9742,6 +9730,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpqizzFBua15kSbWB48T8XGg",
+		"venue_name": "Public House",
+		"latitude": 41.8893653140557,
+		"longitude": -87.6282758306885,
+		"address1": "400 N State St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
 	},
 	{
 		"venue_id": "yelpc9LCR5lJ7Lzg-BEg3FGCyA",
@@ -10212,18 +10212,6 @@
 		"zip_code": "60607"
 	},
 	{
-		"venue_id": "yelp3NViikBJwbjvq1ensGYRcw",
-		"venue_name": "Pasta D'Arte Trattoria Italiana",
-		"latitude": 41.99563,
-		"longitude": -87.78578,
-		"address1": "6311 N Milwaukee Ave",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60646"
-	},
-	{
 		"venue_id": "yelp34C7qV4KzeOyRWZId6pl_g",
 		"venue_name": "Smith & Wollensky",
 		"latitude": 41.8883017,
@@ -10366,6 +10354,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelp3NViikBJwbjvq1ensGYRcw",
+		"venue_name": "Pasta D'Arte Trattoria Italiana",
+		"latitude": 41.99563,
+		"longitude": -87.78578,
+		"address1": "6311 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60646"
 	},
 	{
 		"venue_id": "yelprPp8L8pwkNwepgPRVBy99g",
@@ -10788,6 +10788,18 @@
 		"zip_code": "60614"
 	},
 	{
+		"venue_id": "yelphdEpBdmDqKGgodcPyegh4Q",
+		"venue_name": "HaiSous Vietnamese Kitchen",
+		"latitude": 41.857905464288,
+		"longitude": -87.653351765299,
+		"address1": "1800 S Carpenter St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
 		"venue_id": "yelpc3DGLqz31UbLapOYoRJJiw",
 		"venue_name": "Asian Outpost",
 		"latitude": 41.865437,
@@ -10810,18 +10822,6 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60657"
-	},
-	{
-		"venue_id": "yelphdEpBdmDqKGgodcPyegh4Q",
-		"venue_name": "HaiSous Vietnamese Kitchen",
-		"latitude": 41.857905464288,
-		"longitude": -87.653351765299,
-		"address1": "1800 S Carpenter St",
-		"address2": "",
-		"address3": null,
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60608"
 	},
 	{
 		"venue_id": "yelpZ-SJv3keY-u2bIAnkrDq_Q",
@@ -11268,18 +11268,6 @@
 		"zip_code": "60607"
 	},
 	{
-		"venue_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
-		"venue_name": "Chicken & Farm Shop",
-		"latitude": 41.883746,
-		"longitude": -87.648281,
-		"address1": "113-125 N Green St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60607"
-	},
-	{
 		"venue_id": "yelpVw-Qn1Hg06h4yBUdDQCXyA",
 		"venue_name": "Sushi-San",
 		"latitude": 41.8914851,
@@ -11326,6 +11314,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpcnDJOvf7kErlCj1LgDTe6A",
+		"venue_name": "Chicken & Farm Shop",
+		"latitude": 41.883746,
+		"longitude": -87.648281,
+		"address1": "113-125 N Green St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
 	},
 	{
 		"venue_id": "yelp6gZTET0y7ARZMrbJRmI2mw",
@@ -11640,18 +11640,6 @@
 		"zip_code": "60657"
 	},
 	{
-		"venue_id": "yelpH4KzoY_z3D3tUnPZMv3HXg",
-		"venue_name": "The Burger Point",
-		"latitude": 41.8562862457147,
-		"longitude": -87.6273884868141,
-		"address1": "1900 S State St",
-		"address2": "",
-		"address3": "",
-		"city": "Chicago",
-		"state": "IL",
-		"zip_code": "60616"
-	},
-	{
 		"venue_id": "yelpsai33VSs51v_OVrJjFW_PQ",
 		"venue_name": "City Winery",
 		"latitude": 41.88463,
@@ -11662,6 +11650,18 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpH4KzoY_z3D3tUnPZMv3HXg",
+		"venue_name": "The Burger Point",
+		"latitude": 41.8562862457147,
+		"longitude": -87.6273884868141,
+		"address1": "1900 S State St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
 	},
 	{
 		"venue_id": "yelplFuxZf4-nCThJd8fV_EwBw",

@@ -1,1 +1,122 @@
-[]
+[
+	{
+		"venue_id": "yelpuyUKtGWLYgu-RLjlNImy0A",
+		"venue_name": "Tango Sur",
+		"latitude": 41.9507843879442,
+		"longitude": -87.6639031774259,
+		"address1": "3763 N Southport Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpEnf_3DXmppx19hFGs0UDKw",
+		"venue_name": "La Nonna",
+		"latitude": 41.9429574,
+		"longitude": -87.7203016,
+		"address1": "3400 N Lawndale Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpZbXgwfVDjb2tz08FGWmSAA",
+		"venue_name": "Folklore Argentine Grill",
+		"latitude": 41.9034461975098,
+		"longitude": -87.6799240112305,
+		"address1": "2100 W Division St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpKFNk35nSCX8IRum2aJdRag",
+		"venue_name": "El Nandu Restaurant",
+		"latitude": 41.92452,
+		"longitude": -87.6962099,
+		"address1": "2731 W Fullerton Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelp-QSd8rhzCui-tZEyIfwyQA",
+		"venue_name": "\u00d1",
+		"latitude": 41.9356832,
+		"longitude": -87.6927103,
+		"address1": "2977 N Elston Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelp65-YoAsiOo1-1jPQxvZsog",
+		"venue_name": "El Che Bar",
+		"latitude": 41.8829851,
+		"longitude": -87.6491649,
+		"address1": "845 W Washington Blvd",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpu0QARNxvVpmfJ1BdhyWI0w",
+		"venue_name": "Boleo",
+		"latitude": 41.8807491198048,
+		"longitude": -87.6315721359599,
+		"address1": "122 W Monroe St",
+		"address2": "Fl 15",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelp6Q9qLsGwIPoK3rIDxp1x2w",
+		"venue_name": "FR\u00cdO Gelato",
+		"latitude": 41.9496448,
+		"longitude": -87.6639119,
+		"address1": "3721 N Southport Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpUKmTk8jhcO5ba7sRQz5jwg",
+		"venue_name": "Buenos Aires Deli",
+		"latitude": 41.93717,
+		"longitude": -87.74722,
+		"address1": "3100 N Cicero Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelp58ntl-frEEB-SF_wvOuCPw",
+		"venue_name": "Evita Argentinian Steakhouse",
+		"latitude": 41.99298,
+		"longitude": -87.71219,
+		"address1": "6112 N Lincoln Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	}
+]

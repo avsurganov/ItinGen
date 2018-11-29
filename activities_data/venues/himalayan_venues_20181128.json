@@ -1,1 +1,86 @@
-[]
+[
+	{
+		"venue_id": "yelpWM2JQP4yzQHPbIh-wNdK6g",
+		"venue_name": "Cumin",
+		"latitude": 41.9074789,
+		"longitude": -87.6732148,
+		"address1": "1414 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelp2cETD5PTiMqD7LihZN0TRg",
+		"venue_name": "Chiya Chai Cafe",
+		"latitude": 41.9314223820557,
+		"longitude": -87.7114093648563,
+		"address1": "2770 N Milwaukee Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpRyP97ONsO612MeIQfzhmoA",
+		"venue_name": "Nepal House Indian & Nepalese",
+		"latitude": 41.8656524,
+		"longitude": -87.623901,
+		"address1": "1301 S Michigan Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpeZx4x6wWphM9hZalm2L1lA",
+		"venue_name": "Chicago Curry House",
+		"latitude": 41.87086,
+		"longitude": -87.62846,
+		"address1": "899 S Plymouth Ct",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpD03TeOrCvHgeuBe88bn0lw",
+		"venue_name": "Himalayan Restaurant",
+		"latitude": 41.874164,
+		"longitude": -87.6261049,
+		"address1": "606 S Wabash Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpGWNhuL7cyQID_6azMKZeEQ",
+		"venue_name": "Himshikar",
+		"latitude": 41.99094,
+		"longitude": -87.74794,
+		"address1": "6031 N Cicero Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60646"
+	},
+	{
+		"venue_id": "yelpdc3QDT31XmMF5EU1HmrKZg",
+		"venue_name": "Nepal House",
+		"latitude": 41.9975194,
+		"longitude": -87.6949478,
+		"address1": "2601 West Devon Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	}
+]

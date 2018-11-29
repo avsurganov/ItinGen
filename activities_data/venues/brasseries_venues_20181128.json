@@ -1,1 +1,62 @@
-[]
+[
+	{
+		"venue_id": "yelpUKs05XWhbP0riI8O0Kv36w",
+		"venue_name": "Boeufhaus",
+		"latitude": 41.899831,
+		"longitude": -87.687487,
+		"address1": "1012 N Western Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelp1ujpo6di-VHGmf1kZnRtpQ",
+		"venue_name": "Cochon Volant Brasserie",
+		"latitude": 41.8807911918252,
+		"longitude": -87.6310143247247,
+		"address1": "100 W Monroe St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelp7o5H7U52hQb-iy-yHtGI-A",
+		"venue_name": "Margeaux Brasserie",
+		"latitude": 41.89971,
+		"longitude": -87.62774,
+		"address1": "11 E Walton St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpoFpi7EtXFUbzb1QfDLk2JA",
+		"venue_name": "Le Sud",
+		"latitude": 41.94285,
+		"longitude": -87.68587,
+		"address1": "2301 W Roscoe St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpN7X03pDN0vqxKkCX9SYfRg",
+		"venue_name": "The Little Gem Cafe",
+		"latitude": 41.890246,
+		"longitude": -87.80287,
+		"address1": "189 N Marion St",
+		"address2": "",
+		"address3": "",
+		"city": "Oak Park",
+		"state": "IL",
+		"zip_code": "60301"
+	}
+]

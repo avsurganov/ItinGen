@@ -40,7 +40,7 @@ def get_date():
 
 # Uses private keys to authenticate requests (API Key)
 # You can find it on https://www.yelp.com/developers/v3/manage_app
-API_KEY = "txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIEg5aOUSzJHHggKDT53tQ-Frtd-sZoTlXscG3U_IVAwJ_p6fqeCJlvqW3Yx"
+API_KEY = "PcUO1w3mcD-nRwv_CH6Sg06x07INlXcQkIZNBVGMSKDM2W8R-56Y0OCntQUSogMpqSPEkaZzwahHyvyjdXlP__TXeTbq880ftMxlPpJd6zsuc0J4wlGU1uhvS1rjW3Yx"
 
 keys = ["txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIEg5aOUSzJHHggKDT53tQ-Frtd-sZoTlXscG3U_IVAwJ_p6fqeCJlvqW3Yx",
         "Xnp-xCH_EyHt_QCgvcBCqJklS-AvMSvqcfBZFOdeElGxaMUNrvQV7h9bt2MuaOr5T-5kjcJsm22uCyOxgtaXR4Vm5fbxGe9BuSqRWSppi8TIedkoX23kQ9e77CjiW3Yx",
@@ -112,6 +112,7 @@ def request(host, path, api_key, url_params=None):
     response = requests.request('GET', url, headers=headers, params=url_params)
     if "error" in response:
         switch_api(API_KEY)
+        headers['Authorization'] = 'Bearer %s' % API_KEY
         response = requests.request('GET', url, headers=headers, params=url_params)
     return response.json()
 

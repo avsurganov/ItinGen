@@ -1,1 +1,110 @@
-[]
+[
+	{
+		"venue_id": "yelp4zZgWmx9XqKqyQZSEm8e3Q",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.89802,
+		"longitude": -87.6229199,
+		"address1": "845 N Michigan Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelp2gqz41c1MB0iyYSqzIXZ8w",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.88235,
+		"longitude": -87.6404699,
+		"address1": "500 W Madison St",
+		"address2": "Ste C023",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelpFJLcREM1hE4Km9S_1zn5lA",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.8789787,
+		"longitude": -87.6393944,
+		"address1": "225 S Canal St",
+		"address2": "",
+		"address3": "Inside Union Station",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelpctBDgZFd3y8CcUdDsih7dw",
+		"venue_name": "Auntie Anne's",
+		"latitude": 42.01133,
+		"longitude": -87.71218,
+		"address1": "3333 W Touhy Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Lincolnwood",
+		"state": "IL",
+		"zip_code": "60712"
+	},
+	{
+		"venue_id": "yelppj-MuEBXH-cstpQM4HQiBA",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.757916,
+		"longitude": -87.739601,
+		"address1": "7601 S Cicero Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60652"
+	},
+	{
+		"venue_id": "yelp2Dp_uVOZ_FdWYgZXMIYv8g",
+		"venue_name": "Wetzel's Pretzels",
+		"latitude": 41.9754921,
+		"longitude": -87.8659695,
+		"address1": "5220 Fashion Outlets Way",
+		"address2": "(Kiosk Level 2)",
+		"address3": "",
+		"city": "Rosemont",
+		"state": "IL",
+		"zip_code": "60018"
+	},
+	{
+		"venue_id": "yelphrG4lyFUArzMds4ag8guTA",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.9570116,
+		"longitude": -87.8074343,
+		"address1": "4202 N Harlem Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Norridge",
+		"state": "IL",
+		"zip_code": "60706"
+	},
+	{
+		"venue_id": "yelpG7p8oz5g4Qx5evjFKQCF2Q",
+		"venue_name": "Auntie Anne's",
+		"latitude": 41.9755526483084,
+		"longitude": -87.8676643449749,
+		"address1": "Fashion Outlets Of Chicago",
+		"address2": "",
+		"address3": "",
+		"city": "Cook",
+		"state": "IL",
+		"zip_code": "60018"
+	},
+	{
+		"venue_id": "yelp0roF9j_PiGvUra28yj89yQ",
+		"venue_name": "Auntie Anne's",
+		"latitude": 42.0498772073,
+		"longitude": -87.8372671455,
+		"address1": "239 Golf Mill Shopping Ctr",
+		"address2": "",
+		"address3": "",
+		"city": "Niles",
+		"state": "IL",
+		"zip_code": "60714"
+	}
+]

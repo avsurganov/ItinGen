@@ -1,1 +1,62 @@
-[]
+[
+	{
+		"venue_id": "yelpXZwuqqN5HZ8jFAdmxQmcKg",
+		"venue_name": "Casa Yari",
+		"latitude": 41.92497,
+		"longitude": -87.71019,
+		"address1": "3268 W Fullerton Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpYYyk2KVpb_In8aTdktJj8w",
+		"venue_name": "Super Pollo Restaurant",
+		"latitude": 41.9317113,
+		"longitude": -87.7429392,
+		"address1": "4614 W Diversey Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60639"
+	},
+	{
+		"venue_id": "yelpjI1b5MvBq2ec8bFoZJdULw",
+		"venue_name": "Esquina Del Sabor Catracho",
+		"latitude": 41.92674,
+		"longitude": -87.7558899,
+		"address1": "2525 N Laramie Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60639"
+	},
+	{
+		"venue_id": "yelpOclvhiKM7Tn2qYZy7MtRJw",
+		"venue_name": "Tipico Chicken Restaurant",
+		"latitude": 41.92406,
+		"longitude": -87.73738,
+		"address1": "4419 N Fullerton Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60639"
+	},
+	{
+		"venue_id": "yelp4ZbpaOVKTT2UHjS6r1KKcQ",
+		"venue_name": "Catrachos Restaurant",
+		"latitude": 42.3537152,
+		"longitude": -87.873966,
+		"address1": "330 S Green Bay Rd",
+		"address2": null,
+		"address3": "",
+		"city": "Waukegan",
+		"state": "IL",
+		"zip_code": "60085"
+	}
+]

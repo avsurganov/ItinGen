@@ -1,1 +1,14 @@
-[]
+[
+	{
+		"venue_id": "yelpJ8aqt4ZcpNuOusJMndUPLg",
+		"venue_name": "Cafe Vienna",
+		"latitude": 41.928489,
+		"longitude": -87.642033,
+		"address1": "2523 N Clark St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	}
+]

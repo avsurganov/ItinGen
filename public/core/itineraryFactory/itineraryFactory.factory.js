@@ -122,6 +122,9 @@ angular.module('itineraryFactory')
 		return itin1
 	}
 
+	service.getCurrentItinerary = function() {
+		return itin1
+	}
 	service.getLikedItineraries = function () {
 		return likeItineraries
 	}

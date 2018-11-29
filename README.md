@@ -9,9 +9,28 @@ Table of Contents
 [TOC]
 
 ## Setup
+### Install Prerequisites (NPM/Node.js/MongoDB)
+#### Ubuntu
+You will need to add the Node.js PPA by running this command:
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+```
+Finally, install Node.js:
+```
+sudo apt-get install -y nodejs
+```
 
-https://gorails.com/setup/osx/10.14-mojave
-Currently setup with Postgres as the DataBase.
+Check to see if NPM and Node.js were install correctly by running:
+```
+node -v
+npm -v
+```
+
+Now you will need to install MongoDB:
+```
+sudo apt-get install -y mongodb
+```
+
 
 ### Initializing the app
 ```bash

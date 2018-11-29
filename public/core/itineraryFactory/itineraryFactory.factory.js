@@ -112,7 +112,11 @@ angular.module('itineraryFactory')
 	var itin1 = [{event: event1, venue: venue1, start: "12:00", end: "3:00"},
         {event: event2, venue: venue2, start: "3:30", end: "5:00"}, 
         {event: event3, venue: venue3, start: "6:00", end: "8:00"}]
-	var likedItineraries = []
+    var itin2 = [
+        {event: event2, venue: venue2, start: "3:30", end: "5:00"}, 
+        {event: event3, venue: venue3, start: "6:00", end: "8:00"},
+        {event: event1, venue: venue1, start: "12:00", end: "3:00"}]
+	var likedItineraries = [itin1, itin2]
 	var itinerary = []
 	var service = {}
 
@@ -126,7 +130,7 @@ angular.module('itineraryFactory')
 		return itin1
 	}
 	service.getLikedItineraries = function () {
-		return likeItineraries
+		return likedItineraries
 	}
 
 	service.addToLikedItineraries = function (itineraryObj) {

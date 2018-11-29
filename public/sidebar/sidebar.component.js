@@ -7,15 +7,27 @@ angular.module('sideBar')
 	controller: ['$scope', 'itineraryFactory', function sideBarController($scope, itineraryFactory) {
 		
     this.itinerary = []
-  
+    this.likedItineraries = []
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
        console.log(this.itinerary)
        $scope.$apply()
     }.bind(this))
 
+    this.intToChar = function($index) {
+      return String.fromCharCode(65 + $index)
+    }
 
+    this.getLikedItineraries = function() {
+      console.log("switching!")
+      this.sidebarTemplate = sidebarTemplates[1]
+      this.likedItineraries = itineraryFactory.getLikedItineraries()
+      console.log(this.likedItineraries)
 
+    }
+
+    var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']
+    this.sidebarTemplate = sidebarTemplates[0]
 
 
 	}]

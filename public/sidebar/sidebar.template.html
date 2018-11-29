@@ -3,7 +3,7 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
         <button class="btn-outline-info">Home </button>
-        <button class="btn-outline-info" ng-click="$ctrl.drawLikedItineraries()">Liked Itineraries</button>
+        <button class="btn-outline-info" ng-click="$ctrl.getLikedItineraries()">Liked Itineraries</button>
         <button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Settings</button>
         <button class="btn btn-outline-info" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
       </div>
@@ -18,9 +18,9 @@
   <!-- <button class="btn-sidebar-right w3-bar-item w3-button w3-large">Close &times;</button> -->
 
   <!-- sidebar body cards -> TODO: add angular directives-->
-    <div class="card" style="width: 100%;" ng-repeat="event in $ctrl.itinerary">
+    <!-- <div class="card" style="width: 100%;" ng-repeat="event in $ctrl.itinerary">
       <div class="card-header">
-        <h3 class="card-title">{{String.fromCharCode(65 + $index)}}</h3>
+        <h3 class="card-title">Location {{String.fromCharCode(65 + $index)}}</h3>
       </div>
       <div class="card-body">
         <h5 class="card-title">{{event.event.event_name}}</h5>
@@ -30,7 +30,8 @@
         <p class="card-text">Begin: {{event.start}}</p>
         <p class="card-text">End: {{event.end}}</p>
       </div>
-    </div>
+    </div> -->
+    <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
 </div>
 

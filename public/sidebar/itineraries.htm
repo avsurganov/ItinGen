@@ -1,0 +1,13 @@
+<div class="card" style="width: 100%;" ng-repeat="event in $ctrl.itinerary track by $index">
+  <div class="card-header">
+    <h3 class="card-title">Location {{$ctrl.intToChar($index)}}</h3>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{event.event.event_name}}</h5>
+    <p class="card-text">{{event.venue.address1}}</p>
+    <p class="card-text">{{event.venue.city + "," + event.venue.state + "," + event.venue.zip_code}}</p>
+    <p class="card-text"></p>
+    <p class="card-text">Begin: {{event.start}}</p>
+    <p class="card-text">End: {{event.end}}</p>
+  </div>
+</div>

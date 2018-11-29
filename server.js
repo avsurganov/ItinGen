@@ -1,5 +1,7 @@
 var express = require('express')
 var app = express();
+var dotenv = require('dotenv');
+dotenv.load();
 var morgan = require('morgan');
 var mongoose = require('mongoose');
 var User = require('./app/models/user');
@@ -7,6 +9,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var appRoutes = require('./app/routes/api');
 port = process.env.PORT || 8080;
+console.log(port)
 
 app.use(morgan('dev'));
 app.use(function(req, res, next) {

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const fs = require('fs');
+
 mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
 	if (err){
 		console.log("Not connected to database" + err);
@@ -21,6 +23,11 @@ Venue.collection.drop();
 const pevents_array = [];
 const tevents_array = [];
 const venues_array  = [];
+
+const peventsFolder = './app/activities_data/events/';
+const teventsFolder = './app/activities_data/tmp_events/';
+const venuesFolder = './app/activities_data/venues/';
+
 
 function seedEvents(data, type, events) {
   if (type == 'pevents') {
@@ -85,42 +92,36 @@ function seedVenues(data, venues) {
   });
 }
 
-// PEVENTS JSON
-//fetch('JSON PATH')
-  //.then(response => response.json)
-  //.then(data => seedEvents(data, 'tevents', tevents_array));
+fs.readdirSync(peventsFolder).map(file => {
+  const pevents = require('../activities_data/events/' + file);
+  seedEvents(pevents, 'pevents', pevents_array);
+});
 
-// VENUES JSON
-const venues1 = require('../activities_data/venues/EB_venues.json');
-seedVenues(venues1, venues_array)
+fs.readdirSync(teventsFolder).map(file => {
+  const tevents = require('../activities_data/tmp_events/' + file);
+  seedEvents(tevents, 'tevents', tevents_array);
+});
 
-const venues2 = require('../activities_data/venues/eb_venues_20181114.json');
-seedVenues(venues2, venues_array)
+fs.readdirSync(venuesFolder).map(file => {
+  const venues = require('../activities_data/venues/' + file);
+  seedVenues(venues, venues_array);
+});
 
-const venues3 = require('../activities_data/venues/museums_venues_20181114.json');
-seedVenues(venues3, venues_array)
+Pevent.create(pevents_array)
+  .then(pevent => {
+    console.log(`${pevent.length} pevents created`);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
 
-const venues4 = require('../activities_data/venues/tm_venues_20181114.json');
-seedVenues(venues4, venues_array)
-
-const venues5 = require('../activities_data/venues/venues_11122018.json');
-seedVenues(venues5, venues_array)
-
-//Pevent.create(pevents_array)
-  //.then(pevent => {
-    //console.log(`${pevent.length} pevents created`);
-  //})
-  //.catch((err) => {
-    //console.log(err);
-  //})
-
-//Tevent.create(tevents_array)
-  //.then(tevent => {
-    //console.log(`${tevent.length} tevents created`);
-  //})
-  //.catch((err) => {
-    //console.log(err);
-  //})
+Tevent.create(tevents_array)
+  .then(tevent => {
+    console.log(`${tevent.length} tevents created`);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
 
 Venue.create(venues_array)
   .then(venue => {

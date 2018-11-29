@@ -19,5 +19,7 @@ class Tokens:
 		return token
 
 EB_tokens = Tokens()
-EB_tokens.add_token('UB2SZHBVTC4XB2BXMFXF')
-EB_tokens.add_token('OLZDZGFXV6WEDARUWXK5')
+EB_tokens.add_token('CAFHP4AMQ6TFSGNXPAN4')
+EB_tokens.add_token('MBDUEYBOHQDWCMW6K6NL')
+EB_tokens.add_token('FFQRRNFRZHPHNQ7DTT7T')
+EB_tokens.add_token('4LPIC5HJYXE6YAB27M6I')

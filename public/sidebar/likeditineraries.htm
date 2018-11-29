@@ -1,11 +1,11 @@
 <!-- TODO: loop through all itineraries -->
 <div class="card" ng-repeat="itinerary in $ctrl.likedItineraries" style="margin-top: 20px;">
-  <h3>Itinerary {{$index}}</h3>
+  <h3>Itinerary {{$index + 1}}</h3>
   <div class="card" style="width: 100%;" ng-repeat="event in itinerary">
     <div class="alert alert-light">
       <h5 class="card-title">{{event.event.event_name}}</h5>
     </div>
-    <div class="collapse" id="collapseDetail">
+    <div class="collapse" id="{{'collapseDetail' + $parent.$index}}">
     <div class="card-body">
       
       
@@ -20,5 +20,5 @@
     </div>
   </div>
   </div>
-  <button class="btn btn-outline-info" data-toggle="collapse" data-target="#collapseDetail" aria-expanded="false" aria-controls="collapseDetail">View details</button>
+  <button class="btn btn-outline-info" data-toggle="collapse" data-target="{{'#collapseDetail' + $index}}" aria-expanded="false" aria-controls="{{'collapseDetail' + $index}}">View details</button>
 </div>

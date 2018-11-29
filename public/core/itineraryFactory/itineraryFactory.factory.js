@@ -122,7 +122,7 @@ angular.module('itineraryFactory')
 
 	//on load or dislike an itinerary: 
 	service.getNewItinerary = function() {
-		//TODO: make GET request to backend
+		//TODO: make GET request to backend for new itinerary
 		return itin1
 	}
 

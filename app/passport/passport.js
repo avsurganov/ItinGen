@@ -13,6 +13,7 @@ module.exports = function(app, passport) {
 
     // Serialize users once logged in   
     passport.serializeUser(function(user, done) {
+        token = jwt.sign({ email: user.email}, secret, { expiresIn: '24h' }); // Logged in: Give user token
         done(null, user.id); // Return user object
     });
 
@@ -31,13 +32,29 @@ module.exports = function(app, passport) {
             profileFields: ['id', 'displayName', 'email']
         },
         function(accessToken, refreshToken, profile, done) {
-            console.log(profile);
-            done(null, profile);
+            console.log(profile._json.email);
+            User.findOne({'email' : profile._json.email}).select('email').exec(function(err, user) {
+                if(err){
+                    done(err);
+                    return;
+                } else {
+                    if (user && user != null){
+                        console.log("FOUND ME");
+                        done(null, user);
+                    } else {
+                        console.log("NO USER EXISTS IN DB");
+                        done(err);
+                        // return;
+                    }
+                }
+            });
         }
     ));
 
     // Facebook Routes
-    app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }));
+    app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }), function(req, res) {
+        res.redirect('/facebook/' + token); // Redirect user with newly assigned token
+    });
     app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
 
     return passport; // Return Passport Object

@@ -1,7 +1,9 @@
 'use strict';
 
 // Declare app level module which depends on views, and core components
+
 angular.module('ItinGen', [
+  'appRoutes',
 	'ldButtons',
 	'itineraryFactory',
 	'sideBar',
@@ -92,6 +94,10 @@ angular.module('ItinGen', [
 
 
 }])
+
+.controller('facebookCtrl', function($routeParams) {
+  console.log($routeParams.token);
+})
 
 
 

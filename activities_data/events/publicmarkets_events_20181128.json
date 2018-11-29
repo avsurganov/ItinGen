@@ -1,0 +1,50 @@
+[
+	{
+		"venue_id": "yelplYKn_TKwzudoIYplL2tGDg",
+		"event_name": "Chicago French Market",
+		"event_id": "yelplYKn_TKwzudoIYplL2tGDg",
+		"mon_start": 420,
+		"mon_end": 1170,
+		"tues_start": 420,
+		"tues_end": 1170,
+		"wed_start": 420,
+		"wed_end": 1170,
+		"thurs_start": 420,
+		"thurs_end": 1170,
+		"fri_start": 420,
+		"fri_end": 1170,
+		"sat_start": 510,
+		"sat_end": 1050,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"publicmarkets",
+			"misc"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpHx0Ge_i9uuYUZEmxwnG5_g",
+		"event_name": "Kane County Country Market",
+		"event_id": "yelpHx0Ge_i9uuYUZEmxwnG5_g",
+		"mon_start": 480,
+		"mon_end": 1080,
+		"tues_start": 480,
+		"tues_end": 1080,
+		"wed_start": 480,
+		"wed_end": 1080,
+		"thurs_start": 480,
+		"thurs_end": 1080,
+		"fri_start": 480,
+		"fri_end": 1080,
+		"sat_start": 480,
+		"sat_end": 1020,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"publicmarkets",
+			"misc"
+		],
+		"price": -10
+	}
+]

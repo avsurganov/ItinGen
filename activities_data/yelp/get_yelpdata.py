@@ -47,15 +47,18 @@ keys = ["txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIE
         "M9S8kSyLzLf3y8jtO1f2G9YwCUsYZ0jhONdGYkaaV-MbvmjkoTKmJ2ujHeBNwqYLx8nO4N1Ui6lLhl4UftOuL7n0NaNgRIAS3R5v9P-x2wOspOz6BRrNfHhEJhn-W3Yx",
         "9_5vnCP7kfYbVwsIPW29k6u-XcMC0aY0XA92dDOaRPJeJIrJwBudLTIfqWsBRsKZngFdnen9FiG7J2E6RH0V73WOIaEt3BWj0okyaM4vToY9urtHb11ZyE0rshn-W3Yx",
         "sp3v1oG59W3WrviOCMpj6X38FhYOpZKB7VIpkFqQT9Q63vxLOo78XsNrUNTWtM6xgSDNWN5FVzonizPlTEZFoUegCrmyOXpftdPw4sj06aIuWz_bOJTR0JUEqhv-W3Yx",
-        "LfDN02IOr4ATEedypFAxyOx9ux0VabEv2mmlizqWpms1LshQidkyZUg0Sl_cFoPRf7W1AfLPuZXgUKHTv5mP306p-Fv9A-h6vKbZOMnvjqDFd6aaDDxImNR8UTrrW3Yx"
+        "LfDN02IOr4ATEedypFAxyOx9ux0VabEv2mmlizqWpms1LshQidkyZUg0Sl_cFoPRf7W1AfLPuZXgUKHTv5mP306p-Fv9A-h6vKbZOMnvjqDFd6aaDDxImNR8UTrrW3Yx",
+        "PcUO1w3mcD-nRwv_CH6Sg06x07INlXcQkIZNBVGMSKDM2W8R-56Y0OCntQUSogMpqSPEkaZzwahHyvyjdXlP__TXeTbq880ftMxlPpJd6zsuc0J4wlGU1uhvS1rjW3Yx"
 ]
 
 def switch_api(API_KEY):
     i = 0
-    while keys[i] != API_KEY:
-        next
-        i++
-    API_KEY = keys[i+1]
+    for x, val in enumerate(keys):
+        if val == API_KEY:
+            i = x
+            break
+    new_i = (i + 1) % len(keys)
+    API_KEY = keys[new_i]
 
 
 # API constants
@@ -105,12 +108,11 @@ def request(host, path, api_key, url_params=None):
         'Authorization': 'Bearer %s' % api_key,
     }
     print(u'Querying {0} ...'.format(url))
-    try:
+
+    response = requests.request('GET', url, headers=headers, params=url_params)
+    if "error" in response:
+        switch_api(API_KEY)
         response = requests.request('GET', url, headers=headers, params=url_params)
-    except HTTPError as error:
-        if (error.code == "ACCESS_LIMIT_REACHED"):
-            switch_api(API_KEY)
-            response = requests.request('GET', url, headers=headers, params=url_params)
     return response.json()
 
 
@@ -169,7 +171,7 @@ def construct_venue(business_details):
     venue['zip_code'] = business_details['location']['zip_code']
     return venue
 
-def tag_as_catgeory(input_category):
+def tag_as_category(input_category):
     # (food,) nightlife, museums, publicattractions, misc
     # sports and music i think are all ticketmaster and eventbrite
     museums = ["aquariums", "culturalcenter", "galleries", "museums",
@@ -218,7 +220,6 @@ def tag_as_catgeory(input_category):
                "pretzels",
                "streetvendors",
                "tea",
-
                "afghan",
                 "african",
                 "newamerican",
@@ -355,18 +356,16 @@ def tag_as_catgeory(input_category):
                 "waffles",
                 "wraps"
                 ]
-        if input_category in museums:
-            return "museums"
-        if input_category in publicattractions:
-            return "publicattractions"
-        if input_category in nightlife:
-            return "nightlife"
-        if input_category in misc:
-            return "misc"
-        if input_category in food:
-            return "food"
-        #if input_category in restaurants:
-        #    return "restaurants"
+    if input_category in museums:
+        return "museums"
+    if input_category in publicattractions:
+        return "publicattractions"
+    if input_category in nightlife:
+        return "nightlife"
+    if input_category in misc:
+        return "misc"
+    if input_category in food:
+        return "food"
 
 
 def construct_event(business_details):
@@ -392,7 +391,7 @@ def construct_event(business_details):
     for item in business_details['categories']:
         event['tags'].append(item['alias'])
         category_tag = tag_as_category(input_values.categories)
-        event['tags'].append(catgeory_tag)
+        event['tags'].append(category_tag)
     if 'price' in business_details:
         event['price'] = 0 - len(business_details['price'])
     else:

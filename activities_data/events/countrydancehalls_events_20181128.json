@@ -1,0 +1,30 @@
+[
+	{
+		"venue_id": "yelpBXMnRHd6reLmDuGU2WHLwA",
+		"event_name": "Dance With Janet",
+		"event_id": "yelpBXMnRHd6reLmDuGU2WHLwA",
+		"mon_start": 570,
+		"mon_end": 1350,
+		"tues_start": 570,
+		"tues_end": 1350,
+		"wed_start": 570,
+		"wed_end": 1350,
+		"thurs_start": 570,
+		"thurs_end": 1350,
+		"fri_start": 570,
+		"fri_end": 1350,
+		"sat_start": 570,
+		"sat_end": 1350,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"dance_schools",
+			"nightlife",
+			"countrydancehalls",
+			"nightlife",
+			"dancestudio",
+			"nightlife"
+		],
+		"price": -10
+	}
+]

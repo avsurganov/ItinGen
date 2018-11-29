@@ -163,8 +163,8 @@ function get_events(ordered_categories, user_inputs){ //user inputs formatted as
     for (i = 0; i < numcat; i++) {
         var category = ordered_categories[i];
         var catname = str(category);
-        pool[catname] = [];
-        var cattotalevents = 1000   //number of events in the category overall - will need to calculate
+        pool = [];
+        var cattotalevents = 1000   //number of events in cat - will need to calculate
         evindexes = get_random_indexes(cattotalevents,nevents); // generates list of length nevents of random indices
         for (var j = 0; j < evindexes.length(); j++) {
             //GET the event at that index from the database
@@ -173,20 +173,21 @@ function get_events(ordered_categories, user_inputs){ //user inputs formatted as
             if (user_inputs[user_cost] == 0) {
                 f = check_free(event);
             }
+            // NEED A WAY TO CHECK WHAT SORT OF EVENT IT IS
             if (event == temp) {
                 var t = time_check_temp(event);
                 var d = date_check_temp(event);
                 var m = check_meal_overlap_temp(event);
                 if (t && d && m && f) {
                     //GET venue, put in tuple
-                    pool[catname].push(tuple);
+                    pool.push(tuple);
                 }
             }
             if (event == perm) {
                 var td = time_date_check_perm(event);
                 if (td && f) {
                     //get venue, put in tuple
-                    pool[catname].push(tuple);
+                    pool.push(tuple);
                 }
             }
         }

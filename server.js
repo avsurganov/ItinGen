@@ -1,12 +1,17 @@
 var express = require('express')
 var app = express();
+var dotenv = require('dotenv');
+dotenv.load();
 var morgan = require('morgan');
 var mongoose = require('mongoose');
 var User = require('./app/models/user');
 var bodyParser = require('body-parser');
 var path = require('path');
+var passport = require('passport');
+var social = require('./app/passport/passport')(app, passport);
 var appRoutes = require('./app/routes/api');
 port = process.env.PORT || 8080;
+console.log(port)
 
 app.use(morgan('dev'));
 app.use(function(req, res, next) {
@@ -29,7 +34,7 @@ mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
 	}
 });
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 

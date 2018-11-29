@@ -29,6 +29,8 @@ angular.module('ItinGen', [
             Auth.logout(); // Log the user out
             app.isLoggedIn = false; // Set session to false
             $location.path('/'); // Redirect to home page
+        } else {
+          itineraryFactory.getLikedItineraries();
         }
     });
 }

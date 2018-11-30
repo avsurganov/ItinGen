@@ -51,7 +51,7 @@ npm start
 ```
 
 ## Running Unit Tests
-Unit Tests for the Data Aggregation scripts and the Geneartion Algorithm and the respective instructions on how to use them will be found in the `app/activities_data` directory.
+Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.
 
 To run Database validation tests (back-end) for the application, simply run:
 ```bash

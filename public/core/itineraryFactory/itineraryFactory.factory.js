@@ -136,16 +136,24 @@ angular.module('itineraryFactory')
 		});
 	}
 
-	service.saveSettings = function(userSettings) {
+
+
+	service.saveSettings = function(userSettings, defaultLocation) {
+		console.log(defaultLocation)
+		console.log(userSettings)
 		settings = userSettings
-		if(settings['startLocation'] == undefined){
-			settings['startLocation'] = {'lat': 0, 'lon' : 0};
+		if(settings['startLocation'] == '') {
+			settings['startLocation'] = defaultLocation;
 		}
 		console.log(settings)
 	}
+
+
 	service.getCurrentItinerary = function() {
 		return itin1
 	}
+
+
 	service.getLikedItineraries = function () {
 		$http.get('/api/getliked').then((req) => {
 			var success = req.data.success;

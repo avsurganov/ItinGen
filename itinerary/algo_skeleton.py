@@ -1,13 +1,15 @@
 from algo_helpers import *
 from pull_events import *
+sys.path.insert(0, "tests")
+from validation import *
+from pymongo import MongoClient
 
 
 ####################
 # MASTER ALGORITHM #
 ####################
-[]
 
-def create_itinerary(user_args):
+def create_itinerary(start_time, latitude, longitude, free, radius, transport, size):
     '''
     this is the master function that will generate an itinerary given the
     user inputs
@@ -33,18 +35,13 @@ def create_itinerary(user_args):
     # Step 0: Assume that we have all of the user_args #
     ####################################################
     # NOTE: keeping individual variables to maintain compatibility
-    start_time = 540 # should be int
-    start_location = (41.881855, -87.627115) # should be (lat, lon)
-    distance_radius = 50.0 # float miles
-    only_free = False # boolean
-    transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
     user_data = {
         'start_time': start_time,
-        'start_location': start_location,
-        'distance_radius': distance_radius,
-        'only_free': only_free,
-        'transportation': transportation
+        'start_location': [latitude, longitude],
+        'distance_radius': radius,
+        'only_free': free,
+        'transportation': transport
     }
 
     ####################################################################
@@ -52,7 +49,7 @@ def create_itinerary(user_args):
     #         within this itinerary                                    #
     ####################################################################
     avg_mins_per_event = 120
-    est_num_events = ((24 * 60) - start_time) / avg_mins_per_event
+    est_num_events = ((24 * 60) - user_data.get('start_time')) / avg_mins_per_event
 
     ######################################################################
     # Step 2: Retrieve events from the database based on the user id and #
@@ -60,7 +57,7 @@ def create_itinerary(user_args):
     #         return back a list of events in the form:                  #
     #         [[event, venue], [event, venue], [event, venue], ...]      #
     ######################################################################
-    events = get_pool(user_data)
+    events = get_pool(user_data, size)
     for e in events:
         assert len(e) == 2, 'ERROR: events in pool should have 2 items in its tuple'
 
@@ -69,8 +66,7 @@ def create_itinerary(user_args):
     #         location to create [event, venue, distance] and the sort the  #
     #         events by that distance in decreasing distance order          #
     #########################################################################
-    events = sort_distances(events, start_location)
-    print(len(events))
+    events = sort_distances(events, user_data.get('start_location'))
     for e in events:
         assert len(e) == 3, 'ERROR: post distance calculation the event tuple should have 3 items'
 
@@ -78,9 +74,8 @@ def create_itinerary(user_args):
     # Step 4: Go through the steps to create the itinerary #
     ########################################################
     # manually set the radius for the first iteration
-    print('Running first iter...')
-    radius_mem[0] = distance_radius
-    radius_mem[1] = distance_radius
+    radius_mem[0] = user_data.get('distance_radius')
+    radius_mem[1] = user_data.get('distance_radius')
     # find first index within that radius
     i = -1
     for x, e in enumerate(events):
@@ -96,13 +91,10 @@ def create_itinerary(user_args):
     cont = True
     incr = 1
     while cont:
-        print('Running iteration %d' % incr)
-        print(radius_mem)
         incr += 1
         # try to increment the itinerary
         increment_itinerary(itinerary, valid_events, user_data)
         # check if itinerary is finished
-        print('check')
         if check_finished(itinerary):
             cont = False
         else:
@@ -123,23 +115,17 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
-    #assert validate_itin(itinerary, user_data)
     user_data['date'] = get_date()
     user_data['day'] = day_to_str(datetime.datetime.today().weekday())
-    #assert validate_itin(itinerary, user_data)
+    valid = validate_itin(itinerary, user_data)
 
-    # return the itinerary
+#return the itinerary
     final_itin = []
     for i, item in enumerate(itinerary):
-        # change events to event id
-        e_id = item[0].get('event_id')
-        # change venues to venue id
-        v_id = item[1].get('venue_id')
-        final_itin.append((e_id, v_id, item[2], item[3]))
+        final_itin.append(list(item))
 
         assert len(final_itin[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
 
-    return final_itin
+    return [final_itin, valid]
 
-itin = create_itinerary('test')
-print(itin)
+

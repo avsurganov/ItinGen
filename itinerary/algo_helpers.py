@@ -18,10 +18,9 @@ def increment_itinerary(itinerary, valid_events, user_data):
         return
     # check events in random order
     indices = [i for i in range(len(valid_events))]
-    #random.shuffle(indices)
+    random.shuffle(indices)
     # iterate through the events by index
     for index in indices:
-        #print(index)
         cur_event = valid_events[index]
         if check_valid(cur_event, itinerary, user_data):
             # done with this increment
@@ -51,10 +50,7 @@ def check_valid(cur_event, itinerary, user_data):
     else:
         coords1 = venue_to_lat_long(itinerary[-1][1])
     coords2 = venue_to_lat_long(cur_event[1])
-    #print('len' + str(len(itinerary)))
-#print(itinerary)
     if not validate_angle(coords1, center, coords2) and len(itinerary) != 0:
-        #print(1)
         return False
     #####################################
     # check event is not double counted #
@@ -67,10 +63,8 @@ def check_valid(cur_event, itinerary, user_data):
     start_time = determine_start_time(itinerary, cur_event, user_data)
     if start_time == -10:
         # this event is not valid
-        #print(3)
         return False
     if not validate_restaurant(cur_event[0], start_time):
-        #print(4)
         return False
     else:
         # this was the last check so the event is 100% valid
@@ -188,23 +182,21 @@ def find_distance(coords1, coords2):
     a = sin((lat2-lat1)/2)**2 + cos(lat1)*cos(lat2)*sin((long2-long1)/2)**2
     return fabs(earth_radius*2*atan2(sqrt(a), sqrt(1-a)))
 
-
 def find_angle(coords1, center, coords2):
-    earth_radius = 3957.25
-    a = find_distance(coords1, center)/(2*pi*earth_radius)
-    b = find_distance(center, coords2)/(2*pi*earth_radius)
-    c = find_distance(coords1, coords2)/(2*pi*earth_radius)
-    num = cos(c)-cos(a)*cos(b)
-    den = sin(a)*sin(b)
-    if (fabs(den) < 0.001):
-        if (a+b-c < 0.001):
+    a = find_distance(coords1, center)
+    b = find_distance(center, coords2)
+    c = find_distance(coords1, coords2)
+    num = c**2 - a**2 - b**2
+    den = 2*a*b
+    if (fabs(den) < 0.00001):
+        if (a+b-c < 0.00001):
             return pi
         else:
             return 0.0
     return acos(num/den)
 
 
-def validate_angle(coords1, center, coords2, limit=0.5):
+def validate_angle(coords1, center, coords2, limit=1):
     angle = find_angle(coords1, center, coords2)
     rad_lim = limit*pi
     if (angle <= rad_lim):
@@ -286,11 +278,11 @@ def determine_start_time(itinerary, event, user_data):
     # approximate travel time
     distance = find_distance(last_venue,venue_to_lat_long(next_venue))
     if (transport == 'driving'):
-        travel_time = distance * 2
+        travel_time = int(distance * 3)
     elif (transport == 'transit'):
-        travel_time = distance * 8
+        travel_time = int(distance * 8)
     elif (transport == 'walking'):
-        travel_time = distance * 20
+        travel_time = int(distance * 20)
 
     # validate start time of the next event
     start_time = last_end_time + travel_time
@@ -315,13 +307,13 @@ def determine_end_time(itinerary, event, start_time):
     tags = event[0].get('tags')
     end_time = get_close(event[0])
     if (end_time == -10):
-        return start_time + random.randint(6, 15)*10
+        return start_time + int(random.randint(6, 16))*10
     if (end_time - start_time < 60):
         return end_time
     if ('food' in tags):
         return start_time + 60
     else:
-        time = random.randint(6, 15)*10
+        time = int(random.randint(6, 16))*10
         if (start_time + time > end_time):
             return end_time
         else:

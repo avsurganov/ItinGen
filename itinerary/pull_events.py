@@ -7,6 +7,7 @@ import random
 import numpy
 import math
 from pymongo import MongoClient
+#from algo_skeleton import *
 
 client = MongoClient("mongodb://localhost:27017/")
 with client:
@@ -145,6 +146,10 @@ with client:
                 venid = event.get("venue_id")
                 venue = db.venues.find_one({'venue_id': venid})
                 if venue:
+                    del(event['_id'])
+                    del(venue['_id'])
+                    del(event['__v'])
+                    del(venue['__v'])
                     tpool.append((event,venue))
         return tpool
 
@@ -163,15 +168,19 @@ with client:
                 venid = event.get("venue_id")
                 venue = db.venues.find_one({'venue_id': venid})
                 if venue:
+                    del(event['_id'])
+                    del(venue['_id'])
+                    del(event['__v'])
+                    del(venue['__v'])
                     ppool.append((event,venue))
         return ppool
 
-    def get_pool(user_inputs):
+    def get_pool(user_inputs, total):
         total_p = db.pevents.find().count()
         total_t = db.tevents.find().count()
         total_all = total_p + total_t
-        ntemp = int((total_t / total_all) * 1000)
-        nperm = int((total_p / total_all) * 1000)
+        ntemp = int((total_t / total_all) * total)
+        nperm = int((total_p / total_all) * total)
         tpool = get_t_events(user_inputs,ntemp)
         ppool = get_p_events(user_inputs,nperm)
         pool = tpool + ppool

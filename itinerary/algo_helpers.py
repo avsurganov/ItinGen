@@ -1,7 +1,7 @@
 import random
 from math import sin, cos, sqrt, atan2, radians, acos, fabs, pi
 from operator import itemgetter
-import googlemaps
+#import googlemaps
 
 ############################
 # PRIMARY HELPER FUNCTIONS #
@@ -161,10 +161,15 @@ def decrement_helper(radius_mem, itinerary, user_radius):
 def venue_to_lat_long(venue):
     lat = venue.get('latitude')
     long = venue.get('longitude')
+    print([lat, long])
     return [lat, long]
 
 
 def find_distance(coords1, coords2):
+#    print(coords1)
+#    print(coords2)
+    if coords1[0] is None or coords1[1] is None or coords2[0] is None or coords1[1] is None:
+        return 4000.0
     earth_radius = 3957.25
     lat1 = radians(coords1[0])
     lat2 = radians(coords2[0])

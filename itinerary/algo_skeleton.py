@@ -1,4 +1,5 @@
 from algo_helpers import *
+from pull_events import *
 
 ####################
 # MASTER ALGORITHM #
@@ -30,9 +31,9 @@ def create_itinerary(user_args):
     # Step 0: Assume that we have all of the user_args #
     ####################################################
     # NOTE: keeping individual variables to maintain compatibility
-    start_time = 0 # should be int
-    start_location = (0.0, 0.0) # should be (lat, lon)
-    distance_radius = 0.0 # float miles
+    start_time = 540 # should be int
+    start_location = (41.881855, -87.627115) # should be (lat, lon)
+    distance_radius = 100.0 # float miles
     only_free = False # boolean
     transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
@@ -57,7 +58,7 @@ def create_itinerary(user_args):
     #         return back a list of events in the form:                  #
     #         [[event, venue], [event, venue], [event, venue], ...]      #
     ######################################################################
-    events = []
+    events = get_pool(user_data)
     for e in events:
         assert len(e) == 2, 'ERROR: events in pool should have 2 items in its tuple'
 
@@ -66,7 +67,7 @@ def create_itinerary(user_args):
     #         location to create [event, venue, distance] and the sort the  #
     #         events by that distance in decreasing distance order          #
     #########################################################################
-    events = sort_distances(events)
+    events = sort_distances(events, start_location)
     for e in events:
         assert len(e) == 3, 'ERROR: post distance calculation the event tuple should have 3 items'
 
@@ -78,7 +79,7 @@ def create_itinerary(user_args):
     radius_mem[1] = distance_radius
     # find first index within that radius
     i = -1
-    for x, e in events:
+    for x, e in enumerate(events):
         if e[2] <= radius_mem[1]:
             i = x
             break
@@ -124,3 +125,7 @@ def create_itinerary(user_args):
         assert len(itinerary[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
 
     return itinerary
+
+itin = create_itinerary('test')
+print(itin)
+

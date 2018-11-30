@@ -204,7 +204,7 @@ def find_angle(coords1, center, coords2):
     return acos(num/den)
 
 
-def validate_angle(coords1, center, coords2, limit=0.5):
+def validate_angle(coords1, center, coords2, limit=1):
     angle = find_angle(coords1, center, coords2)
     rad_lim = limit*pi
     if (angle <= rad_lim):
@@ -286,11 +286,11 @@ def determine_start_time(itinerary, event, user_data):
     # approximate travel time
     distance = find_distance(last_venue,venue_to_lat_long(next_venue))
     if (transport == 'driving'):
-        travel_time = distance * 2
+        travel_time = int(distance * 3)
     elif (transport == 'transit'):
-        travel_time = distance * 8
+        travel_time = int(distance * 8)
     elif (transport == 'walking'):
-        travel_time = distance * 20
+        travel_time = int(distance * 20)
 
     # validate start time of the next event
     start_time = last_end_time + travel_time
@@ -315,13 +315,13 @@ def determine_end_time(itinerary, event, start_time):
     tags = event[0].get('tags')
     end_time = get_close(event[0])
     if (end_time == -10):
-        return start_time + random.randint(6, 15)*10
+        return start_time + int(random.randint(6, 16))*10
     if (end_time - start_time < 60):
         return end_time
     if ('food' in tags):
         return start_time + 60
     else:
-        time = random.randint(6, 15)*10
+        time = int(random.randint(6, 16))*10
         if (start_time + time > end_time):
             return end_time
         else:

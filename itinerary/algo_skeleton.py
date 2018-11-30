@@ -1,6 +1,7 @@
 from algo_helpers import *
 from pull_events import *
-
+sys.path.insert(0, "tests")
+from validation import *
 
 ####################
 # MASTER ALGORITHM #
@@ -35,7 +36,7 @@ def create_itinerary(user_args):
     # NOTE: keeping individual variables to maintain compatibility
     start_time = 540 # should be int
     start_location = (41.881855, -87.627115) # should be (lat, lon)
-    distance_radius = 50.0 # float miles
+    distance_radius = 10.0 # float miles
     only_free = False # boolean
     transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
@@ -126,18 +127,19 @@ def create_itinerary(user_args):
     #assert validate_itin(itinerary, user_data)
     user_data['date'] = get_date()
     user_data['day'] = day_to_str(datetime.datetime.today().weekday())
-    #assert validate_itin(itinerary, user_data)
+    #print(itinerary)
+    assert validate_itin(itinerary, user_data)
 
-    # return the itinerary
+#return the itinerary
     final_itin = []
     for i, item in enumerate(itinerary):
         # change events to event id
-        e_id = item[0].get('event_id')
+        #e_id = item[0].get('event_id')
         # change venues to venue id
-        v_id = item[1].get('venue_id')
-        final_itin.append((e_id, v_id, item[2], item[3]))
+        #v_id = item[1].get('venue_id')
+        final_itin.append(list(item))
 
-        assert len(final_itin[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
+# assert len(itinerary[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
 
     return final_itin
 

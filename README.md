@@ -59,13 +59,10 @@ npm test
 ```
 
 ## Suggested Acceptance Tests
-
-Opening and closing the hamburger menu, clicking the register link so that a modal window appears with a form for user information, and closing this window.
-
-For acceptance tests of the map, feel free to manipulate the map as you see fit (zoom in and out, travel to other parts of the world, etc.).
-
-User disliking an itinerary triggers the generation of a new itinerary. The TA can test this functionality by clicking the dislike button (red thumb down).
-
+- Opening and closing the hamburger menu. 
+- Opening the menu and selecting different settings and generating different itinereraries. 
+- Logging in and out.
+- For acceptance tests of the map, feel free to manipulate the map as you see fit (zoom in and out, travel to other parts of the world, etc.).
 
 ## Who Did What
 
@@ -88,6 +85,7 @@ Clare wrote the logic to create a pool of viable itinerary events. Masha wrote t
    * We rewrote the app with an Angular.js front end.
    * We decided to change the format of the "Liked Itineraries" visual so that the user doesn't see overlapping itineraries.
    * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
+   * We decided not to implement the ability for a user to un-like an itinerary.
    * We implemented a Facebook login functionality. 
    * We updated the color scheme. 
    * We added a fire logo.

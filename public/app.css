@@ -27,15 +27,34 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
-  color: white;
+  color: #fff;
+  background-color: #F7882F;
+  border-color: #F7882F;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
 }
 
+.light_back{
+  background-color: #6B7A8F !important;
+}
+.medium_back{
+  background-color: #a7cdf2;
+}
+.menu_button
+{
+  width: 100%;
+  color: #fff;
+  background-color: #F7882F !important;
+  border-color: #F7882F !important;
+  margin: 2px;
+}
+
+.radio_button
+{
+  justify-content:  left;
+}
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
@@ -142,8 +161,6 @@ form {
 position: relative;
 padding-top: 16px;
 padding-bottom: 16px;
-width  : 740px;
-height : 300px;
 margin : 0 auto;
 border: 10px;
 

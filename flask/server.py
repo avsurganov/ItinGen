@@ -18,17 +18,7 @@ def run_algorithm():
     free = request.args.get("free")
     radius = request.args.get("radius")
     transport = request.args.get("transport")
-    return algorithm(start_time, latitude, longitude, free, radius, transport)
-
-def algorithm(start_time, latitude, longitude, free, radius, transport):
-    ret = {
-        'start_time': start_time,
-        'latitude': latitude,
-        'longitude': longitude,
-        'free': free,
-        'radius': radius,
-        'transport': transport
-    }
+    itin = master_algorithm(start_time, latitude, longitude, free, radius, transport)
     return json.dumps(ret)
 
 if __name__ == '__main__':

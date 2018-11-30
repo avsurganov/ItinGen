@@ -14,69 +14,69 @@ from tm_api import *
 # from get_yelpdata import *
 
 
-# museums = ["aquariums", "culturalcenter", "galleries", "museums",
-#             "observatories", "planetarium", "zoos",
-#             ]
-# publicattractions = ["gardens", "landmarks", "localflavor"]
-# nightlife = ["adultentertainment", "barcrawl", "beerbar", "champagnebars",
-#                 "cigarbars", "cocktailbars", "divebars", "drivethrubars",
-#                 "gaybars", "hookah_bars", "irish_pubs", "lounges",
-#                 "pubs", "speakeasies", "sportsbars", "tikibars",
-#                 "vermouthbars", "whiskeybars", "wine_bars", "beergardens",
-#                 "clubcrawl", "comedyclubs", "countrydancehalls", "danceclubs",
-#                 "jazzandblues", "karaoke", "pianobars", "poolhalls",
-#                 "cabaret", "casinos", "wineries", "breweries",
-#                 "distilleries"
-#                 ]
-# misc = ["farms", "fleamarkets", "paintandsip", "publicmarkets",
-#         "trampoline", "bowling", "escapegames", "golf",
-#         "minigolf", "paintball", "lasertag", "scavengerhunts",
-#         "waterparks", "arcades", "hauntedhouses", "saunas",
-#         "amusementparks", "psychic_astrology", "virtualrealitycenters"
-#         ]
-# food = ["acaibowls",
-#            "bagels",
-#            "bakeries",
-#            "bento",
-#            "bubbletea",
-#            "chimneycakes",
-#            "churros",
-#            "cideries",
-#            "coffee",
-#            "cupcakes",
-#            "delicatessen",
-#            "desserts",
-#            "diyfood",
-#            "donuts",
-#            "empanadas",
-#            "farmersmarket",
-#            "foodtrucks",
-#            "gelato",
-#            "icecream",
-#            "jpsweets",
-#            "juicebars",
-#            "cakeshop",
-#            "poke",
-#            "pretzels",
-#            "streetvendors",
-#            "tea",
-#            "afghan",
-#             "african",
-#             "newamerican",
-#             "tradamerican",
-#             "arabian",
-#             "argentine",
-#             "armenian",
-#             "asianfusion",
-#             "australian",
-#             "austrian",
-#             "bangladeshi",
-#             "bbq",
-#             "basque",
-#             "belgian",
-#             "brasseries",
-#             "brazilian",
-food = [            "breakfast_brunch",
+museums = ["aquariums", "culturalcenter", "galleries", "museums",
+            "observatories", "planetarium", "zoos",
+            ]
+publicattractions = ["gardens", "landmarks", "localflavor"]
+nightlife = ["adultentertainment", "barcrawl", "beerbar", "champagnebars",
+                "cigarbars", "cocktailbars", "divebars", "drivethrubars",
+                "gaybars", "hookah_bars", "irish_pubs", "lounges",
+                "pubs", "speakeasies", "sportsbars", "tikibars",
+                "vermouthbars", "whiskeybars", "wine_bars", "beergardens",
+                "clubcrawl", "comedyclubs", "countrydancehalls", "danceclubs",
+                "jazzandblues", "karaoke", "pianobars", "poolhalls",
+                "cabaret", "casinos", "wineries", "breweries",
+                "distilleries"
+                ]
+misc = ["farms", "fleamarkets", "paintandsip", "publicmarkets",
+        "trampoline", "bowling", "escapegames", "golf",
+        "minigolf", "paintball", "lasertag", "scavengerhunts",
+        "waterparks", "arcades", "hauntedhouses", "saunas",
+        "amusementparks", "psychic_astrology", "virtualrealitycenters"
+        ]
+food = ["acaibowls",
+           "bagels",
+           "bakeries",
+           "bento",
+           "bubbletea",
+           "chimneycakes",
+           "churros",
+           "cideries",
+           "coffee",
+           "cupcakes",
+           "delicatessen",
+           "desserts",
+           "diyfood",
+           "donuts",
+           "empanadas",
+           "farmersmarket",
+           "foodtrucks",
+           "gelato",
+           "icecream",
+           "jpsweets",
+           "juicebars",
+           "cakeshop",
+           "poke",
+           "pretzels",
+           "streetvendors",
+           "tea",
+           "afghan",
+            "african",
+            "newamerican",
+            "tradamerican",
+            "arabian",
+            "argentine",
+            "armenian",
+            "asianfusion",
+            "australian",
+            "austrian",
+            "bangladeshi",
+            "bbq",
+            "basque",
+            "belgian",
+            "brasseries",
+            "brazilian",
+            "breakfast_brunch",
             "british",
             "buffets",
             "bulgarian",
@@ -198,10 +198,10 @@ food = [            "breakfast_brunch",
             ]
 
 categories = []
-# categories.extend(museums)
-# categories.extend(publicattractions)
-# categories.extend(nightlife)
-# categories.extend(misc)
+categories.extend(museums)
+categories.extend(publicattractions)
+categories.extend(nightlife)
+categories.extend(misc)
 categories.extend(food)
 
 
@@ -239,33 +239,33 @@ def master_data():
     # print("\n###################")
     # print("# EVENTBRITE DATA #")
     # print("###################\n")
-    # # keeping the same demo call that was provided
-    # EB_demo = EB()
-    # eb_v, eb_e = EB_demo.query_EB_api_today() # return venue json, events json
-    # # write to file
-    # eb_venue_of = VEN + "eb_venues_" + get_date() + ".json"
-    # eb_event_of = TMP + "eb_events_" + get_date() + ".json"
-    # with open(eb_venue_of, "w") as fp:
-    #     json.dump(eb_v, fp, indent=2)
-    # with open(eb_event_of, "w") as fp:
-    #     json.dump(eb_e, fp, indent=2)
+    # keeping the same demo call that was provided
+    EB_demo = EB()
+    eb_v, eb_e = EB_demo.query_EB_api_today() # return venue json, events json
+    # write to file
+    eb_venue_of = VEN + "eb_venues_" + get_date() + ".json"
+    eb_event_of = TMP + "eb_events_" + get_date() + ".json"
+    with open(eb_venue_of, "w") as fp:
+        json.dump(eb_v, fp, indent=2)
+    with open(eb_event_of, "w") as fp:
+        json.dump(eb_e, fp, indent=2)
 
 
     # print("\n#####################")
     # print("# TICKETMASTER DATA #")
     # print("#####################\n")
-    # # run the main tm function
-    # tm_v, tm_s, tm_m = run_tm_pipeline() # venue, sport events, music events
-    # # write to file
-    # tm_venue_of = VEN + "tm_venues_" + get_date() + ".json"
-    # tm_s_event_of = TMP + "tm_sports_events_" + get_date() + ".json"
-    # tm_m_event_of = TMP + "tm_music_events" + get_date() + ".json"
-    # with open(tm_venue_of, "w") as fp:
-    #     json.dump(tm_v, fp, indent=2)
-    # with open(tm_s_event_of, "w") as fp:
-    #     json.dump(tm_s, fp, indent=2)
-    # with open(tm_m_event_of, "w") as fp:
-    #     json.dump(tm_m, fp, indent=2)
+    # run the main tm function
+    tm_v, tm_s, tm_m = run_tm_pipeline() # venue, sport events, music events
+    # write to file
+    tm_venue_of = VEN + "tm_venues_" + get_date() + ".json"
+    tm_s_event_of = TMP + "tm_sports_events_" + get_date() + ".json"
+    tm_m_event_of = TMP + "tm_music_events" + get_date() + ".json"
+    with open(tm_venue_of, "w") as fp:
+        json.dump(tm_v, fp, indent=2)
+    with open(tm_s_event_of, "w") as fp:
+        json.dump(tm_s, fp, indent=2)
+    with open(tm_m_event_of, "w") as fp:
+        json.dump(tm_m, fp, indent=2)
 
 
     print("\n#############")

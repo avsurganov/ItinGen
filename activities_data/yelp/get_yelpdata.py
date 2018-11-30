@@ -51,7 +51,7 @@ keys = ["txsgyNE9-odnCQBXF4IeAQcy9JjdWtCSdvJLpln0AhSkmX5B4q57QiLM-1T9jZTI5p3csIE
         "PcUO1w3mcD-nRwv_CH6Sg06x07INlXcQkIZNBVGMSKDM2W8R-56Y0OCntQUSogMpqSPEkaZzwahHyvyjdXlP__TXeTbq880ftMxlPpJd6zsuc0J4wlGU1uhvS1rjW3Yx"
 ]
 
-def switch_api(API_KEY):
+def switch_api():
     i = 0
     for x, val in enumerate(keys):
         if val == API_KEY:
@@ -101,17 +101,17 @@ eventlist = []
 # url_params (dict) is an optional set of query parameters
 # returns JSON response from the request
 # raises HTTP error if an error occurs from the request
-def request(host, path, api_key, url_params=None):
+def request(host, path, url_params=None):
     url_params = url_params or {}
     url = '{0}{1}'.format(host, quote(path.encode('utf8')))
     headers = {
-        'Authorization': 'Bearer %s' % api_key,
+        'Authorization': 'Bearer %s' % API_KEY,
     }
     print(u'Querying {0} ...'.format(url))
 
     response = requests.request('GET', url, headers=headers, params=url_params)
     if "error" in response:
-        switch_api(API_KEY)
+        switch_api()
         headers['Authorization'] = 'Bearer %s' % API_KEY
         response = requests.request('GET', url, headers=headers, params=url_params)
     return response.json()
@@ -119,21 +119,21 @@ def request(host, path, api_key, url_params=None):
 
 # query the API by given category, location, and offset
 # returns JSON response from the request with all businesses of given category and location
-def search_categories(api_key, categories, location, offset):
+def search_categories(categories, location, offset):
     url_params = {
         'categories': categories,
         'location': location.replace(' ', '+'),
         'limit': SEARCH_LIMIT,
         'offset': int(offset)
     }
-    return request(API_HOST, SEARCH_PATH, api_key, url_params=url_params)
+    return request(API_HOST, SEARCH_PATH, url_params=url_params)
 
 
 # query the business API by a business ID to get more specifics about a business
 # returns JSON response from the request
-def get_business(api_key, business_id):
+def get_business(business_id):
     business_path = BUSINESS_PATH + business_id
-    return request(API_HOST, business_path, api_key)
+    return request(API_HOST, business_path)
 
 def get_ids(businesses):
     biz_ids = []
@@ -332,7 +332,7 @@ def tag_as_category(input_category):
                 "scandinavian",
                 "scottish",
                 "seafood",
-                "singaporean", 
+                "singaporean",
                 "slovakian",
                 "soulfood",
                 "soup",
@@ -426,7 +426,7 @@ def query_api(categories, location, offset):
     nevents = 0
     nvenues = 0
 
-    response = search_categories(API_KEY, categories, location, offset)
+    response = search_categories(categories, location, offset)
     businesses = response.get('businesses')
     nbiz = response.get('total')
     print('# businesses = {}'.format(nbiz))
@@ -438,7 +438,7 @@ def query_api(categories, location, offset):
     while businesses:
         biz_ids = get_ids(businesses)
         for id in biz_ids:
-            biz_detail = get_business(API_KEY,id)
+            biz_detail = get_business(id)
             venue = construct_venue(biz_detail)
             event = construct_event(biz_detail)
             if validate_venue(venue):
@@ -453,7 +453,7 @@ def query_api(categories, location, offset):
             return
         offset += 50
         print('offset = {}'.format(offset))
-        response = search_categories(API_KEY, categories, location, offset)
+        response = search_categories(categories, location, offset)
         nbiz = response.get('total')
         businesses = response.get('businesses')
 

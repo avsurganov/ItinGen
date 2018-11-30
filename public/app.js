@@ -40,7 +40,19 @@ angular.module('ItinGen', [
 
   
      var map;
+     $scope.location
+     $scope.displayLocation
+     function setDefault(x, y) {
+
+        $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + x + ',' + y + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').
+        then((res) => {
+          $scope.displayLocation = res.data.results[0].formatted_address
+        }) 
+     }
+
      function initMap(x, y) {
+      setDefault(x, y)
+      $scope.location = {lat: x, lng: y}
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
         map = new google.maps.Map(document.getElementById('map'), {
@@ -57,9 +69,6 @@ angular.module('ItinGen', [
     function locationNotRecieved(positionError){
       console.log(positionError);
       // if not location, center map on Chicago
-  
-
-
       initMap(41.881855, -87.627115);
     }
 

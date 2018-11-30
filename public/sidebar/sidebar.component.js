@@ -4,10 +4,22 @@ angular.module('sideBar')
 
 .component('sideBar', {
 	templateUrl: 'sidebar/sidebar.template.html',
-	controller: ['$scope', 'itineraryFactory', function sideBarController($scope, itineraryFactory) {
+	controller: ['$scope', '$http', 'itineraryFactory', function sideBarController($scope, $http,itineraryFactory) {
 		
     this.itinerary = []
     this.likedItineraries = []
+    // Default settings
+   
+    this.settings = {
+      startTime: new Date(Date.now()),
+      startLocation: $scope.$parent.$displayLocation,
+      free: true,
+      radius: 10,
+      transport: 'DRIVING'
+    }
+
+
+    this.startLocation
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
        console.log(this.itinerary)
@@ -39,10 +51,17 @@ angular.module('sideBar')
       }
     }
 
+    this.saveSettings = function() {
+      console.log(this.settings)
+      itineraryFactory.saveSettings(this.settings)
+    }
+
+    this.assignTransport = function(transport) {
+      this.settings.transport = transport
+    }
+
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']
     this.sidebarTemplate = sidebarTemplates[0]
-
-
 	}]
 })
 

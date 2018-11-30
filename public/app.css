@@ -257,3 +257,11 @@ left: 50%;
 margin-left: -5px;
 margin-top: -1px;
 }
+
+.logo {
+  display: block; 
+  z-index: 2147483630;
+  vertical-align: top;
+  position: absolute;
+  right: 36%;
+}

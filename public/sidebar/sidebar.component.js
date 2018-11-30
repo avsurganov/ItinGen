@@ -29,13 +29,16 @@ angular.module('sideBar')
       });
   }
     // Default settings
-    this.settings = {
-      startTime: new Date(Date.now()),
-      startLocation: '',
-      free: true,
-      radius: 10,
-      transport: 'DRIVING'
-    }
+    // this.settings = {
+    //   startTime: new Date(Date.now()),
+    //   startLocation: '',
+    //   free: true,
+    //   radius: 10,
+    //   transport: 'DRIVING'
+    // }
+
+    // itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
+
 
 
     this.generate = function() {
@@ -70,9 +73,14 @@ angular.module('sideBar')
 
     this.getLikedItineraries = function() {
       console.log("switching!")
-      this.sidebarTemplate = sidebarTemplates[1]
-      this.likedItineraries = itineraryFactory.getLikedItineraries()
-      console.log(this.likedItineraries)
+      if(app.isLoggedIn){
+        console.log("LOGGED IN");
+        this.sidebarTemplate = sidebarTemplates[1]
+        this.likedItineraries = itineraryFactory.getLikedItineraries()
+        console.log(this.likedItineraries)
+      } else {
+        console.log("NOT LOGGED IN");
+      }
 
     }
 
@@ -91,11 +99,11 @@ angular.module('sideBar')
 
     this.saveSettings = function() {
       console.log($scope.$parent.location)
-      itineraryFactory.saveSettings(this.settings, $scope.$parent.location);
+      itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
     }
 
     this.assignTransport = function(transport) {
-      this.settings.transport = transport
+      $scope.$parent.settings.transport = transport
     }
 
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']

@@ -140,10 +140,11 @@ angular.module('itineraryFactory')
 
 
 	service.saveSettings = function(userSettings, defaultLocation) {
+		console.log("in save settings");
 		console.log(defaultLocation)
 		console.log(userSettings)
-		settings = userSettings
-		if(settings['startLocation'] == '') {
+		settings = userSettings;
+		if(settings['startLocation'] == '' || settings['startLocation'] == undefined) {
 			settings['startLocation'] = defaultLocation;
 		}
 		console.log(settings)
@@ -169,8 +170,7 @@ angular.module('itineraryFactory')
 	}
 
 	service.addToLikedItineraries = function () {
-		// likedItineraries.push(currentItinerary)
-		likedItineraries = "test";
+		likedItineraries.push(currentItinerary)
 		$http.post('/api/putliked', {likedItineraries}).then((req) => {
 			return;
 		});

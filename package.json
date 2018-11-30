@@ -7,7 +7,8 @@
     "test": "mocha tests/",
     "start": "node server.js",
     "seed": "node app/helpers/seed.js",
-    "flask": "python3 flask/server.py"
+    "flask": "python3 flask/server.py",
+    "e2e": "nightwatch -t e2e/frontend_spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -38,7 +39,9 @@
   "devDependencies": {
     "angular-mocks": "^1.7.5",
     "chai": "^4.2.0",
+    "chromedriver": "^2.44.0",
     "cpx": "^1.5.0",
+    "geckodriver": "^1.14.1",
     "http-server": "^0.11.1",
     "jasmine-core": "^3.3.0",
     "karma": "^3.1.1",
@@ -46,6 +49,8 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
     "mockgoose": "^7.3.5",
-    "protractor": "^5.4.1"
+    "nightwatch": "^0.9.21",
+    "protractor": "^5.4.1",
+    "selenium-server": "^3.141.59"
   }
 }

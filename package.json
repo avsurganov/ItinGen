@@ -6,7 +6,8 @@
   "scripts": {
     "test": "karma start karma.conf.js",
     "start": "node server.js",
-    "seed": "node app/helpers/seed.js"
+    "seed": "node app/helpers/seed.js",
+    "flask": "python3 flask/server.py"
   },
   "author": "",
   "license": "ISC",

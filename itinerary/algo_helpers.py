@@ -148,7 +148,7 @@ def increment_radius(radius, orig_radius):
     return radius + orig_radius/200
 
 #def increment_helper(radius_mem, itinerary, user_data):
-    
+
 
 def decrement_helper(radius_mem, itinerary, user_data):
     '''
@@ -281,7 +281,7 @@ def determine_start_time(itinerary, event, user_data):
         last_end_time = itinerary[-1][3]
     next_event = event[0]
     next_venue = event[1]
-    
+
     transport = user_data.get('transportation')
     # approximate travel time
     distance = find_distance(last_venue,venue_to_lat_long(next_venue))
@@ -302,13 +302,13 @@ def determine_start_time(itinerary, event, user_data):
     if start_time + 30 > close_time and close_time != -10:
         # event ends within 30 mins of arrival time
         return -10
+    if open_time - 30 > start_time:
+        # event doesn't start within 30 mins of arrival time
+        return -10
     if start_time > open_time:
         return start_time
-    if open_time - start_time < 30:
-        # event starts after predicted arrival time
-        return open_time
     else:
-        return -10
+        return open_time
 
 
 def determine_end_time(itinerary, event, start_time):

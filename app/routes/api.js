@@ -9,8 +9,18 @@ var secret = 'itingen'; // Create custom secret to use with JWT
 
 router.post('/getitinerary', function(req, res) {
 	var userSettings = req.body.userSettings;
-	// params
-	var pythonProcess = spawn('python',["algorithm.py", ]);
+	var startTime = userSettings.startTime;
+	var startLocation = userSettings.startTime;
+	var free = userSettings.startTime;
+	var radius = userSettings.startTime;
+	var transport = userSettings.transport;
+	// var pythonProcess = spawn('py',["algorithm.py", "startTime", startTime, 
+	// 									"startLocation", startLocation, "free", 
+	// 									free, "radius", radius, "transport", transport]);
+	// pythonProcess.stdout.on('data', (data) => {
+	// 	// Do something with the data returned from python script
+	// 	console.log("GOT DATA");
+	// });
 });
 
 

@@ -82,12 +82,15 @@ def validate_travel_time(itin, transport):
         next_start_time = itin[i+1][2]
         between_time = next_start_time - prev_end_time
         distance = find_distance(venue_to_lat_long(prev_venue),venue_to_lat_long(next_venue))
-        if (transport == "driving"):
+        travel_time = 0
+        if (transport == "DRIVING"):
             travel_time = distance * 2
-        elif (transport == "transit"):
-            travel_time = distance * 8
-        else:
+        elif (transport == "TRANSIT"):
+            travel_time = distance * 12
+        elif (transport == "WALK"):
             travel_time = distance * 20
+        elif (transport == "BIKE"):
+            travel_time = distance * 10
         if between_time < travel_time:
             return False
     return True

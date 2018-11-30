@@ -51,13 +51,13 @@ class TestDistanceValidation(unittest.TestCase):
         self.assertFalse(validate_event_distance(itin1, 1))
 
     def test_validate_travel_time(self):
-        self.assertFalse(validate_travel_time(itin1, "driving"))
-        self.assertTrue(validate_travel_time(itin2, "driving"))
-        self.assertFalse(validate_travel_time(itin3, "transit"))
-        self.assertTrue(validate_travel_time(itin5, "transit"))
-        self.assertFalse(validate_travel_time(itin6, "walking"))
-        self.assertTrue(validate_travel_time(itin7, "walking"))
-        self.assertFalse(validate_travel_time(itin11, "transit"))
+        self.assertFalse(validate_travel_time(itin1, "DRIVING"))
+        self.assertTrue(validate_travel_time(itin2, "DRIVING"))
+        self.assertFalse(validate_travel_time(itin3, "TRANSIT"))
+        self.assertTrue(validate_travel_time(itin5, "TRANSIT"))
+        self.assertFalse(validate_travel_time(itin6, "WALK"))
+        self.assertTrue(validate_travel_time(itin7, "WALK"))
+        self.assertFalse(validate_travel_time(itin11, "TRANSIT"))
 
 class TestEventValidation(unittest.TestCase):
     def test_validate_no_duplicates(self):

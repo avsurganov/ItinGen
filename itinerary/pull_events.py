@@ -28,23 +28,12 @@ with client:
 
         return date
 
-    #categories = ["misc","museums","music","nightlife","publicattractions","sports"]
-    #numcat = 6
-    #user_weight_default = [1 for x in range(numcat)]
-    #numev = 50 # number of events you want to pull from each category
-                # maybe make bigger if only free? bc you'll throw out a lot
-
-
-    # what is format of user weight gonna be? a dict? each category has a value?
-    # assumes format = array w probabilities ordered by alphabetical categories
+    # gets categories from which to get events
     def pick_categories(user_weight=0):
-        #ordered_categories = []
-        #if user_weight:
-        #    ordered_categories.append(numpy.random.choice(categories,replace=False,p=user_weight))
-        #else:
         ordered_categories = shuffle(categories)
         return ordered_categories
 
+    # get str version of a day
     def day_to_str(dayint):
         if dayint == 0:
             return "mon"
@@ -61,7 +50,7 @@ with client:
         if dayint == 6:
             return "sun"
 
-    # for permanent events
+    # for permanent events - check that time and date are right
     def time_date_check_perm(event,user_start_time):
         daynum = datetime.datetime.today().weekday()
         daystr = day_to_str(daynum)
@@ -77,6 +66,7 @@ with client:
             return False
         return True
 
+    # check that time is compatible with user time
     def time_check_temp(event,user_start_time):
         starttime = event.get('start')
         endtime = event.get('end')
@@ -91,12 +81,14 @@ with client:
             return False
         return True
 
+    # check that date of event is actually today
     def date_check_temp(event):
         today = get_date()
         if event.get('date') != today:
             return False
         return True
 
+    # check that events dont overlap with meal times
     def check_meal_overlap_temp(event):
         starttime = event.get('start')
         endtime = event.get('end')
@@ -110,8 +102,9 @@ with client:
             return False #throws out if event covers entire lunch period
                             # may want to make this optional depending on how we think
                             # of one time events - do you go to whole thing or no?
-        return True                    
+        return True
 
+    # checks that events are free
     def check_free(event):
         if event["price"] == 0:
             return True
@@ -119,18 +112,7 @@ with client:
             return True
         return False
 
-    '''
-     assuming user_inputs = formatted like:
-
-     user_inputs = { "user_start_time" : 1200
-                     "user_start_location" : {"lat" : whatever, "long" = whatever}
-                     "user_transport" : "car"
-                     "user_radius" : 10
-                     "free" : 0
-     }
-
-     '''
-
+    # gets the pool of temporary events
     def get_t_events(user_inputs,numev):
         evindexes = []
         tpool = []
@@ -156,6 +138,7 @@ with client:
                     tpool.append((event,venue))
         return tpool
 
+    # gets the pool of permanent events
     def get_p_events(user_inputs,numev):
         evindexes = []
         ppool = []
@@ -178,6 +161,7 @@ with client:
                     ppool.append((event,venue))
         return ppool
 
+    # gets the complete pool of events with proper temp/perm ratio
     def get_pool(user_inputs, total):
         total_p = db.pevents.find().count()
         total_t = db.tevents.find().count()

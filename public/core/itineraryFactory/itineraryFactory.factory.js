@@ -129,6 +129,7 @@ angular.module('itineraryFactory')
 		$http.post('/api/getitinerary', {settings}).then((data) => {
 			var success = data.data.success;
 			if(success) {
+				currentItinerary = data.data.itinerary
 				return data.data.itinerary;
 			} else {
 				return {};
@@ -150,7 +151,7 @@ angular.module('itineraryFactory')
 
 
 	service.getCurrentItinerary = function() {
-		return itin1
+		return currentItinerary
 	}
 
 

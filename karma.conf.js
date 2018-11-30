@@ -3,13 +3,15 @@ module.exports = function(config) {
   config.set({
 
     basePath: './public',
-
+// removed factory b/c of failure to load
     files: [
       'lib/angular/angular.js',
       'lib/angular-route/angular-route.js',
       '../node_modules/angular-mocks/angular-mocks.js',
+      'view*/**/*.js',
       'core/**/*.js',
-      'view*/**/*.js'
+      'app.js',
+      'app.spec.js'
     ],
 
     autoWatch: true,

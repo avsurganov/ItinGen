@@ -1,16 +1,16 @@
-// 'use strict';
+'use strict';
 
-// describe('itineraryFactory', function() {
+describe('itineraryFactory module', function() {
 
-//   beforeEach(module('ItinGen'));
+  beforeEach(module('itineraryFactory'));
 
-//   describe('itineraryFactory factory', function(){
+  describe('itineraryFactory factory', function(){
 
-//     it('should ....', inject(function($factory) {
-//       //spec body
-//       var ItinFactory = $factory('itineraryFactory');
-//       expect(ItinFactory).toBeDefined();
-//     }));
+    it('should ....', inject(function($factory) {
+      //spec body
+      var ItinFactory = $factory('itineraryFactory');
+      expect(ItinFactory).toBeDefined();
+    }));
 
-//   });
-// });
+  });
+});

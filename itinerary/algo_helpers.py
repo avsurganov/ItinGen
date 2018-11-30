@@ -63,14 +63,18 @@ def check_valid(cur_event, itinerary, user_data):
     if start_time == -10:
         # this event is not valid
         return False
+	if not validate_restaurant(cur_event[0], start_time):
+		return False
+	end_time = determine_end_time(itinerary, cur_event, start_time)
+	if end_time == -10
+		# this event is not valid
+		return False
     else:
         # this was the last check so the event is 100% valid
         # add it to the itinerary and return true
-        end_time = start_time + 120 # arbitrarily setting this for now
         # format is: (event, venue, start, end)
         add_item = (cur_event[0], cur_event[1], start_time, end_time)
         itinerary.append(add_item)
-
         return True
 
 
@@ -205,8 +209,31 @@ def sort_distances(events, center):
 #########################
 # TIME HELPER FUNCTIONS #
 #########################
+def day_to_str(dayint):
+	if dayint == 0:
+		return "mon"
+	if dayint == 1:
+		return "tues"
+	if dayint == 2
+		return "wed"
+	if dayint == 3:
+		return "thurs"
+	if dayint == 4:
+		return "fri"
+	if dayint == 5:
+		return "sat"
+	if dayint == 6:
+		return "sun"
 
-def determine_start_time(itinerary, event, transport):
+def get_close (event):
+	close_time = event.get('end')
+	if open_time is None:
+		weekday = datetime.datetime.today().weekday()
+		day_str = day_to_str(weekday)
+		close_time = event.get(day_str + '_end')
+
+
+def determine_start_time(itinerary, event, transport, use_google):
     '''
     find the start time of the next event
     return start time in minutes from midnight
@@ -222,31 +249,13 @@ def determine_start_time(itinerary, event, transport):
     end_time = end_time_in_mins - 1440 * is_past_midnight
     hours = end_time // 60
     mins = end_time % 60
-    date = datetime.datetime.today() + datetime.timedelta(days=is_past_midnight)
-    time = datetime.datetime(date.year, date.month, date.day, hours, mins)
-
-    # query directions between previous and next venues
-    gmaps = googlemaps.Client(key="AIzaSyCGtRkePdbwkM6UsXdsvlwwplKvh5rruYk")
-    directions_result = gmaps.directions(last_venue_coords,
-                                         next_venue_coords,
-                                         mode=transport,
-                                         departure_time=time)
-
-    # find travel time between the venues in minutes
-    travel_time_str = directions_result[0]['legs'][0]['duration']['text'].split(" ")
-    list_len = len(travel_time_str)
-    if list_len == 4:
-        # format: 'x hours y mins'
-        travel_time = int(travel_time_str[0])*60+int(travel_time_str[2])
-    elif list_len == 2:
-        # format: 'x hours'
-        if travel_time_str[1] == 'hours' or travel_time_str[1] == 'hour':
-            travel_time = int(travel_time_str[0])*60
-        # format: 'x mins'
-        else:
-            travel_time = int(travel_time_str[0])
-    # travel time within Illinois cannot exceed 24 hours
-    # so other formats are not considered
+	distance = find_distance(venue_to_lat_long(last_venue),venue_to_lat_long(next_venue))
+	if (transport = 'driving'):
+		travel_time = distance * 2
+	elif (transport = 'transit'):
+		travel_time = distance * 5
+	elif (transport = 'walking'):
+		travel_time = distance * 20
 
     # validate start time of the next event
     start_time = end_time_in_mins + travel_time
@@ -270,6 +279,36 @@ def determine_start_time(itinerary, event, transport):
             return start + 1440 * is_past_midnight
 
     return start_time
+
+def determine_end_time(itinerary, event, start_time):
+	tags = event[0].get('tags')
+	end_time = get_close(event)
+	if (end_time == -10):
+		return start_time + random.randint(6, 15)*10
+	elif (end_time <= start_time):
+		return -10
+	if (end_time - start_time < 60):
+		return end_time
+	if ('food' in tags):
+		return start_time + 60
+	else:
+		time = random.randint(6, 15)*10
+		if (start_time + time > end_time):
+			return end_time
+		else:
+			return start_time + time
+
+
+
+def validate_restaurant(event, start_time):
+	tags = event.get('tags')
+	if start_time < (12*60) or start_time > (19.5*60) or (start_time > 13 * 60 and start_time < 18.5*60):
+		if 'food' in tags:
+			return True
+		else:
+			return False
+
+
 
 ################
 # MISC HELPERS #

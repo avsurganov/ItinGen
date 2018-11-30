@@ -78,7 +78,7 @@ def time_check_temp(event,user_start_time):
     if endtime - user_start_time < 15:
         return False
     # do we want to throw out if the event starts before the user start time?
-    if starttime == 0 and entime == 0:
+    if starttime == 0 and endtime == 0:
         return False
     return True
 
@@ -106,6 +106,4 @@ def check_free(event):
     if event[price] != -10:
         return False
     return True
-
-
  

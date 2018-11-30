@@ -118,11 +118,14 @@ angular.module('itineraryFactory')
         {event: event1, venue: venue1, start: "12:00", end: "3:00"}]
 	var likedItineraries = [itin1, itin2]
 	var currentItinerary = []
+	var settings = {}
 	var service = {}
 
+
 	//on load or dislike an itinerary: 
-	service.getNewItinerary = function(userSettings) {
-		$http.post('/api/getitinerary', {userSettings}).then((data) => {
+	service.getNewItinerary = function() {
+		console.log(settings)
+		$http.post('/api/getitinerary', {settings}).then((data) => {
 			var success = data.data.success;
 			if(success) {
 				return data.data.itinerary;
@@ -132,6 +135,10 @@ angular.module('itineraryFactory')
 		});
 	}
 
+	service.saveSettings = function(userSettings) {
+		settings = userSettings
+		console.log(settings)
+	}
 	service.getCurrentItinerary = function() {
 		return itin1
 	}

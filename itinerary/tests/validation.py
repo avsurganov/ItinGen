@@ -26,19 +26,17 @@ def validate_chrono(itin):
 
 # checks that times given for itin items are within event's open hours
 def validate_isopen(itin, day):
-    starthours = str(day) + '_start'
-    endhours = str(day) + '_end'
     for i in range(len(itin)):
         event = itin[i][0]
-        #print(type(itin),"itin type")
-        #print(type(itin[0]),"first group thing in itin")
-        #print(type(itin[0][0]),"first item of first group, aka event")
         if "start" in event:
             starthours = 'start'
             endhours = 'end'
-        if itin[i][2] < event[starthours]:
+        else:
+            starthours = str(day) + '_start'
+            endhours = str(day) + '_end'
+        if itin[i][2] < event[starthours] and event[starthours] != -10:
             return False
-        if itin[i][3] > event[endhours]:
+        if itin[i][3] > event[endhours] and event[endhours] != -10:
             return False
     return True
 

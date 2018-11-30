@@ -72,7 +72,7 @@ router.get('/getliked', function(req, res) {
 				console.log("IN HEREz");
 				res.json({ success: false, message: 'No user was found' }); // Return error
 			} else {
-				if(user.liked.length > 0){
+				if(user){
 					res.json({ success: true, message: 'found itineraries', itineraries: user.liked});
 				} else {
 					console.log("IN HEREz");
@@ -85,13 +85,21 @@ router.get('/getliked', function(req, res) {
 
 // Route to append to a users like itineraries
 router.post('/putliked', (req, res) => {
-	var itins = req.body.itineraries;
+	var itins = req.body.likedItineraries;
 	var userEmail = req.decoded.email;
-	let user = new User();
-	user.liked = itins;
-	user.userEmail = userEmail;
-	User.findOneAndUpdate({email : userEmail}, user, function(err) {
+	var itinsStr = '';
+	console.log("IN PUTLIKED");
+	if(itins.length > 1){
+		itinsStr = JSON.stringify(itins);
+		console.log(itinsStr);
+	}
+	// let user = new User();
+	// user.liked = itins;
+	// user.userEmail = userEmail;
+	// delete user._id;
+	User.findOneAndUpdate({email : userEmail}, {email : userEmail, liked : itinsStr}, function(err) {
 		if (err) { 
+			console.log(err)
 			res.json({success : false});
 			return; 
 		}

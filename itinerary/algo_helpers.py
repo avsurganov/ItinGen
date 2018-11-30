@@ -158,7 +158,6 @@ def decrement_helper(radius_mem, itinerary, user_radius):
 def venue_to_lat_long(venue):
     lat = venue.get('latitude')
     long = venue.get('longitude')
-    print([lat, long])
     return [lat, long]
 
 
@@ -270,7 +269,7 @@ def determine_start_time(itinerary, event, transport, use_google):
     if (transport == 'driving'):
         travel_time = distance * 2
     elif (transport == 'transit'):
-        travel_time = distance * 5
+        travel_time = distance * 8
     elif (transport == 'walking'):
         travel_time = distance * 20
 

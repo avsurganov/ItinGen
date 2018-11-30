@@ -1,4 +1,7 @@
+import math
 import sys
+sys.path.insert(0, '../')
+from algo_helpers import *
 
 ''' TIME VALIDATION FUNCTIONS '''
 
@@ -49,24 +52,46 @@ def validate_isopen(itin, day):
 
 # check that each venue in the itinerary is within dist (in miles; optionally
 # specified by the user) from the user's starting location
-def validate_max_distance(itin, start_location, dist=10):
-
-    return False
+def validate_max_distance(itin, start_location, dist):
+    for venue in itin:
+        venue_coord = venue_to_lat_long(venue[1])
+        distance = find_distance(start_location, venue_coord)
+        if distance > dist:
+            return False
+    return True
 
 # check that each venue is within a reasonable distance of venues before
 # and after it
 # (dist is the same parameter as in the above function)
 # this function ensures that venues in the itinerary are clustered to some
 # extent, not just randomly spread out throughout the space defined by dist
-def validate_event_distance(itin, dist=10):
-
-    return False
-
+def validate_event_distance(itin, dist):
+    for i in range(len(itin)-1):
+        prev_venue_coord = venue_to_lat_long(itin[i][1])
+        next_venue_coord = venue_to_lat_long(itin[i+1][1])
+        distance = find_distance(prev_venue_coord, next_venue_coord)
+        if distance > dist * math.sqrt(2):
+            return False
+    return True
 # check that the time between each pair of adjacent events in the itinerary
 # is sufficient for travel between their venues, given user's transportation mode
-def validate_travel_time(itin, transport="drive"):
-
-    return False
+def validate_travel_time(itin, transport):
+    for i in range(len(itin)-1):
+        prev_venue = itin[i][1]
+        prev_end_time = itin[i][3]
+        next_venue = itin[i+1][1]
+        next_start_time = itin[i+1][2]
+        between_time = next_start_time - prev_end_time
+        distance = find_distance(venue_to_lat_long(prev_venue),venue_to_lat_long(next_venue))
+        if (transport == 'driving'):
+            travel_time = distance * 2
+        elif (transport == 'transit'):
+            travel_time = distance * 8
+        else:
+            travel_time = distance * 20
+        if between_time < travel_time:
+            return False
+    return True
 
 
 ''' EVENT VALIDATION FUNCTIONS '''

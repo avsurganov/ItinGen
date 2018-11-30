@@ -80,7 +80,7 @@ function seedVenues(data, venues) {
       venue_name: d.venue_name,
       venue_alias: d.venue_alias,
       latitude: d.latitude,
-      longitutde: d.longitude,
+      longitude: d.longitude,
       address1: d.address1,
       address2: d.address2,
       address3: d.address3,

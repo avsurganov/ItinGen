@@ -4,9 +4,19 @@ ItinGen is a web based application that allows users to randomly
 generate optimized itineraries for their schedules to explore a new city
 or rediscover a city they have been living in for years
 
-Table of Contents
+# Table of Contents
 
-[TOC]
+- [Setup](#setup)
+    * [Install Prerequisites](#install-prerequisites)
+    * [Initializing the App](#initializing-the-app)
+- [Running Unit Tests](#running-unit-tests)
+- [Suggested Acceptance Tests](#suggested-acceptance-tests)
+- [Who Did What](#who-did-what)
+    * [Back End](#back-end)
+    * [Front End](#front-end)
+    * [Data Aggregation](#data-aggregation)
+- [Changes](#changes)
+- [Specific Information for 4B](#specific-information-for-4b)
 
 ## Setup
 ### Install Prerequisites (NPM/Node.js/MongoDB)
@@ -32,7 +42,7 @@ sudo apt-get install -y mongodb
 ```
 
 
-### Initializing the app
+### Initializing the App
 ```bash
 npm install
 npm run seed

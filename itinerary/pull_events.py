@@ -77,8 +77,10 @@ with client:
         return True
 
     def time_check_temp(event,user_start_time):
-        starttime = event[start]
-        endtime = event[end]
+        starttime = event.get('start')
+        endtime = event.get('end')
+        if endtime == -10:
+            return True
         if endtime < user_start_time:
             return False
         if endtime - user_start_time < 15:
@@ -90,13 +92,13 @@ with client:
 
     def date_check_temp(event):
         today = get_date()
-        if event[date] != today:
+        if event.get('date') != today:
             return False
         return True
 
     def check_meal_overlap_temp(event):
-        starttime = event[start]
-        endtime = event[end]
+        starttime = event.get('start')
+        endtime = event.get('end')
         if starttime >= 660 and endtime <= 780:
             return False #throws out if entire event is within lunch period 11-1
         if starttime >= 660 and starttime <= 690 and endtime >= 780:
@@ -130,16 +132,17 @@ with client:
         tpool = []
         total_tevents = db.tevents.find().count()
         evindexes.append(random.sample(range(total_tevents),numev))
-        for index in evindexes:
+        for index in evindexes[0]:
             event = db.tevents.find().skip(index).limit(1)[0]
             f = True
-            if user_inputs[free] == True:
+            t = True
+            d = True
+            if user_inputs.get('only_free') == True:
                 f = check_free(event)
-            t = time_check_temp(event,user_inputs[user_start_time])
-            d = date_check_temp(event)
-            #m = check_meal_overlap_temp(event)
+            t = time_check_temp(event,user_inputs.get('start_time'))
+#            d = date_check_temp(event)
             if t and d and f:
-                venid = event["venue_id"]
+                venid = event.get("venue_id")
                 venue = db.venues.find_one({'venue_id': venid})
                 if venue:
                     tpool.append((event,venue))
@@ -150,14 +153,14 @@ with client:
         ppool = []
         total_pevents = db.pevents.find().count()
         evindexes.append(random.sample(range(total_pevents),numev))
-        for index in evindexes:
+        for index in evindexes[0]:
             event = db.pevents.find().skip(index).limit(1)[0]
             f = True
-            if user_inputs[free] == True:
+            if user_inputs.get('only_free') == True:
                 f = check_free(event)
-            td = time_date_check_perm(event,user_inputs[user_start_time])
+            td = time_date_check_perm(event,user_inputs.get('start_time'))
             if td and f:
-                venid = event["venue_id"]
+                venid = event.get("venue_id")
                 venue = db.venues.find_one({'venue_id': venid})
                 if venue:
                     ppool.append((event,venue))
@@ -167,9 +170,9 @@ with client:
         total_p = db.pevents.find().count()
         total_t = db.tevents.find().count()
         total_all = total_p + total_t
-        ntemp = ceil((total_t / total_all) * 500)
-        nperm = ceil((total_p / total_all) * 500)
-        tpool = get_t_events(user_inputs,nt)
-        ppool = get_p_events(user_inputs,np)
+        ntemp = int((total_t / total_all) * 1000)
+        nperm = int((total_p / total_all) * 1000)
+        tpool = get_t_events(user_inputs,ntemp)
+        ppool = get_p_events(user_inputs,nperm)
         pool = tpool + ppool
         return pool

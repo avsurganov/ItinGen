@@ -174,18 +174,17 @@ venue3 = {
 # invalid travel distance (user dist)
 # valid for all time tests
 itin1 = [(event1, venue1, 660, 780),
-        (event2, venue2, 785, 920)]
+        (event2, venue2, 782, 920)]
 
 # valid travel time (driving)
 itin2 = [(event1, venue1, 660, 780),
         (event2, venue2, 790, 920)]
 
-# invalid travel time (biking)
+# invalid travel time (transit)
 itin3 = [(event1, venue1, 660, 780),
         (event2, venue2, 795, 920)]
 
-# valid travel time (biking)
-# invalid travel time (transit)
+# are we using this itin somewhere?
 itin4 = [(event1, venue1, 660, 780),
         (event2, venue2, 800, 920)]
 
@@ -206,7 +205,7 @@ itin7 = [(event1, venue1, 660, 780),
 # valid travel distance (user dist)
 # invalid travel distance (default dist)
 itin8 = [(event1, venue1, 660, 780),
-        (event3, venue3, 830, 920)]
+        (event3, venue3, 840, 920)]
 
 # duplicate events
 # same time periods
@@ -218,10 +217,10 @@ itin9 = [(event1, venue1, 660, 780),
 # chronologically valid
 itin10 = [(event2, venue1, 660, 780)]
 
-# invalid travel time overall
+# invalid travel time overall (transit)
 itin11 = [(event2, venue2, 660, 780),
           (event1, venue1, 810, 830),
-          (event3, venue3, 850, 900)]
+          (event3, venue3, 845, 900)]
 
 
 # itins for time testing specifically
@@ -249,4 +248,4 @@ itin17 = [(event1, venue1, 15.2, 780),
         (event2, venue2, 790, 920)]
 
 #free
-itin18 = [(event3, venue3, 1250, 1280)]    
+itin18 = [(event3, venue3, 1250, 1280)]

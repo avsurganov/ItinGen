@@ -48,33 +48,37 @@ User disliking an itinerary triggers the generation of a new itinerary. The TA c
 
 
 ## Who Did What
+
+The entire team collaborated to integrate and test each piece of the system. 
+
 ### Back End
-Omar and Anthony wrote the back-end together. They implemented a seeds
-file to make sure that the JSON data that the Data Aggregation Team
-extracted was populating the database. They also redeveloped the
-application to utilize PosgreSQL instead of MongoDB. Additionally,
-established the route and testing suite, wrote DB migrations, model
-validations, and implemented controller logic. Lastly, they tracked down
-bugs in the app and data aggregation scripts.
+Omar and Anthony wrote the back-end together. They implemented a seeds file to make sure that the JSON data that the Data Aggregation Team extracted was populating the database. They also redeveloped the application to utilize MongoDB. Additionally, they  established the route and testing suite, wrote DB migrations, model validations, and implemented controller logic. Lastly, they tracked down bugs in the app and data aggregation scripts.
 
 ### Front End
 Leslie and Tyler constructed the sidebar with information related to events/activities in a given itinerary and buttons allowing one to access more information about the event when fully implemented. Additionally, they implemented a menu with links to home, liked itineraries, log in window, and register window. Register link triggers a modal view of a the sign on form. Finally, they built and positioned like and dislike buttons on top of the map.
 
-Anthony implemented the Google map with drawn itineraries and paths and
-injected Ruby code into the front-end to display itineraries in the
-sidebar.
+Anthony implemented the Google map with drawn itineraries and paths and injected Ruby code into the front-end to display itineraries in the sidebar.
 
 ### Data Aggregation
-Max wrote the Ticketmaster API data collection, Clare and Masha wrote the Yelp API data collection and Eli wrote the Eventbrite API data collection. Each team member wrote validation tests for their API. The main database pipeline was written primarily by Max with assistance from the other members of the Data Aggregation Team. The collected data was all stored as JSON files for use by the Back-end team.
+Clare wrote the logic to create a pool of viable itinerary events. Masha wrote the logic to check that the times and distances between itineraries were logical. Eli wrote the logic to choose events within a certain distance and angle of the previosu event. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 
+
+
 
 ## Changes
-We decided to switch the application from using MongoDB to Postgresql.
-We were having issues with MongoDB working properly with the Rails
-application and so we switched it out for Postgres.
-
-No longer using Vue.js frontend framework. Instead only working with pure javascript, html, and CSS. This decision allowed for quicker development time as the Vue.js presented a learning curve for all members of our team
-
-We switched from collecting data by type of event to collecting data by API to reduce data overlap and the number of API calls needed. This also allowed each member of the data aggregation team to focus on a single API.
+- Back End:
+   * We rewrote the app with a node.js back end. We decided to switch to an node.js because it's easier to integrate with an Angular.js front end. 
+   * We switched back to an MongoDB to better support our unstructured data.
+- Front End:
+   * We rewrote the app with an Angular.js front end.
+   * We decided to change the format of the "Liked Itineraries" visual so that the user doesn't see overlapping itineraries.
+   * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
+   * We implemented a Facebook login functionality. 
+   * We updated the color scheme. 
+- Data Team:
+   * We made a number of small changes to various user preference features:
+      * The user can specify start time, but not end time. We removed end time because it resulted in too many evening events being rejected.
+      * The user can specify which method of transportation they want to use to get between events.
+      * The user can specify that they want an itinerary with only free events. 
 
 ## Specific Information for 4B
 

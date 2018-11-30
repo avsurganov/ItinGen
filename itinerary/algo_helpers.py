@@ -66,9 +66,6 @@ def check_valid(cur_event, itinerary, user_data):
     if not validate_restaurant(cur_event[0], start_time):
         return False
     end_time = determine_end_time(itinerary, cur_event, start_time)
-    if end_time == -10:
-        # this event is not valid
-        return False
     else:
         # this was the last check so the event is 100% valid
         # add it to the itinerary and return true
@@ -229,11 +226,27 @@ def day_to_str(dayint):
 
 
 def get_close (event):
+    '''
+    find the time event ends
+    '''
     close_time = event.get('end')
-    if open_time is None:
+    if close_time is None:
         weekday = datetime.datetime.today().weekday()
         day_str = day_to_str(weekday)
         close_time = event.get(day_str + '_end')
+    return close_time
+
+
+def get_open(event):
+    '''
+    find the time event starts
+    '''
+    opem_time = event.get('start')
+    if open_time is None:
+        weekday = datetime.datetime.today().weekday()
+        day_str = day_to_str(weekday)
+        open_time = event.get(day_str + '_start')
+    return open_time
 
 
 def determine_start_time(itinerary, event, transport, use_google):
@@ -242,7 +255,6 @@ def determine_start_time(itinerary, event, transport, use_google):
     return start time in minutes from midnight
     return -10 if start time is invalid
     '''
-
     last_venue = itinerary[-1][1]
     next_event = event[0]
     next_venue = event[1]
@@ -262,23 +274,14 @@ def determine_start_time(itinerary, event, transport, use_google):
     if start_time >= 1440:
         # predicted arrival time is at/after midnight
         return -10
-    if 'start' in next_event:
-        if start_time + 30 > next_event['end'] and next_event['end'] != -10:
-            # event ends within 30 mins of arrival time
-            return -10
-        if start_time < next_event['start']:
-            # event starts after predicted arrival time
-            return next_event['start']
-    else:
-        weekday = day_to_str(datetime.datetime.today().weekday())
-        start = next_event[weekday + '_start']
-        end = next_event[weekday + '_end']
-        if start_time + 30 > end:
-            # event ends within 30 mins of arrival time
-            return -10
-        if start_time < start:
-            # event starts after predicted arrival time
-            return start
+    open_time = get_open(next_event)
+    close_time = get_close(next_event)
+    if start_time + 30 > close_time and close_time != -10:
+        # event ends within 30 mins of arrival time
+        return -10
+    if start_time < open_time:
+        # event starts after predicted arrival time
+        return open_time
 
     return start_time
 

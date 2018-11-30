@@ -41,6 +41,10 @@ angular.module('sideBar')
 
     itineraryFactory.saveSettings(this.settings);
 
+    this.generate = function() {
+      itineraryFactory.addToLikedItineraries()
+      $scope.$parent.updateMapWithNewItinerary();
+    }
 
     this.startLocation
     $scope.$on('update', function(e) {
@@ -137,3 +141,5 @@ $(function() {
  // Fake a change to position bubble at page load
  .trigger('change');
 });
+
+

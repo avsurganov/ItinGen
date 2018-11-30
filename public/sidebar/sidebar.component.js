@@ -4,7 +4,7 @@ angular.module('sideBar')
 
 .component('sideBar', {
 	templateUrl: 'sidebar/sidebar.template.html',
-	controller: ['$scope', '$http', 'itineraryFactory', function sideBarController($scope, $http,itineraryFactory) {
+	controller: ['$scope', '$http', 'itineraryFactory', '$window', function sideBarController($scope, $http,itineraryFactory, $window) {
 		
     this.itinerary = []
     this.likedItineraries = []
@@ -32,7 +32,6 @@ angular.module('sideBar')
 
   
     this.facebook = function() {
-      app.disabled = true;
       $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';
       };
 

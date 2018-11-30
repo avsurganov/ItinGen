@@ -19,7 +19,7 @@
 
 describe('itinerary factory module', function() {
 	var factoryService;
-	var http;
+	let http;
 
 	beforeEach(function() {
 		module('itineraryFactory');
@@ -29,11 +29,31 @@ describe('itinerary factory module', function() {
 		});
 	});
 
+	var testSettings = {
+      startTime: new Date(Date.now()),
+      startLocation: '',
+      free: true,
+      radius: 10,
+      transport: 'DRIVING'
+    }
+	
 	it('should exist', function() {
 		expect(factoryService).toBeDefined();
 	})
 
-	it('get new itinerary', function() {
-		expect(factoryService.getNewItinerary).toBeDefined();
+	it('should get new itinerary', function() {
+		expect(factoryService.getNewItinerary()).toBeDefined();
+	})
+
+	it('should make post request to get new itinerary', function() {
+		expect(http).toBeDefined();
+	})
+
+	it('should make post request to get new itinerary', function() {
+		expect(factoryService.getCurrentItinerary()).toBeDefined();
+	})
+
+	it('should save setting', function() {
+		expect(factoryService.saveSettings()).toBeDefined();
 	})
 })

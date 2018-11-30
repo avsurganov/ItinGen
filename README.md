@@ -12,16 +12,16 @@ Table of Contents
 ### Install Prerequisites (NPM/Node.js/MongoDB)
 #### Ubuntu
 You will need to add the Node.js PPA by running this command:
-```
+```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 ```
 Finally, install Node.js:
-```
+```bash
 sudo apt-get install -y nodejs
 ```
 
 Check to see if NPM and Node.js were install correctly by running:
-```
+```bash
 node -v
 npm -v
 ```
@@ -34,17 +34,17 @@ sudo apt-get install -y mongodb
 
 ### Initializing the app
 ```bash
-bundle install
-rake db:setup
-rails s
+npm install
+npm run seed
+npm start
 ```
 
 ## Running Unit Tests
-Unit Tests for the Data Aggregation scripts and instructions on how to use them will be found in the `activities_data` directory.
+Unit Tests for the Data Aggregation scripts and instructions on how to use them will be found in the `app/activities_data` directory.
 
 To run tests for the application, simply run:
 ```bash
-rspec
+npm test
 ```
 These tests will test to make sure that all of the front-end objects are
 displaying on the home page properly and as are intended.:w

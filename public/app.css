@@ -36,11 +36,49 @@ button {
   cursor: pointer;
 }
 
+.ng-hide:not(.ng-hide-animate) {
+  /* These are just alternative ways of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+h2{
+  color: #DCC7AA !important;
+  font-size: 50px !important;
+  vertical-align:   middle !important;
+  font-family: "Times New Roman";
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+h3{
+  padding-top: 30px;
+  padding-bottom:   30px;
+  padding-left: 10px;
+  padding-right: 10px;
+    size: 50px !important;
+    color: #DCC7AA !important;
+    vertical-align:   middle !important;
+    font-family: "Times New Roman";
+}
+
+.header-content-inner img {
+  float: left;   
+}
+
+.btn_blue{
+  background-color:   #4267b2 !important  ;
+}
+
 .light_back{
   background-color: #6B7A8F !important;
 }
-.medium_back{
-  background-color: #a7cdf2;
+.full_width{
+  min-width:  100px !important;
+  max-width:  500px !important;
+  width: auto !important;
 }
 .menu_button
 {
@@ -49,6 +87,18 @@ button {
   background-color: #F7882F !important;
   border-color: #F7882F !important;
   margin: 2px;
+  font-size: 20px !important;
+}
+
+.generate_button
+{
+  width: 100%;
+  color: #fff;
+  background-color: #F7882F !important;
+  border-color: #F7882F !important;
+  margin: 2px;
+  font-size: 32px !important;
+  font-weight:  bold;
 }
 
 .radio_button
@@ -58,6 +108,7 @@ button {
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
+
 }
 
 /* Extra style for the cancel button (red) */

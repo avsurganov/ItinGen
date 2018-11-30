@@ -1,4 +1,5 @@
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block; width: 20%;" id="sidebar">
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left light_back" style="display:block; width: 20%;" id="sidebar">
+
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-4 light_back">
@@ -8,16 +9,26 @@
           Settings
     </button>
         <button class="btn btn-primary menu_button" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
+        <button class="btn btn-primary menu_button">Log Out</button>
       </div>
     </div>
     <nav class="navbar navbar-dark light_back">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
-  </div>
+  
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
+  <div ng-click="showDiv=true" 
+        ng-show="!showDiv" class="ng-hide" id="intro_message" >
+       <h2>Welcome to ItinGen!</h2>
+       <h3> Click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
+        <button id="Generate" type="button" class="generate_button" ng-click="showDiv=true; $ctrl.nextItinerary()" 
+        ng-show="!showDiv">Generate</button>
+<!--  -->
+  </div>
+</div>
 </div>
 
 <!-- Bootstrapg modal for Settings -->
@@ -176,17 +187,17 @@
 <!-- Modal for Logging in -->
 
 <div class="modal fade" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centere" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="loginTitle">Log in</h5>
+        <h5 class="modal-title" id="loginTitle">Log in with Facebook!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-          <a href="/auth/facebook" target="_blank" ><button type="button" class="btn btn-success">Facebook</button></a>
+          <!-- <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
+          <a href="/auth/facebook" target="_blank" ><button type="button" class="btn btn-success btn_blue" >Continue with Facebook</button></a>
           </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

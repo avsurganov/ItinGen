@@ -8,7 +8,8 @@ var router = app.Router();
 var secret = 'itingen'; // Create custom secret to use with JWT
 
 router.post('/getitinerary', function(req, res) {
-	var userSettings = req.body.userSettings;
+	var userSettings = req.body.settings;
+	console.log(userSettings);
 	var startTime = userSettings.startTime;
 	var startLocation = userSettings.startLocation;
 	var lat = startLocation.lat;
@@ -16,13 +17,14 @@ router.post('/getitinerary', function(req, res) {
 	var free = userSettings.free;
 	var radius = userSettings.radius;
 	var transport = userSettings.transport;
-	console.log(userSettings);
-	var pythonProcess = spawn('py',["algorithm.py", "startTime", startTime, 
+	var pythonProcess = spawn('py',["script.py", "startTime", startTime, 
 										"lat", lat, "lon", lon, "free", 
 										free, "radius", radius, "transport", transport]);
 	pythonProcess.stdout.on('data', (data) => {
 		// Do something with the data returned from python script
+
 		console.log("GOT DATA");
+		console.log(data);
 	});
 });
 

@@ -14,6 +14,11 @@ angular.module('ldButtons')
 		this.nextItinerary = function() {
 			$scope.$parent.updateMapWithNewItinerary();
 		}
-		
+		$(document).ready(function() {
+   		$('[data-toggle="popover"]').popover({
+      		placement: 'top',
+      		trigger: 'hover'
+   			});
+		});
 	}]
 })

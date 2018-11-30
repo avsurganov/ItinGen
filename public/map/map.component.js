@@ -16,3 +16,20 @@ angular.module('googleMap')
 		
 	}]
 });
+
+.component('ldButtons', {
+	templateUrl: 'siderbar/sidebar.template.html',
+	controller: ['$scope', 'itineraryFactory', function ldButtonsController($scope, itineraryFactory) {
+		
+		this.addToLikedItinerary = function() {
+			showDiv=true;
+			itineraryFactory.addToLikedItineraries()
+			this.nextItinerary();
+		}
+
+		this.nextItinerary = function() {
+			$scope.$parent.updateMapWithNewItinerary();
+		}
+		
+	}]
+})

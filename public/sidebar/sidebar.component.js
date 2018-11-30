@@ -4,10 +4,31 @@ angular.module('sideBar')
 
 .component('sideBar', {
 	templateUrl: 'sidebar/sidebar.template.html',
-	controller: ['$scope', '$http', 'itineraryFactory', function sideBarController($scope, $http,itineraryFactory) {
+	controller: ['$scope', '$http', 'itineraryFactory', '$window', 'Auth', function sideBarController($scope, $http,itineraryFactory, $window, Auth) {
 		
     this.itinerary = []
     this.likedItineraries = []
+
+    var app = this;
+    app.isLoggedIn = false;
+
+    if (Auth.isLoggedIn()) {
+      // Check if a the token expired
+      Auth.getUser().then(function(data) {
+          // Check if the returned user is undefined (expired)
+          console.log("HERE");
+          console.log(data.data);
+          if (data.data.email === undefined) {
+              Auth.logout(); // Log the user out
+              // $location.path('/'); // Redirect to home page
+          } else {
+            // let likeditineraries = itineraryFactory.getLikedItineraries();
+            // console.log(likeditineraries);
+            // itineraryFactory.addToLikedItineraries();
+            app.isLoggedIn = true;
+          }
+      });
+  }
     // Default settings
     console.log($scope.$parent.$displayLocation)
     this.settings = {
@@ -18,6 +39,12 @@ angular.module('sideBar')
       transport: 'DRIVING'
     }
 
+    itineraryFactory.saveSettings(this.settings);
+
+    this.generate = function() {
+      itineraryFactory.addToLikedItineraries()
+      $scope.$parent.updateMapWithNewItinerary();
+    }
 
     this.startLocation
     $scope.$on('update', function(e) {
@@ -30,9 +57,11 @@ angular.module('sideBar')
       return String.fromCharCode(65 + $index)
     }
 
+    this.logout = function(){
+      Auth.logout();
+    }
   
     this.facebook = function() {
-      app.disabled = true;
       $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';
       };
 
@@ -112,3 +141,5 @@ $(function() {
  // Fake a change to position bubble at page load
  .trigger('change');
 });
+
+

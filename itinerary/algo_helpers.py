@@ -66,9 +66,6 @@ def check_valid(cur_event, itinerary, user_data):
     if not validate_restaurant(cur_event[0], start_time):
         return False
     end_time = determine_end_time(itinerary, cur_event, start_time)
-    if end_time == -10:
-        # this event is not valid
-        return False
     else:
         # this was the last check so the event is 100% valid
         # add it to the itinerary and return true
@@ -234,29 +231,41 @@ def day_to_str(dayint):
 
 
 def get_close (event):
+    '''
+    find the time event ends
+    '''
     close_time = event.get('end')
-    if open_time is None:
+    if close_time is None:
         weekday = datetime.datetime.today().weekday()
         day_str = day_to_str(weekday)
         close_time = event.get(day_str + '_end')
+    return close_time
+
+
+def get_open(event):
+    '''
+    find the time event starts
+    '''
+    opem_time = event.get('start')
+    if open_time is None:
+        weekday = datetime.datetime.today().weekday()
+        day_str = day_to_str(weekday)
+        open_time = event.get(day_str + '_start')
+    return open_time
 
 
 def determine_start_time(itinerary, event, transport, use_google):
     '''
     find the start time of the next event
     return start time in minutes from midnight
-    return -10 if event ends within 30 mins of arrival time
+    return -10 if start time is invalid
     '''
     last_venue = itinerary[-1][1]
     next_event = event[0]
     next_venue = event[1]
-    last_venue_coords = {"lat": last_venue["latitude"], "lng": last_venue["longitude"]}
-    next_venue_coords = {"lat": next_venue["latitude"], "lng": next_venue["longitude"]}
-    end_time_in_mins = itinerary[-1][3]
-    is_past_midnight = end_time_in_mins // 1440
-    end_time = end_time_in_mins - 1440 * is_past_midnight
-    hours = end_time // 60
-    mins = end_time % 60
+    last_end_time = itinerary[-1][3]
+
+    # approximate travel time
     distance = find_distance(venue_to_lat_long(last_venue),venue_to_lat_long(next_venue))
     if (transport == 'driving'):
         travel_time = distance * 2
@@ -266,25 +275,18 @@ def determine_start_time(itinerary, event, transport, use_google):
         travel_time = distance * 20
 
     # validate start time of the next event
-    start_time = end_time_in_mins + travel_time
-    if 'start' in next_event:
-        if start_time + 30 > next_event['end'] and next_event['end'] != -10:
-            return -10
-        if start_time < next_event['start']:
-            return next_event['start']
-    else:
-        # implementation depends on how we store permanent events that close after midnight
-        # this implementation assumes that all times stored are below 1440
-        is_past_midnight = start_time // 1440
-        date = datetime.datetime.today() + datetime.timedelta(days=is_past_midnight)
-        time = start_time - 1440 * is_past_midnight
-        weekday = day_to_str(date.weekday())
-        start = next_event[weekday + '_start']
-        end = next_event[weekday + '_end']
-        if time + 30 > end:
-            return -10
-        if time < start:
-            return start + 1440 * is_past_midnight
+    start_time = last_end_time + travel_time
+    if start_time >= 1440:
+        # predicted arrival time is at/after midnight
+        return -10
+    open_time = get_open(next_event)
+    close_time = get_close(next_event)
+    if start_time + 30 > close_time and close_time != -10:
+        # event ends within 30 mins of arrival time
+        return -10
+    if start_time < open_time:
+        # event starts after predicted arrival time
+        return open_time
 
     return start_time
 
@@ -294,8 +296,6 @@ def determine_end_time(itinerary, event, start_time):
     end_time = get_close(event)
     if (end_time == -10):
         return start_time + random.randint(6, 15)*10
-    elif (end_time <= start_time):
-        return -10
     if (end_time - start_time < 60):
         return end_time
     if ('food' in tags):

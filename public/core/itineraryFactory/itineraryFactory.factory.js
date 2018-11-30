@@ -129,7 +129,7 @@ angular.module('itineraryFactory')
 			} else {
 				return {};
 			}
-		}
+		});
 	}
 
 	service.getCurrentItinerary = function() {

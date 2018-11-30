@@ -35,7 +35,7 @@ def create_itinerary(user_args):
     # NOTE: keeping individual variables to maintain compatibility
     start_time = 540 # should be int
     start_location = (41.881855, -87.627115) # should be (lat, lon)
-    distance_radius = 1000.0 # float miles
+    distance_radius = 50.0 # float miles
     only_free = False # boolean
     transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
@@ -123,13 +123,10 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
-<<<<<<< HEAD
     #assert validate_itin(itinerary, user_data)
-=======
     user_data['date'] = get_date()
     user_data['day'] = day_to_str(datetime.datetime.today().weekday())
-    assert validate_itin(itinerary, user_data)
->>>>>>> 67cb6e2c503dd0d32342acab05fba1f8bea6e8af
+    #assert validate_itin(itinerary, user_data)
 
     # return the itinerary
     final_itin = []

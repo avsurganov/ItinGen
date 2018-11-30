@@ -145,7 +145,7 @@ def decrement_radius(radius, dA):
 #    return new_rad
 
 def increment_radius(radius, orig_radius):
-    return radius + orig_radius/10000
+    return radius + orig_radius/200
 
 #def increment_helper(radius_mem, itinerary, user_data):
     

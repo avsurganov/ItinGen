@@ -170,8 +170,8 @@ with client:
         total_p = db.pevents.find().count()
         total_t = db.tevents.find().count()
         total_all = total_p + total_t
-        ntemp = int((total_t / total_all) * 2000)
-        nperm = int((total_p / total_all) * 2000)
+        ntemp = int((total_t / total_all) * 1000)
+        nperm = int((total_p / total_all) * 1000)
         tpool = get_t_events(user_inputs,ntemp)
         ppool = get_p_events(user_inputs,nperm)
         pool = tpool + ppool

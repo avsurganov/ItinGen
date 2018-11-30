@@ -121,9 +121,15 @@ angular.module('itineraryFactory')
 	var service = {}
 
 	//on load or dislike an itinerary: 
-	service.getNewItinerary = function() {
-		//TODO: make GET request to backend for new itinerary
-		return itin1
+	service.getNewItinerary = function(userSettings) {
+		$http.post('/api/getitinerary', {userSettings}).then((data) => {
+			var success = data.data.success;
+			if(success) {
+				return data.data.itinerary;
+			} else {
+				return {};
+			}
+		}
 	}
 
 	service.getCurrentItinerary = function() {

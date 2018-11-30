@@ -30,6 +30,12 @@ angular.module('sideBar')
       return String.fromCharCode(65 + $index)
     }
 
+  
+    this.facebook = function() {
+      app.disabled = true;
+      $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';
+      };
+
     this.getLikedItineraries = function() {
       console.log("switching!")
       this.sidebarTemplate = sidebarTemplates[1]

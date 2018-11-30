@@ -9,8 +9,21 @@ var secret = 'itingen'; // Create custom secret to use with JWT
 
 router.post('/getitinerary', function(req, res) {
 	var userSettings = req.body.userSettings;
-	// params
-	var pythonProcess = spawn('python',["algorithm.py", ]);
+	var startTime = userSettings.startTime;
+	var startLocation = userSettings.startLocation;
+	var lat = startLocation.lat;
+	var lon = startLocation.lon;
+	var free = userSettings.free;
+	var radius = userSettings.radius;
+	var transport = userSettings.transport;
+	console.log(userSettings);
+	var pythonProcess = spawn('py',["algorithm.py", "startTime", startTime, 
+										"lat", lat, "lon", lon, "free", 
+										free, "radius", radius, "transport", transport]);
+	pythonProcess.stdout.on('data', (data) => {
+		// Do something with the data returned from python script
+		console.log("GOT DATA");
+	});
 });
 
 
@@ -65,10 +78,18 @@ router.get('/getliked', function(req, res) {
 
 // Route to append to a users like itineraries
 router.post('/putliked', (req, res) => {
-	console.log("WEIRD");
 	var itins = req.body.itineraries;
-	console.log(req.body);
-
-})
+	var userEmail = req.decoded.email;
+	let user = new User();
+	user.liked = itins;
+	user.userEmail = userEmail;
+	User.findOneAndUpdate({email : userEmail}, user, function(err) {
+		if (err) { 
+			res.json({success : false});
+			return; 
+		}
+		res.json({success : true});
+	});
+});
 
 module.exports = router;

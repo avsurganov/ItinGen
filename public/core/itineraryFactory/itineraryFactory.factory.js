@@ -152,6 +152,7 @@ angular.module('itineraryFactory')
 		$http.get('/api/getliked').then((req) => {
 			var success = req.data.success;
 			if(success) {
+				likedItineraries = req.data.itineraries
 				return req.data.itineraries;
 			}
 			else {

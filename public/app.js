@@ -81,12 +81,14 @@ angular.module('ItinGen', [
     })()
 
 
+
 	function drawNewItinerary() {
 	  	var waypoints = []
 	  	for (event in currentItinerary) {
 	  		var index = parseInt(event) + 1
+        var waypointData = currentItinerary[index][2]
 	  		if (index != currentItinerary.length)
-	  			waypoints.push({location: currentItinerary[index].venue.latlng}) 
+	  			waypoints.push({location: {lat: waypointData.latitude , lng: waypointData.longitude}}) 
 	  	}
 
 	  	var directionRequest = {

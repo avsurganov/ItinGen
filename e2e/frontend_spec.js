@@ -5,7 +5,10 @@ module.exports = {
       .waitForElementVisible('body', 1000)
       .pause(1000)
       .assert.title('ItinGen')
-    .pause(1000)
+      .waitForElementVisible('.ng-isolate-scope', 1000)
+      .waitForElementVisible('#map-btn-container', 1000)
+      .waitForElementVisible('#like', 1000)
+      .waitForElementVisible('#dislike', 1000)
       .end();
   }
 };

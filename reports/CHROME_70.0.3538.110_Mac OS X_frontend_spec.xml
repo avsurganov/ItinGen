@@ -5,11 +5,21 @@
 
   <testsuite name="frontend_spec"
     errors="0" failures="1" hostname="" id="" package="frontend_spec" skipped="0"
-    tests="1" time="3.477" timestamp="Fri, 30 Nov 2018 11:29:00 GMT">
+    tests="1" time="5.409" timestamp="Fri, 30 Nov 2018 11:41:55 GMT">
   
-    <testcase name="Testing FrontEnd" classname="frontend_spec" time="3.477" assertions="2">
+    <testcase name="Testing FrontEnd" classname="frontend_spec" time="5.409" assertions="7">
 
-      <failure message="Testing if the page title equals &#34;ItinGen&#34;.">    at Object.Testing FrontEnd (/Users/avsurganov/Documents/Rails/ItinGen/e2e/frontend_spec.js:7:15)
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;.p-4&gt; to be visible for 1000 milliseconds.">    at Object.Testing FrontEnd (/Users/avsurganov/Documents/Rails/ItinGen/e2e/frontend_spec.js:12:8)
     at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
 
     

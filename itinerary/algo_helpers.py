@@ -63,12 +63,12 @@ def check_valid(cur_event, itinerary, user_data):
     if start_time == -10:
         # this event is not valid
         return False
-	if not validate_restaurant(cur_event[0], start_time):
-		return False
-	end_time = determine_end_time(itinerary, cur_event, start_time)
-	if end_time == -10
-		# this event is not valid
-		return False
+    if not validate_restaurant(cur_event[0], start_time):
+        return False
+    end_time = determine_end_time(itinerary, cur_event, start_time)
+    if end_time == -10:
+        # this event is not valid
+        return False
     else:
         # this was the last check so the event is 100% valid
         # add it to the itinerary and return true
@@ -99,7 +99,7 @@ def check_finished(itinerary):
 # RADIUS FUNCTIONS #
 ####################
 
-def determine_radius(itinerary, itin_mem, radius_mem):
+def determine_radius(itinerary, itin_mem, radius_mem, user_data):
     '''
     determine what the new search radius should be
     '''
@@ -108,12 +108,12 @@ def determine_radius(itinerary, itin_mem, radius_mem):
         itin_mem = len(itinerary)
         radius_mem[0] == radius_mem[1]
         # now we need to decrement the radius by some amount
-        d_area = decrement_helper(radius_mem, itinerary)
+        d_area = decrement_helper(radius_mem, itinerary, user_data['distance_radius'])
         radius_mem[1] = decrement_radius(radius_mem[0], d_area)
         return 0
     elif len(itinerary) == itin_mem:
         # an item was not added successfully
-        d_area = decrement_helper(radius_mem, itinerary)
+        d_area = decrement_helper(radius_mem, itinerary, user_data['distance_radius'])
         radius_mem[1] = increment_radius(radius_mem[1], d_area)
         if radius_mem[1] >= radius_mem[0]:
             # no more possible moves
@@ -141,7 +141,7 @@ def increment_radius(radius, dA):
     return new_rad
 
 
-def decrement_helper(radius_mem, itinerary):
+def decrement_helper(radius_mem, itinerary, user_radius):
     '''
     calculate the area that we want to move
 
@@ -149,7 +149,7 @@ def decrement_helper(radius_mem, itinerary):
     take in global variables
     '''
     n = ((24 * 60) - itinerary[-1][-1]) / 120
-    d_area = (pi * (radius_mem[0] ** 2)) - (pi * (7 ** 2))
+    d_area = (pi * (radius_mem[0] ** 2)) - (pi * ((user_radius / 2) ** 2))
     d_area = d_area / n
 
     return d_area
@@ -182,10 +182,10 @@ def find_angle(coords1, center, coords2):
     num = cos(c)-cos(a)*cos(b)
     den = sin(a)*sin(b)
     if (fabs(den) < 0.001):
-		if (a+b-c < 0.001):
-			return 180.0
-		else:
-			return 0.0
+        if (a+b-c < 0.001):
+            return 180.0
+        else:
+            return 0.0
     return acos(num/den)
 
 
@@ -197,40 +197,43 @@ def validate_angle(coords1, center, coords2, limit=0.5):
     else:
         return False
 
+
 def sort_distances(events, center):
-	event_distances = []
-	for event in events:
-		venue = event[1]
-		distance = find_distance(venue_to_lat_long(venue), center)
-		event_distances.append(event+(distance,))
-	event_distances.sort(key=itemgetter(2), reverse=True)
-	return event_distances
+    event_distances = []
+    for event in events:
+        venue = event[1]
+        distance = find_distance(venue_to_lat_long(venue), center)
+        event_distances.append(event+(distance,))
+    event_distances.sort(key=itemgetter(2), reverse=True)
+    return event_distances
 
 #########################
 # TIME HELPER FUNCTIONS #
 #########################
+
 def day_to_str(dayint):
-	if dayint == 0:
-		return "mon"
-	if dayint == 1:
-		return "tues"
-	if dayint == 2
-		return "wed"
-	if dayint == 3:
-		return "thurs"
-	if dayint == 4:
-		return "fri"
-	if dayint == 5:
-		return "sat"
-	if dayint == 6:
-		return "sun"
+    if dayint == 0:
+        return "mon"
+    if dayint == 1:
+        return "tues"
+    if dayint == 2:
+        return "wed"
+    if dayint == 3:
+        return "thurs"
+    if dayint == 4:
+        return "fri"
+    if dayint == 5:
+        return "sat"
+    if dayint == 6:
+        return "sun"
+
 
 def get_close (event):
-	close_time = event.get('end')
-	if open_time is None:
-		weekday = datetime.datetime.today().weekday()
-		day_str = day_to_str(weekday)
-		close_time = event.get(day_str + '_end')
+    close_time = event.get('end')
+    if open_time is None:
+        weekday = datetime.datetime.today().weekday()
+        day_str = day_to_str(weekday)
+        close_time = event.get(day_str + '_end')
 
 
 def determine_start_time(itinerary, event, transport, use_google):
@@ -249,13 +252,13 @@ def determine_start_time(itinerary, event, transport, use_google):
     end_time = end_time_in_mins - 1440 * is_past_midnight
     hours = end_time // 60
     mins = end_time % 60
-	distance = find_distance(venue_to_lat_long(last_venue),venue_to_lat_long(next_venue))
-	if (transport = 'driving'):
-		travel_time = distance * 2
-	elif (transport = 'transit'):
-		travel_time = distance * 5
-	elif (transport = 'walking'):
-		travel_time = distance * 20
+    distance = find_distance(venue_to_lat_long(last_venue),venue_to_lat_long(next_venue))
+    if (transport == 'driving'):
+        travel_time = distance * 2
+    elif (transport == 'transit'):
+        travel_time = distance * 5
+    elif (transport == 'walking'):
+        travel_time = distance * 20
 
     # validate start time of the next event
     start_time = end_time_in_mins + travel_time
@@ -280,35 +283,33 @@ def determine_start_time(itinerary, event, transport, use_google):
 
     return start_time
 
-def determine_end_time(itinerary, event, start_time):
-	tags = event[0].get('tags')
-	end_time = get_close(event)
-	if (end_time == -10):
-		return start_time + random.randint(6, 15)*10
-	elif (end_time <= start_time):
-		return -10
-	if (end_time - start_time < 60):
-		return end_time
-	if ('food' in tags):
-		return start_time + 60
-	else:
-		time = random.randint(6, 15)*10
-		if (start_time + time > end_time):
-			return end_time
-		else:
-			return start_time + time
 
+def determine_end_time(itinerary, event, start_time):
+    tags = event[0].get('tags')
+    end_time = get_close(event)
+    if (end_time == -10):
+        return start_time + random.randint(6, 15)*10
+    elif (end_time <= start_time):
+        return -10
+    if (end_time - start_time < 60):
+        return end_time
+    if ('food' in tags):
+        return start_time + 60
+    else:
+        time = random.randint(6, 15)*10
+        if (start_time + time > end_time):
+            return end_time
+        else:
+            return start_time + time
 
 
 def validate_restaurant(event, start_time):
-	tags = event.get('tags')
-	if start_time < (12*60) or start_time > (19.5*60) or (start_time > 13 * 60 and start_time < 18.5*60):
-		if 'food' in tags:
-			return True
-		else:
-			return False
-
-
+    tags = event.get('tags')
+    if start_time < (12*60) or start_time > (19.5*60) or (start_time > 13 * 60 and start_time < 18.5*60):
+        if 'food' in tags:
+            return True
+        else:
+            return False
 
 ################
 # MISC HELPERS #

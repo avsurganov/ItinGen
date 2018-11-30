@@ -43,7 +43,7 @@ angular.module('ItinGen', [
 
 
   
-     var map;
+     $scope.map;
      $scope.location
      $scope.displayLocation
      $scope.displayLocationLoaded = false
@@ -61,11 +61,11 @@ angular.module('ItinGen', [
       $scope.location = {lat: x, lng: y}
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
-        map = new google.maps.Map(document.getElementById('map'), {
+      $scope.map = new google.maps.Map(document.getElementById('map'), {
 	        center: {lat: x, lng: y},
 	        zoom: 13
         });
-        directionsDisplay.setMap(map);
+        directionsDisplay.setMap($scope.map);
     }
     function onPositionRecieved(position){
       var coords = position.coords;

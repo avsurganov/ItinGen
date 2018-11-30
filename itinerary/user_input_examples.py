@@ -61,3 +61,13 @@ user_data6 = {
               'date': '11-20-2018',
               'day': 'mon'
 }
+
+user_data70 = {
+              'start_time': 0,
+              'start_location': [41.792210, -87.599940],
+              'distance_radius': 1000,
+              'only_free': 0,
+              'transportation': "driving",
+              'date': '02-16-2019',
+              'day': 'sat'
+}

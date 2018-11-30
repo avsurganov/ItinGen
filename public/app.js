@@ -23,22 +23,15 @@ angular.module('ItinGen', [
      $scope.location
      $scope.displayLocation
      $scope.displayLocationLoaded = false
-     function setDefault(x, y) {
+     
 
-        $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + x + ',' + y + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').
-        then((res) => {
-          $scope.displayLocation = res.data.results[0].formatted_address
-          $scope.displayLocationLoaded = true
-        }) 
-     }
-
-     function initMap(x, y) {
-      setDefault(x, y)
+    function initMap(x, y) {
+      var center = {lat: x, lng: y}
       $scope.location = {lat: x, lng: y}
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.map = new google.maps.Map(document.getElementById('map'), {
-	        center: {lat: x, lng: y},
+	        center: center,
 	        zoom: 13
         });
         directionsDisplay.setMap($scope.map);

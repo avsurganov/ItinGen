@@ -22,8 +22,10 @@ angular.module('ldButtons')
 		}
 
 		this.nextItinerary = function() {
+			itineraryFactory.saveSettings(this.settings, $scope.$parent.location);
 			$scope.$parent.updateMapWithNewItinerary();
 		}
+
 		$(document).ready(function() {
    		$('[data-toggle="popover"]').popover({
       		placement: 'top',

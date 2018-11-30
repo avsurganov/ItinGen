@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "testkarma": "karma start karma.conf.js",
-    "testchai": "chai tests/",
+    "test": "mocha tests/",
     "start": "node server.js",
     "seed": "node app/helpers/seed.js",
     "flask": "python3 flask/server.py"
@@ -46,6 +45,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
+    "mockgoose": "^7.3.5",
     "protractor": "^5.4.1"
   }
 }

@@ -4,6 +4,7 @@ var dotenv = require('dotenv');
 dotenv.load();
 var morgan = require('morgan');
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird').Promise
 var User = require('./app/models/user');
 var bodyParser = require('body-parser');
 var path = require('path');

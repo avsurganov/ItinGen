@@ -25,7 +25,7 @@ router.post('/getitinerary', function(req, res) {
 	//res.json({success: true, itinerary: oneItin});
 	var query = qs.stringify({ startTime, lat, lon, free, radius, transport});
 	console.log(query);
-	request('http://localhost:5000/?' + query, function(err, res, body) {  
+	request('http://localhost:5000/?' + query, function(err, res2, body) {  
 		if(err) res.json({success:false});
 		else {
 			res.json({success: true, itinerary: body});

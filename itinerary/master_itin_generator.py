@@ -3,12 +3,14 @@ from pull_events import *
 from math import fabs
 from pymongo import MongoClient
 
+# main function to make itinerary
 def generate_itin(start_time, latitude, longitude, free, radius, transport):
     tries = 0
     final_itin = []
     time_split = start_time.split('T')
     units = time_split[1].split(':')
     time = 60*int(units[0])+int(units[1])
+    # check if user inputs make sense
     if time > (20*60) or fabs(latitude - 41.5) > 2 or fabs(latitude + 87.5) > 2:
         return []
     while len(final_itin) < 2:

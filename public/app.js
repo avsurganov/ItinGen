@@ -103,10 +103,22 @@ angular.module('ItinGen', [
 	  	
 	  }
 
-	  $scope.updateMapWithNewItinerary = async function() {
-	  	currentItinerary = itineraryFactory.getNewItinerary()
-	  	await drawNewItinerary()
-	  	$scope.$broadcast('update')
+	  $scope.updateMapWithNewItinerary =  function() {
+      itineraryFactory.getNewItinerary().then((data) => {
+        var success = data.data.success;
+        console.log("SUCCESS >?");
+        console.log(success)
+        if(success) {
+          currentItinerary = data.data.itinerary
+          console.log("m2");
+          console.log(currentItinerary);
+          drawNewItinerary()
+          $scope.$broadcast('update')
+        } else {
+          return {};
+        }
+      });
+
 	  }
 }])
 

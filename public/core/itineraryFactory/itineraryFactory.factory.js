@@ -126,16 +126,7 @@ angular.module('itineraryFactory')
 	service.getNewItinerary = function() {
 		console.log("SETTINGS ARE");
 		console.log(settings);
-		$http.post('/api/getitinerary', {settings}).then((data) => {
-			var success = data.data.success;
-			if(success) {
-				currentItinerary = data.data.itinerary
-				console.log(currentItinerary);
-				return data.data.itinerary;
-			} else {
-				return {};
-			}
-		});
+		return $http.post('/api/getitinerary', {settings});
 	}
 
 

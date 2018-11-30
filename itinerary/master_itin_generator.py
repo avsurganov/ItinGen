@@ -11,3 +11,6 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
             final_itin = itin
         tries+=1
     return final_itin
+
+itin = generate_itin(540, 41.881855, -87.62711, False, 10.0, 'driving')
+print(itin)

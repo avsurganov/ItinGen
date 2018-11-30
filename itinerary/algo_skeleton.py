@@ -49,7 +49,7 @@ def create_itinerary(start_time, latitude, longitude, free, radius, transport, s
     #         within this itinerary                                    #
     ####################################################################
     avg_mins_per_event = 120
-    est_num_events = ((24 * 60) - start_time) / avg_mins_per_event
+    est_num_events = ((24 * 60) - user_data.get('start_time')) / avg_mins_per_event
 
     ######################################################################
     # Step 2: Retrieve events from the database based on the user id and #
@@ -66,7 +66,7 @@ def create_itinerary(start_time, latitude, longitude, free, radius, transport, s
     #         location to create [event, venue, distance] and the sort the  #
     #         events by that distance in decreasing distance order          #
     #########################################################################
-    events = sort_distances(events, start_location)
+    events = sort_distances(events, user_data.get('start_location'))
     for e in events:
         assert len(e) == 3, 'ERROR: post distance calculation the event tuple should have 3 items'
 
@@ -74,8 +74,8 @@ def create_itinerary(start_time, latitude, longitude, free, radius, transport, s
     # Step 4: Go through the steps to create the itinerary #
     ########################################################
     # manually set the radius for the first iteration
-    radius_mem[0] = distance_radius
-    radius_mem[1] = distance_radius
+    radius_mem[0] = user_data.get('distance_radius')
+    radius_mem[1] = user_data.get('distance_radius')
     # find first index within that radius
     i = -1
     for x, e in enumerate(events):

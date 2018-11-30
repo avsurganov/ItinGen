@@ -7,7 +7,6 @@ or rediscover a city they have been living in for years
 # Table of Contents
 
 - [Setup](#setup)
-- [Initializing the App](#initializing-the-app)
 - [Running Unit Tests](#running-unit-tests)
 - [Suggested Acceptance Tests](#suggested-acceptance-tests)
 - [Who Did What](#who-did-what)
@@ -19,20 +18,25 @@ or rediscover a city they have been living in for years
 
 
 ## Setup
-https://gorails.com/setup/osx/10.14-mojave
-Currently setup with Postgres as the DataBase.
 
-## Initializing the App
-```bash
-bundle install
-rake db:setup
-rails s
-```
+1. Install MongoDB (https://docs.mongodb.com/manual/installation/)
+2. Install node.js (https://nodejs.org/en/download/)
+3. In user console, type the following commands:
+   ```
+      mongod
+      npm install
+      node app/helpers/seed.js
+      npm start
+   ```
+
+To access the site, visit localhost:3000 in browser.
 
 ## Running Unit Tests
-Unit Tests for the Data Aggregation scripts and instructions on how to use them will be found in the `activities_data` directory.
+Unit Tests for the generation algorithm and instructions on how to use them are in the `itinerary/tests` directory.
 
-To run tests for the application, simply run:
+To run tests for the application, [INSERT TEST INFO HERE]
+
+simply run:
 ```bash
 rspec
 ```
@@ -52,12 +56,10 @@ User disliking an itinerary triggers the generation of a new itinerary. The TA c
 The entire team collaborated to integrate and test each piece of the system. 
 
 ### Back End
-Omar and Anthony wrote the back-end together. They implemented a seeds file to make sure that the JSON data that the Data Aggregation Team extracted was populating the database. They also redeveloped the application to utilize MongoDB. Additionally, they  established the route and testing suite, wrote DB migrations, model validations, and implemented controller logic. Lastly, they tracked down bugs in the app and data aggregation scripts.
+Omar and Anthony wrote the back-end together. They redeveloped the application to utilize MongoDB. They registered our app on Facebook and connected our database to Facebook so that the user could sign up for our app strictly through Facebook. 
 
 ### Front End
-Leslie and Tyler constructed the sidebar with information related to events/activities in a given itinerary and buttons allowing one to access more information about the event when fully implemented. Additionally, they implemented a menu with links to home, liked itineraries, log in window, and register window. Register link triggers a modal view of a the sign on form. Finally, they built and positioned like and dislike buttons on top of the map.
-
-Anthony implemented the Google map with drawn itineraries and paths and injected Ruby code into the front-end to display itineraries in the sidebar.
+Leslie and Tyler make tweaks to the sidebar. They implemented the feature that allows users to save itineraries and view their saved itineraries. They added various "help" modals to give more information to the user about the functionality of various buttons. 
 
 ### Data Aggregation
 Clare wrote the logic to create a pool of viable itinerary events. Masha wrote the logic to check that the times and distances between itineraries were logical. Eli wrote the logic to choose events within a certain distance and angle of the previosu event. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 

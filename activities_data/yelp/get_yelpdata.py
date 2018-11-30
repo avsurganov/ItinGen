@@ -391,8 +391,8 @@ def construct_event(business_details):
     event['tags'] = []
     for item in business_details['categories']:
         event['tags'].append(item['alias'])
-        category_tag = tag_as_category(input_values.categories)
-        event['tags'].append(category_tag)
+    category_tag = tag_as_category(input_values.categories)
+    event['tags'].append(category_tag)
     if 'price' in business_details:
         event['price'] = 0 - len(business_details['price'])
     else:

@@ -20,11 +20,13 @@
   
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
-  <div class="intro">
+  <div ng-click="showDiv=true" 
+        ng-show="!showDiv" class="ng-hide" id="intro_message" >
        <h2>Welcome to ItinGen!</h2>
        <h3> Click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
-        <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.nextItinerary()">Generate</button>
-
+        <button id="Generate" type="button" class="generate_button" ng-click="showDiv=true; $ctrl.nextItinerary()" 
+        ng-show="!showDiv">Generate</button>
+<!--  -->
   </div>
 </div>
 </div>
@@ -185,10 +187,10 @@
 <!-- Modal for Logging in -->
 
 <div class="modal fade" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centere" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="loginTitle">Log in</h5>
+        <h5 class="modal-title" id="loginTitle">Log in with Facebook!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -1,6 +1,6 @@
-# ItinGen
+# plan.it
 
-ItinGen is a web based application that allows users to randomly generate optimized itineraries for their schedules to explore a new city or rediscover a city they have been living in for years.
+plan.it is a web based application that allows users to randomly generate optimized itineraries for their schedules to explore a new city or rediscover a city they have been living in for years.
 
 # Table of Contents
 
@@ -78,7 +78,7 @@ Omar and Anthony wrote the back-end together. They redeveloped the application t
 Leslie and Tyler make tweaks to the sidebar. They implemented the feature that allows users to save itineraries and view their saved itineraries. They added various "help" modals to give more information to the user about the functionality of various buttons. 
 
 ### Data Aggregation
-Clare wrote the logic to create a pool of viable itinerary events. Masha wrote the logic to check that the times and distances between itineraries were logical. Eli wrote the logic to choose events within a certain distance and angle of the previous event. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 
+Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the logic to choose events within a certain distance and angle of the previous event. Masha wrote the logic to check that the times and distances between events were logical. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 
 
 ## Changes
 - Back End:
@@ -86,15 +86,15 @@ Clare wrote the logic to create a pool of viable itinerary events. Masha wrote t
    * We switched back to an MongoDB to better support our unstructured data.
 - Front End:
    * We rewrote the app with an Angular.js front end.
-   * We decided to change the format of the "Liked Itineraries" visual so that the user doesn't see overlapping itineraries.
-   * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
-   * We decided not to implement the ability for a user to un-like an itinerary.
-   * We implemented a Facebook login functionality. 
-   * We updated the color scheme. 
-   * We added a fire logo.
-- Data Team:
    * We made a number of small changes to various user preference features:
       * The user can specify start time, but not end time. We removed end time because it resulted in too many evening events being rejected.
       * The user can specify which method of transportation they want to use to get between events.
       * The user can specify that they want an itinerary with only free events. 
-   * Our final version does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to be worth the computational and performance cost.      
+      * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
+      * We decided not to implement the ability for a user to un-like an itinerary.
+   * We decided to change the format of the "Liked Itineraries" visual so that the user doesn't see overlapping itineraries.
+   * We implemented a Facebook login functionality. 
+   * We updated the color scheme. 
+   * We added a fire logo.
+- Data Team:
+   * Our final version of the algorithm does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to the core features of the software to be worth the computational and performance cost.      

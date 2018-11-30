@@ -17,7 +17,7 @@ plan.it is a web based application that allows users to randomly generate optimi
 
 ## Setup
 ### Install Prerequisites 
-(NPM/Node.js/MongoDB)
+(NPM/Node.js/MongoDB/Flask)
 #### Ubuntu
 You will need to add the Node.js PPA by running this command:
 ```bash
@@ -35,17 +35,23 @@ npm -v
 ```
 
 Now you will need to install MongoDB:
-```
+```bash
 sudo apt-get install -y mongodb
 ```
 
-Run the python server using the command:
-```
-python server.py
+You will also need to install Flask
+```bash
+pip3 install Flask
 ```
 
 
 ### Initializing the App
+In one terminal window, run this command:
+```bash
+npm run flask
+```
+
+In another terminal window, run these commands:
 ```bash
 npm install
 npm run seed
@@ -56,13 +62,15 @@ npm start
 ### Front End
 - Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
   ```
-  mpm run karma
+  npm run karma
+  npm run e2e
   ```
 ### Back End
 - To run database validation tests (back end) for the application, simply run:
   ```bash
   npm test
   ```
+
 ### Data & Algorithm
 - Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.  
   

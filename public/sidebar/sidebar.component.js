@@ -21,7 +21,23 @@ angular.module('sideBar')
           if (data.data.email === undefined) {
               // $location.path('/'); // Redirect to home page
           } else {
-            // let likeditineraries = itineraryFactory.getLikedItineraries();
+            console.log("LOGGED ON");
+            itineraryFactory.getLikedItineraries().then((req) => {
+              var success = req.data.success;
+              console.log("WAS SUCCESS" + success);
+              if(success) {
+                var tmp = req.data.itineraries
+                var parsedItins = JSON.parse(tmp);
+                console.log(parsedItins);
+                this.likedItineraries = parsedItins;
+                console.log(this.likedItineraries)
+              }
+              else {
+                var emptyArray = [];
+                return emptyArray;
+              }
+            });
+
             // console.log(likeditineraries);
             // itineraryFactory.addToLikedItineraries();
             app.isLoggedIn = true;

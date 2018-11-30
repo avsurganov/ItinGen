@@ -7,7 +7,7 @@
     "test": "mocha tests/",
     "start": "node server.js",
     "seed": "node app/helpers/seed.js",
-    "flask": "python3 flask/server.py",
+    "flask": "python3 itinerary/server.py",
     "e2e": "nightwatch -t e2e/frontend_spec.js"
   },
   "author": "",

@@ -21,7 +21,7 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         print(valid)
         #print(itin)
         sys.stdout.flush()
-        if valid and len(itin) > 1 and  itin[-1][3] - time > 120:
+        if True and len(itin) > 1 and  itin[-1][3] - time > 120:
             final_itin = itin
         tries+=1
     return final_itin

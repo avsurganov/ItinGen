@@ -241,3 +241,12 @@ itin14 = [(event1, venue1, 800, 920),
 # event open hours dont match assigned itinerary times
 itin15 = [(event1, venue1, 1050, 1100),
         (event2, venue2, 1100, 1111)]
+
+# wrong types
+itin16 = [("hey", venue1, 660, 780),
+        (event2, venue2, 790, 920)]
+itin17 = [(event1, venue1, 15.2, 780),
+        (event2, venue2, 790, 920)]
+
+#free
+itin18 = [(event3, venue3, 1250, 1280)]    

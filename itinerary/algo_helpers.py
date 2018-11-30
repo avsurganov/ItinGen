@@ -277,6 +277,7 @@ def determine_start_time(itinerary, event, user_data):
     transport = user_data.get('transportation')
     # approximate travel time
     distance = find_distance(last_venue,venue_to_lat_long(next_venue))
+    travel_time  = 0
     if (transport == 'driving'):
         travel_time = int(distance * 3)
     elif (transport == 'transit'):

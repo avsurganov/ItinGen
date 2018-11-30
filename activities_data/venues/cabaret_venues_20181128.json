@@ -1,0 +1,110 @@
+[
+	{
+		"venue_id": "yelpw9bZmMN6Bjy252t7gjX_Xg",
+		"venue_name": "Vaudezilla",
+		"latitude": 41.93947,
+		"longitude": -87.71807,
+		"address1": "3614 W Belmont Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpIITu5GokSXIJC902vV_b0A",
+		"venue_name": "Kit Kat Lounge & Supper Club",
+		"latitude": 41.949263828004,
+		"longitude": -87.6497471053475,
+		"address1": "3700 N Halsted St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpRdGcL75OCzYWDXXXq-TTCw",
+		"venue_name": "The Kiss Kiss Cabaret",
+		"latitude": 41.90615,
+		"longitude": -87.67038,
+		"address1": "1331 N Milwaukee",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpJcE9gHI9shys6n7GclqiBw",
+		"venue_name": "Bordel",
+		"latitude": 41.90298,
+		"longitude": -87.67079,
+		"address1": "1721 W Division St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelp21eUwlyh6oxcWyC4Bs4Qdg",
+		"venue_name": "The Baton Show Lounge",
+		"latitude": 41.890323,
+		"longitude": -87.631385,
+		"address1": "436 N Clark St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelpWTrcP6DOxCiX_qYXrb53kg",
+		"venue_name": "@North Bar",
+		"latitude": 41.91037,
+		"longitude": -87.66914,
+		"address1": "1637 W North Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpeInJr1SYBnHvhph4nNlTxw",
+		"venue_name": "Links Hall",
+		"latitude": 41.9380311,
+		"longitude": -87.6878368,
+		"address1": "3111 N Western Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpHyT_x64jpulRNAe0BYAYOQ",
+		"venue_name": "Boy Toy's Pocket Cabaret",
+		"latitude": 41.96846,
+		"longitude": -87.65661,
+		"address1": "",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelptU0hLeT-irw5FXSt6SSF8w",
+		"venue_name": "Chicago Fringe Festival 2014",
+		"latitude": 41.9673195,
+		"longitude": -87.7606964,
+		"address1": "4774 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60630"
+	}
+]

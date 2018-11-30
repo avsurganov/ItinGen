@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelp0s3yJUGqg9KrPCSwk8hJNA",
+		"venue_name": "Brando's Speakeasy",
+		"latitude": 41.87713,
+		"longitude": -87.629,
+		"address1": "343 S Dearborn St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60604"
+	},
+	{
+		"venue_id": "yelpG-kiY2RWQOiztnt8H_JWng",
+		"venue_name": "The Drifter Chicago",
+		"latitude": 41.89456,
+		"longitude": -87.63741,
+		"address1": "676 N Orleans St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelp4MOTVKKcqSec9GUZsQjXGw",
+		"venue_name": "Room 13",
+		"latitude": 41.94065,
+		"longitude": -87.65452,
+		"address1": "3222 N Sheffield Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpvtvTJZdVEdz66LYKL8Yuvg",
+		"venue_name": "Tinker to Evers",
+		"latitude": 41.94547,
+		"longitude": -87.65482,
+		"address1": "3473 N Clark St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelp65cSgrL3rVgu4gx87l0AWw",
+		"venue_name": "Club Bodega",
+		"latitude": 41.8889073,
+		"longitude": -87.6309051,
+		"address1": "355 N Clark St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	}
+]

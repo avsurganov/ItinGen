@@ -1,0 +1,110 @@
+[
+	{
+		"venue_id": "yelptL3lslj3Ji9YQvK9yVjLqg",
+		"venue_name": "BryAnna's Restaurant",
+		"latitude": 41.98515,
+		"longitude": -87.69795,
+		"address1": "5695 N Lincoln Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpNyDEW92FKQ3ZRh4i6FFKxA",
+		"venue_name": "Las Delicias",
+		"latitude": 41.9611375152379,
+		"longitude": -87.7283420423903,
+		"address1": "4010 W Montrose Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpHuDrPKz8puGVJmobXdvq4Q",
+		"venue_name": "Pupuseria Metapan",
+		"latitude": 41.94548,
+		"longitude": -87.77929,
+		"address1": "6107 W Addison St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	},
+	{
+		"venue_id": "yelpFgsvAwRexyHgUsqUMAiM3w",
+		"venue_name": "Pupuseria Restaurant Cuscatleco",
+		"latitude": 41.9683421098996,
+		"longitude": -87.7070768441803,
+		"address1": "3125 W Lawrence Ave",
+		"address2": "Ste 1",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpWtD5fi7RuayIx2EXwCCFgA",
+		"venue_name": "Restaurante Olocuilta",
+		"latitude": 41.9361350141524,
+		"longitude": -87.7566292136908,
+		"address1": "3040 N Laramie Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpE_P0_bQjXwK40trAMh8s-g",
+		"venue_name": "El Guanaco",
+		"latitude": 41.9321136474609,
+		"longitude": -87.7223587036133,
+		"address1": "3802 W Diversey Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelp7PqcX4QKcZPqhXueHNkEpw",
+		"venue_name": "Latin Patio Restaurant",
+		"latitude": 41.9375,
+		"longitude": -87.7663726806641,
+		"address1": "3115 N Central Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	},
+	{
+		"venue_id": "yelp0jJbDHXnphyqdrjdLGORng",
+		"venue_name": "Izalco Restaurant",
+		"latitude": 41.8438529968262,
+		"longitude": -87.7339859008789,
+		"address1": "4377 W 26th St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelpC_ZPTkpGek-5IaVlnfjXUw",
+		"venue_name": "El Mirador",
+		"latitude": 41.9316101074219,
+		"longitude": -87.7605209350586,
+		"address1": "5340 West Diversey Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60639"
+	}
+]

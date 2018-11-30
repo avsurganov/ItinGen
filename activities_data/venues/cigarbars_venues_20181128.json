@@ -1,0 +1,110 @@
+[
+	{
+		"venue_id": "yelp5fg2OPDoGzBVhy83RnlX_g",
+		"venue_name": "Habano Cigars Lounge",
+		"latitude": 41.99786,
+		"longitude": -87.76638,
+		"address1": "6416 N Lehigh Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60646"
+	},
+	{
+		"venue_id": "yelpoeZNGoUTe_XqrG-D0Rfv_w",
+		"venue_name": "The Cigar Lounge",
+		"latitude": 42.0433649,
+		"longitude": -88.0383987,
+		"address1": "1710 E Woodfield Rd",
+		"address2": null,
+		"address3": "",
+		"city": "Schaumburg",
+		"state": "IL",
+		"zip_code": "60173"
+	},
+	{
+		"venue_id": "yelpBLWCN03_a65L3rjGwdsubg",
+		"venue_name": "Rucker Cigar Lounge",
+		"latitude": 41.67784,
+		"longitude": -87.67124,
+		"address1": "11869 S Vincennes Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60643"
+	},
+	{
+		"venue_id": "yelpr3F9lcp4PVMt8QezLAKTew",
+		"venue_name": "Hollywood Smokes",
+		"latitude": 41.6022222,
+		"longitude": -87.7862418,
+		"address1": "6857 159th St",
+		"address2": "",
+		"address3": "",
+		"city": "Tinley Park",
+		"state": "IL",
+		"zip_code": "60477"
+	},
+	{
+		"venue_id": "yelphxiKR2ppKkPkGGeqddNcGQ",
+		"venue_name": "Trading Post Tobacco & Cigars",
+		"latitude": 41.9974449,
+		"longitude": -87.7663175,
+		"address1": "5510 W Devon Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60646"
+	},
+	{
+		"venue_id": "yelpez9BTw7atJAU5n2SFgU_7g",
+		"venue_name": "Rocky Patel Cigar Lounge",
+		"latitude": 41.95834,
+		"longitude": -87.80766,
+		"address1": "4300 N Harlem Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Norridge",
+		"state": "IL",
+		"zip_code": "60706"
+	},
+	{
+		"venue_id": "yelpK-lS7EaZ6-jbHANq5ZQORg",
+		"venue_name": "Papa's Cigar Shop & Lounge",
+		"latitude": 42.20284,
+		"longitude": -87.81099,
+		"address1": "328 Green Bay Rd",
+		"address2": null,
+		"address3": null,
+		"city": "Highwood",
+		"state": "IL",
+		"zip_code": "60040"
+	},
+	{
+		"venue_id": "yelpSVFv8gQEKhJURuKVjGZltA",
+		"venue_name": "Habano Cigar Lounge",
+		"latitude": 41.6285672287184,
+		"longitude": -87.9400232685394,
+		"address1": "13033 W 143rd St",
+		"address2": "",
+		"address3": null,
+		"city": "Homer Glen",
+		"state": "IL",
+		"zip_code": "60491"
+	},
+	{
+		"venue_id": "yelpo3S1fau4Lr5Vn8vfl0SO1A",
+		"venue_name": "Cigar Elmwood Park",
+		"latitude": 41.9375975,
+		"longitude": -87.8190749,
+		"address1": "3140 N 77th Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Elmwood Park",
+		"state": "IL",
+		"zip_code": "60707"
+	}
+]

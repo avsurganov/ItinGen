@@ -1,0 +1,30 @@
+[
+	{
+		"venue_id": "yelpJ8aqt4ZcpNuOusJMndUPLg",
+		"event_name": "Cafe Vienna",
+		"event_id": "yelpJ8aqt4ZcpNuOusJMndUPLg",
+		"mon_start": 540,
+		"mon_end": 1020,
+		"tues_start": 540,
+		"tues_end": 1020,
+		"wed_start": 540,
+		"wed_end": 1020,
+		"thurs_start": 540,
+		"thurs_end": 1020,
+		"fri_start": 450,
+		"fri_end": 1080,
+		"sat_start": 450,
+		"sat_end": 1080,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"bakeries",
+			"food",
+			"breakfast_brunch",
+			"food",
+			"austrian",
+			"food"
+		],
+		"price": -1
+	}
+]

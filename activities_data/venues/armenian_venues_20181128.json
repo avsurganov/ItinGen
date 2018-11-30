@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpN_1edjdTR11IZ4vw4dZMPA",
+		"venue_name": "Sayat Nova",
+		"latitude": 41.8923110961914,
+		"longitude": -87.6232223510742,
+		"address1": "157 E Ohio St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpxeNT_b0EzcC_gJm0rMnV_A",
+		"venue_name": "Siunik Armenian Grill",
+		"latitude": 42.08695,
+		"longitude": -87.79895,
+		"address1": "1707 Chestnut Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Glenview",
+		"state": "IL",
+		"zip_code": "60025"
+	}
+]

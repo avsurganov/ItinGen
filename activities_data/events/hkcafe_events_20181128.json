@@ -1,0 +1,30 @@
+[
+	{
+		"venue_id": "yelpkVQL97svePu8-thJPK3A1w",
+		"event_name": "Saint Anna Bakery & Cafe",
+		"event_id": "yelpkVQL97svePu8-thJPK3A1w",
+		"mon_start": 480,
+		"mon_end": 1200,
+		"tues_start": 480,
+		"tues_end": 1200,
+		"wed_start": 480,
+		"wed_end": 1200,
+		"thurs_start": 480,
+		"thurs_end": 1200,
+		"fri_start": 480,
+		"fri_end": 1200,
+		"sat_start": 480,
+		"sat_end": 1200,
+		"sun_start": 480,
+		"sun_end": 1200,
+		"tags": [
+			"bakeries",
+			"food",
+			"cantonese",
+			"food",
+			"hkcafe",
+			"food"
+		],
+		"price": -1
+	}
+]

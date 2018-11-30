@@ -1,0 +1,58 @@
+[
+	{
+		"venue_id": "yelpPSKOt1kwYm6_PiCS2oHONQ",
+		"event_name": "White Pearl Restaurant",
+		"event_id": "yelpPSKOt1kwYm6_PiCS2oHONQ",
+		"mon_start": 660,
+		"mon_end": 1260,
+		"tues_start": 660,
+		"tues_end": 1260,
+		"wed_start": 660,
+		"wed_end": 1260,
+		"thurs_start": 660,
+		"thurs_end": 1260,
+		"fri_start": 660,
+		"fri_end": 1320,
+		"sat_start": 660,
+		"sat_end": 1320,
+		"sun_start": 660,
+		"sun_end": 1200,
+		"tags": [
+			"chinese",
+			"food",
+			"thai",
+			"food",
+			"laotian",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpQv79Hd0a9Yzm-k7a5nofJA",
+		"event_name": "Lao & Thai Spicy Noodle",
+		"event_id": "yelpQv79Hd0a9Yzm-k7a5nofJA",
+		"mon_start": 660,
+		"mon_end": 1260,
+		"tues_start": 660,
+		"tues_end": 1260,
+		"wed_start": 660,
+		"wed_end": 1260,
+		"thurs_start": 660,
+		"thurs_end": 1260,
+		"fri_start": 660,
+		"fri_end": 1260,
+		"sat_start": 660,
+		"sat_end": 1260,
+		"sun_start": 720,
+		"sun_end": 1200,
+		"tags": [
+			"noodles",
+			"food",
+			"thai",
+			"food",
+			"laotian",
+			"food"
+		],
+		"price": -2
+	}
+]

@@ -1,0 +1,98 @@
+[
+	{
+		"venue_id": "yelpScWAfhKfDwbMfkFAHU9r3w",
+		"venue_name": "Krypton Virtual Reality Lounge",
+		"latitude": 41.9393032647897,
+		"longitude": -87.6491695498636,
+		"address1": "3153 N Halsted St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelp9gJ1qHwgVzp0H7FhzigYFQ",
+		"venue_name": "VR Mania Virtual Reality Lounge & Cafe",
+		"latitude": 41.9758749,
+		"longitude": -87.71067,
+		"address1": "3248 W Foster Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpDZrYqDE2ShA4HySZjSTgHg",
+		"venue_name": "Fun Zone",
+		"latitude": 41.7723491,
+		"longitude": -88.0322066,
+		"address1": "2011 63rd St",
+		"address2": null,
+		"address3": "",
+		"city": "Downers Grove",
+		"state": "IL",
+		"zip_code": "60516"
+	},
+	{
+		"venue_id": "yelpp-pN4-BArPYtqQfhem8H0Q",
+		"venue_name": "Indoor Golf Links of America",
+		"latitude": 41.59224,
+		"longitude": -87.87256,
+		"address1": "16356 104th Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Orland Park",
+		"state": "IL",
+		"zip_code": "60467"
+	},
+	{
+		"venue_id": "yelpLZfc0dRn3BCPkVsfm0Pe7g",
+		"venue_name": "Nova VR Lounge",
+		"latitude": 42.338921,
+		"longitude": -88.0026081,
+		"address1": "1826 E Belvidere Rd",
+		"address2": null,
+		"address3": "",
+		"city": "Grayslake",
+		"state": "IL",
+		"zip_code": "60030"
+	},
+	{
+		"venue_id": "yelpVZzNQ6_joxnulcjv_QqEoQ",
+		"venue_name": "MassVR Beyond Reality",
+		"latitude": 41.9721,
+		"longitude": -87.87066,
+		"address1": "5135 Pearl St",
+		"address2": null,
+		"address3": "",
+		"city": "chiller Park",
+		"state": "IL",
+		"zip_code": "60176"
+	},
+	{
+		"venue_id": "yelpbpeaFNXRZvMvdF37sYMkBQ",
+		"venue_name": "Genesis VR",
+		"latitude": 41.518182,
+		"longitude": -87.984346,
+		"address1": "416 Nelson Rd",
+		"address2": null,
+		"address3": "",
+		"city": "New Lenox",
+		"state": "IL",
+		"zip_code": "60451"
+	},
+	{
+		"venue_id": "yelpZrF5uxfF9lLvtVqEGzFT_g",
+		"venue_name": "Gamma VR",
+		"latitude": 41.52293,
+		"longitude": -88.14257,
+		"address1": "2419 W Jefferson St",
+		"address2": null,
+		"address3": "",
+		"city": "Joliet",
+		"state": "IL",
+		"zip_code": "60435"
+	}
+]

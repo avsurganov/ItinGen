@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelpJDNZxz0ud7zhuPo5pqznMA",
+		"venue_name": "Demera Ethiopian Restaurant",
+		"latitude": 41.96918,
+		"longitude": -87.65931,
+		"address1": "4801 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelpOVW54jiavdQXO4SLbGx90A",
+		"venue_name": "Ras Dashen Ethiopian Restaurant",
+		"latitude": 41.9885039,
+		"longitude": -87.6604057,
+		"address1": "5846 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60660"
+	},
+	{
+		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"venue_name": "Ethiopian Diamond",
+		"latitude": 41.9930056,
+		"longitude": -87.6605436,
+		"address1": "6120 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60660"
+	},
+	{
+		"venue_id": "yelpggi4ASeyeY5MEd4yjRgmZA",
+		"venue_name": "Tesfa Ethiopian Cuisine",
+		"latitude": 41.96532,
+		"longitude": -87.6557799,
+		"address1": "1023 W Wilson Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelpVLlWsbYXcJdUPn6hCdP3xA",
+		"venue_name": "Den Den Restaurant",
+		"latitude": 42.0028237,
+		"longitude": -87.6720684,
+		"address1": "6635 N Clark St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60626"
+	},
+	{
+		"venue_id": "yelpW2hvbGLNqmyYkILJcNbG4Q",
+		"venue_name": "Awash Ethiopian Restaurant",
+		"latitude": 41.997093,
+		"longitude": -87.6607807,
+		"address1": "6324- 26 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60660"
+	},
+	{
+		"venue_id": "yelpXQFg1HNd-PbuWQkZI1QQRg",
+		"venue_name": "Selam Ethiopian Kitchen",
+		"latitude": 41.964892,
+		"longitude": -87.6567838,
+		"address1": "4543 N Broadway St",
+		"address2": null,
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	}
+]

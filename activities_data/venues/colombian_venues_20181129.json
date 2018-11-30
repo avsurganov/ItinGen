@@ -1,0 +1,122 @@
+[
+	{
+		"venue_id": "yelp2WoMT3wSpp9vxZeTv6u-cw",
+		"venue_name": "Las Tablas Colombian Steakhouse",
+		"latitude": 41.935258,
+		"longitude": -87.662681,
+		"address1": "2942 N Lincoln Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpepOvUIFJEm9rdlxwA1jV8A",
+		"venue_name": "Sabor A Cafe",
+		"latitude": 41.990297,
+		"longitude": -87.691057,
+		"address1": "2435 W Peterson Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelp3nOO3B9xoASM9XLzJfbHDg",
+		"venue_name": "ArePA George",
+		"latitude": 41.9098848,
+		"longitude": -87.7071149,
+		"address1": "1552 N Kedzie Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60651"
+	},
+	{
+		"venue_id": "yelpJy_-RfcqgYVQ6CjIrNHEBA",
+		"venue_name": "Pizza y Pan Pa' Ya",
+		"latitude": 41.9609413146973,
+		"longitude": -87.7068023681641,
+		"address1": "3125 W Montrose",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpzpLIsXCEitY8zMbW4wQELw",
+		"venue_name": "Brasa Roja",
+		"latitude": 41.9461541666152,
+		"longitude": -87.7276231342307,
+		"address1": "3556 N Pulaski Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelp8IwmGEwKYUbNnrTeT_h4fg",
+		"venue_name": "Antojitos Colombianos",
+		"latitude": 41.95723,
+		"longitude": -87.75194,
+		"address1": "4208 N Milwaukee Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpCVnNuzqwhH2E7rwxLZC5BQ",
+		"venue_name": "El Llano Restaurant - Northcenter",
+		"latitude": 41.95356,
+		"longitude": -87.67793,
+		"address1": "3941 N Lincoln Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpfhaRGmrgFep8_uQt1p4ALA",
+		"venue_name": "El Llano Restaurant",
+		"latitude": 41.954179,
+		"longitude": -87.719454,
+		"address1": "4011 N Elston Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelp_akk97gxb21J5Syo2XSHrA",
+		"venue_name": "La Gozadera Restaurant & Bar",
+		"latitude": 41.99072,
+		"longitude": -87.69378,
+		"address1": "2542 W Peterson Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpqSrQDsG2BYdCmphu3-qrvA",
+		"venue_name": "Congas",
+		"latitude": 41.9801907898559,
+		"longitude": -87.8032832220197,
+		"address1": "7021 W Higgins Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60656"
+	}
+]

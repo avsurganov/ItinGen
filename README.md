@@ -78,7 +78,7 @@ Omar and Anthony wrote the back-end together. They redeveloped the application t
 Leslie and Tyler make tweaks to the sidebar. They implemented the feature that allows users to save itineraries and view their saved itineraries. They added various "help" modals to give more information to the user about the functionality of various buttons. 
 
 ### Data Aggregation
-Clare wrote the logic to create a pool of viable itinerary events. Masha wrote the logic to check that the times and distances between itineraries were logical. Eli wrote the logic to choose events within a certain distance and angle of the previous event. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 
+Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the logic to choose events within a certain distance and angle of the previous event. Masha wrote the logic to check that the times and distances between events were logical. Max wrote the logic to slot events into a final itinerary and account for meal times in the itinerary. Each team member wrote validation functions for their generation logic and tested their validation functions. 
 
 ## Changes
 - Back End:

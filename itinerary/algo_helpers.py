@@ -288,7 +288,7 @@ def determine_start_time(itinerary, event, user_data):
     if (transport == 'driving'):
         travel_time = distance * 2
     elif (transport == 'transit'):
-        travel_time = distance * 5
+        travel_time = distance * 8
     elif (transport == 'walking'):
         travel_time = distance * 20
 

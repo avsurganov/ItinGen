@@ -123,7 +123,13 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
+<<<<<<< HEAD
     #assert validate_itin(itinerary, user_data)
+=======
+    user_data['date'] = get_date()
+    user_data['day'] = day_to_str(datetime.datetime.today().weekday())
+    assert validate_itin(itinerary, user_data)
+>>>>>>> 67cb6e2c503dd0d32342acab05fba1f8bea6e8af
 
     # return the itinerary
     final_itin = []
@@ -140,4 +146,3 @@ def create_itinerary(user_args):
 
 itin = create_itinerary('test')
 print(itin)
-

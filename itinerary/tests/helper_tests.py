@@ -5,6 +5,18 @@ sys.path.append("..")
 from pull_events import *
 from helper_itin_examples import *
 
+'''
+Functions that aren't tested and why:
+
+    - time and date checking functions for temp and perm events
+      because they check the date against today's actual date
+      so tests written today would fail tomorrow. We have validated
+      that they do work based on the itineraries we have generated
+    - get_t_events and get_p_events because they both required
+      queries to the database that aren't possible to simulate
+      for testing purposes
+'''
+
 class TestDayConversion(unittest.TestCase):
     def test_day_to_str(self):
         self.assertEqual(day_to_str(0),"mon")
@@ -18,19 +30,8 @@ class TestDayConversion(unittest.TestCase):
         self.assertNotEqual(day_to_str(4),"mon")
         self.assertNotEqual(day_to_str(6),"thurs")
 
-# not written because these functions check that the date in the event
-# matches "today" - so tests written today will fail tomorrow
-# we've confirmed from running it that these functions do their job,
-# but because the functions call a library that gets the actual current
-# date, running them at a later time would make it fail
-# (and theres no way to conveniently take the date out of the functions
-# given how we use them)
-#class TestPermEventChecks(unittest.TestCase):
-    #def test_time_date_check_perm(self):
 
 class TestTempEventChecks(unittest.TestCase):
-    #def test_time_check_temp(self):
-    #def test_date_check_temp(self)
     def test_check_meal_overlap_temp(self):
         self.assertTrue(check_meal_overlap_temp(event7))
         self.assertFalse(check_meal_overlap_temp(event3))
@@ -47,11 +48,6 @@ class TestCostChecks(unittest.TestCase):
         self.assertFalse(check_free(event5))
         self.assertFalse(check_free(event6))
 
-'''
-get_t_events and get_p_events are not tested because
-they both required queries to the database that aren't
-possible to simulate for testing purposes
-'''
 
 
 

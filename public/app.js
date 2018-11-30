@@ -19,6 +19,8 @@ angular.module('ItinGen', [
   $scope.test = "We got it!"
   var app = this;
 
+
+
   if (Auth.isLoggedIn()) {
     // Check if a the token expired
     Auth.getUser().then(function(data) {
@@ -44,11 +46,13 @@ angular.module('ItinGen', [
      var map;
      $scope.location
      $scope.displayLocation
+     $scope.displayLocationLoaded = false
      function setDefault(x, y) {
 
         $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + x + ',' + y + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').
         then((res) => {
           $scope.displayLocation = res.data.results[0].formatted_address
+          $scope.displayLocationLoaded = true
         }) 
      }
 

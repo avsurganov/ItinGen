@@ -15,18 +15,16 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
     if time > (20*60) or fabs(latitude - 41.5) > 2 or fabs(longitude + 87.5) > 2:
         print(time)
         return []
-    while len(final_itin) < 2:
+    while len(final_itin) < 2 and tries < 5:
         [itin, valid] = create_itinerary(60*int(units[0])+int(units[1]), latitude, longitude, free, radius, transport, 500 * (tries+1))
         print("We")
         print(valid)
-        print(itin)
+        #print(itin)
         sys.stdout.flush()
-        if len(itin) > 1 and  itin[-1][3] - time > 120:
+        if valid and len(itin) > 1 and  itin[-1][3] - time > 120:
             final_itin = itin
         tries+=1
-        if tries == 5:
-            return []
     return final_itin
 
-#itin = generate_itin('2018-11-30T08:21:50.182Z', 41.881855, -87.627115, False, 10.0, 'driving')
+itin = generate_itin('2018-11-30T08:21:50.182Z', 41.881855, -87.627115, False, 10.0, 'driving')
 #print(itin)

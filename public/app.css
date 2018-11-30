@@ -258,9 +258,10 @@ margin-top: -1px;
 }
 
 .logo {
+  padding-top: 5px;
   display: block; 
   z-index: 2;
   vertical-align: top;
   position: absolute;
-  right: 36%;
+  right: 5%;
 }

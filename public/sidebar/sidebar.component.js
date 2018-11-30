@@ -42,7 +42,9 @@ angular.module('sideBar')
 
 
     this.generate = function() {
-      itineraryFactory.addToLikedItineraries()
+      console.log($scope.$parent.settings);
+      console.log($scope.$parent.location);
+      itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
       $scope.$parent.updateMapWithNewItinerary();
     }
 

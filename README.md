@@ -50,10 +50,14 @@ npm start
 ## Running Unit Tests
 Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.
 
-To run Database validation tests (back-end) for the application, simply run:
+To run database validation tests (back-end) for the application, simply run:
 ```bash
 npm test
 ```
+
+Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
+```mpm run karma```
+
 
 ## Suggested Acceptance Tests
 - Opening and closing the hamburger menu. 

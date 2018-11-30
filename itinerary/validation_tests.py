@@ -4,6 +4,7 @@ from validation import *
 from validation_itin_examples import *
 from user_input_examples import *
 
+# tests validation functions in terms of times of events
 class TestTimeValidation(unittest.TestCase):
     def test_validate_nooverlap(self):
         self.assertTrue(validate_nooverlap(itin1,0))
@@ -37,6 +38,7 @@ class TestTimeValidation(unittest.TestCase):
         self.assertFalse(validate_isopen(itin15,"sat"))
         self.assertFalse(validate_isopen(itin15,"sun"))
 
+# tests validation functions in terms of checking distance
 class TestDistanceValidation(unittest.TestCase):
     def test_validate_max_distance(self):
         self.assertTrue(validate_max_distance(itin1, [41.792210, -87.599940], 10))
@@ -59,6 +61,7 @@ class TestDistanceValidation(unittest.TestCase):
         self.assertTrue(validate_travel_time(itin7, "WALK"))
         self.assertFalse(validate_travel_time(itin11, "TRANSIT"))
 
+# tests functions that check that events are valid in the itin
 class TestEventValidation(unittest.TestCase):
     def test_validate_no_duplicates(self):
         self.assertEqual(validate_no_duplicates(itin9),1)
@@ -72,6 +75,7 @@ class TestEventValidation(unittest.TestCase):
         self.assertTrue(validate_event_date(itin8, '02-16-2018'))
         self.assertFalse(validate_event_date(itin8, '02-16-2019'))
 
+# tests the overall validation function for itins
 class TestItinValidation(unittest.TestCase):
     def test_validate_itin(self):
         self.assertTrue(validate_itin(itin2,user_data1))

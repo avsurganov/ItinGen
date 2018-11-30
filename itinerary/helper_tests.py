@@ -21,6 +21,7 @@ Functions that aren't tested and why:
       can't be easily simulated and passed into the functions
 '''
 
+# tests the function that converts an int to string
 class TestDayConversion(unittest.TestCase):
     def test_day_to_str(self):
         self.assertEqual(day_to_str(0),"mon")
@@ -34,6 +35,7 @@ class TestDayConversion(unittest.TestCase):
         self.assertNotEqual(day_to_str(4),"mon")
         self.assertNotEqual(day_to_str(6),"thurs")
 
+# tests function that ensures events dont overlap with meals
 class TestTempEventChecks(unittest.TestCase):
     def test_check_meal_overlap_temp(self):
         self.assertTrue(check_meal_overlap_temp(evente))
@@ -42,7 +44,7 @@ class TestTempEventChecks(unittest.TestCase):
         self.assertFalse(check_meal_overlap_temp(eventc))
         self.assertFalse(check_meal_overlap_temp(eventd))
 
-
+# tests function that checks that all events are free
 class TestCostChecks(unittest.TestCase):
     def test_check_free(self):
         self.assertTrue(check_free(evente))
@@ -51,7 +53,7 @@ class TestCostChecks(unittest.TestCase):
         self.assertFalse(check_free(eventc))
         self.assertFalse(check_free(eventd))
 
-
+# tests functions from the algorithm helper function
 class TestAlgoHelpers(unittest.TestCase):
     def test_check_valid(self):
         self.assertFalse(check_valid((event1, venue1, 480, 580), itin7, user_data1))
@@ -68,6 +70,7 @@ class TestAlgoHelpers(unittest.TestCase):
         self.assertTrue(check_double_count(event1, itin1))
         self.assertFalse(check_double_count(event3, itin1))
 
+# tests helper functions that do distance calculations
 class TestDistanceHelpers(unittest.TestCase):
     def test_venue_to_lat_long(self):
         v1 = venue_to_lat_long(venue1)

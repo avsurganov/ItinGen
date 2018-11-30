@@ -204,7 +204,7 @@ def validate_angle(coords1, center, coords2, limit=1):
     else:
         return False
 
-
+# sort pool of events by distance
 def sort_distances(events, center):
     event_distances = []
     for event in events:
@@ -218,6 +218,7 @@ def sort_distances(events, center):
 # TIME HELPER FUNCTIONS #
 #########################
 
+# convert day of the week to string
 def day_to_str(dayint):
     if dayint == 0:
         return "mon"
@@ -305,7 +306,7 @@ def determine_start_time(itinerary, event, user_data):
     else:
         return open_time
 
-
+# pick end time for event
 def determine_end_time(itinerary, event, start_time):
     tags = event[0].get('tags')
     end_time = get_close(event[0])
@@ -322,7 +323,7 @@ def determine_end_time(itinerary, event, start_time):
         else:
             return start_time + time
 
-
+# check if restaurants are placed at a valid time
 def validate_restaurant(event, start_time):
     tags = event.get('tags')
     if start_time < (12*60) or start_time > (19.5*60) or (start_time > 13 * 60 and start_time < 18.5*60):

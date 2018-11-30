@@ -125,13 +125,20 @@ Tevent.create(tevents_array)
     console.log(err);
   })
 
-Venue.create(venues_array)
-  .then(venue => {
-    console.log(`${venue.length} venues created`);
-  })
-  .catch((err) => {
-    console.log(err);
-  })
+venues_array.map(v => {
+  Venue.create(v)
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+//Venue.create(venues_array)
+  //.then(venue => {
+    //console.log(`${venue.length} venues created`);
+  //})
+  //.catch((err) => {
+    //console.log(err);
+  //})
 
 User.create(
   [

@@ -169,6 +169,46 @@ venue3 = {
           "zip_code": "60018"
 }
 
+event4 = {
+          "venue_id": "yelpAkcZ1fUyB3RocKLYGFu20Q",
+          "event_name": "Art Institute of Chicago",
+          "event_id": "yelpAkcZ1fUyB3RocKLYGFu20Q",
+          "mon_start": 630,
+          "mon_end": 1020,
+          "tues_start": 630,
+          "tues_end": 1020,
+          "wed_start": 630,
+          "wed_end": 1020,
+          "thurs_start": 630,
+          "thurs_end": 1200,
+          "fri_start": 630,
+          "fri_end": 1020,
+          "sat_start": 630,
+          "sat_end": 1020,
+          "sun_start": 630,
+          "sun_end": 1020,
+          "tags": [
+            "artschools",
+            "landmarks",
+            "artmuseums",
+            "food"
+          ],
+          "price": -10
+         }
+
+venue4 = {
+          "venue_id": "yelpAkcZ1fUyB3RocKLYGFu20Q",
+          "venue_name": "Art Institute of Chicago",
+          "latitude": 41.8796,
+          "longitude": -87.623713,
+          "address1": "111 S Michigan Ave",
+          "address2": "",
+          "address3": "",
+          "city": "Chicago",
+          "state": "IL",
+          "zip_code": "60603"
+         }
+
 # invalid travel time (driving)
 # valid travel distance (default dist)
 # invalid travel distance (user dist)
@@ -249,3 +289,6 @@ itin17 = [(event1, venue1, 15.2, 780),
 
 #free
 itin18 = [(event3, venue3, 1250, 1280)]
+
+# ends late
+itin18 = [(event3, venue3, 1250, 1400)]

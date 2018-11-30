@@ -1,7 +1,7 @@
 import unittest
 
 from validation import *
-from itin_examples import *
+from validation_itin_examples import *
 from user_input_examples import *
 
 class TestTimeValidation(unittest.TestCase):

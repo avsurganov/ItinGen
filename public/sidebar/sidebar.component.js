@@ -19,7 +19,6 @@ angular.module('sideBar')
           console.log("HERE");
           console.log(data.data);
           if (data.data.email === undefined) {
-              Auth.logout(); // Log the user out
               // $location.path('/'); // Redirect to home page
           } else {
             // let likeditineraries = itineraryFactory.getLikedItineraries();
@@ -59,6 +58,7 @@ angular.module('sideBar')
 
     this.logout = function(){
       Auth.logout();
+      app.isLoggedIn = false;
     }
   
     this.facebook = function() {

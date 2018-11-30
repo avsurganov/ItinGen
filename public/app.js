@@ -18,31 +18,7 @@ angular.module('ItinGen', [
   var directionsDisplay
   $scope.test = "We got it!"
   var app = this;
-
-
-
-  if (Auth.isLoggedIn()) {
-    // Check if a the token expired
-    Auth.getUser().then(function(data) {
-        // Check if the returned user is undefined (expired)
-        console.log("HERE");
-        console.log(data.data);
-        if (data.data.email === undefined) {
-            Auth.logout(); // Log the user out
-            app.isLoggedIn = false; // Set session to false
-            $location.path('/'); // Redirect to home page
-        } else {
-          let likeditineraries = itineraryFactory.getLikedItineraries();
-          console.log(likeditineraries);
-          itineraryFactory.addToLikedItineraries();
-        }
-    });
-}
-
-
-
-
-  
+ 
      $scope.map;
      $scope.location
      $scope.displayLocation

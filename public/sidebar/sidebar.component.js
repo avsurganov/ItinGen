@@ -72,9 +72,14 @@ angular.module('sideBar')
 
     this.getLikedItineraries = function() {
       console.log("switching!")
-      this.sidebarTemplate = sidebarTemplates[1]
-      this.likedItineraries = itineraryFactory.getLikedItineraries()
-      console.log(this.likedItineraries)
+      if(app.isLoggedIn){
+        console.log("LOGGED IN");
+        this.sidebarTemplate = sidebarTemplates[1]
+        this.likedItineraries = itineraryFactory.getLikedItineraries()
+        console.log(this.likedItineraries)
+      } else {
+        console.log("NOT LOGGED IN");
+      }
 
     }
 

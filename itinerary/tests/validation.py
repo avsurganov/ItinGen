@@ -1,5 +1,4 @@
 import sys
-from pull_events import *
 
 ''' TIME VALIDATION FUNCTIONS '''
 
@@ -7,7 +6,7 @@ from pull_events import *
 def validate_nooverlap(itin, user_start_time):
     if itin[0][2] < user_start_time:
         return False
-    for i in len(itin):
+    for i in range(len(itin)-1):
         # check if end time of event a is after start time of event a+1
         # for itin of format [(ev1,venue1,starttime, endtime), (ev2,venue2,starttime endtime) ... ]
         if itin[i][3] > itin[i+1][2]:
@@ -17,7 +16,7 @@ def validate_nooverlap(itin, user_start_time):
 
 # checks that itin items are in chronological order
 def validate_chrono(itin):
-    for i in len(itin):
+    for i in range(len(itin)-1):
         if itin[i][2] >= itin[i+1][2]:
             return False
     return True
@@ -26,7 +25,7 @@ def validate_chrono(itin):
 def validate_isopen(itin, day):
     starthours = str(day) + '_start'
     endhours = str(day) + '_end'
-    for i in len(itin):
+    for i in range(len(itin)):
         event = itin[i][0]
         #print(type(itin),"itin type")
         #print(type(itin[0]),"first group thing in itin")
@@ -161,11 +160,11 @@ def validate_types(itin):
 def validate_itin(itin,user_inputs):
 
     user_times = user_inputs['start_time']
-    day = day_to_str(datetime.datetime.today().weekday())
     start_location = user_inputs['start_location']
     dist = user_inputs['distance_radius']
     transport = user_inputs['transportation']
-    date = get_date()
+    day = user_inputs['day']
+    date = user_inputs['date']
 
     istypes = validate_types(itin)
     if not istypes:

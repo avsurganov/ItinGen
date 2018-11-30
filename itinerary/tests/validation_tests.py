@@ -1,6 +1,7 @@
 import unittest
 from validation import *
 from itin_examples import *
+from user_input_examples import *
 
 class TestTimeValidation(unittest.TestCase):
     def test_validate_nooverlap(self):
@@ -80,20 +81,20 @@ class TestEventValidation(unittest.TestCase):
 
 class TestItinValidation(unittest.TestCase):
     def test_validate_itin(self):
-        #self.assertTrue(validate_itin(itin2,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin12,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin13,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin15,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin13,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin1,"mon",[41.792210, -87.599940],0,"11-20-2018",800))
-        #self.assertTrue(validate_itin(itin1,"tues",[41.792210, -87.599940],0,"02-16-2019"))
-        #self.assertTrue(validate_itin(itin10,"tues",[41.792210, -87.599940],0,"02-16-2019"))
-        #self.assertTrue(validate_itin(itin9,"tues",[41.792210, -87.599940],0,"02-16-2018"))
-        self.assertFalse(validate_itin(itin8,"tues",[41.792210, -87.599940],0,"02-16-2019"))
-        self.assertFalse(validate_itin(itin16,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin17,"mon",[41.792210, -87.599940],0,"11-20-2018"))
-        self.assertFalse(validate_itin(itin18,"mon",[41.792210, -87.599940],1,"11-20-2018"))
-        #self.assertTrue(validate_itin(itin2,"mon",[41.792210, -87.599940],1,"11-20-2018"))
+        self.assertTrue(validate_itin(itin2,user_data1))
+        self.assertFalse(validate_itin(itin12,user_data1))
+        self.assertFalse(validate_itin(itin13,user_data1))
+        self.assertFalse(validate_itin(itin15,user_data1))
+        self.assertFalse(validate_itin(itin13,user_data1))
+        self.assertFalse(validate_itin(itin1,user_data2))
+        self.assertTrue(validate_itin(itin1,user_data3))
+        self.assertTrue(validate_itin(itin10,user_data3))
+        self.assertTrue(validate_itin(itin9,user_data3))
+        self.assertFalse(validate_itin(itin8,user_data3))
+        self.assertFalse(validate_itin(itin16,user_data1))
+        self.assertFalse(validate_itin(itin17,user_data1))
+        self.assertFalse(validate_itin(itin18,user_data4))
+        self.assertTrue(validate_itin(itin2,user_data4))
 
 
 

@@ -12,9 +12,9 @@ http://localhost:5000/?start_time=1430&latitude=44.544&longitude=87.345&free=yes
 
 @app.route("/")
 def run_algorithm():
-    start_time = request.args.get("start_time")
-    latitude = request.args.get("latitude")
-    longitude = request.args.get("longitude")
+    start_time = request.args.get("startTime")
+    latitude = request.args.get("lat")
+    longitude = request.args.get("lon")
     free = request.args.get("free")
     radius = request.args.get("radius")
     transport = request.args.get("transport")

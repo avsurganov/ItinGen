@@ -1,8 +1,12 @@
 import unittest
 import sys
 
+
 from pull_events import *
 from helper_itin_examples import *
+from algo_helpers import *
+from user_input_examples import *
+from itin_examples import *
 
 class TestDayConversion(unittest.TestCase):
     def test_day_to_str(self):
@@ -31,20 +35,37 @@ class TestTempEventChecks(unittest.TestCase):
     #def test_time_check_temp(self):
     #def test_date_check_temp(self)
     def test_check_meal_overlap_temp(self):
-        self.assertTrue(check_meal_overlap_temp(event7))
-        self.assertFalse(check_meal_overlap_temp(event3))
-        self.assertFalse(check_meal_overlap_temp(event4))
-        self.assertFalse(check_meal_overlap_temp(event5))
-        self.assertFalse(check_meal_overlap_temp(event6))
+        self.assertTrue(check_meal_overlap_temp(evente))
+        self.assertFalse(check_meal_overlap_temp(eventa))
+        self.assertFalse(check_meal_overlap_temp(eventb))
+        self.assertFalse(check_meal_overlap_temp(eventc))
+        self.assertFalse(check_meal_overlap_temp(eventd))
 
 
 class TestCostChecks(unittest.TestCase):
     def test_check_free(self):
-        self.assertTrue(check_free(event7))
-        self.assertTrue(check_free(event4))
-        self.assertFalse(check_free(event3))
-        self.assertFalse(check_free(event5))
-        self.assertFalse(check_free(event6))
+        self.assertTrue(check_free(evente))
+        self.assertTrue(check_free(eventb))
+        self.assertFalse(check_free(eventa))
+        self.assertFalse(check_free(eventc))
+        self.assertFalse(check_free(eventd))
+
+
+class TestAlgoHelpers(unittest.TestCase):
+    def test_check_valid(self):
+        self.assertFalse(check_valid((event1, venue1, 480, 580), itin7, user_data1))
+
+    def test_check_finished(self):
+        self.assertFalse(check_finished([]))
+        self.assertTrue(check_finished(itin18))
+
+    def test_validate_restaurant(self):
+        self.assertFalse(validate_restaurant(event3, 720))
+        self.assertTrue(validate_restaurant(event4, 720))
+
+    def test_double_count(self):
+        self.assertTrue(check_double_count(event1, itin1))
+        self.assertFalse(check_double_count(event3, itin1))
 
 '''
 get_t_events and get_p_events are not tested because

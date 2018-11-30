@@ -1,0 +1,52 @@
+[
+	{
+		"venue_id": "yelpHwOzFKTCkOE1NwGrxXxuAQ",
+		"event_name": "Rickshaw Republic",
+		"event_id": "yelpHwOzFKTCkOE1NwGrxXxuAQ",
+		"mon_start": 1020,
+		"mon_end": 1260,
+		"tues_start": 1020,
+		"tues_end": 1260,
+		"wed_start": 1020,
+		"wed_end": 1260,
+		"thurs_start": 1020,
+		"thurs_end": 1290,
+		"fri_start": 1020,
+		"fri_end": 1290,
+		"sat_start": 1020,
+		"sat_end": 1200,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"indonesian",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpUnRhrQEi4QBxQsRFnRvAOA",
+		"event_name": "The Rice Table",
+		"event_id": "yelpUnRhrQEi4QBxQsRFnRvAOA",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"catering",
+			"food",
+			"indonesian",
+			"food"
+		],
+		"price": -2
+	}
+]

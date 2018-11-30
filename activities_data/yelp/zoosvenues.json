@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpRQmbLZvI7XyFQd2JgNDVig",
+		"venue_name": "Lincoln Park Zoo",
+		"latitude": 41.9209148287011,
+		"longitude": -87.6336050034629,
+		"address1": "2001 N Clark St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpZboeT_8JZUDPN2vr6L0itw",
+		"venue_name": "Brookfield Zoo",
+		"latitude": 41.83055,
+		"longitude": -87.83226,
+		"address1": "3300 Golf Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Brookfield",
+		"state": "IL",
+		"zip_code": "60513"
+	},
+	{
+		"venue_id": "yelpen_X257_3-Y6rL7hS9uaTQ",
+		"venue_name": "Scales & Tales Traveling Zoo",
+		"latitude": 41.85902,
+		"longitude": -87.65358,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
+		"venue_id": "yelp9dSzFbsWrt0xxV1dAYLKmA",
+		"venue_name": "Willowbrook Wildlife Center",
+		"latitude": 41.84288,
+		"longitude": -88.06033,
+		"address1": "525 S Park Blvd",
+		"address2": "",
+		"address3": "",
+		"city": "Glen Ellyn",
+		"state": "IL",
+		"zip_code": "60137"
+	},
+	{
+		"venue_id": "yelpjee5Z3j5OjtP4E4dXz9fUg",
+		"venue_name": "JG's Reptile Road Show",
+		"latitude": 42.046973,
+		"longitude": -87.890788,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Des Plaines",
+		"state": "IL",
+		"zip_code": "60016"
+	},
+	{
+		"venue_id": "yelpf2Yw5dJwvmzS-ERZExs__g",
+		"venue_name": "Brookfield Zoo Run Run",
+		"latitude": 41.8349019,
+		"longitude": -87.8328421,
+		"address1": "3300 Golf Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Brookfield",
+		"state": "IL",
+		"zip_code": "60513"
+	}
+]

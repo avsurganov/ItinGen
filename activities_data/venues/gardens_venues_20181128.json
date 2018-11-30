@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelpJfNZVzh052lwZKpIMgsA1g",
+		"venue_name": "Garfield Park Conservatory",
+		"latitude": 41.886342,
+		"longitude": -87.717266,
+		"address1": "300 N Central Park",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60624"
+	},
+	{
+		"venue_id": "yelpX3Eu87DKPlvip-GudTiV0A",
+		"venue_name": "Lurie Garden",
+		"latitude": 41.881321,
+		"longitude": -87.621665,
+		"address1": "201 E Randolph St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60601"
+	},
+	{
+		"venue_id": "yelp6gEGAxXt7YyxPTgM73DsYw",
+		"venue_name": "The Magic Hedge",
+		"latitude": 41.9631135731647,
+		"longitude": -87.6331382989883,
+		"address1": "200 West Montrose Harbor Dr",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelp91dH1gj6Muy_RrIjOH9r4Q",
+		"venue_name": "Green and Growing Fair",
+		"latitude": 41.8864844,
+		"longitude": -87.7166689,
+		"address1": "300 N Central Park Ave",
+		"address2": "",
+		"address3": "Garfield Park Conservatory",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60624"
+	},
+	{
+		"venue_id": "yelpCBPwzQGzha0zman96ohraw",
+		"venue_name": "Atkins Medicinal Plant Garden",
+		"latitude": 41.87072,
+		"longitude": -87.670799,
+		"address1": "833 S Wood St",
+		"address2": "",
+		"address3": "UIC College of Pharmacy",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	},
+	{
+		"venue_id": "yelp2QeY5BwB5eeen0l4W_a1Vw",
+		"venue_name": "The Papermaker Maker's Garden",
+		"latitude": 41.8721121218628,
+		"longitude": -87.6264234849452,
+		"address1": "728 S Wabash Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpWQkPJiJV75jn_7y8IkL6lQ",
+		"venue_name": "Chicago Flower & Garden Show",
+		"latitude": 41.892084367477,
+		"longitude": -87.6020805003365,
+		"address1": "600 E Grand Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	}
+]

@@ -1,6 +1,9 @@
 from flask import Flask
 from flask import request
 import json
+import sys
+sys.path.insert(0, '../itinerary')
+from master_itin_generator import *
 
 app = Flask(__name__)
 
@@ -18,17 +21,7 @@ def run_algorithm():
     free = request.args.get("free")
     radius = request.args.get("radius")
     transport = request.args.get("transport")
-    return algorithm(start_time, latitude, longitude, free, radius, transport)
-
-def algorithm(start_time, latitude, longitude, free, radius, transport):
-    ret = {
-        'start_time': start_time,
-        'latitude': latitude,
-        'longitude': longitude,
-        'free': free,
-        'radius': radius,
-        'transport': transport
-    }
+    itin = generate_itin(start_time, latitude, longitude, free, radius, transport)
     return json.dumps(ret)
 
 if __name__ == '__main__':

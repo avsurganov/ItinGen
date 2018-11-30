@@ -1,0 +1,50 @@
+[
+	{
+		"venue_id": "yelpT1dv09OKSxmuitPVLXD5Aw",
+		"venue_name": "Serai",
+		"latitude": 41.9206132,
+		"longitude": -87.6933394,
+		"address1": "2169 N Milwaukee Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpwYlHOHV87yqs4fv_4o-Fiw",
+		"venue_name": "The Family House- CLOSED",
+		"latitude": 41.99751,
+		"longitude": -87.68767,
+		"address1": "2305 W Devon Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpxXFZ-VCq9tQJ7vu5pdqkYQ",
+		"venue_name": "Asian Noodle House",
+		"latitude": 42.043528,
+		"longitude": -88.08126,
+		"address1": "844 N Roselle Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Hoffman Estates",
+		"state": "IL",
+		"zip_code": "60194"
+	},
+	{
+		"venue_id": "yelpu3aM3t-iw0V99uEkARp88A",
+		"venue_name": "Penang Malaysian Cuisine",
+		"latitude": 42.0575571455209,
+		"longitude": -88.0041967853661,
+		"address1": "1720 W Algonquin Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Arlington Heights",
+		"state": "IL",
+		"zip_code": "60005"
+	}
+]

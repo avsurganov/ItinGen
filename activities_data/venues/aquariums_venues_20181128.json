@@ -1,0 +1,62 @@
+[
+	{
+		"venue_id": "yelpXAh7Xce30KGmL_CTCdHAhg",
+		"venue_name": "Shedd Aquarium",
+		"latitude": 41.867574,
+		"longitude": -87.61404,
+		"address1": "1200 S Lake Shore Dr",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpZuYoA_AdmeR0pSP1xBU3PA",
+		"venue_name": "Old Town Aquarium",
+		"latitude": 41.91026,
+		"longitude": -87.635,
+		"address1": "1538 N Wells St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelp4RMGciaf6HJKiZ-WNv1Xag",
+		"venue_name": "Tank it Easy",
+		"latitude": 41.9488847,
+		"longitude": -87.6690484,
+		"address1": "3700 N Ashland Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpcJJClE03GcmLj1vdlxkQbw",
+		"venue_name": "Aquatic World",
+		"latitude": 41.9392929077148,
+		"longitude": -87.6795806884766,
+		"address1": "2029 W Belmont Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpFlLNtD6JJggTBvqFPRFJmg",
+		"venue_name": "Chicago Discus",
+		"latitude": 41.9452422,
+		"longitude": -87.7944124,
+		"address1": "3553 N Rutherford Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	}
+]

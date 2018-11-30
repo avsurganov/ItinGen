@@ -1,0 +1,122 @@
+[
+	{
+		"venue_id": "yelp8P3vFRfVyvn1LGAlkJOWaQ",
+		"venue_name": "Oyster Bah",
+		"latitude": 41.91777,
+		"longitude": -87.64887,
+		"address1": "1962 N Halsted",
+		"address2": "Fl 1",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpPidZ26sboIS3-6CtUpNskA",
+		"venue_name": "Chicago Raw",
+		"latitude": 41.8841694251783,
+		"longitude": -87.6408842460633,
+		"address1": "131 N Clinton St",
+		"address2": "Ste 7",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelpzvJx0BPvAGO3w5II1Tg0mw",
+		"venue_name": "Hi-Vibe Superfood Juicery",
+		"latitude": 41.889175,
+		"longitude": -87.63306,
+		"address1": "160 W Kinzie St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelp2kNaY86bIQqj1OwNXHwD5A",
+		"venue_name": "Chicago Raw",
+		"latitude": 41.8947448,
+		"longitude": -87.6301154,
+		"address1": "51 W Huron St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpeVeNRO9y9mG0X6FN_5EpiQ",
+		"venue_name": "JuiceRx",
+		"latitude": 41.91611,
+		"longitude": -87.67789,
+		"address1": "1880 N Damen Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpmPpnVe0bWPYrAnlDsQulAQ",
+		"venue_name": "Freshii Palmer House",
+		"latitude": 41.8802948,
+		"longitude": -87.6272202,
+		"address1": "17 E Monroe St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelpjWjJo-NoRIYnqDMvU1rvNw",
+		"venue_name": "Wellness Grub",
+		"latitude": 41.914363,
+		"longitude": -87.634338,
+		"address1": "1750 N Clark St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpo181YeTN2hYH70puBBG9rA",
+		"venue_name": "Wellness Grub",
+		"latitude": 41.899543,
+		"longitude": -87.624473,
+		"address1": "900 N Michigan Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpJQwg13gbL0hafjQpIhPdSg",
+		"venue_name": "Hi-Vibe Superfood Juicery",
+		"latitude": 41.8885294055749,
+		"longitude": -87.6342481703613,
+		"address1": "222 Merchandise Mart Plz",
+		"address2": "Ste 200",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpwU4o4Xctbv2z358ViHRkVg",
+		"venue_name": "Cru Cacao",
+		"latitude": 41.85,
+		"longitude": -87.65,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": ""
+	}
+]

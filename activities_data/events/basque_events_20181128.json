@@ -1,0 +1,30 @@
+[
+	{
+		"venue_id": "yelpusQ_BVEMT1hp4nTEiaOv9A",
+		"event_name": "Tapas Barcelona",
+		"event_id": "yelpusQ_BVEMT1hp4nTEiaOv9A",
+		"mon_start": 690,
+		"mon_end": 870,
+		"tues_start": 1020,
+		"tues_end": 1320,
+		"wed_start": 690,
+		"wed_end": 870,
+		"thurs_start": 1020,
+		"thurs_end": 1320,
+		"fri_start": 690,
+		"fri_end": 870,
+		"sat_start": 1020,
+		"sat_end": 1320,
+		"sun_start": 690,
+		"sun_end": 870,
+		"tags": [
+			"spanish",
+			"food",
+			"tapas",
+			"food",
+			"basque",
+			"food"
+		],
+		"price": -2
+	}
+]

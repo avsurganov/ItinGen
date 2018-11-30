@@ -1,0 +1,54 @@
+[
+	{
+		"venue_id": "yelpGvU2TIDK0deL_xbPfIkezA",
+		"event_name": "Chicago Diplomat Cafe",
+		"event_id": "yelpGvU2TIDK0deL_xbPfIkezA",
+		"mon_start": 900,
+		"mon_end": 1380,
+		"tues_start": 900,
+		"tues_end": 1380,
+		"wed_start": 900,
+		"wed_end": 1380,
+		"thurs_start": 780,
+		"thurs_end": 1380,
+		"fri_start": 780,
+		"fri_end": 1380,
+		"sat_start": 780,
+		"sat_end": 1260,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"modern_european",
+			"food",
+			"cafes",
+			"food",
+			"georgian",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpZgGqk1aPRGJb4jv4H8WtoA",
+		"event_name": "Aragvi Georgian Bakery Caf\u00e9",
+		"event_id": "yelpZgGqk1aPRGJb4jv4H8WtoA",
+		"mon_start": 480,
+		"mon_end": 1200,
+		"tues_start": 480,
+		"tues_end": 1200,
+		"wed_start": 480,
+		"wed_end": 1200,
+		"thurs_start": 480,
+		"thurs_end": 1200,
+		"fri_start": 480,
+		"fri_end": 1200,
+		"sat_start": 540,
+		"sat_end": 1020,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"georgian",
+			"food"
+		],
+		"price": -10
+	}
+]

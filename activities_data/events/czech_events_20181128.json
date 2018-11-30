@@ -1,0 +1,80 @@
+[
+	{
+		"venue_id": "yelpfY3fK2kj7j6cENF3A3zG6A",
+		"event_name": "Czech Plaza Restaurant",
+		"event_id": "yelpfY3fK2kj7j6cENF3A3zG6A",
+		"mon_start": 660,
+		"mon_end": 1200,
+		"tues_start": 660,
+		"tues_end": 1200,
+		"wed_start": 660,
+		"wed_end": 1200,
+		"thurs_start": 660,
+		"thurs_end": 1200,
+		"fri_start": 660,
+		"fri_end": 1200,
+		"sat_start": 660,
+		"sat_end": 1140,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"czech",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpCv-I_tcWaIhjif8NgHA0pQ",
+		"event_name": "Riverside  Restaurant",
+		"event_id": "yelpCv-I_tcWaIhjif8NgHA0pQ",
+		"mon_start": 660,
+		"mon_end": 1140,
+		"tues_start": 660,
+		"tues_end": 1140,
+		"wed_start": 660,
+		"wed_end": 1140,
+		"thurs_start": 660,
+		"thurs_end": 1200,
+		"fri_start": 660,
+		"fri_end": 1200,
+		"sat_start": 660,
+		"sat_end": 1140,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"czech",
+			"food",
+			"slovakian",
+			"food",
+			"seafood",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpj6mjqhFWwBiKGM8ei3OEXw",
+		"event_name": "Josie's Dumplings",
+		"event_id": "yelpj6mjqhFWwBiKGM8ei3OEXw",
+		"mon_start": 540,
+		"mon_end": 1020,
+		"tues_start": 540,
+		"tues_end": 1020,
+		"wed_start": 540,
+		"wed_end": 1020,
+		"thurs_start": 540,
+		"thurs_end": 1020,
+		"fri_start": 540,
+		"fri_end": 1020,
+		"sat_start": 540,
+		"sat_end": 840,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"czech",
+			"food",
+			"importedfood",
+			"food"
+		],
+		"price": -1
+	}
+]

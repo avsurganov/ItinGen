@@ -1,0 +1,28 @@
+[
+	{
+		"venue_id": "yelpJ0KtcQZC_QymUiScLvO5tw",
+		"event_name": "Chances Dances",
+		"event_id": "yelpJ0KtcQZC_QymUiScLvO5tw",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"gaybars",
+			"nightlife",
+			"arts",
+			"nightlife"
+		],
+		"price": -10
+	}
+]

@@ -1,0 +1,122 @@
+[
+	{
+		"venue_id": "yelp43rd1LKcZRIunySzbMsyLQ",
+		"venue_name": "Fogo de Ch\u00e3o Brazilian Steakhouse",
+		"latitude": 41.8942208218562,
+		"longitude": -87.6323306601503,
+		"address1": "661 N Lasalle Blvd",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpd6UbRb9W5eA1yL-DuVZ8ug",
+		"venue_name": "ZED451",
+		"latitude": 41.896111,
+		"longitude": -87.63102,
+		"address1": "739 N Clark St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelp1uvWscUUqiO2_Q_aBpeZyA",
+		"venue_name": "La Sirena Clandestina",
+		"latitude": 41.887103,
+		"longitude": -87.651697,
+		"address1": "954 W Fulton Market",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpHAi1irLE91wjLJo5Qiskpg",
+		"venue_name": "Brazilian Bowl",
+		"latitude": 41.940256,
+		"longitude": -87.644653,
+		"address1": "3204 N Broadway St",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpU2i4dCWTP6AhSuCwDhhblA",
+		"venue_name": "Sinha Elegant Cuisine",
+		"latitude": 41.87888,
+		"longitude": -87.67735,
+		"address1": "2018 W Adams",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	},
+	{
+		"venue_id": "yelpXCdk3YPa98n16uHU6IauJA",
+		"venue_name": "Texas de Brazil",
+		"latitude": 41.891161,
+		"longitude": -87.622115,
+		"address1": "210 E Upper Illinois St",
+		"address2": "",
+		"address3": "Optima Chicago Ctr",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelp_-toZK3WpdvKpXYjT8wTCg",
+		"venue_name": "Brazilian Bowl",
+		"latitude": 41.9686181,
+		"longitude": -87.7086805,
+		"address1": "3200 W Lawrence Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelp2sYjo92uvdTfhO_ef79QCg",
+		"venue_name": "Brasil Legal Cafe",
+		"latitude": 41.92162,
+		"longitude": -87.68719,
+		"address1": "2161 N Western Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpynloEehLRbX69kYLJFiL2A",
+		"venue_name": "Norman's Bistro",
+		"latitude": 41.81667,
+		"longitude": -87.60146,
+		"address1": "1001 E 43rd",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60653"
+	},
+	{
+		"venue_id": "yelp7StPHdmTHUeTQ9HEykPzQw",
+		"venue_name": "CFA Clubhouse",
+		"latitude": 41.9932767,
+		"longitude": -87.6703349,
+		"address1": "6122 N Clark St",
+		"address2": null,
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60660"
+	}
+]

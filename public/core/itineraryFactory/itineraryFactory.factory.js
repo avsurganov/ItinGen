@@ -147,6 +147,9 @@ angular.module('itineraryFactory')
 		return currentItinerary
 	}
 
+	service.setCurrentItinerary = function(current) {
+		currentItinerary = current;
+	}
 
 	service.getLikedItineraries = function () {
 		$http.get('/api/getliked').then((req) => {

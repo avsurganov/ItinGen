@@ -42,14 +42,13 @@ angular.module('sideBar')
 
 
     this.generate = function() {
-      itineraryFactory.addToLikedItineraries()
       $scope.$parent.updateMapWithNewItinerary();
     }
 
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
        console.log(this.itinerary)
-       $scope.$apply()
+      //  $scope.$apply()
     }.bind(this))
 
     this.intToChar = function($index) {

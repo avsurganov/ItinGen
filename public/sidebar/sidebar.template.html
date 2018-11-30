@@ -101,7 +101,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" ng-click="$ctrl.saveSettings()">Save changes</button>
+        <button type="button" class="btn btn-primary" ng-click="$ctrl.saveSettings($scope.$parent.settings)">Save changes</button>
       </div>
     </div>
   </div>
@@ -205,4 +205,3 @@
     </div>
   </div>
 </div><!-- End Modal for Logging in -->
-

@@ -46,7 +46,6 @@ angular.module('sideBar')
       $scope.$parent.updateMapWithNewItinerary();
     }
 
-    this.startLocation
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
        console.log(this.itinerary)
@@ -97,9 +96,10 @@ angular.module('sideBar')
       }
     }
 
-    this.saveSettings = function() {
-      console.log($scope.$parent.location)
-      itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
+    this.saveSettings = function(settings) {
+       $scope.$parent.settings = settings;
+       console.log($scope.$parent.settings)
+      itineraryFactory.saveSettings(settings, $scope.$parent.location);
     }
 
     this.assignTransport = function(transport) {

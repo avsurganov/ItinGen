@@ -7,7 +7,8 @@
     "test": "mocha tests/",
     "start": "node server.js",
     "seed": "node app/helpers/seed.js",
-    "flask": "python3 flask/server.py"
+    "flask": "python3 flask/server.py",
+    "e2e": "nightwatch -t e2e/frontend_spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -46,6 +47,7 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
     "mockgoose": "^7.3.5",
+    "nightwatch": "^0.9.21",
     "protractor": "^5.4.1"
   }
 }

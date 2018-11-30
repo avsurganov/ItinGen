@@ -117,7 +117,7 @@ angular.module('itineraryFactory')
         {event: event3, venue: venue3, start: "6:00", end: "8:00"},
         {event: event1, venue: venue1, start: "12:00", end: "3:00"}]
 	var likedItineraries = [itin1, itin2]
-	var itinerary = []
+	var currentItinerary = []
 	var service = {}
 
 	//on load or dislike an itinerary: 
@@ -130,17 +130,23 @@ angular.module('itineraryFactory')
 		return itin1
 	}
 	service.getLikedItineraries = function () {
-
-		$http.get('/getliked').then((data) => {
-			console.log("IN liked itineraries");
-			console.log(data);
+		$http.get('/api/getliked').then((req) => {
+			var success = req.data.success;
+			if(success) {
+				return req.data.itineraries;
+			}
+			else {
+				var emptyArray = [];
+				return emptyArray;
+			}
 		});
 	}
 
-	service.addToLikedItineraries = function (itineraryObj) {
-		likedItineraries.push(itineraryObj)
-		// TODO: add POST request to add new liked itinerary
-		return likeItineraries
+	service.addToLikedItineraries = function () {
+		likedItineraries.push(currentItinerary)
+		$http.post('/api/putliked', {likedItineraries}).then((req) => {
+			return;
+		});
 	}
 
 

@@ -60,7 +60,7 @@ npm test
 These tests will test to make sure that all of the front-end objects are
 displaying on the home page properly and as are intended.:w
 
-## Suggested acceptance tests
+## Suggested Acceptance Tests
 
 Opening and closing the hamburger menu, clicking the register link so that a modal window appears with a form for user information, and closing this window.
 

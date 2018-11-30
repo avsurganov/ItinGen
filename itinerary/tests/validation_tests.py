@@ -37,13 +37,7 @@ class TestTimeValidation(unittest.TestCase):
         self.assertFalse(validate_isopen(itin15,"sat"))
         self.assertFalse(validate_isopen(itin15,"sun"))
 
-    #def test_validate_within_usertime(self):
-    #    self.assertFalse(validate_within_usertime(itin1,[800,1000]))
-    #    self.assertFalse(validate_within_usertime(itin1,[630,850]))
-    #    self.assertTrue(validate_within_usertime(itin1,[600,950]))
-
 class TestDistanceValidation(unittest.TestCase):
-
     def test_validate_max_distance(self):
         self.assertTrue(validate_max_distance(itin1, [41.792210, -87.599940], 10))
         self.assertFalse(validate_max_distance(itin8, [41.792210, -87.599940], 10))
@@ -86,16 +80,15 @@ class TestItinValidation(unittest.TestCase):
         self.assertFalse(validate_itin(itin15,user_data1))
         self.assertFalse(validate_itin(itin13,user_data1))
         self.assertFalse(validate_itin(itin1,user_data2))
-        self.assertTrue(validate_itin(itin1,user_data3))
-        self.assertTrue(validate_itin(itin10,user_data3))
-        self.assertTrue(validate_itin(itin9,user_data3))
+        self.assertTrue(validate_itin(itin2,user_data3))
+        self.assertFalse(validate_itin(itin10,user_data3))
+        self.assertFalse(validate_itin(itin9,user_data3))
         self.assertFalse(validate_itin(itin8,user_data3))
         self.assertFalse(validate_itin(itin16,user_data1))
         self.assertFalse(validate_itin(itin17,user_data1))
-        self.assertFalse(validate_itin(itin18,user_data4))
         self.assertTrue(validate_itin(itin2,user_data4))
-
-
+        self.assertFalse(validate_itin(itin2,user_data5))
+        self.assertFalse(validate_itin(itin2,user_data6))
 
 if __name__ == '__main__':
     unittest.main()

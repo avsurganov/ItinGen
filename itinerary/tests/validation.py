@@ -73,6 +73,7 @@ def validate_event_distance(itin, dist):
         if distance > dist * math.sqrt(2):
             return False
     return True
+
 # check that the time between each pair of adjacent events in the itinerary
 # is sufficient for travel between their venues, given user's transportation mode
 def validate_travel_time(itin, transport):
@@ -83,9 +84,9 @@ def validate_travel_time(itin, transport):
         next_start_time = itin[i+1][2]
         between_time = next_start_time - prev_end_time
         distance = find_distance(venue_to_lat_long(prev_venue),venue_to_lat_long(next_venue))
-        if (transport == 'driving'):
+        if (transport == "driving"):
             travel_time = distance * 2
-        elif (transport == 'transit'):
+        elif (transport == "transit"):
             travel_time = distance * 8
         else:
             travel_time = distance * 20
@@ -190,6 +191,7 @@ def validate_itin(itin,user_inputs):
     transport = user_inputs['transportation']
     day = user_inputs['day']
     date = user_inputs['date']
+    free = user_inputs['only_free']
 
     istypes = validate_types(itin)
     if not istypes:
@@ -200,9 +202,9 @@ def validate_itin(itin,user_inputs):
                     validate_max_distance(itin,start_location,dist) and
                     validate_event_distance(itin,dist) and
                     validate_travel_time(itin,transport) and
-                    validate_no_duplicates(itin) and
-                    validate_venue_id_match(itin) and
-                    validate_event_date(itin,date))
+                    not validate_no_duplicates(itin) and
+                    not validate_venue_id_match(itin) and
+                    not validate_event_date(itin,date))
 
-    isfree = validate_free(itin) or not free
+    isfree = not free or validate_free(itin)
     return isvalid and isfree

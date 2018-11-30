@@ -18,51 +18,20 @@ angular.module('ItinGen', [
   var directionsDisplay
   $scope.test = "We got it!"
   var app = this;
-
-
-
-  if (Auth.isLoggedIn()) {
-    // Check if a the token expired
-    Auth.getUser().then(function(data) {
-        // Check if the returned user is undefined (expired)
-        console.log("HERE");
-        console.log(data.data);
-        if (data.data.email === undefined) {
-            Auth.logout(); // Log the user out
-            app.isLoggedIn = false; // Set session to false
-            $location.path('/'); // Redirect to home page
-        } else {
-          let likeditineraries = itineraryFactory.getLikedItineraries();
-          console.log(likeditineraries);
-          itineraryFactory.addToLikedItineraries();
-        }
-    });
-}
-
-
-
-
-  
+ 
      $scope.map;
      $scope.location
      $scope.displayLocation
      $scope.displayLocationLoaded = false
-     function setDefault(x, y) {
+     
 
-        $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + x + ',' + y + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').
-        then((res) => {
-          $scope.displayLocation = res.data.results[0].formatted_address
-          $scope.displayLocationLoaded = true
-        }) 
-     }
-
-     function initMap(x, y) {
-      setDefault(x, y)
+    function initMap(x, y) {
+      var center = {lat: x, lng: y}
       $scope.location = {lat: x, lng: y}
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.map = new google.maps.Map(document.getElementById('map'), {
-	        center: {lat: x, lng: y},
+	        center: center,
 	        zoom: 13
         });
         directionsDisplay.setMap($scope.map);

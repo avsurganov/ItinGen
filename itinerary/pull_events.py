@@ -109,11 +109,14 @@ with client:
             return False #throws out if event covers entire lunch period
                             # may want to make this optional depending on how we think
                             # of one time events - do you go to whole thing or no?
+        return True                    
 
     def check_free(event):
-        if event[price] != -10:
-            return False
-        return True
+        if event["price"] == 0:
+            return True
+        if event["price"] == -10:
+            return True
+        return False
 
     '''
      assuming user_inputs = formatted like:

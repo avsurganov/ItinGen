@@ -1,10 +1,7 @@
 import random
 from math import sin, cos, sqrt, atan2, radians, acos, fabs, pi
 from operator import itemgetter
-<<<<<<< HEAD
 #import googlemaps
-=======
->>>>>>> 3d99e81f0f027c4c0e2026789d6bf4de2daa559c
 
 ############################
 # PRIMARY HELPER FUNCTIONS #

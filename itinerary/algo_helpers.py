@@ -65,11 +65,11 @@ def check_valid(cur_event, itinerary, user_data):
         return False
     if not validate_restaurant(cur_event[0], start_time):
         return False
-    end_time = determine_end_time(itinerary, cur_event, start_time)
     else:
         # this was the last check so the event is 100% valid
         # add it to the itinerary and return true
         # format is: (event, venue, start, end)
+        end_time = determine_end_time(itinerary, cur_event, start_time)
         add_item = (cur_event[0], cur_event[1], start_time, end_time)
         itinerary.append(add_item)
         return True

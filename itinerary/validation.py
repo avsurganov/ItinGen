@@ -198,15 +198,15 @@ def validate_itin(itin,user_inputs):
     istypes = validate_types(itin)
     if not istypes:
         return False
-    isvalid =  (validate_nooverlap(itin,user_times) and
-                validate_chrono(itin) and
-                #validate_isopen(itin,day) and
+        isvalid =  (validate_nooverlap(itin,user_times) and
+                    validate_chrono(itin) and
+                    validate_isopen(itin,day) and
                     validate_max_distance(itin,start_location,dist) and
                     validate_event_distance(itin,dist) and
                     validate_travel_time(itin,transport) and
                     not validate_no_duplicates(itin) and
                     not validate_venue_id_match(itin) and
-#                    not validate_event_date(itin,date))
-                True)
+                    not validate_event_date(itin,date)
+                )
     isfree = not free or validate_free(itin)
     return isvalid and isfree

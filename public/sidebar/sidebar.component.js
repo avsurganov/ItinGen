@@ -18,6 +18,10 @@ angular.module('sideBar')
       transport: 'DRIVING'
     }
 
+    this.generate = function() {
+      itineraryFactory.addToLikedItineraries()
+      $scope.$parent.updateMapWithNewItinerary();
+    }
 
     this.startLocation
     $scope.$on('update', function(e) {
@@ -107,3 +111,5 @@ $(function() {
  // Fake a change to position bubble at page load
  .trigger('change');
 });
+
+

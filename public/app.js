@@ -85,15 +85,28 @@ angular.module('ItinGen', [
 	function drawNewItinerary() {
 	  	var waypoints = []
 	  	for (event in currentItinerary) {
-	  		var index = parseInt(event) + 1
-        var waypointData = currentItinerary[index][2]
-	  		if (index != currentItinerary.length)
+        var index = parseInt(event) + 1
+        console.log("hhh")
+        console.log(index)
+	  		if (index != currentItinerary.length){
+          var waypointData = currentItinerary[index][1]
+          console.log("WAYPOINTs");
+          console.log(waypointData);
 	  			waypoints.push({location: {lat: waypointData.latitude , lng: waypointData.longitude}}) 
-	  	}
 
+        }
+	  	}
+      console.log("WAYPOINTS")
+      console.log(waypoints)
+      waypoints.pop()
+      var originCoords = currentItinerary[0][1]
+      var destinationCoords = currentItinerary[currentItinerary.length - 1][1]
+      console.log("PRINTING ORIGIN AND DESTINATION")
+      console.log(originCoords)
+      console.log(destinationCoords)
 	  	var directionRequest = {
-			origin: currentItinerary[0].venue.latlng,
-			destination: currentItinerary[currentItinerary.length - 1].venue.latlng,
+			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
+			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
 			travelMode: 'DRIVING',
 			waypoints: waypoints
 	  	}
@@ -111,7 +124,12 @@ angular.module('ItinGen', [
         console.log("SUCCESS >?");
         console.log(success)
         if(success) {
-          currentItinerary = data.data.itinerary
+          let itineraryString = data.data.itinerary;
+          let itinerary = JSON.parse(itineraryString)
+          console.log("here 2")
+          console.log(itinerary)
+          currentItinerary = itinerary;
+          itineraryFactory.setCurrentItinerary(itinerary)
           console.log("m2");
           console.log(currentItinerary);
           drawNewItinerary()

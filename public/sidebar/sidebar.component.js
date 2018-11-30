@@ -42,16 +42,13 @@ angular.module('sideBar')
 
 
     this.generate = function() {
-      console.log($scope.$parent.settings);
-      console.log($scope.$parent.location);
-      itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
       $scope.$parent.updateMapWithNewItinerary();
     }
 
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
        console.log(this.itinerary)
-       $scope.$apply()
+      //  $scope.$apply()
     }.bind(this))
 
     this.intToChar = function($index) {

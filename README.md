@@ -39,7 +39,7 @@ Now you will need to install MongoDB:
 sudo apt-get install -y mongodb
 ```
 
-Run the python server using the command:
+Run the python server locating in `itinerary` using the command:
 ```
 python server.py
 ```

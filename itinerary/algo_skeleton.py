@@ -1,9 +1,11 @@
 from algo_helpers import *
 from pull_events import *
 
+
 ####################
 # MASTER ALGORITHM #
 ####################
+[]
 
 def create_itinerary(user_args):
     '''
@@ -24,7 +26,7 @@ def create_itinerary(user_args):
     # Variables to keep track of various things during runtime #
     ############################################################
     radius_mem = [0, 0]
-    itin_mem = 0
+    itin_mem = [0]
     itinerary = []
 
     ####################################################
@@ -33,7 +35,7 @@ def create_itinerary(user_args):
     # NOTE: keeping individual variables to maintain compatibility
     start_time = 540 # should be int
     start_location = (41.881855, -87.627115) # should be (lat, lon)
-    distance_radius = 100.0 # float miles
+    distance_radius = 1000.0 # float miles
     only_free = False # boolean
     transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
@@ -68,6 +70,7 @@ def create_itinerary(user_args):
     #         events by that distance in decreasing distance order          #
     #########################################################################
     events = sort_distances(events, start_location)
+    print(len(events))
     for e in events:
         assert len(e) == 3, 'ERROR: post distance calculation the event tuple should have 3 items'
 
@@ -75,6 +78,7 @@ def create_itinerary(user_args):
     # Step 4: Go through the steps to create the itinerary #
     ########################################################
     # manually set the radius for the first iteration
+    print('Running first iter...')
     radius_mem[0] = distance_radius
     radius_mem[1] = distance_radius
     # find first index within that radius
@@ -90,10 +94,15 @@ def create_itinerary(user_args):
     valid_events = events[i:]
     # lets create the full itinerary now
     cont = True
+    incr = 1
     while cont:
+        print('Running iteration %d' % incr)
+        print(radius_mem)
+        incr += 1
         # try to increment the itinerary
         increment_itinerary(itinerary, valid_events, user_data)
         # check if itinerary is finished
+        print('check')
         if check_finished(itinerary):
             cont = False
         else:
@@ -104,7 +113,7 @@ def create_itinerary(user_args):
             else:
                 # find first index within that radius
                 i = -1
-                for x, e in events:
+                for x, e in enumerate(events):
                     if e[2] <= radius_mem[1]:
                         i = x
                         break
@@ -114,18 +123,20 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
-    assert validate_itin(itinerary, user_data)
+    #assert validate_itin(itinerary, user_data)
 
     # return the itinerary
+    final_itin = []
     for i, item in enumerate(itinerary):
         # change events to event id
-        itinerary[i][0] = item[0]['event_id']
+        e_id = item[0].get('event_id')
         # change venues to venue id
-        itinerary[i][1] = item[1]['venue_id']
+        v_id = item[1].get('venue_id')
+        final_itin.append((e_id, v_id, item[2], item[3]))
 
-        assert len(itinerary[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
+        assert len(final_itin[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
 
-    return itinerary
+    return final_itin
 
 itin = create_itinerary('test')
 print(itin)

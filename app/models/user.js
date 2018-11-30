@@ -9,7 +9,7 @@ var ItinerarySchema = new Schema({
 
 var UserSchema = new Schema({
 	email: {type: String, required: true, unique: true},
-	liked: [ItinerarySchema]
+	liked: String
 });
 
 // UserSchema.methods.generateHash = function(password) {

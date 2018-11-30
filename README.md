@@ -1,8 +1,6 @@
 # ItinGen
 
-ItinGen is a web based application that allows users to randomly
-generate optimized itineraries for their schedules to explore a new city
-or rediscover a city they have been living in for years
+ItinGen is a web based application that allows users to randomly generate optimized itineraries for their schedules to explore a new city or rediscover a city they have been living in for years.
 
 # Table of Contents
 
@@ -16,7 +14,6 @@ or rediscover a city they have been living in for years
     * [Front End](#front-end)
     * [Data Aggregation](#data-aggregation)
 - [Changes](#changes)
-- [Specific Information for 4B](#specific-information-for-4b)
 
 ## Setup
 ### Install Prerequisites 
@@ -95,9 +92,3 @@ Clare wrote the logic to create a pool of viable itinerary events. Masha wrote t
       * The user can specify which method of transportation they want to use to get between events.
       * The user can specify that they want an itinerary with only free events. 
    * Our final version does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to be worth the computational and performance cost.      
-
-## Specific Information for 4B
-
-Question answers go here
-
-

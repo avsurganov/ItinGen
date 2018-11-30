@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelpYB_9eiEqE9JKwQNiElwhDg",
+		"venue_name": "US Poker & Casino Parties",
+		"latitude": 41.8825302124023,
+		"longitude": -87.6375122070313,
+		"address1": "",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelppS6P9LCkbdRAszB5-99BTg",
+		"venue_name": "Anna's Gaming Cafe",
+		"latitude": 41.8422660827637,
+		"longitude": -87.7434616088867,
+		"address1": "2625 S Cicero Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Cicero",
+		"state": "IL",
+		"zip_code": "60804"
+	},
+	{
+		"venue_id": "yelpYi9hRSRKttIx92sQap_ZgQ",
+		"venue_name": "Sonny's Slots And Caf\u00e9",
+		"latitude": 41.8433860215558,
+		"longitude": -87.7917385612677,
+		"address1": "6721 26th St",
+		"address2": "",
+		"address3": null,
+		"city": "Berwyn",
+		"state": "IL",
+		"zip_code": "60402"
+	},
+	{
+		"venue_id": "yelpiFH-qEGTpBF2t_QCvh-BEg",
+		"venue_name": "Windsor Cafe",
+		"latitude": 41.8326618,
+		"longitude": -87.7946475,
+		"address1": "6834 Windsor Ave",
+		"address2": null,
+		"address3": "Store Front",
+		"city": "Berwyn",
+		"state": "IL",
+		"zip_code": "60402"
+	},
+	{
+		"venue_id": "yelpWOBvJMlcxBh_zZT7j6mnRA",
+		"venue_name": "Big Top 2",
+		"latitude": 41.85054,
+		"longitude": -87.7694999,
+		"address1": "5813 Cermak Rd",
+		"address2": "",
+		"address3": null,
+		"city": "Cicero",
+		"state": "IL",
+		"zip_code": "60804"
+	},
+	{
+		"venue_id": "yelpCECo_GpfCiI0K4_Bx6OWBg",
+		"venue_name": "Olivia's Place",
+		"latitude": 41.8403,
+		"longitude": -87.80286,
+		"address1": "2823 S Harlem Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Berwyn",
+		"state": "IL",
+		"zip_code": "60402"
+	},
+	{
+		"venue_id": "yelpTHrXlwTi5WskLtAs2CO_yg",
+		"venue_name": "Golden Dragon Casino Shuttle Tours",
+		"latitude": 41.8432960510254,
+		"longitude": -87.6321868896484,
+		"address1": "2734 S Wentworth Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	}
+]

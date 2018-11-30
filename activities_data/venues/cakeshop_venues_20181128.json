@@ -1,0 +1,122 @@
+[
+	{
+		"venue_id": "yelpD-fAPWkLhe41j4rHGRZgIQ",
+		"venue_name": "La Fournette",
+		"latitude": 41.9104983,
+		"longitude": -87.6345168,
+		"address1": "1547 N Wells St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60610"
+	},
+	{
+		"venue_id": "yelpVzs9WS3dV3liKH7u6vJ0Mg",
+		"venue_name": "Toni Patisserie & Cafe",
+		"latitude": 41.8831251,
+		"longitude": -87.6257316,
+		"address1": "65 E Washington St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60602"
+	},
+	{
+		"venue_id": "yelptenon92k9vnOhEvr2fdZjw",
+		"venue_name": "Coffee Joint",
+		"latitude": 41.953995,
+		"longitude": -87.681054,
+		"address1": "2059 W Irving Park Rd",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60618"
+	},
+	{
+		"venue_id": "yelpwmj_Xz6jR3-G02Fb950x2Q",
+		"venue_name": "Eli's Ark",
+		"latitude": 41.91026,
+		"longitude": -87.67437,
+		"address1": "1843 W North Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpHbiLddjRD8fTv555kovpKA",
+		"venue_name": "Bake For Me",
+		"latitude": 41.81592,
+		"longitude": -87.64535,
+		"address1": "4305 S Halsted St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60609"
+	},
+	{
+		"venue_id": "yelpFtK-QeqadsxzSEPk1fixYg",
+		"venue_name": "Panaderia El Acambaro",
+		"latitude": 41.85799,
+		"longitude": -87.66951,
+		"address1": "1720 W 18th St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
+		"venue_id": "yelpNH4a1qTfaAf0qow79xjz6g",
+		"venue_name": "Oak Park Bakery",
+		"latitude": 41.8718713,
+		"longitude": -87.7937778,
+		"address1": "904 S Oak Park Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Oak Park",
+		"state": "IL",
+		"zip_code": "60304"
+	},
+	{
+		"venue_id": "yelp8lBYFFynPZ6EtpSUajaqDw",
+		"venue_name": "T'oui Macaron and Patisserie",
+		"latitude": 41.9733457870172,
+		"longitude": -87.6599560590162,
+		"address1": "5018 N Broadway",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60640"
+	},
+	{
+		"venue_id": "yelpsJ3XdLDqAS50YxDTrf1JEQ",
+		"venue_name": "Sweet World Pastry",
+		"latitude": 41.98046,
+		"longitude": -87.77258,
+		"address1": "5450 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60630"
+	},
+	{
+		"venue_id": "yelp49BCVtGBjZnae8AxWr98mg",
+		"venue_name": "Cakes & Beyond",
+		"latitude": 41.9385201,
+		"longitude": -87.7798094,
+		"address1": "6126 W Belmont Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60634"
+	}
+]

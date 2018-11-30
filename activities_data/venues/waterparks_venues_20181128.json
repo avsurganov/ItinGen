@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelppGkd3MzRM_Es2THuniJm5g",
+		"venue_name": "Lucy Ella Gonzales Parsons Park",
+		"latitude": 41.93912,
+		"longitude": -87.74445,
+		"address1": "4712 W Belmont Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpg1MHB4aGe0N-57XVb47TbA",
+		"venue_name": "Skokie Water Playground",
+		"latitude": 42.0261151,
+		"longitude": -87.7452321,
+		"address1": "4701 Oakton St",
+		"address2": "",
+		"address3": "",
+		"city": "Skokie",
+		"state": "IL",
+		"zip_code": "60076"
+	},
+	{
+		"venue_id": "yelpk0tQ39bmqbtvGJGGTv3beA",
+		"venue_name": "Niles Park District Oasis Waterpark",
+		"latitude": 42.0230903625488,
+		"longitude": -87.8106918334961,
+		"address1": "7877 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Niles",
+		"state": "IL",
+		"zip_code": "60714"
+	},
+	{
+		"venue_id": "yelpp3uEkvedqdAJSmZyMMG8fw",
+		"venue_name": "Austin Park",
+		"latitude": 41.8877195220074,
+		"longitude": -87.7734260404878,
+		"address1": "5951 West Lake St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60644"
+	},
+	{
+		"venue_id": "yelpFA1wVxGAtWWIJtTi5tAntA",
+		"venue_name": "Mystic Waters Family Aquatic Center",
+		"latitude": 42.0388852,
+		"longitude": -87.8746865,
+		"address1": "2025 Miner St",
+		"address2": "",
+		"address3": "",
+		"city": "Des Plaines",
+		"state": "IL",
+		"zip_code": "60016"
+	},
+	{
+		"venue_id": "yelpFD2OvUqJlvUYgwnhXjQhGg",
+		"venue_name": "Prospect Park",
+		"latitude": 42.02159,
+		"longitude": -87.82811,
+		"address1": "733 N Prospect Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Park Ridge",
+		"state": "IL",
+		"zip_code": "60068"
+	}
+]

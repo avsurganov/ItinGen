@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelppOVnDbSAQotGvguTxrcAGQ",
+		"venue_name": "Cooper's Hawk Winery & Restaurant - Oak Park",
+		"latitude": 41.88894,
+		"longitude": -87.80007,
+		"address1": "950 Lake St",
+		"address2": null,
+		"address3": "",
+		"city": "Oak Park",
+		"state": "IL",
+		"zip_code": "60301"
+	},
+	{
+		"venue_id": "yelpf9bVCcwvZ0JDAZCm1KiQyA",
+		"venue_name": "Vinejoy",
+		"latitude": 41.92522,
+		"longitude": -87.64292,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpDq7LA6nu-x5IlL8yOKJisw",
+		"venue_name": "Good Vines Wine",
+		"latitude": 41.8961105,
+		"longitude": -87.6345596,
+		"address1": "744 N Wells St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpEGmatI9setMcU88xfpO6NA",
+		"venue_name": "Santa Fe Grape Distributors",
+		"latitude": 41.82962,
+		"longitude": -87.65652,
+		"address1": "3500 S Racine Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60609"
+	},
+	{
+		"venue_id": "yelpuhkGCgURfsKG66w8E0DsEg",
+		"venue_name": "World Wide Tobacco",
+		"latitude": 41.9102058559656,
+		"longitude": -87.6770541071892,
+		"address1": "1587 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpX-6efgaFBcsAUOUlo8QG3g",
+		"venue_name": "Era of Elegance",
+		"latitude": 41.9757,
+		"longitude": -87.69428,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpl9r9bYMIfvkHLbJVIhuHoQ",
+		"venue_name": "DC Estate Winery",
+		"latitude": 42.4947941933256,
+		"longitude": -88.9432251207825,
+		"address1": "8877 Stateline Rd",
+		"address2": null,
+		"address3": null,
+		"city": "South Beloit",
+		"state": "IL",
+		"zip_code": "61080"
+	}
+]

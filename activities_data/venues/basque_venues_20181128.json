@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpjIjMCBLyjrFTvmyNXJuwPw",
+		"venue_name": "Bar Biscay",
+		"latitude": 41.8963899,
+		"longitude": -87.66441,
+		"address1": "1450 W Chicago Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60642"
+	},
+	{
+		"venue_id": "yelpusQ_BVEMT1hp4nTEiaOv9A",
+		"venue_name": "Tapas Barcelona",
+		"latitude": 42.0464606,
+		"longitude": -87.6793354,
+		"address1": "1615 Chicago Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Evanston",
+		"state": "IL",
+		"zip_code": "60201"
+	}
+]

@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpmIa3DWMFUU2KbCACC3OHHg",
+		"venue_name": "The Social Table",
+		"latitude": 41.9179970776209,
+		"longitude": -87.6493691426277,
+		"address1": "819 W Armitage Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelprEC2bVBoh7n6q_8IFv91wg",
+		"venue_name": "Madison & Rayne",
+		"latitude": 41.911875,
+		"longitude": -87.68003,
+		"address1": "327 N Bell Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpAYdJnIdRvDO1xsuszQG4Wg",
+		"venue_name": "The Pursuit Supply Company",
+		"latitude": 41.9536729,
+		"longitude": -87.7362106,
+		"address1": "4316 W Irving Park Rd",
+		"address2": "Fl 1",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpUO94zBzM23Y2Uv2-mz03iA",
+		"venue_name": "Market Chicago",
+		"latitude": 41.8875889156048,
+		"longitude": -87.6219022168346,
+		"address1": "151 E Wacker Dr",
+		"address2": "",
+		"address3": "Hyatt Regency East Tower",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60601"
+	},
+	{
+		"venue_id": "yelpJ22i9xLCH30k3mY_XGrzPA",
+		"venue_name": "Caf\u00e9 251",
+		"latitude": 41.8951073,
+		"longitude": -87.6211853,
+		"address1": "234-240 E Huron St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpPdWdjQ6K6DdiGhrx99_AwA",
+		"venue_name": "DiGiorno's Pizza",
+		"latitude": 41.953899,
+		"longitude": -87.661741,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	}
+]

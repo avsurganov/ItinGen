@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpVIojEv4Vucr7tmgJjO_8nw",
+		"venue_name": "Frietkoten Belgian Fries & Beer",
+		"latitude": 41.8842199591045,
+		"longitude": -87.6407377607133,
+		"address1": "131 N Clinton St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60606"
+	},
+	{
+		"venue_id": "yelpWwmxVYk-DYS76iZ3ey1ybQ",
+		"venue_name": "Friistyle",
+		"latitude": 41.8028142,
+		"longitude": -87.6192392,
+		"address1": "5059 S Prairie",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60615"
+	},
+	{
+		"venue_id": "yelpWrVoeeV13luBR_aERYZsiA",
+		"venue_name": "Bruges Brothers",
+		"latitude": 41.8805999755859,
+		"longitude": -87.6548690795898,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpj04sEXZlTdLhiE6MGNneBA",
+		"venue_name": "Leonidas",
+		"latitude": 42.1286074072123,
+		"longitude": -87.8272464126348,
+		"address1": "1348 Shermer Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Northbrook",
+		"state": "IL",
+		"zip_code": "60062"
+	},
+	{
+		"venue_id": "yelpXVSpo4SjpAsTvWnNrVvFXQ",
+		"venue_name": "Crispy Waffle",
+		"latitude": 41.5310886684685,
+		"longitude": -88.1981597095728,
+		"address1": "564 Brook Forest Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Shorewood",
+		"state": "IL",
+		"zip_code": "60404"
+	},
+	{
+		"venue_id": "yelpVGczTYM5uz7sDs0P0dTsvw",
+		"venue_name": "#Fries",
+		"latitude": 41.75651,
+		"longitude": -88.21077,
+		"address1": "195 Fox Valley Ctr",
+		"address2": null,
+		"address3": "",
+		"city": "Aurora",
+		"state": "IL",
+		"zip_code": "60504"
+	}
+]

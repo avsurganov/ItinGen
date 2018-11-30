@@ -1,0 +1,98 @@
+[
+	{
+		"venue_id": "yelpjQcaehu_CEUXPOCVZ4MSfg",
+		"venue_name": "Milt's Barbecue for the Perplexed",
+		"latitude": 41.9436696024963,
+		"longitude": -87.6448920107288,
+		"address1": "3411 N Broadway St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60657"
+	},
+	{
+		"venue_id": "yelpk0QBn866aeD8jRZ16WYo6g",
+		"venue_name": "Tel-Aviv Kosher Pizza",
+		"latitude": 41.9971407,
+		"longitude": -87.6994397,
+		"address1": "6349 N California Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelp58ntl-frEEB-SF_wvOuCPw",
+		"venue_name": "Evita Argentinian Steakhouse",
+		"latitude": 41.99298,
+		"longitude": -87.71219,
+		"address1": "6112 N Lincoln Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpcXCvYv8EFe2iXhj4PYLy1g",
+		"venue_name": "Bebe's Kosher Deli",
+		"latitude": 41.884106,
+		"longitude": -87.641231,
+		"address1": "131 N Clinton St",
+		"address2": "",
+		"address3": "The French Market",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelpptALWqqJ16iW9hhJ5-jnLw",
+		"venue_name": "Kol Tuv Kosher Foods ",
+		"latitude": 41.997604,
+		"longitude": -87.7035612,
+		"address1": "2938 W Devon Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpP7NcNd0vrPLpL3One3V07Q",
+		"venue_name": "Great Chicago Food & Beverage",
+		"latitude": 41.9972618,
+		"longitude": -87.7088599,
+		"address1": "3149 W Devon Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelpQdzsQzaCSIAfqjnB47ajRw",
+		"venue_name": "MetroKlub",
+		"latitude": 41.8818633219705,
+		"longitude": -87.6468229293823,
+		"address1": "733 W Madison St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60661"
+	},
+	{
+		"venue_id": "yelp3LDMdhYK3jc7lqDPuJ7-gQ",
+		"venue_name": "Kosher Stand",
+		"latitude": 41.8811836242676,
+		"longitude": -87.6865234375,
+		"address1": "The United Ctr",
+		"address2": "",
+		"address3": "Lower Level, Aisle 114",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60612"
+	}
+]

@@ -17,6 +17,8 @@ Functions that aren't tested and why:
     - get_t_events and get_p_events because they both required
       queries to the database that aren't possible to simulate
       for testing purposes
+    - radius functions because they require outside information which
+      can't be easily simulated and passed into the functions
 '''
 
 class TestDayConversion(unittest.TestCase):

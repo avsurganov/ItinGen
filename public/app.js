@@ -34,6 +34,11 @@ angular.module('ItinGen', [
     }
 
      
+    $scope.saveSettings = function() {
+      console.log($scope.settings.startLocation)
+      console.log($scope.settings)
+    }
+
 
     function initMap(x, y) {
       var center = {lat: x, lng: y}

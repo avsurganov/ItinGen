@@ -9,7 +9,7 @@ angular.module('sideBar')
     this.itinerary = []
     this.likedItineraries = []
     // Default settings
-   
+    console.log($scope.$parent.$displayLocation)
     this.settings = {
       startTime: new Date(Date.now()),
       startLocation: $scope.$parent.$displayLocation,
@@ -34,6 +34,11 @@ angular.module('sideBar')
     this.facebook = function() {
       $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';
       };
+
+    this.home = function() {
+       this.sidebarTemplate = sidebarTemplates[0]
+       this.itinerary = itineraryFactory.getNewItinerary()
+    }
 
     this.getLikedItineraries = function() {
       console.log("switching!")

@@ -90,11 +90,13 @@ Clare wrote the logic to create a pool of viable itinerary events. Masha wrote t
    * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
    * We implemented a Facebook login functionality. 
    * We updated the color scheme. 
+   * We added a fire logo.
 - Data Team:
    * We made a number of small changes to various user preference features:
       * The user can specify start time, but not end time. We removed end time because it resulted in too many evening events being rejected.
       * The user can specify which method of transportation they want to use to get between events.
       * The user can specify that they want an itinerary with only free events. 
+   * Our final version does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to be worth the computational and performance cost.      
 
 ## Specific Information for 4B
 

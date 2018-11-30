@@ -1,10 +1,11 @@
 module.exports = {
-  'Title is Bing': function(browser) {
-    // Browser is the browser that is being controlled
+  'Testing FrontEnd' : function (browser) {
     browser
-      .url('https://www.bing.com') // Navigate to the url
-      .waitForElementVisible('body', 1000) // Wait until you can see the body element.
-      .verify.title('Bing') // Verify that the title is 'Bing'
-      .end() // This must be called to close the browser at the end
-    }
-}
+      .url('http://localhost:3000/')
+      .waitForElementVisible('body', 1000)
+      .pause(1000)
+      .assert.title('ItinGen')
+    .pause(1000)
+      .end();
+  }
+};

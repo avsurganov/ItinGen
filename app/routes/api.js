@@ -26,10 +26,12 @@ router.post('/getitinerary', function(req, res) {
 	var query = qs.stringify({ startTime, lat, lon, free, radius, transport});
 	console.log(query);
 	request('http://localhost:5000/?' + query, function(err, res, body) {  
-		console.log(body);
+		if(err) res.json({success:false});
+		else {
+			res.json({success: true, itinerary: body});
+		}
 	});
-	});
-
+});
 
 
 // Middleware for Routes that checks for token - Place all routes after this route that require the user to already be logged in

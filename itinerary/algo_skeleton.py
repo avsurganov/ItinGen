@@ -1,4 +1,5 @@
 from algo_helpers import *
+from pull_events import *
 
 ####################
 # MASTER ALGORITHM #
@@ -113,7 +114,8 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
-    
+    assert validate_itin(itinerary, user_data)
+
     # return the itinerary
     for i, item in enumerate(itinerary):
         # change events to event id

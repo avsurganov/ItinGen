@@ -147,9 +147,6 @@ def increment_radius(radius, orig_radius):
 def decrement_helper(radius_mem, itinerary, user_data):
     '''
     calculate the area that we want to move
-
-    there are 2 values hardcoded in right now, think about changing them to
-    take in global variables
     '''
     # must be first iteration
     if len(itinerary) == 0:
@@ -165,7 +162,11 @@ def decrement_helper(radius_mem, itinerary, user_data):
 # DISTANCE CALCULATIONS #
 #########################
 
+
 def venue_to_lat_long(venue):
+    '''
+    takes venue object and returns just lat and long values
+    '''
     lat = venue.get('latitude')
     long = venue.get('longitude')
     return [lat, long]
@@ -197,6 +198,9 @@ def find_angle(coords1, center, coords2):
 
 
 def validate_angle(coords1, center, coords2, limit=1):
+    '''
+    checks that the angle is within the given part of the circle
+    '''
     angle = find_angle(coords1, center, coords2)
     rad_lim = limit*pi
     if (angle <= rad_lim):
@@ -204,8 +208,10 @@ def validate_angle(coords1, center, coords2, limit=1):
     else:
         return False
 
-# sort pool of events by distance
 def sort_distances(events, center):
+    '''
+    sorts list of (event, venue) tuples by distance to center descending
+    '''
     event_distances = []
     for event in events:
         venue = event[1]

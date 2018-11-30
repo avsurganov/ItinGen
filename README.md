@@ -60,7 +60,7 @@ npm test
 
 ## Suggested Acceptance Tests
 
-Opening and closing the hamburger menu, clicking the register link so that a modal window appears with a form for user information, and closing this window.
+Opening and closing the hamburger menu. Open up the menu and selecting different settings and generating different itinereraries. 
 
 For acceptance tests of the map, feel free to manipulate the map as you see fit (zoom in and out, travel to other parts of the world, etc.).
 
@@ -90,6 +90,7 @@ Clare wrote the logic to create a pool of viable itinerary events. Masha wrote t
    * We did not implement the ability to select an itinerary to follow. We decided that this feature didn't add anything to the app experience and wasn't important to the main functionality.
    * We implemented a Facebook login functionality. 
    * We updated the color scheme. 
+   * We decided not to allow users to un-like itineraries
 - Data Team:
    * We made a number of small changes to various user preference features:
       * The user can specify start time, but not end time. We removed end time because it resulted in too many evening events being rejected.

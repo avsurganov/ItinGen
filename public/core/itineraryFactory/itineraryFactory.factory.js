@@ -124,7 +124,8 @@ angular.module('itineraryFactory')
 
 	//on load or dislike an itinerary: 
 	service.getNewItinerary = function() {
-		console.log(settings)
+		console.log("SETTINGS ARE");
+		console.log(settings);
 		$http.post('/api/getitinerary', {settings}).then((data) => {
 			var success = data.data.success;
 			if(success) {
@@ -137,6 +138,9 @@ angular.module('itineraryFactory')
 
 	service.saveSettings = function(userSettings) {
 		settings = userSettings
+		if(settings['startLocation'] == undefined){
+			settings['startLocation'] = {'lat': 0, 'lon' : 0};
+		}
 		console.log(settings)
 	}
 	service.getCurrentItinerary = function() {

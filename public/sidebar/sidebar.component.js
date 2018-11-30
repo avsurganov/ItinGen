@@ -4,10 +4,31 @@ angular.module('sideBar')
 
 .component('sideBar', {
 	templateUrl: 'sidebar/sidebar.template.html',
-	controller: ['$scope', '$http', 'itineraryFactory', '$window', function sideBarController($scope, $http,itineraryFactory, $window) {
+	controller: ['$scope', '$http', 'itineraryFactory', '$window', 'Auth', function sideBarController($scope, $http,itineraryFactory, $window, Auth) {
 		
     this.itinerary = []
     this.likedItineraries = []
+
+    var app = this;
+    app.isLoggedIn = false;
+
+    if (Auth.isLoggedIn()) {
+      // Check if a the token expired
+      Auth.getUser().then(function(data) {
+          // Check if the returned user is undefined (expired)
+          console.log("HERE");
+          console.log(data.data);
+          if (data.data.email === undefined) {
+              Auth.logout(); // Log the user out
+              // $location.path('/'); // Redirect to home page
+          } else {
+            // let likeditineraries = itineraryFactory.getLikedItineraries();
+            // console.log(likeditineraries);
+            // itineraryFactory.addToLikedItineraries();
+            app.isLoggedIn = true;
+          }
+      });
+  }
     // Default settings
     console.log($scope.$parent.$displayLocation)
     this.settings = {
@@ -17,6 +38,8 @@ angular.module('sideBar')
       radius: 10,
       transport: 'DRIVING'
     }
+
+    itineraryFactory.saveSettings(this.settings);
 
 
     this.startLocation
@@ -30,6 +53,9 @@ angular.module('sideBar')
       return String.fromCharCode(65 + $index)
     }
 
+    this.logout = function(){
+      Auth.logout();
+    }
   
     this.facebook = function() {
       $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';

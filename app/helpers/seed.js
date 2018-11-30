@@ -11,10 +11,12 @@ mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
 });
 
 const User = require('../models/user');
+const Itinerary = require('../models/itinerary');
 const Pevent = require('../models/pevent');
 const Tevent = require('../models/tevent');
 const Venue = require('../models/venue');
 
+Itinerary.collection.drop();
 User.collection.drop();
 Pevent.collection.drop();
 Tevent.collection.drop();
@@ -153,4 +155,8 @@ User.create(
   .finally(() => {
     mongoose.connection.close();
   });
+
+  var itin = new Itinerary();
+  itin.activities = [];
+  itin.save();
 

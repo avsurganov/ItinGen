@@ -7,6 +7,8 @@ var jwt = require('jsonwebtoken'); // Import JWT Package
 var router = app.Router();
 var secret = 'itingen'; // Create custom secret to use with JWT
 
+
+
 router.post('/getitinerary', function(req, res) {
 	var userSettings = req.body.settings;
 	console.log(userSettings);
@@ -17,16 +19,17 @@ router.post('/getitinerary', function(req, res) {
 	var free = userSettings.free;
 	var radius = userSettings.radius;
 	var transport = userSettings.transport;
-	var pythonProcess = spawn('py',["script.py", "startTime", startTime, 
-										"lat", lat, "lon", lon, "free", 
-										free, "radius", radius, "transport", transport]);
-	pythonProcess.stdout.on('data', (data) => {
-		// Do something with the data returned from python script
+	res.json({success: true, itinerary: oneItin});
+	// var pythonProcess = spawn('py',["script.py", "startTime", startTime, 
+	// 									"lat", lat, "lon", lon, "free", 
+	// 									free, "radius", radius, "transport", transport]);
+	// pythonProcess.stdout.on('data', (data) => {
+	// 	// Do something with the data returned from python script
 
-		console.log("GOT DATA");
-		console.log(data);
+	// 	console.log("GOT DATA");
+	// 	console.log(data);
 	});
-});
+
 
 
 // Middleware for Routes that checks for token - Place all routes after this route that require the user to already be logged in

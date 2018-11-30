@@ -130,6 +130,7 @@ angular.module('itineraryFactory')
 			var success = data.data.success;
 			if(success) {
 				currentItinerary = data.data.itinerary
+				console.log(currentItinerary);
 				return data.data.itinerary;
 			} else {
 				return {};

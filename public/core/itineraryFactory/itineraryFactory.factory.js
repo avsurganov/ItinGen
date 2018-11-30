@@ -149,7 +149,8 @@ angular.module('itineraryFactory')
 	}
 
 	service.addToLikedItineraries = function () {
-		likedItineraries.push(currentItinerary)
+		// likedItineraries.push(currentItinerary)
+		likedItineraries = "test";
 		$http.post('/api/putliked', {likedItineraries}).then((req) => {
 			return;
 		});

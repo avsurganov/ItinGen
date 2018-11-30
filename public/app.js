@@ -32,10 +32,12 @@ angular.module('ItinGen', [
         } else {
           let likeditineraries = itineraryFactory.getLikedItineraries();
           console.log(likeditineraries);
-          itineraryFactory.addToLikedItineraries(["work"]);
+          itineraryFactory.addToLikedItineraries();
         }
     });
 }
+
+
 
 
   

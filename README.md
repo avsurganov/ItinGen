@@ -39,6 +39,11 @@ Now you will need to install MongoDB:
 sudo apt-get install -y mongodb
 ```
 
+Run the python server using the command:
+```
+python server.py
+```
+
 
 ### Initializing the App
 ```bash
@@ -48,17 +53,19 @@ npm start
 ```
 
 ## Running Unit Tests
-Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.
-
-To run database validation tests (back-end) for the application, simply run:
-```bash
-npm test
-```
-
-Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
-```
-mpm run karma
-```
+### Front End
+- Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
+  ```
+  mpm run karma
+  ```
+### Back End
+- To run database validation tests (back end) for the application, simply run:
+  ```bash
+  npm test
+  ```
+### Data & Algorithm
+- Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.  
+  
 
 
 ## Suggested Acceptance Tests

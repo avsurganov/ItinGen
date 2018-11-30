@@ -104,16 +104,19 @@ router.post('/me', function(req, res) {
 
 // Route to get users liked itineraries
 router.get('/getliked', function(req, res) {
+	console.log("GOT HERE");
 	User.findOne({ email: req.decoded.email}).exec(function(err, user) {
 		if (err) {
 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
 		} else {
 			if (!user) {
+				console.log("IN HEREz");
 				res.json({ success: false, message: 'No user was found' }); // Return error
 			} else {
-				if(users.liked.length > 0){
-					res.json({ success: true, message: 'found itineraries', itineraries: users.liked});
+				if(user.liked.length > 0){
+					res.json({ success: true, message: 'found itineraries', itineraries: user.liked});
 				} else {
+					console.log("IN HEREz");
 					res.json({success: false, message: 'No itineraries were found'});	
 				}
 			}	
@@ -121,12 +124,13 @@ router.get('/getliked', function(req, res) {
 	});
 });
 
-// // Route to append to a users like itineraries
-// router.post('/addliked', (req, res) => {
-// 	var itins = req.body.itineraries;
-// 	var username = req.body.username;
+// Route to append to a users like itineraries
+router.post('/putliked', (req, res) => {
+	console.log("WEIRD");
+	var itins = req.body.itineraries;
+	console.log(req.body);
 
-// })
+})
 
 // // Route to provide the user with a new token to renew session
 // router.get('/renewToken', function(req, res) {

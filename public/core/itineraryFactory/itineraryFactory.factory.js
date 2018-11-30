@@ -130,16 +130,22 @@ angular.module('itineraryFactory')
 		return itin1
 	}
 	service.getLikedItineraries = function () {
-		$http.get('/getliked').then((data) => {
-			console.log("IN liked itineraries");
-			console.log(data);
+		$http.get('/api/getliked').then((req) => {
+			var success = req.data.success;
+			if(success) {
+				return req.data.itineraries;
+			}
+			else {
+				var emptyArray = [];
+				return emptyArray;
+			}
 		});
 	}
 
-	service.addToLikedItineraries = function (itineraryObj) {
-		likedItineraries.push(itineraryObj)
-		// TODO: add POST request to add new liked itinerary
-		return likeItineraries
+	service.addToLikedItineraries = function (itineraries) {
+		$http.post('/api/putliked', {itineraries}).then((req) => {
+			return;
+		});
 	}
 
 

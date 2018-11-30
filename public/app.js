@@ -30,7 +30,9 @@ angular.module('ItinGen', [
             app.isLoggedIn = false; // Set session to false
             $location.path('/'); // Redirect to home page
         } else {
-          itineraryFactory.getLikedItineraries();
+          let likeditineraries = itineraryFactory.getLikedItineraries();
+          console.log(likeditineraries);
+          itineraryFactory.addToLikedItineraries(["work"]);
         }
     });
 }

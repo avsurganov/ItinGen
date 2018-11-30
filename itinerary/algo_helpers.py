@@ -21,7 +21,6 @@ def increment_itinerary(itinerary, valid_events, user_data):
     random.shuffle(indices)
     # iterate through the events by index
     for index in indices:
-        #print(index)
         cur_event = valid_events[index]
         if check_valid(cur_event, itinerary, user_data):
             # done with this increment
@@ -51,10 +50,7 @@ def check_valid(cur_event, itinerary, user_data):
     else:
         coords1 = venue_to_lat_long(itinerary[-1][1])
     coords2 = venue_to_lat_long(cur_event[1])
-    #print('len' + str(len(itinerary)))
-#print(itinerary)
     if not validate_angle(coords1, center, coords2) and len(itinerary) != 0:
-        #print(1)
         return False
     #####################################
     # check event is not double counted #
@@ -67,10 +63,8 @@ def check_valid(cur_event, itinerary, user_data):
     start_time = determine_start_time(itinerary, cur_event, user_data)
     if start_time == -10:
         # this event is not valid
-        #print(3)
         return False
     if not validate_restaurant(cur_event[0], start_time):
-        #print(4)
         return False
     else:
         # this was the last check so the event is 100% valid
@@ -188,24 +182,6 @@ def find_distance(coords1, coords2):
     a = sin((lat2-lat1)/2)**2 + cos(lat1)*cos(lat2)*sin((long2-long1)/2)**2
     return fabs(earth_radius*2*atan2(sqrt(a), sqrt(1-a)))
 
-
-#def find_angle(coords1, center, coords2):
-#    earth_radius = 3957.25
-#    a = find_distance(coords1, center)/(2*pi*earth_radius)
-#    b = find_distance(center, coords2)/(2*pi*earth_radius)
-#    c = find_distance(coords1, coords2)/(2*pi*earth_radius)
-#    print(a)
-#    print(b)
-#    print(c)
-#    num = cos(c)-cos(a)*cos(b)
-#    den = sin(a)*sin(b)
-#    if (fabs(den) < 0.000001):
-#        if (a+b-c < 0.000001):
-#            return pi
-#        else:
-#            return 0.0
-#    return acos(num/den)
-
 def find_angle(coords1, center, coords2):
     a = find_distance(coords1, center)
     b = find_distance(center, coords2)
@@ -222,10 +198,6 @@ def find_angle(coords1, center, coords2):
 
 def validate_angle(coords1, center, coords2, limit=1):
     angle = find_angle(coords1, center, coords2)
-    print(coords1)
-    print(center)
-    print(coords2)
-    print(angle)
     rad_lim = limit*pi
     if (angle <= rad_lim):
         return True

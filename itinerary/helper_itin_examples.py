@@ -1,4 +1,4 @@
-event3 = {
+eventa = {
           "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
           "event_name": "Elton John: Farewell Yellow Brick Road",
           "venue_id": "TMAPIKovZpa2MCe",
@@ -15,7 +15,7 @@ event3 = {
           "price": 59.5
          }
 
-venue3 = {
+venuea = {
           "venue_id": "TMAPIKovZpa2MCe",
           "venue_name": "Allstate Arena",
           "latitude": 42.00499247,
@@ -28,7 +28,7 @@ venue3 = {
           "zip_code": "60018"
 }
 
-event4 = {
+eventb = {
           "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
           "event_name": "Elton John: Farewell Yellow Brick Road",
           "venue_id": "TMAPIKovZpa2MCe",
@@ -45,7 +45,7 @@ event4 = {
           "price": -10
          }
 
-event5 = {
+eventc = {
           "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
           "event_name": "Elton John: Farewell Yellow Brick Road",
           "venue_id": "TMAPIKovZpa2MCe",
@@ -62,7 +62,7 @@ event5 = {
           "price": 59.5
          }
 
-event6 = {
+eventd = {
           "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
           "event_name": "Elton John: Farewell Yellow Brick Road",
           "venue_id": "TMAPIKovZpa2MCe",
@@ -79,7 +79,7 @@ event6 = {
           "price": -3
          }
 
-event7 = {
+evente = {
           "event_id": "TMAPIvv1A7ZA8wGkdfoeXP",
           "event_name": "Elton John: Farewell Yellow Brick Road",
           "venue_id": "TMAPIKovZpa2MCe",
@@ -97,16 +97,16 @@ event7 = {
          }
 # passes meal_overlap check
 # free
-itina = [(event7,venue3,650,1200)]
+itina = [(evente,venuea,650,1200)]
 # fails meal_overlap check
 # free / unspecified price
-itinb = [(event4,venue3,650,790)]
+itinb = [(eventb,venuea,650,790)]
 # fails meal_overlap check
 # not free
-itinc = [(event5,venue3,650,790)]
+itinc = [(eventc,venuea,650,790)]
 # fails meal_overlap check
 # not free
-itind = [(event6,venue3,650,790)]
+itind = [(eventd,venuea,650,790)]
 # fails meal_overlap check
 # not free
-itine = [(event3,venue3,650,790)]
+itine = [(eventa,venuea,650,790)]

@@ -170,16 +170,12 @@ def validate_types(itin):
         st = item[2]
         et = item[3]
         if not (isinstance(ev,dict)):
-            print(1)
             return False
         if not (isinstance(ven,dict)):
-            print(2)
             return False
         if not (isinstance(st,int)):
-            print(3)
             return False
         if not (isinstance(et,int)):
-            print(4)
             return False
     return True
 
@@ -198,7 +194,7 @@ def validate_itin(itin,user_inputs):
     istypes = validate_types(itin)
     if not istypes:
         return False
-        isvalid =  (validate_nooverlap(itin,user_times) and
+    isvalid =  (validate_nooverlap(itin,user_times) and
                     validate_chrono(itin) and
                     validate_isopen(itin,day) and
                     validate_max_distance(itin,start_location,dist) and
@@ -206,7 +202,8 @@ def validate_itin(itin,user_inputs):
                     validate_travel_time(itin,transport) and
                     not validate_no_duplicates(itin) and
                     not validate_venue_id_match(itin) and
-                    not validate_event_date(itin,date)
-                )
+                    not validate_event_date(itin,date))
+                    #)
+                    #True)
     isfree = not free or validate_free(itin)
     return isvalid and isfree

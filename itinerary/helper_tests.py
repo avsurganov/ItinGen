@@ -1,6 +1,5 @@
 import unittest
 import sys
-sys.path.append("..")
 
 from pull_events import *
 from helper_itin_examples import *

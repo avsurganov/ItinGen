@@ -9,7 +9,9 @@ module.exports = function(config) {
       'lib/angular-route/angular-route.js',
       '../node_modules/angular-mocks/angular-mocks.js',
       'view*/**/*.js',
-      'core/**/*.js',
+      'core/itineraryFactory/itineraryFactory.module.js',
+      'core/itineraryFactory/itineraryFactory.factory.js',
+      'core/itineraryFactory/itineraryFactory.spec.js',
       'app.js',
       'app.spec.js'
     ],

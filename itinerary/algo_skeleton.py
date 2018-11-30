@@ -113,6 +113,7 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
+    
     # return the itinerary
     for i, item in enumerate(itinerary):
         # change events to event id

@@ -19,7 +19,8 @@ or rediscover a city they have been living in for years
 - [Specific Information for 4B](#specific-information-for-4b)
 
 ## Setup
-### Install Prerequisites (NPM/Node.js/MongoDB)
+### Install Prerequisites 
+(NPM/Node.js/MongoDB)
 #### Ubuntu
 You will need to add the Node.js PPA by running this command:
 ```bash

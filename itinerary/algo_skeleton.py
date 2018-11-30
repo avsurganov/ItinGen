@@ -9,7 +9,7 @@ from pymongo import MongoClient
 # MASTER ALGORITHM #
 ####################
 
-def create_itinerary(user_args, size):
+def create_itinerary(start_time, latitude, longitude, free, radius, transport, size):
     '''
     this is the master function that will generate an itinerary given the
     user inputs
@@ -35,18 +35,13 @@ def create_itinerary(user_args, size):
     # Step 0: Assume that we have all of the user_args #
     ####################################################
     # NOTE: keeping individual variables to maintain compatibility
-    start_time = 540 # should be int
-    start_location = (41.881855, -87.627115) # should be (lat, lon)
-    distance_radius = 10.0 # float miles
-    only_free = False # boolean
-    transportation = 'driving' # str can be ['driving', 'transit', 'walking']
     # dict to make it easy to pass to other functions
     user_data = {
         'start_time': start_time,
-        'start_location': start_location,
-        'distance_radius': distance_radius,
-        'only_free': only_free,
-        'transportation': transportation
+        'start_location': [latitude, longitude],
+        'distance_radius': radius,
+        'only_free': free,
+        'transportation': transport
     }
 
     ####################################################################

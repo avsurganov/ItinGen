@@ -58,13 +58,17 @@ def create_itinerary(user_args):
     #         [[event, venue], [event, venue], [event, venue], ...]      #
     ######################################################################
     events = []
+    for e in events:
+        assert len(e) == 2, 'ERROR: events in pool should have 2 items in its tuple'
 
     #########################################################################
     # Step 3: Calculate the distance for each [event, venue] from the start #
     #         location to create [event, venue, distance] and the sort the  #
     #         events by that distance in decreasing distance order          #
     #########################################################################
-    events = []
+    events = sort_distances(events)
+    for e in events:
+        assert len(e) == 3, 'ERROR: post distance calculation the event tuple should have 3 items'
 
     ########################################################
     # Step 4: Go through the steps to create the itinerary #
@@ -94,7 +98,7 @@ def create_itinerary(user_args):
         else:
             # the given itinerary is not done, we need to get a new radius
             # and find the new valid itins based on distance
-            if determine_radius(itinerary, itin_mem, radius_mem):
+            if determine_radius(itinerary, itin_mem, radius_mem, user_data):
                 cont = False
             else:
                 # find first index within that radius
@@ -109,5 +113,14 @@ def create_itinerary(user_args):
                     valid_events = events[i:]
     # we are done creating the itinerary
     # run some final validity checks here
+    
     # return the itinerary
+    for i, item in enumerate(itinerary):
+        # change events to event id
+        itinerary[i][0] = item[0]['event_id']
+        # change venues to venue id
+        itinerary[i][1] = item[1]['venue_id']
+
+        assert len(itinerary[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
+
     return itinerary

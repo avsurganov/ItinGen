@@ -18,11 +18,21 @@ angular.module('ItinGen', [
   var directionsDisplay
   $scope.test = "We got it!"
   var app = this;
+
  
      $scope.map;
      $scope.location
      $scope.displayLocation
      $scope.displayLocationLoaded = false
+
+     $scope.settings = {
+      startTime: new Date(Date.now()),
+      startLocation: '',
+      free: true,
+      radius: 10,
+      transport: 'DRIVING'
+    }
+
      
 
     function initMap(x, y) {

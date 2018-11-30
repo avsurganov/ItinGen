@@ -22,7 +22,9 @@ angular.module('ldButtons')
 		}
 
 		this.nextItinerary = function() {
-			itineraryFactory.saveSettings(this.settings, $scope.$parent.location);
+			console.log($scope.$parent.settings);
+			console.log($scope.$parent.location);
+			itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
 			$scope.$parent.updateMapWithNewItinerary();
 		}
 

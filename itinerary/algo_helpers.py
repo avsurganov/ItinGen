@@ -18,7 +18,7 @@ def increment_itinerary(itinerary, valid_events, user_data):
         return
     # check events in random order
     indices = [i for i in range(len(valid_events))]
-    #random.shuffle(indices)
+    random.shuffle(indices)
     # iterate through the events by index
     for index in indices:
         #print(index)
@@ -189,15 +189,31 @@ def find_distance(coords1, coords2):
     return fabs(earth_radius*2*atan2(sqrt(a), sqrt(1-a)))
 
 
+#def find_angle(coords1, center, coords2):
+#    earth_radius = 3957.25
+#    a = find_distance(coords1, center)/(2*pi*earth_radius)
+#    b = find_distance(center, coords2)/(2*pi*earth_radius)
+#    c = find_distance(coords1, coords2)/(2*pi*earth_radius)
+#    print(a)
+#    print(b)
+#    print(c)
+#    num = cos(c)-cos(a)*cos(b)
+#    den = sin(a)*sin(b)
+#    if (fabs(den) < 0.000001):
+#        if (a+b-c < 0.000001):
+#            return pi
+#        else:
+#            return 0.0
+#    return acos(num/den)
+
 def find_angle(coords1, center, coords2):
-    earth_radius = 3957.25
-    a = find_distance(coords1, center)/(2*pi*earth_radius)
-    b = find_distance(center, coords2)/(2*pi*earth_radius)
-    c = find_distance(coords1, coords2)/(2*pi*earth_radius)
-    num = cos(c)-cos(a)*cos(b)
-    den = sin(a)*sin(b)
-    if (fabs(den) < 0.001):
-        if (a+b-c < 0.001):
+    a = find_distance(coords1, center)
+    b = find_distance(center, coords2)
+    c = find_distance(coords1, coords2)
+    num = c**2 - a**2 - b**2
+    den = 2*a*b
+    if (fabs(den) < 0.00001):
+        if (a+b-c < 0.00001):
             return pi
         else:
             return 0.0
@@ -206,6 +222,10 @@ def find_angle(coords1, center, coords2):
 
 def validate_angle(coords1, center, coords2, limit=1):
     angle = find_angle(coords1, center, coords2)
+    print(coords1)
+    print(center)
+    print(coords2)
+    print(angle)
     rad_lim = limit*pi
     if (angle <= rad_lim):
         return True

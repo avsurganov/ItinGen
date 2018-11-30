@@ -277,12 +277,15 @@ def determine_start_time(itinerary, event, user_data):
     transport = user_data.get('transportation')
     # approximate travel time
     distance = find_distance(last_venue,venue_to_lat_long(next_venue))
-    if (transport == 'driving'):
+    travel_time  = 0
+    if (transport == 'DRIVING'):
         travel_time = int(distance * 3)
-    elif (transport == 'transit'):
-        travel_time = int(distance * 8)
-    elif (transport == 'walking'):
+    elif (transport == 'TRANSIT'):
+        travel_time = int(distance * 12)
+    elif (transport == 'WALK'):
         travel_time = int(distance * 20)
+    elif (transport == 'BIKE'):
+        travel_time = int(distance * 10)
 
     # validate start time of the next event
     start_time = last_end_time + travel_time

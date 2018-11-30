@@ -1,6 +1,6 @@
 from algo_helpers import *
+import sys
 from pull_events import *
-sys.path.insert(0, "tests")
 from validation import *
 from pymongo import MongoClient
 

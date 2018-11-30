@@ -30,7 +30,9 @@ angular.module('ItinGen', [
             app.isLoggedIn = false; // Set session to false
             $location.path('/'); // Redirect to home page
         } else {
-          itineraryFactory.getLikedItineraries();
+          let likeditineraries = itineraryFactory.getLikedItineraries();
+          console.log(likeditineraries);
+          itineraryFactory.addToLikedItineraries(["work"]);
         }
     });
 }
@@ -54,6 +56,11 @@ angular.module('ItinGen', [
     // error if initial position not recieved
     function locationNotRecieved(positionError){
       console.log(positionError);
+      // if not location, center map on Chicago
+  
+
+
+      initMap(41.881855, -87.627115);
     }
 
     // set position on map when position tracking coords received

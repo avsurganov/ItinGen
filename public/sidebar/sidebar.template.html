@@ -1,14 +1,16 @@
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block; width: 20%;" id="sidebar">
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <button class="btn-outline-info">Home </button>
-        <button class="btn-outline-info" ng-click="$ctrl.getLikedItineraries()">Liked Itineraries</button>
-        <button onclick="document.getElementById('id00').style.display='block'" class="btn-outline-info">Settings</button>
-        <button class="btn btn-outline-info" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
+      <div class="p-4 light_back">
+        <button class="btn btn-primary menu_button">Home </button>
+        <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()">Liked Itineraries</button>
+        <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
+          Settings
+    </button>
+        <button class="btn btn-primary menu_button" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark medium_back">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,18 +20,22 @@
   <!--sidebar body-->
 </div>
 
-
-
-<!-- Modal for Settings / Search Parameters -->
-     <div class="w3-container">
-        <div id="id00" class="w3-modal">
-          <div class="w3-modal-content">
-            <div class="w3-container">
-              <span onclick="document.getElementById('id00').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <form>
+<!-- Bootstrapg modal for Settings -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Set your custom itinerary search parameters!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
                   <div class="form-inline">
                     <!-- class="col-2 col-form-label" -->
-                    <label for="example-time-input" >Start Time&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="example-time-input" >Start Time&nbsp;&nbsp;</label>
                     <div class="col-10">
                       <input class="form-control" type="time" value="06:00:00" id="example-time-input">
                     </div>
@@ -81,12 +87,92 @@
                     </fieldset>
                   <!-- End of Radio Buttons -->
                 </form>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Modal for Settings / Search Parameters -->
+<!-- End bootstrap modal for settings -->
 
+
+<!-- Bootstrap modal for Login -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Set your custom itinerary search parameters!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+                  <div class="form-inline">
+                    <!-- class="col-2 col-form-label" -->
+                    <label for="example-time-input" >Start Time&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <div class="col-10">
+                      <input class="form-control" type="time" value="06:00:00" id="example-time-input">
+                    </div>
+                  </div>
+                  <div class="form-inline">
+                    <label for="formGroupExampleInput">Start Location &nbsp;</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location">
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Only Free Events<br>
+                    </label>
+                    <label>&nbsp;</label>
+                    <br>
+                  </div>
+                    <div class="form-group">
+                      <legend>Maximum Radius</legend>
+                      <input type="range" class="form-control-range" id="formControlRange" min="1" max = "100" name ="foo">
+                      <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                    </div>
+                  <!-- Radio Buttons for Transportation -->
+                  <fieldset class="form-inline">
+                      <legend>Transportation</legend>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          Car &nbsp; 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                          Public Transportation &nbsp;
+                        </label>
+                      </div>
+                      <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                          Walk &nbsp;
+                        </label>
+                      </div>
+                      <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                          Bike &nbsp;
+                        </label>
+                      </div>
+                    </fieldset>
+                  <!-- End of Radio Buttons -->
+                </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End bootstrap modal for Logging in -->
 <!-- Modal for Logging in -->
 
 <div class="modal fade" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
@@ -108,27 +194,3 @@
     </div>
   </div>
 </div><!-- End Modal for Logging in -->
-
-<!-- Modal for Register -->
-     <div class="w3-container">
-        <div id="id02" class="w3-modal">
-          <div class="w3-modal-content">
-            <div class="w3-container">
-              <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Please Enter your Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Please Enter a Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-          </div>
-        </div>
-</div>
-<!-- End Modal for Register -->

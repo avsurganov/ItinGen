@@ -26,6 +26,19 @@ angular.module('sideBar')
 
     }
 
+    this.showElements = function(index) {
+      var numEventsInItinerary = this.likedItineraries[index].length;
+      let i;
+      for (i = 0; i < numEventsInItinerary; i++) {
+        var elementClasses = document.getElementById('collapseDetail' + index + i).classList
+        console.log(elementClasses.length)
+        if (elementClasses.length == 1)
+          $('#collapseDetail' + index + i).collapse('show')
+        else
+          $('#collapseDetail' + index + i).collapse('hide')
+      }
+    }
+
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']
     this.sidebarTemplate = sidebarTemplates[0]
 

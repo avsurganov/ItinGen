@@ -56,6 +56,11 @@ angular.module('ItinGen', [
     // error if initial position not recieved
     function locationNotRecieved(positionError){
       console.log(positionError);
+      // if not location, center map on Chicago
+  
+
+
+      initMap(41.881855, -87.627115);
     }
 
     // set position on map when position tracking coords received

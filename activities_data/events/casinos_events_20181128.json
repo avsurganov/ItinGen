@@ -1,0 +1,80 @@
+[
+	{
+		"venue_id": "yelpYB_9eiEqE9JKwQNiElwhDg",
+		"event_name": "US Poker & Casino Parties",
+		"event_id": "yelpYB_9eiEqE9JKwQNiElwhDg",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"casinos",
+			"nightlife",
+			"partysupplies",
+			"nightlife",
+			"partyequipmentrentals",
+			"nightlife"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpWOBvJMlcxBh_zZT7j6mnRA",
+		"event_name": "Big Top 2",
+		"event_id": "yelpWOBvJMlcxBh_zZT7j6mnRA",
+		"mon_start": 480,
+		"mon_end": 840,
+		"tues_start": 480,
+		"tues_end": 840,
+		"wed_start": 480,
+		"wed_end": 840,
+		"thurs_start": 480,
+		"thurs_end": 840,
+		"fri_start": 480,
+		"fri_end": 840,
+		"sat_start": 480,
+		"sat_end": 900,
+		"sun_start": 660,
+		"sun_end": 840,
+		"tags": [
+			"casinos",
+			"nightlife"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpTHrXlwTi5WskLtAs2CO_yg",
+		"event_name": "Golden Dragon Casino Shuttle Tours",
+		"event_id": "yelpTHrXlwTi5WskLtAs2CO_yg",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"casinos",
+			"nightlife",
+			"tours",
+			"nightlife"
+		],
+		"price": -10
+	}
+]

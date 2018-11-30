@@ -1,0 +1,50 @@
+[
+	{
+		"venue_id": "yelp0w7eAd3JzIQa9VyJQJaXVg",
+		"venue_name": "Eris Brewery and Cider House",
+		"latitude": 41.95389,
+		"longitude": -87.73426,
+		"address1": "4240 W Irving Park Rd",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60641"
+	},
+	{
+		"venue_id": "yelpqsfzywqiToEaeCYusyz0yQ",
+		"venue_name": "North Shore Cider Company",
+		"latitude": 42.0195849,
+		"longitude": -87.6809,
+		"address1": "707 Howard St",
+		"address2": "Unit B",
+		"address3": "",
+		"city": "Evanston",
+		"state": "IL",
+		"zip_code": "60202"
+	},
+	{
+		"venue_id": "yelp0XHTSBm6jR0x9dn8nLMscg",
+		"venue_name": "2 Fools Cider",
+		"latitude": 41.7749849,
+		"longitude": -88.188631,
+		"address1": "1665 Quincy Ave",
+		"address2": "Ste 155",
+		"address3": null,
+		"city": "Naperville",
+		"state": "IL",
+		"zip_code": "60540"
+	},
+	{
+		"venue_id": "yelpCvTnRaqzLvh8KF-ZMlt5Vw",
+		"venue_name": "Aftermath Cidery & Winery",
+		"latitude": 41.4630273107436,
+		"longitude": -87.0528276264668,
+		"address1": "15 N Washington St",
+		"address2": "",
+		"address3": "",
+		"city": "Valparaiso",
+		"state": "IN",
+		"zip_code": "46383"
+	}
+]

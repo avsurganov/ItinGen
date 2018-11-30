@@ -1,0 +1,110 @@
+[
+	{
+		"venue_id": "yelpZ7Z0QCpKxJ_1JQcr6mz3VA",
+		"venue_name": "Owen & Engine",
+		"latitude": 41.93047,
+		"longitude": -87.68823,
+		"address1": "2700 N Western Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelptQoQbc3vAo3qdTDiNgSekA",
+		"venue_name": "Pleasant House Pub",
+		"latitude": 41.85357,
+		"longitude": -87.64621,
+		"address1": "2119 S Halsted St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
+		"venue_id": "yelpAKOxQTqo_t8V0LwsXXw-xA",
+		"venue_name": "Pub Royale",
+		"latitude": 41.90286,
+		"longitude": -87.67916,
+		"address1": "2049 W Division",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60622"
+	},
+	{
+		"venue_id": "yelpijtyBBrKmxVkmmMzcVqOMQ",
+		"venue_name": "The Globe Pub",
+		"latitude": 41.954487,
+		"longitude": -87.677776,
+		"address1": "1934 W Irving Park Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60613"
+	},
+	{
+		"venue_id": "yelpBmc0wjoqFH1kSBMPSrj0xw",
+		"venue_name": "The Red Lion Pub",
+		"latitude": 41.9262503,
+		"longitude": -87.6502686,
+		"address1": "2446 N Lincoln Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpXGqbxoFN6SyuZqEoqB0HJA",
+		"venue_name": "Elephant & Castle",
+		"latitude": 41.879309125108,
+		"longitude": -87.631175724772,
+		"address1": "111 West Adams St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelpLih5VgEGoXbohqVlIP_bVg",
+		"venue_name": "Elephant & Castle",
+		"latitude": 41.8855099,
+		"longitude": -87.62603,
+		"address1": "185 N Wabash Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60601"
+	},
+	{
+		"venue_id": "yelpdju6KZJzLWPHkP_b-V8uyw",
+		"venue_name": "The Red Lion Lincoln Square",
+		"latitude": 41.9679049150299,
+		"longitude": -87.6937158119112,
+		"address1": "4749 N Rockwell St",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60625"
+	},
+	{
+		"venue_id": "yelpqkjAHBV5eMcXEtWE51XEQg",
+		"venue_name": "Pub Royale",
+		"latitude": 41.8798638284247,
+		"longitude": -87.6306062936783,
+		"address1": "125 S Clark St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	}
+]

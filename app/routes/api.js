@@ -1,4 +1,6 @@
 var User = require("../models/user");
+const request = require('request');
+var qs = require('querystring');
 var Itinerary = require("../models/itinerary");
 var mongoose = require("mongoose");
 var spawn = require("child_process").spawn;
@@ -14,20 +16,18 @@ router.post('/getitinerary', function(req, res) {
 	console.log(userSettings);
 	var startTime = userSettings.startTime;
 	var startLocation = userSettings.startLocation;
+	console.log(startLocation);
 	var lat = startLocation.lat;
-	var lon = startLocation.lon;
+	var lon = startLocation.lng;
 	var free = userSettings.free;
 	var radius = userSettings.radius;
 	var transport = userSettings.transport;
-	res.json({success: true, itinerary: oneItin});
-	// var pythonProcess = spawn('py',["script.py", "startTime", startTime, 
-	// 									"lat", lat, "lon", lon, "free", 
-	// 									free, "radius", radius, "transport", transport]);
-	// pythonProcess.stdout.on('data', (data) => {
-	// 	// Do something with the data returned from python script
-
-	// 	console.log("GOT DATA");
-	// 	console.log(data);
+	//res.json({success: true, itinerary: oneItin});
+	var query = qs.stringify({ startTime, lat, lon, free, radius, transport});
+	console.log(query);
+	request('http://localhost:5000/?' + query, function(err, res, body) {  
+		console.log(body);
+	});
 	});
 
 

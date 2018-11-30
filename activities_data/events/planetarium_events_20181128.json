@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpraFJsOc8GV6eyJ7dZN9BLA",
+		"event_name": "Adler Planetarium",
+		"event_id": "yelpraFJsOc8GV6eyJ7dZN9BLA",
+		"mon_start": 570,
+		"mon_end": 960,
+		"tues_start": 570,
+		"tues_end": 960,
+		"wed_start": 570,
+		"wed_end": 960,
+		"thurs_start": 570,
+		"thurs_end": 960,
+		"fri_start": 570,
+		"fri_end": 960,
+		"sat_start": 570,
+		"sat_end": 960,
+		"sun_start": 570,
+		"sun_end": 960,
+		"tags": [
+			"planetarium",
+			"museums"
+		],
+		"price": -10
+	}
+]

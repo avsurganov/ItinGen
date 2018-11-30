@@ -1,0 +1,74 @@
+[
+	{
+		"venue_id": "yelpMZW8dNQDn4IUrPadfDJWJA",
+		"venue_name": "cityHUNT",
+		"latitude": 41.8953514099121,
+		"longitude": -87.6227264404297,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	},
+	{
+		"venue_id": "yelpVS_XW-v6oASfLvuC7j5ToA",
+		"venue_name": "Museum Hack",
+		"latitude": 41.8795473,
+		"longitude": -87.6237238,
+		"address1": "111 S Michigan Ave",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelp7Q_1Stm-mPnmG-U_5iXW5Q",
+		"venue_name": "Watson Adventures Scavenger Hunts",
+		"latitude": 41.8834728,
+		"longitude": -87.6291268,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60602"
+	},
+	{
+		"venue_id": "yelpRSQZEo4M0S_KEFdn-q8FNw",
+		"venue_name": "Big City Hunt",
+		"latitude": 41.88621,
+		"longitude": -87.6182,
+		"address1": "",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60601"
+	},
+	{
+		"venue_id": "yelpJ0cU09u31F3Tr0ospHyk-g",
+		"venue_name": "Lincoln Park Young Professionals",
+		"latitude": 41.9221038818359,
+		"longitude": -87.6493225097656,
+		"address1": "",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelptvyIGvpuQfLsYFep_BinBQ",
+		"venue_name": "Strayboots",
+		"latitude": 41.89169,
+		"longitude": -87.60834,
+		"address1": "600 E Grand Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60611"
+	}
+]

@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelpBMdRFPxMEGSDI3gGcNJBdw",
+		"venue_name": "Fruit Paradise",
+		"latitude": 41.9240170931104,
+		"longitude": -87.6990046352148,
+		"address1": "2355 N Milwaukee Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60647"
+	},
+	{
+		"venue_id": "yelpWntyn82g6He3X4ovI3GPOA",
+		"venue_name": "Fruve' xPress Juicery",
+		"latitude": 41.868383,
+		"longitude": -87.626354,
+		"address1": "1130 S Wabash Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60605"
+	},
+	{
+		"venue_id": "yelpm-nV58s8Xu8VrDEOl6F92A",
+		"venue_name": "The Juice House",
+		"latitude": 41.85815,
+		"longitude": -87.6599,
+		"address1": "1324 W 18th St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60608"
+	},
+	{
+		"venue_id": "yelpVLmsGWzlMbgrk14WXvD3fg",
+		"venue_name": "Graze",
+		"latitude": 41.8937419,
+		"longitude": -87.6313456,
+		"address1": "648 N Clark St",
+		"address2": null,
+		"address3": "Studio Three",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60654"
+	},
+	{
+		"venue_id": "yelpDfWVZN-a2USPLTDs_jsAFA",
+		"venue_name": "Graze",
+		"latitude": 41.8797693,
+		"longitude": -87.6303311,
+		"address1": "125 S Clark St",
+		"address2": "",
+		"address3": "Revival Food Hall",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60603"
+	},
+	{
+		"venue_id": "yelpnpSkKR_M681MDehAkoogfg",
+		"venue_name": "Fruve' xPress Juicery",
+		"latitude": 41.8817649,
+		"longitude": -87.6550433,
+		"address1": "1108 W Madison St",
+		"address2": "",
+		"address3": null,
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60607"
+	},
+	{
+		"venue_id": "yelpxgtx0i6eKFbnPqRgCEgJbw",
+		"venue_name": "Jamba Juice",
+		"latitude": 41.8521995849909,
+		"longitude": -87.6181843028143,
+		"address1": "2301 S Lakeshore Dr",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60616"
+	}
+]

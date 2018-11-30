@@ -28,7 +28,7 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 button {
   color: #fff;
-  background-color: #F7882F;
+  background-color: #ff6700;
   border-color: #F7882F;
   padding: 14px 20px;
   margin: 8px 0;
@@ -45,7 +45,7 @@ button {
 }
 
 h2{
-  color: #DCC7AA !important;
+  color: #ff6700 !important;
   font-size: 50px !important;
   vertical-align:   middle !important;
   font-family: "Times New Roman";
@@ -59,7 +59,7 @@ h3{
   padding-left: 10px;
   padding-right: 10px;
     size: 50px !important;
-    color: #DCC7AA !important;
+    color: #ebebeb !important;
     vertical-align:   middle !important;
     font-family: "Times New Roman";
 }
@@ -84,7 +84,7 @@ h3{
 {
   width: 100%;
   color: #fff;
-  background-color: #F7882F !important;
+  background-color: #ff6700 !important;
   border-color: #F7882F !important;
   margin: 2px;
   font-size: 20px !important;
@@ -94,11 +94,10 @@ h3{
 {
   width: 100%;
   color: #fff;
-  background-color: #F7882F !important;
+  background-color: #Fff6700 !important;
   border-color: #F7882F !important;
   margin: 2px;
   font-size: 32px !important;
-  font-weight:  bold;
 }
 
 .radio_button
@@ -260,7 +259,7 @@ margin-top: -1px;
 
 .logo {
   display: block; 
-  z-index: 2147483630;
+  z-index: 2;
   vertical-align: top;
   position: absolute;
   right: 36%;

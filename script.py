@@ -4,20 +4,13 @@ import sys
 args = sys.argv
 print('hi')
 sys.stdout.flush()
-# client = MongoClient('mongodb://localhost:27017/')
+itin = [[{'tags': ['cafes', 'bakeries'], 'venue_id': 'yelpKB1xJ9uCj7FMLNDUxK2p_g', 'event_name': 'Lakeview Rewired Cafe', 'event_id': 'yelpKB1xJ9uCj7FMLNDUxK2p_g', 'mon_start': 420, 'mon_end': 1140, 'tues_start': 420, 'tues_end': 1140, 'wed_start': 420, 'wed_end': 1140, 'thurs_start': 420, 'thurs_end': 1140, 'fri_start': 420, 'fri_end': 1140, 'sat_start': 420, 'sat_end': 1140, 'sun_start': 420, 'sun_end': 1140, 'price': -1}, {'venue_id': 'yelpKB1xJ9uCj7FMLNDUxK2p_g', 'venue_name': 'Lakeview Rewired Cafe', 'latitude': 41.9458, 'longitude': -87.64666, 'address1': '3508 N Broadway Ave', 'address2': None, 'address3': '', 'city': 'Chicago', 'state': 'IL', 'zip_code': '60657'}, 553, 643], [{'tags': ['mexican', 'misc'], 'venue_id': 'yelp_Yx4OcyoYXTiI3xOzNgVyw', 'event_name': 'Pueblo Nuevo', 'event_id': 'yelp_Yx4OcyoYXTiI3xOzNgVyw', 'mon_start': 660, 'mon_end': 1260, 'tues_start': 660, 'tues_end': 1260, 'wed_start': 660, 'wed_end': 1260, 'thurs_start': 660, 'thurs_end': 1260, 'fri_start': 660, 'fri_end': 1260, 'sat_start': 660, 'sat_end': 1260, 'sun_start': 660, 'sun_end': 1260, 'price': -1}, {'venue_id': 'yelp_Yx4OcyoYXTiI3xOzNgVyw', 'venue_name': 'Pueblo Nuevo', 'latitude': 41.960272, 'longitude': -87.76744, 'address1': '4342 N Central Ave', 'address2': '', 'address3': '', 'city': 'Chicago', 'state': 'IL', 'zip_code': '60634'}, 661, 811], [{'tags': ['puertorican', 'nightlife'], 'venue_id': 'yelpBj_4lpjmkFHwOAzRbIoabg', 'event_name': 'The Jibarito Stop', 'event_id': 'yelpBj_4lpjmkFHwOAzRbIoabg', 'mon_start': 660, 'mon_end': 1200, 'tues_start': 660, 'tues_end': 1200, 'wed_start': 660, 'wed_end': 1200, 'thurs_start': 660, 'thurs_end': 1200, 'fri_start': 720, 'fri_end': 1200, 'sat_start': 720, 'sat_end': 1020, 'sun_start': 0, 'sun_end': 0, 'price': -1}, {'venue_id': 'yelpBj_4lpjmkFHwOAzRbIoabg', 'venue_name': 'The Jibarito Stop', 'latitude': 41.85802, 'longitude': -87.66801, 'address1': '1646 W 18th St', 'address2': '', 'address3': None, 'city': 'Chicago', 'state': 'IL', 'zip_code': '60608'}, 837, 967], [{'tags': ['grocery', 'newamerican'], 'venue_id': 'yelphHislpkPZSqnFePunjtbhg', 'event_name': "Kiko's Market & Restaurant", 'event_id': 'yelphHislpkPZSqnFePunjtbhg', 'mon_start': 600, 'mon_end': 1320, 'tues_start': 600, 'tues_end': 1320, 'wed_start': 600, 'wed_end': 1320, 'thurs_start': 600, 'thurs_end': 1320, 'fri_start': 600, 'fri_end': 1320, 'sat_start': 600, 'sat_end': 1380, 'sun_start': 600, 'sun_end': 1380, 'price': -2}, {'venue_id': 'yelphHislpkPZSqnFePunjtbhg', 'venue_name': "Kiko's Market & Restaurant", 'latitude': 41.9739468660265, 'longitude': -87.6918498426676, 'address1': '5077 N Lincoln Ave', 'address2': '', 'address3': '', 'city': 'Chicago', 'state': 'IL', 'zip_code': '60625'}, 991, 1121], [{'tags': ['breakfast_brunch', 'food', 'bagels', 'food', 'salad', 'food'], 'venue_id': 'yelp3pa7dfPBmEF-ceeH02t-0Q', 'event_name': 'Chicago Bagel Authority', 'event_id': 'yelp3pa7dfPBmEF-ceeH02t-0Q', 'mon_start': 420, 'mon_end': 1260, 'tues_start': 420, 'tues_end': 1260, 'wed_start': 420, 'wed_end': 1260, 'thurs_start': 420, 'thurs_end': 1260, 'fri_start': 420, 'fri_end': 1260, 'sat_start': 420, 'sat_end': 1260, 'sun_start': 480, 'sun_end': 1260, 'price': -1}, {'venue_id': 'yelp3pa7dfPBmEF-ceeH02t-0Q', 'venue_name': 'Chicago Bagel Authority', 'latitude': 41.939794, 'longitude': -87.653737, 'address1': '955 W Belmont Ave', 'address2': '', 'address3': '', 'city': 'Chicago', 'state': 'IL', 'zip_code': '60657'}, 1130, 1190], [{'tags': ['newamerican', 'nightlife', 'bars', 'nightlife', 'chickenshop', 'nightlife'], 'venue_id': 'yelpeUlykGltBGH0RC5lkwx2eg', 'event_name': 'Honey Butter Fried Chicken', 'event_id': 'yelpeUlykGltBGH0RC5lkwx2eg', 'mon_start': 660, 'mon_end': 1260, 'tues_start': 660, 'tues_end': 1260, 'wed_start': 660, 'wed_end': 1260, 'thurs_start': 660, 'thurs_end': 1320, 'fri_start': 600, 'fri_end': 1320, 'sat_start': 600, 'sat_end': 1260, 'sun_start': 0, 'sun_end': 0, 'price': -2}, {'venue_id': 'yelpeUlykGltBGH0RC5lkwx2eg', 'venue_name': 'Honey Butter Fried Chicken', 'latitude': 41.9426302817062, 'longitude': -87.7027218416333, 'address1': '3361 N Elston Ave', 'address2': '', 'address3': '', 'city': 'Chicago', 'state': 'IL', 'zip_code': '60618'}, 1197, 1287]]
+client = MongoClient('mongodb://localhost:27017/')
 
-# ## tevents
-# ## pevents
-# ## venues
-
-# with client:
-#     db = client.itingen
-#     print("DB HAS")
-#     ## FIND COLLECTIONS COUNT
-#     print(db.venues.find().count())
-#     ## FIND  ITEM AT INDEX  2 -> skip(index)
-#     venue_id = 'yelpm-fake'
-#     venue = db.venues.find_one({'venue_id': venue_id})
-#     print(venue)
-#     venues = db.venues.find().skip(2).limit(1)
-#     # print(venues[0])
+## tevents
+## pevents
+## venues
+with client:
+    db = client.itingen
+    newitin = {"activities" : itin}
+    db.itineraries.insert_one(newitin)

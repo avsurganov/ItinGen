@@ -1,12 +1,12 @@
-describe('itinGenController', function() {
+// describe('itinGenController', function() {
 
-	beforeEach(module('ItinGen'));
+// 	beforeEach(module('ItinGen'));
 
 	
-	it('should...', inject(function($controller) {
+// 	it('should...', inject(function($controller) {
 	
-		var ctrl = $controller('itinGenController');
+// 		var ctrl = $controller('itinGenController');
 
-		expect(ctrl).toBeDefined();
-	}))
-})
+// 		expect(ctrl).toBeDefined();
+// 	}))
+// })

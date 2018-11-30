@@ -1,0 +1,143 @@
+[
+	{
+		"venue_id": "yelpRQmbLZvI7XyFQd2JgNDVig",
+		"event_name": "Lincoln Park Zoo",
+		"event_id": "yelpRQmbLZvI7XyFQd2JgNDVig",
+		"mon_start": 600,
+		"mon_end": 1020,
+		"tues_start": 600,
+		"tues_end": 1020,
+		"wed_start": 600,
+		"wed_end": 1020,
+		"thurs_start": 600,
+		"thurs_end": 1020,
+		"fri_start": 600,
+		"fri_end": 1020,
+		"sat_start": 600,
+		"sat_end": 1020,
+		"sun_start": 600,
+		"sun_end": 1020,
+		"tags": [
+			"zoos"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpZboeT_8JZUDPN2vr6L0itw",
+		"event_name": "Brookfield Zoo",
+		"event_id": "yelpZboeT_8JZUDPN2vr6L0itw",
+		"mon_start": 600,
+		"mon_end": 1020,
+		"tues_start": 600,
+		"tues_end": 1020,
+		"wed_start": 600,
+		"wed_end": 1020,
+		"thurs_start": 600,
+		"thurs_end": 1020,
+		"fri_start": 600,
+		"fri_end": 1020,
+		"sat_start": 600,
+		"sat_end": 1080,
+		"sun_start": 600,
+		"sun_end": 1080,
+		"tags": [
+			"zoos"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpen_X257_3-Y6rL7hS9uaTQ",
+		"event_name": "Scales & Tales Traveling Zoo",
+		"event_id": "yelpen_X257_3-Y6rL7hS9uaTQ",
+		"mon_start": 600,
+		"mon_end": 1320,
+		"tues_start": 600,
+		"tues_end": 1320,
+		"wed_start": 600,
+		"wed_end": 1320,
+		"thurs_start": 600,
+		"thurs_end": 1320,
+		"fri_start": 600,
+		"fri_end": 1320,
+		"sat_start": 600,
+		"sat_end": 1320,
+		"sun_start": 600,
+		"sun_end": 1320,
+		"tags": [
+			"zoos",
+			"eventplanning"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelp9dSzFbsWrt0xxV1dAYLKmA",
+		"event_name": "Willowbrook Wildlife Center",
+		"event_id": "yelp9dSzFbsWrt0xxV1dAYLKmA",
+		"mon_start": 540,
+		"mon_end": 1020,
+		"tues_start": 540,
+		"tues_end": 1020,
+		"wed_start": 540,
+		"wed_end": 1020,
+		"thurs_start": 540,
+		"thurs_end": 1020,
+		"fri_start": 540,
+		"fri_end": 1020,
+		"sat_start": 540,
+		"sat_end": 1020,
+		"sun_start": 540,
+		"sun_end": 1020,
+		"tags": [
+			"zoos"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpjee5Z3j5OjtP4E4dXz9fUg",
+		"event_name": "JG's Reptile Road Show",
+		"event_id": "yelpjee5Z3j5OjtP4E4dXz9fUg",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"eventplanning",
+			"zoos",
+			"museums"
+		],
+		"price": -10
+	},
+	{
+		"venue_id": "yelpf2Yw5dJwvmzS-ERZExs__g",
+		"event_name": "Brookfield Zoo Run Run",
+		"event_id": "yelpf2Yw5dJwvmzS-ERZExs__g",
+		"mon_start": 0,
+		"mon_end": 0,
+		"tues_start": 0,
+		"tues_end": 0,
+		"wed_start": 0,
+		"wed_end": 0,
+		"thurs_start": 0,
+		"thurs_end": 0,
+		"fri_start": 0,
+		"fri_end": 0,
+		"sat_start": 0,
+		"sat_end": 0,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"zoos"
+		],
+		"price": -10
+	}
+]

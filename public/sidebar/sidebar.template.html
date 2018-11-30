@@ -8,8 +8,8 @@
         <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
           Settings
     </button>
-        <button class="btn btn-primary menu_button" ng-show="!$ctrl.isLoggedIn" data-toggle="modal" data-target="#fbLoginWindow">Log In</button>
-        <button class="btn btn-primary menu_button" ng-show="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">Log Out</button>
+        <button class="btn btn-primary menu_button" data-toggle="modal" data-target="#fbLoginWindow">Log in</button>
+        <button class="btn btn-primary menu_button" ng-click="$ctrl.logout()">Log Out</button>
       </div>
     </div>
     <nav class="navbar navbar-dark light_back">
@@ -22,7 +22,7 @@
   <!--sidebar body-->
   <div ng-click="showDiv=true" 
         ng-show="!showDiv" class="ng-hide" id="intro_message" >
-       <h2>Welcome to ItinGen!</h2>
+       <h2>Welcome to plan.it!</h2>
        <h3> Click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
         <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.generate()" 
         ng-show="!showDiv">Generate</button>
@@ -206,5 +206,3 @@
   </div>
 </div><!-- End Modal for Logging in -->
 
-<div class="logo">
-  <img src="ItinGen\public\assests\logo.png" hieght = "30" width="45"

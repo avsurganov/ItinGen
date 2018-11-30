@@ -1,15 +1,18 @@
-11:22:16.818 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-11:22:16.891 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2018-11-30 11:22:16.938:INFO::main: Logging initialized @2282ms to org.seleniumhq.jetty9.util.log.StdErrLog
-11:22:17.139 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-11:22:17.221 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-11:22:17.392 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+05:28:59.658 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+05:28:59.713 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2018-11-30 05:28:59.758:INFO::main: Logging initialized @327ms to org.seleniumhq.jetty9.util.log.StdErrLog
+05:28:59.959 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+05:29:00.070 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+05:29:00.217 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "chrome",
   "javascriptEnabled": true,
   "name": "Frontend Spec",
   "nativeEvents": true
 }
-11:22:17.393 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634) on port 23493
+05:29:00.219 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5) on port 34063
 Only local connections are allowed.
+05:29:02.017 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+05:29:02.260 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 88fedfa2eda65b24e9e376cd1ab157e3 (org.openqa.selenium.chrome.ChromeDriverService)
+05:29:03.610 INFO [ActiveSessions$1.onStop] - Removing session 88fedfa2eda65b24e9e376cd1ab157e3 (org.openqa.selenium.chrome.ChromeDriverService)

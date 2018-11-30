@@ -56,7 +56,9 @@ npm test
 ```
 
 Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
-```mpm run karma```
+```
+mpm run karma
+```
 
 
 ## Suggested Acceptance Tests

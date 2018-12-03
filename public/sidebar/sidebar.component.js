@@ -8,6 +8,7 @@ angular.module('sideBar')
 		
     this.itinerary = []
     this.likedItineraries = []
+    $scope.settings = itineraryFactory.getSettings();
 
     var app = this;
     app.isLoggedIn = false;
@@ -16,21 +17,16 @@ angular.module('sideBar')
       // Check if a the token expired
       Auth.getUser().then(function(data) {
           // Check if the returned user is undefined (expired)
-          console.log("HERE");
-          console.log(data.data);
-          if (data.data.email === undefined) {
+
+          if (data.data.success) {
               // $location.path('/'); // Redirect to home page
           } else {
-            console.log("LOGGED ON");
             itineraryFactory.getLikedItineraries().then((req) => {
               var success = req.data.success;
-              console.log("WAS SUCCESS" + success);
               if(success) {
                 var tmp = req.data.itineraries
                 var parsedItins = JSON.parse(tmp);
-                console.log(parsedItins);
                 this.likedItineraries = parsedItins;
-                console.log(this.likedItineraries)
               }
               else {
                 var emptyArray = [];
@@ -63,7 +59,6 @@ angular.module('sideBar')
 
     $scope.$on('update', function(e) {
        this.itinerary = itineraryFactory.getCurrentItinerary();
-       console.log(this.itinerary)
       //  $scope.$apply()
     }.bind(this))
 
@@ -82,20 +77,14 @@ angular.module('sideBar')
 
     this.home = function() {
        this.sidebarTemplate = sidebarTemplates[0]
-       this.itinerary = itineraryFactory.getNewItinerary()
+      //  this.itinerary = itineraryFactory.getNewItinerary()
     }
 
     this.getLikedItineraries = function() {
-      console.log("switching!")
       if(app.isLoggedIn){
-        console.log("LOGGED IN");
         this.sidebarTemplate = sidebarTemplates[1]
         this.likedItineraries = itineraryFactory.getLikedItineraries()
-        console.log(this.likedItineraries)
-      } else {
-        console.log("NOT LOGGED IN");
-      }
-
+      } 
     }
 
     this.showElements = function(index) {
@@ -103,7 +92,6 @@ angular.module('sideBar')
       let i;
       for (i = 0; i < numEventsInItinerary; i++) {
         var elementClasses = document.getElementById('collapseDetail' + index + i).classList
-        console.log(elementClasses.length)
         if (elementClasses.length == 1)
           $('#collapseDetail' + index + i).collapse('show')
         else
@@ -111,14 +99,13 @@ angular.module('sideBar')
       }
     }
 
-    this.saveSettings = function(settings) {
-       $scope.$parent.settings = settings;
-       console.log($scope.$parent.settings)
-      itineraryFactory.saveSettings(settings, $scope.$parent.location);
+    this.saveSettings = function() {
+      console.log('here');
+      itineraryFactory.saveSettings($scope.settings);
     }
 
     this.assignTransport = function(transport) {
-      $scope.$parent.settings.transport = transport
+      $scope.settings.transport = transport;
     }
 
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']

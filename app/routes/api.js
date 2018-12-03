@@ -18,7 +18,7 @@ router.post('/getitinerary', function(req, res) {
 	var startLocation = userSettings.startLocation;
 	console.log(startLocation);
 	var lat = startLocation.lat;
-	var lon = startLocation.lng;
+	var lon = startLocation.lon;
 	var free = userSettings.free;
 	var radius = userSettings.radius;
 	var transport = userSettings.transport;
@@ -28,6 +28,8 @@ router.post('/getitinerary', function(req, res) {
 	request('http://localhost:5000/?' + query, function(err, res2, body) {  
 		if(err) res.json({success:false});
 		else {
+			console.log('in get itineraryhere');
+			console.log(body);
 			res.json({success: true, itinerary: body});
 		}
 	});
@@ -56,9 +58,7 @@ router.use(function(req, res, next) {
 
 // Route to get the currently logged in user    
 router.post('/me', function(req, res) {
-	console.log("in /me");
-	console.log(req.decoded);
-	res.send(req.decoded); // Return the token acquired from middleware
+	res.json({success : true, user: req.decoded}); // Return the token acquired from middleware
 });
 
 // Route to get users liked itineraries

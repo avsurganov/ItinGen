@@ -47,16 +47,16 @@
           <div class="form-inline">
             <!-- class="col-2 col-form-label" -->
             <p data-toggle="popover" data-content="Enter in the time you want your itinerary to begin">&#9432;&nbsp;&nbsp;</p><label for="example-time-input" >Start Time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input class="form-control" type="time" id="example-time-input" ng-model="$scope.$parent.settings.startTime">            
+              <input class="form-control" type="time" id="example-time-input" ng-model="$scope.settings.startTime">            
           </div>
           <div class="form-inline">
             <p data-toggle="popover" data-content="Enter in where you want your itinerary to start and end">&#9432;&nbsp;</p>
             <label for="formGroupExampleInput">Start Location&nbsp;&nbsp;</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location" ng-model="$scope.$parent.settings.startLocation">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location" ng-model="$scope.settings.startLocation">
           </div>
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="" ng-model="$scope.$parent.settings.free">
+              <input class="form-check-input" type="checkbox" value="" ng-model="$scope.settings.free">
               Only Include Free Events
             </label>
             <label>&nbsp;</label>
@@ -64,8 +64,8 @@
           </div>
             <div class="form-group">
 
-              <legend data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">Maximum Radius: {{$scope.$parent.settings.radius}} &nbsp;&nbsp;&#9432;&nbsp;</legend>
-              <input type="range" class="form-control-range" id="formControlRange" min="1" max = "50" name ="radius" ng-model="$scope.$parent.settings.radius">
+              <legend data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">Maximum Radius: {{$scope.settings.radius}} &nbsp;&nbsp;&#9432;&nbsp;</legend>
+              <input type="range" class="form-control-range" id="formControlRange" min="1" max = "50" name ="radius" ng-model="$scope.settings.radius">
               
             </div>
           <!-- Radio Buttons for Transportation -->
@@ -73,25 +73,25 @@
               <legend>Transportation</legend>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="driving" ng-change="$scope.$parent.assignTransport('DRIVING')" ng-model="$scope.$parent.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="driving" ng-change="$ctrl.assignTransport('DRIVING')" ng-model="$scope.settings.transport">
                   Driving &nbsp; 
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="transit" ng-change="$scope.$parent.assignTransport('TRANSIT')" ng-model="$scope.$parent.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="transit" ng-change="$ctrl.assignTransport('TRANSIT')" ng-model="$scope.settings.transport">
                   Transit &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="walk" ng-change="$scope.$parent.assignTransport('WALK')" ng-model="$scope.$parent.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="walk" ng-change="$ctrl.assignTransport('WALK')" ng-model="$scope.settings.transport">
                   Walk &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="biking" ng-change="$scope.$parent.assignTransport('BIKE')" ng-model="$scope.$parent.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="biking" ng-change="$ctrl.assignTransport('BIKE')" ng-model="$scope.settings.transport">
                   Bike &nbsp;
                 </label>
               </div>
@@ -101,7 +101,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" ng-click="$ctrl.saveSettings($scope.$parent.settings)" data-dismiss = "modal">Save changes</button>
+        <button type="button" class="btn btn-primary" ng-click="$ctrl.saveSettings()" data-dismiss = "modal">Save changes</button>
       </div>
     </div>
   </div>

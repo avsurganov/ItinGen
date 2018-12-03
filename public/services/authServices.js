@@ -31,7 +31,6 @@ angular.module('authServices', [])
 
     // Function to logout the user
     authFactory.logout = function() {
-        console.log("gothere");
         AuthToken.setToken(); // Removes token from local storage
     };
 

@@ -1,10 +1,8 @@
-console.log('testintingtes')
 angular.module('appRoutes', ['ngRoute'])
 
 // Configure Routes; 'authenticated = true' means the user must be logged in to access the route
 .config(function($routeProvider, $locationProvider) {
 
-    console.log("HEREEE");
     // AngularJS Route Handler
     $routeProvider
 

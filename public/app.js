@@ -13,7 +13,7 @@ angular.module('ItinGen', [
 
 .controller('itinGenController', ['$scope', '$http', 'itineraryFactory', 'Auth', function($scope, $http, itineraryFactory, Auth) {
   
-  var currentItinerary = {}
+  var currentItinerary = []
   var directionsService 
   var directionsDisplay
   $scope.test = "We got it!"
@@ -21,28 +21,18 @@ angular.module('ItinGen', [
 
  
      $scope.map;
-     $scope.location
      $scope.displayLocation
      $scope.displayLocationLoaded = false
 
-     $scope.settings = {
-      startTime: new Date(Date.now()),
-      startLocation: '',
-      free: true,
-      radius: 10,
-      transport: 'DRIVING'
-    }
-
      
-    $scope.saveSettings = function() {
-      console.log($scope.settings.startLocation)
-      console.log($scope.settings)
-    }
+    // $scope.saveSettings = function() {
+    //   console.log($scope.settings.startLocation)
+    //   console.log($scope.settings)
+    // }
 
 
     function initMap(x, y) {
       var center = {lat: x, lng: y}
-      $scope.location = {lat: x, lng: y}
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.map = new google.maps.Map(document.getElementById('map'), {
@@ -57,7 +47,6 @@ angular.module('ItinGen', [
     }
     // error if initial position not recieved
     function locationNotRecieved(positionError){
-      console.log(positionError);
       // if no location, center map on Chicago
       initMap(41.881855, -87.627115);
     }
@@ -86,24 +75,16 @@ angular.module('ItinGen', [
 	  	var waypoints = []
 	  	for (event in currentItinerary) {
         var index = parseInt(event) + 1
-        console.log("hhh")
-        console.log(index)
 	  		if (index != currentItinerary.length){
           var waypointData = currentItinerary[index][1]
-          console.log("WAYPOINTs");
-          console.log(waypointData);
 	  			waypoints.push({location: {lat: waypointData.latitude , lng: waypointData.longitude}}) 
 
         }
 	  	}
-      console.log("WAYPOINTS")
-      console.log(waypoints)
+
       waypoints.pop()
       var originCoords = currentItinerary[0][1]
       var destinationCoords = currentItinerary[currentItinerary.length - 1][1]
-      console.log("PRINTING ORIGIN AND DESTINATION")
-      console.log(originCoords)
-      console.log(destinationCoords)
 	  	var directionRequest = {
 			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
 			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
@@ -121,21 +102,15 @@ angular.module('ItinGen', [
 	  $scope.updateMapWithNewItinerary =  function() {
       itineraryFactory.getNewItinerary().then((data) => {
         var success = data.data.success;
-        console.log("SUCCESS >?");
-        console.log(success)
         if(success) {
           let itineraryString = data.data.itinerary;
           let itinerary = JSON.parse(itineraryString)
-          console.log("here 2")
-          console.log(itinerary)
           currentItinerary = itinerary;
           itineraryFactory.setCurrentItinerary(itinerary)
-          console.log("m2");
-          console.log(currentItinerary);
           drawNewItinerary()
           $scope.$broadcast('update')
         } else {
-          return {};
+          console.log("Failed to get new itinerary");
         }
       });
 
@@ -143,7 +118,6 @@ angular.module('ItinGen', [
 }])
 
 .controller('facebookCtrl', function($routeParams, Auth, $location) {
-  console.log($routeParams.token);
   Auth.socialMedia($routeParams.token);
   $location.path('/'); 
 })

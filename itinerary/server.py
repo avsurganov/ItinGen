@@ -23,6 +23,7 @@ def run_algorithm():
     transport = request.args.get("transport")
     free = False
     print(start_time, latitude, longitude, free, radius, transport, free)
+    sys.stdout.flush()
     itin = generate_itin(start_time, float(latitude), float(longitude), free, float(radius), transport)
     print("OMAR")
     print(itin)

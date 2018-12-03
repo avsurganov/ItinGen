@@ -9,11 +9,10 @@ angular.module('ldButtons')
 		this.addToLikedItinerary = function() {
 
 			if (Auth.isLoggedIn()) {
-				// Check if a the token expired
+				// Check if the token expired
 				Auth.getUser().then(function(data) {
 					// Check if the returned user is undefined (expired)
-					if (data.data.email === undefined) {
-					} else {
+					if (data.data.success == true) {
 					  itineraryFactory.addToLikedItineraries()
 					}
 				});
@@ -21,11 +20,9 @@ angular.module('ldButtons')
 			this.nextItinerary();
 		}
 
-		this.nextItinerary = function() {
-			console.log($scope.$parent.settings);
-			console.log($scope.$parent.location);
-			itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
-			$scope.$parent.updateMapWithNewItinerary();
+		this.nextItinerary = async function() {
+			// itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
+			await $scope.$parent.updateMapWithNewItinerary();
 		}
 
 		$(document).ready(function() {

@@ -58,6 +58,11 @@ angular.module('itineraryFactory')
 		likedItineraries = likedItins;
 	}
 
+	service.getcurrentLikedItineraries = function () {
+		return likedItineraries;
+	}
+
+
 	service.getLikedItineraries = function () {
 		return $http.get('/api/getliked');
 	}

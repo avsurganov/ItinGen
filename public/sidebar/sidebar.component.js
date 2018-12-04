@@ -103,12 +103,7 @@ angular.module('sideBar')
     this.saveSettings = function(settings) {
 
       // check for undefined fields
-       for (var field in settings) {
-        if (settings[field] == undefined) {
-          alert("Please fill out all settings fields before saving")
-          return;
-        }
-      }
+      
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
@@ -116,6 +111,7 @@ angular.module('sideBar')
         settings.startLocation = res.data.results[0].geometry.location
         console.log(settings)
         itineraryFactory.saveSettings(settings);
+        alert("Settings successfully saved!")
       })
       
     }

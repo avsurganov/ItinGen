@@ -4,7 +4,7 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-4 light_back">
         <button class="btn btn-primary menu_button" ng-click="$ctrl.home()">Home </button>
-        <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()">Liked Itineraries</button>
+        <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()" ng-if="isLoggedIn">Liked Itineraries</button>
         <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
           Settings
     </button>

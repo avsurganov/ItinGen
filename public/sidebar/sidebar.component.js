@@ -4,7 +4,7 @@ angular.module('sideBar')
 
 .component('sideBar', {
 	templateUrl: 'sidebar/sidebar.template.html',
-	controller: ['$scope', '$http', 'itineraryFactory', '$window', 'Auth', function sideBarController($scope, $http,itineraryFactory, $window, Auth) {
+	controller: ['$scope', '$http', 'itineraryFactory', '$window', 'Auth', '$route', function sideBarController($scope, $http,itineraryFactory, $window, Auth, $route) {
 		
     $scope.itinerary = []
     $scope.likedItineraries = []
@@ -69,7 +69,9 @@ angular.module('sideBar')
 
     this.logout = function(){
       Auth.logout();
+      itineraryFactory.setLikedItineraries([]);
       $scope.isLoggedIn = false;
+      $window.location.reload();
     }
   
     this.facebook = function() {
@@ -100,9 +102,9 @@ angular.module('sideBar')
       }
     }
 
-    this.saveSettings = function() {
-      console.log('here');
-      itineraryFactory.saveSettings($scope.settings);
+    this.saveSettings = function(settings) {
+      console.log(settings);
+      itineraryFactory.saveSettings(settings);
     }
 
     this.assignTransport = function(transport) {

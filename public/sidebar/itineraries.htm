@@ -8,8 +8,20 @@
     <p class="card-text">{{event[1].address1}}
     </br>{{event[1].city + ", " + event[1].state + ", " + event[1].zip_code}}</p>
     <p class="card-text"></p>
-    <p class="card-text">Begin: {{(event[2] - (event[2] % 60)) / 60}} : {{event[2] % 60}}</p>
-    <p class="card-text">End: {{(event[3] - (event[3] % 60)) / 60}} : {{event[3] % 60}}</p>
+
+    <script>
+     var myVar === "two";
+  </script>
+
+    <p class="card-text">Begin: 
+    {{(event[2] - (event[2] % 60)) / 60 < 10 ? 
+    "0":""}}{{(event[2] - (event[2] % 60)) / 60}}:{{(event[2] % 60) < 10 ? 
+    "0":""}}{{event[2] % 60}}
+
+  </p>
+    <p class="card-text">End: {{(event[3] - (event[3] % 60)) / 60 < 10 ? 
+    "0":""}}{{(event[3] - (event[3] % 60)) / 60}}:{{(event[3] % 60) < 10 ? 
+    "0":""}}{{event[3] % 60}}</p>
   </div>
 </div
 

@@ -231,41 +231,41 @@ def master_data():
         success (int) - 0 for success and 1 for failure
     '''
     # header file paths
-    VEN = "venues/"
-    TMP = "tmp_events/"
-    EVN = "events/"
+    VEN = "../app/activies_data/venues/"
+    TMP = "../app/activies_data/tmp_events/"
+    EVN = "../app/activies_data/events/"
 
-    # data
-    # print("\n###################")
-    # print("# EVENTBRITE DATA #")
-    # print("###################\n")
-    # # keeping the same demo call that was provided
-    # EB_demo = EB()
-    # eb_v, eb_e = EB_demo.query_EB_api_today() # return venue json, events json
-    # # write to file
-    # eb_venue_of = VEN + "eb_venues_" + get_date() + ".json"
-    # eb_event_of = TMP + "eb_events_" + get_date() + ".json"
-    # with open(eb_venue_of, "w") as fp:
-    #     json.dump(eb_v, fp, indent=2)
-    # with open(eb_event_of, "w") as fp:
-    #     json.dump(eb_e, fp, indent=2)
+#data
+    print("\n###################")
+    print("# EVENTBRITE DATA #")
+    print("###################\n")
+    # keeping the same demo call that was provided
+    EB_demo = EB()
+    eb_v, eb_e = EB_demo.query_EB_api_today() # return venue json, events json
+    # write to file
+    eb_venue_of = VEN + "eb_venues_" + get_date() + ".json"
+    eb_event_of = TMP + "eb_events_" + get_date() + ".json"
+    with open(eb_venue_of, "w") as fp:
+        json.dump(eb_v, fp, indent=2)
+    with open(eb_event_of, "w") as fp:
+        json.dump(eb_e, fp, indent=2)
 
 
-    # print("\n#####################")
-    # print("# TICKETMASTER DATA #")
-    # print("#####################\n")
-    # # run the main tm function
-    # tm_v, tm_s, tm_m = run_tm_pipeline() # venue, sport events, music events
-    # # write to file
-    # tm_venue_of = VEN + "tm_venues_" + get_date() + ".json"
-    # tm_s_event_of = TMP + "tm_sports_events_" + get_date() + ".json"
-    # tm_m_event_of = TMP + "tm_music_events" + get_date() + ".json"
-    # with open(tm_venue_of, "w") as fp:
-    #     json.dump(tm_v, fp, indent=2)
-    # with open(tm_s_event_of, "w") as fp:
-    #     json.dump(tm_s, fp, indent=2)
-    # with open(tm_m_event_of, "w") as fp:
-    #     json.dump(tm_m, fp, indent=2)
+    print("\n#####################")
+    print("# TICKETMASTER DATA #")
+    print("#####################\n")
+    # run the main tm function
+    tm_v, tm_s, tm_m = run_tm_pipeline() # venue, sport events, music events
+    # write to file
+    tm_venue_of = VEN + "tm_venues_" + get_date() + ".json"
+    tm_s_event_of = TMP + "tm_sports_events_" + get_date() + ".json"
+    tm_m_event_of = TMP + "tm_music_events" + get_date() + ".json"
+    with open(tm_venue_of, "w") as fp:
+        json.dump(tm_v, fp, indent=2)
+    with open(tm_s_event_of, "w") as fp:
+        json.dump(tm_s, fp, indent=2)
+    with open(tm_m_event_of, "w") as fp:
+        json.dump(tm_m, fp, indent=2)
 
 
     print("\n#############")

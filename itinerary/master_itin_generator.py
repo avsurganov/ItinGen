@@ -8,16 +8,16 @@ from pymongo import MongoClient
 def generate_itin(start_time, latitude, longitude, free, radius, transport):
     tries = 0
     final_itin = []
-    time_split = start_time.split('T')
-    units = time_split[1].split(':')
-    time = 60*int(units[0])+int(units[1])
-    
-#    hours = int(start_time[0:2])
-#    minutes = int(start_time[3:5])
-#    time_of_day = start_time[6:8]
-#    if time_of_day == 'PM':
-#        hours +=12
-#    time = hours*60 + minutes
+#    time_split = start_time.split('T')
+#    units = time_split[1].split(':')
+#    time = 60*int(units[0])+int(units[1])
+
+    hours = int(start_time[0:2]) % 12
+    minutes = int(start_time[3:5])
+    time_of_day = start_time[6:8]
+    if time_of_day == 'PM':
+        hours +=12
+    time = hours*60 + minutes
     
     
     # check if user inputs make sense

@@ -1,6 +1,6 @@
 <!-- TODO: loop through all itineraries -->
 <div class="card" ng-repeat="itinerary in likedItineraries" style="margin-top: 20px;">
-  <h3>Itinerary {{$index + 1}}</h3>
+  <h3 class="section-title">Itinerary {{$index + 1}}</h3>
   <div class="card" style="width: 100%;" ng-repeat="event in itinerary">
     <div class="alert alert-light">
       <h5 class="card-title">{{event[0].event_name}}</h5>
@@ -12,10 +12,10 @@
         <h5 class="card-title">Location {{$ctrl.intToChar($index)}}</h5>
         <p class="card-text">{{event.event.event_name}}</p>
         <p class="card-text">{{event[1].address1}}</p>
-        <p class="card-text">{{event[1].city + "," + event[1].state + "," + event[1].zip_code}}</p>
+        <p class="card-text">{{event[1].city + ", " + event[1].state + ", " + event[1].zip_code}}</p>
         <p class="card-text"></p>
-        <p class="card-text">Begin: {{event.start}}</p>
-        <p class="card-text">End: {{event.end}}</p>
+        <p class="card-text">Begin: {{(event[2] - (event[2] % 60)) / 60}} : {{event[2] % 60}}</p>
+        <p class="card-text">End: {{(event[3] - (event[3] % 60)) / 60}} : {{event[3] % 60}}</p>
  
     </div>
   </div>

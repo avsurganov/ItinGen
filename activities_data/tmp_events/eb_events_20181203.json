@@ -1,0 +1,882 @@
+[
+  {
+    "start": 1080,
+    "event_id": "EB_52421681661",
+    "venue_id": "EB_20880651",
+    "end": 1800,
+    "event_name": "Speed Rack @ Thalia Hall",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 30.0
+  },
+  {
+    "start": 1050,
+    "event_id": "EB_52225447720",
+    "venue_id": "EB_27761356",
+    "end": 1200,
+    "event_name": "ASID Illinois Annual Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_51318376646",
+    "venue_id": "EB_21015749",
+    "end": 1350,
+    "event_name": "Foiled Again",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53020094530",
+    "venue_id": "EB_20881999",
+    "end": 1800,
+    "event_name": "The Corner @ The Promontory",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52428561238",
+    "venue_id": "EB_27859078",
+    "end": 1260,
+    "event_name": "BWLA & BMLA Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53075368857",
+    "venue_id": "EB_23753861",
+    "end": 1320,
+    "event_name": "ACTual Show 8: Dance Tribute to Nasty Buoy",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52213059667",
+    "venue_id": "EB_27755801",
+    "end": 1200,
+    "event_name": "FGI Chicago Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 20.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_53002977332",
+    "venue_id": "EB_23208333",
+    "end": 1290,
+    "event_name": "Afterthoughts: a Roast Show. FREE WITH RSVP",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1320,
+    "event_id": "EB_53160895670",
+    "venue_id": "EB_25073093",
+    "end": 1680,
+    "event_name": "INDUSTRY MONDAY 12.3",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1260,
+    "event_id": "EB_51781117717",
+    "venue_id": "EB_9503506",
+    "end": 1350,
+    "event_name": "Monday December 03: The Late Nite Mic",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_52852808172",
+    "venue_id": "EB_28002661",
+    "end": 1320,
+    "event_name": "Let Me Speak Benefit Performance",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1185,
+    "event_id": "EB_53055085188",
+    "venue_id": "EB_28097655",
+    "end": 1230,
+    "event_name": "Jose Costa on Leadership",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52381906693",
+    "venue_id": "EB_27840501",
+    "end": 1200,
+    "event_name": "Having Difficult Conversations",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52498553587",
+    "venue_id": "EB_27543324",
+    "end": 1200,
+    "event_name": "Thinkful Online Info Session: Becoming a Data Scientist",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52365015170",
+    "venue_id": "EB_27831142",
+    "end": 1230,
+    "event_name": "Chicago City SC WPSL - Meeting",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 930,
+    "event_id": "EB_52287741041",
+    "venue_id": "EB_18939604",
+    "end": 122010,
+    "event_name": "Anime & Manga Drawing | 9 Week Art Class for grades 3-8",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52359140599",
+    "venue_id": "EB_27204283",
+    "end": 1260,
+    "event_name": "Movie Maker Mondays",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 15.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_53037836597",
+    "venue_id": "EB_22284599",
+    "end": 1260,
+    "event_name": "Beyond the Basics: Let's be independent, together!",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 30.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52879491984",
+    "venue_id": "EB_26996133",
+    "end": 1320,
+    "event_name": "Bughouse! #15 | December 3, 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 10.0
+  },
+  {
+    "start": 1380,
+    "event_id": "EB_51439750679",
+    "venue_id": "EB_24019819",
+    "end": 1560,
+    "event_name": "The Drop's Open Mic StandUp Comedy Show: Trigger Warning",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1050,
+    "event_id": "EB_52889487882",
+    "venue_id": "EB_28020602",
+    "end": 1200,
+    "event_name": "How to Build An Effective Sales Process For Your Business",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 100.0
+  },
+  {
+    "start": 0,
+    "event_id": "EB_52766240245",
+    "venue_id": "EB_26969258",
+    "end": 10050,
+    "event_name": "7-Day Jumpstart to Vegan Challenge | CHI",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 11.97
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53191491182",
+    "venue_id": "EB_28131422",
+    "end": 1320,
+    "event_name": "Start Your CBD HEMP Business - Free Training",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_47104468734",
+    "venue_id": "EB_24351880",
+    "end": 6780,
+    "event_name": "AgilePM Foundation & Practitioner Training in Chicago, IL on Dec 3rd-7th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2199.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48548003385",
+    "venue_id": "EB_25840305",
+    "end": 3900,
+    "event_name": "Excel Analytics Training in Chicago, IL on Dec 3rd-5th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48550106676",
+    "venue_id": "EB_22459177",
+    "end": 5340,
+    "event_name": "Professional in Business Analysis (PMI-PBA)\u00ae in Chicago, IL on Dec 3rd-6th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48636815023",
+    "venue_id": "EB_22459177",
+    "end": 3900,
+    "event_name": "PMI Agile Certified Practitioner (PMI-ACP) Training in Chicago, IL on Dec 3rd-5th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_49690167629",
+    "venue_id": "EB_26492306",
+    "end": 2460,
+    "event_name": "2-Day Lean Change Agent: Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 845.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_50541617338",
+    "venue_id": "EB_26650728",
+    "end": 5340,
+    "event_name": "Dual Lean Six Sigma Green Belt and Black Belt 4-Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2599.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_50580534741",
+    "venue_id": "EB_22140417",
+    "end": 1230,
+    "event_name": "Women's Conference on Soulmate Attraction",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 45.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_50773006429",
+    "venue_id": "EB_27050097",
+    "end": 1230,
+    "event_name": "Start Your Own Credit Repair Business-Call Chicago-Felicia Guidry",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51032197677",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Certified Associate in Project Management (CAPM) 4-days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51159343975",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Lean Six Sigma Black Belt (LSSBB) 4 Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2099.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51167137285",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Lean Six Sigma Green Belt (LSSGB) 4 Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1899.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_52582669179",
+    "venue_id": "EB_27915645",
+    "end": 1230,
+    "event_name": "Free Grant Writing Intro Training - Cicero, Illinois",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 480,
+    "event_id": "EB_53091049759",
+    "venue_id": "EB_28114882",
+    "end": 541020,
+    "event_name": "Intervenez en \u00e9tablissement scolaire",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53111958297",
+    "venue_id": "EB_27968609",
+    "end": 1230,
+    "event_name": "Socialist Feminism:  A Roadmap to Organizing in the Trump Era ",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53135729397",
+    "venue_id": "EB_25292334",
+    "end": 1230,
+    "event_name": "Chicago, IL - Be Financially Free - Learn Real Estate Investing - All Strategies From A to Z",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53192723869",
+    "venue_id": "EB_28160011",
+    "end": 1200,
+    "event_name": "FREE TRAINING on CBD/HEMP Oil Business",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53202613449",
+    "venue_id": "EB_28160011",
+    "end": 1200,
+    "event_name": "Make Money NOW with CBD/HEMP",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53203957469",
+    "venue_id": "EB_27359978",
+    "end": 1170,
+    "event_name": "Travel 10 Save & Earn on Travel Bookings WorldWide (US-Chi)",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53219695542",
+    "venue_id": "EB_28005439",
+    "end": 1260,
+    "event_name": "Meatless Mondays: Vegan Indian Cooking Class",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53227499885",
+    "venue_id": "EB_28172223",
+    "end": 1200,
+    "event_name": "90-Day CBD Challenge Learn How to Start",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 0,
+    "event_id": "EB_53270003013",
+    "venue_id": "EB_26524977",
+    "end": 4290,
+    "event_name": "Radisson Blu Aqua Chicago's Flash Sale ",
+    "date": "12-04-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52421681661",
+    "venue_id": "EB_20880651",
+    "end": 1800,
+    "event_name": "Speed Rack @ Thalia Hall",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 30.0
+  },
+  {
+    "start": 1050,
+    "event_id": "EB_52225447720",
+    "venue_id": "EB_27761356",
+    "end": 1200,
+    "event_name": "ASID Illinois Annual Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_51318376646",
+    "venue_id": "EB_21015749",
+    "end": 1350,
+    "event_name": "Foiled Again",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53020094530",
+    "venue_id": "EB_20881999",
+    "end": 1800,
+    "event_name": "The Corner @ The Promontory",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52428561238",
+    "venue_id": "EB_27859078",
+    "end": 1260,
+    "event_name": "BWLA & BMLA Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53075368857",
+    "venue_id": "EB_23753861",
+    "end": 1320,
+    "event_name": "ACTual Show 8: Dance Tribute to Nasty Buoy",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52213059667",
+    "venue_id": "EB_27755801",
+    "end": 1200,
+    "event_name": "FGI Chicago Holiday Party",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 20.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_53002977332",
+    "venue_id": "EB_23208333",
+    "end": 1290,
+    "event_name": "Afterthoughts: a Roast Show. FREE WITH RSVP",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1320,
+    "event_id": "EB_53160895670",
+    "venue_id": "EB_25073093",
+    "end": 1680,
+    "event_name": "INDUSTRY MONDAY 12.3",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1260,
+    "event_id": "EB_51781117717",
+    "venue_id": "EB_9503506",
+    "end": 1350,
+    "event_name": "Monday December 03: The Late Nite Mic",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_52852808172",
+    "venue_id": "EB_28002661",
+    "end": 1320,
+    "event_name": "Let Me Speak Benefit Performance",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1185,
+    "event_id": "EB_53055085188",
+    "venue_id": "EB_28097655",
+    "end": 1230,
+    "event_name": "Jose Costa on Leadership",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_52381906693",
+    "venue_id": "EB_27840501",
+    "end": 1200,
+    "event_name": "Having Difficult Conversations",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52498553587",
+    "venue_id": "EB_27543324",
+    "end": 1200,
+    "event_name": "Thinkful Online Info Session: Becoming a Data Scientist",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52365015170",
+    "venue_id": "EB_27831142",
+    "end": 1230,
+    "event_name": "Chicago City SC WPSL - Meeting",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 930,
+    "event_id": "EB_52287741041",
+    "venue_id": "EB_18939604",
+    "end": 122010,
+    "event_name": "Anime & Manga Drawing | 9 Week Art Class for grades 3-8",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 5.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52359140599",
+    "venue_id": "EB_27204283",
+    "end": 1260,
+    "event_name": "Movie Maker Mondays",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 15.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_53037836597",
+    "venue_id": "EB_22284599",
+    "end": 1260,
+    "event_name": "Beyond the Basics: Let's be independent, together!",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 30.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_52879491984",
+    "venue_id": "EB_26996133",
+    "end": 1320,
+    "event_name": "Bughouse! #15 | December 3, 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 10.0
+  },
+  {
+    "start": 1380,
+    "event_id": "EB_51439750679",
+    "venue_id": "EB_24019819",
+    "end": 1560,
+    "event_name": "The Drop's Open Mic StandUp Comedy Show: Trigger Warning",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1050,
+    "event_id": "EB_52889487882",
+    "venue_id": "EB_28020602",
+    "end": 1200,
+    "event_name": "How to Build An Effective Sales Process For Your Business",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 100.0
+  },
+  {
+    "start": 0,
+    "event_id": "EB_52766240245",
+    "venue_id": "EB_26969258",
+    "end": 10050,
+    "event_name": "7-Day Jumpstart to Vegan Challenge | CHI",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 11.97
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53191491182",
+    "venue_id": "EB_28131422",
+    "end": 1320,
+    "event_name": "Start Your CBD HEMP Business - Free Training",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_47104468734",
+    "venue_id": "EB_24351880",
+    "end": 6780,
+    "event_name": "AgilePM Foundation & Practitioner Training in Chicago, IL on Dec 3rd-7th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2199.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48548003385",
+    "venue_id": "EB_25840305",
+    "end": 3900,
+    "event_name": "Excel Analytics Training in Chicago, IL on Dec 3rd-5th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48550106676",
+    "venue_id": "EB_22459177",
+    "end": 5340,
+    "event_name": "Professional in Business Analysis (PMI-PBA)\u00ae in Chicago, IL on Dec 3rd-6th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_48636815023",
+    "venue_id": "EB_22459177",
+    "end": 3900,
+    "event_name": "PMI Agile Certified Practitioner (PMI-ACP) Training in Chicago, IL on Dec 3rd-5th 2018",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_49690167629",
+    "venue_id": "EB_26492306",
+    "end": 2460,
+    "event_name": "2-Day Lean Change Agent: Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 845.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_50541617338",
+    "venue_id": "EB_26650728",
+    "end": 5340,
+    "event_name": "Dual Lean Six Sigma Green Belt and Black Belt 4-Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2599.0
+  },
+  {
+    "start": 1080,
+    "event_id": "EB_50580534741",
+    "venue_id": "EB_22140417",
+    "end": 1230,
+    "event_name": "Women's Conference on Soulmate Attraction",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 45.0
+  },
+  {
+    "start": 1200,
+    "event_id": "EB_50773006429",
+    "venue_id": "EB_27050097",
+    "end": 1230,
+    "event_name": "Start Your Own Credit Repair Business-Call Chicago-Felicia Guidry",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51032197677",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Certified Associate in Project Management (CAPM) 4-days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1699.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51159343975",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Lean Six Sigma Black Belt (LSSBB) 4 Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 2099.0
+  },
+  {
+    "start": 540,
+    "event_id": "EB_51167137285",
+    "venue_id": "EB_27145164",
+    "end": 5340,
+    "event_name": "Lean Six Sigma Green Belt (LSSGB) 4 Days Classroom in Chicago",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 1899.0
+  },
+  {
+    "start": 1170,
+    "event_id": "EB_52582669179",
+    "venue_id": "EB_27915645",
+    "end": 1230,
+    "event_name": "Free Grant Writing Intro Training - Cicero, Illinois",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 480,
+    "event_id": "EB_53091049759",
+    "venue_id": "EB_28114882",
+    "end": 541020,
+    "event_name": "Intervenez en \u00e9tablissement scolaire",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53111958297",
+    "venue_id": "EB_27968609",
+    "end": 1230,
+    "event_name": "Socialist Feminism:  A Roadmap to Organizing in the Trump Era ",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53135729397",
+    "venue_id": "EB_25292334",
+    "end": 1230,
+    "event_name": "Chicago, IL - Be Financially Free - Learn Real Estate Investing - All Strategies From A to Z",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53192723869",
+    "venue_id": "EB_28160011",
+    "end": 1200,
+    "event_name": "FREE TRAINING on CBD/HEMP Oil Business",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53202613449",
+    "venue_id": "EB_28160011",
+    "end": 1200,
+    "event_name": "Make Money NOW with CBD/HEMP",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53203957469",
+    "venue_id": "EB_27359978",
+    "end": 1170,
+    "event_name": "Travel 10 Save & Earn on Travel Bookings WorldWide (US-Chi)",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53219695542",
+    "venue_id": "EB_28005439",
+    "end": 1260,
+    "event_name": "Meatless Mondays: Vegan Indian Cooking Class",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "EB_53227499885",
+    "venue_id": "EB_28172223",
+    "end": 1200,
+    "event_name": "90-Day CBD Challenge Learn How to Start",
+    "date": "12-03-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
+    "start": 0,
+    "event_id": "EB_53270003013",
+    "venue_id": "EB_26524977",
+    "end": 4290,
+    "event_name": "Radisson Blu Aqua Chicago's Flash Sale ",
+    "date": "12-04-2018",
+    "tags": "",
+    "price": 0.0
+  }
+]

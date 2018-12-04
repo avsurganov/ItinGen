@@ -11,12 +11,21 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
     time_split = start_time.split('T')
     units = time_split[1].split(':')
     time = 60*int(units[0])+int(units[1])
+    
+#    hours = int(start_time[0:2])
+#    minutes = int(start_time[3:5])
+#    time_of_day = start_time[6:8]
+#    if time_of_day == 'PM':
+#        hours +=12
+#    time = hours*60 + minutes
+    
+    
     # check if user inputs make sense
     if time > (20*60) or fabs(latitude - 41.5) > 2 or fabs(longitude + 87.5) > 2:
         print(time)
         return []
     while len(final_itin) < 2 and tries < 5:
-        [itin, valid] = create_itinerary(60*int(units[0])+int(units[1]), latitude, longitude, free, radius, transport, 500 * (tries+1))
+        [itin, valid] = create_itinerary(time, float(latitude), float(longitude), free, radius, transport, 500 * (tries+1))
         print("We")
         print(valid)
         #print(itin)

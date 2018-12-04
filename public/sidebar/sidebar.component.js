@@ -11,7 +11,15 @@ angular.module('sideBar')
     $scope.settings = itineraryFactory.getSettings();
     $scope.isLoggedIn = false;
 
+    console.log($scope.settings)
+    $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lon + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+      console.log(res.data.results[0].formatted_address)
+      $scope.settings.startLocation = res.data.results[0].formatted_address
+    })
+    
+
     if (Auth.isLoggedIn()) {
+
       // Check if a the token expired
       Auth.getUser().then(function(data) {
           // Check if the returned user is undefined (expired)

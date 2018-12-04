@@ -65,7 +65,7 @@
             <div class="form-group">
 
               <legend data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">Maximum Radius: {{settings.radius}} &nbsp;&nbsp;&#9432;&nbsp;</legend>
-              <input type="range" class="form-control-range" id="formControlRange" min="1" max = "50" name ="radius" ng-model="settings.radius">
+              <input type="range" class="form-control-range" id="formControlRange" min="2" max = "50" name ="radius" ng-model="settings.radius">
               
             </div>
           <!-- Radio Buttons for Transportation -->
@@ -73,25 +73,25 @@
               <legend>Transportation</legend>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="driving" ng-change="$ctrl.assignTransport('DRIVING')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="DRIVING" ng-change="$ctrl.assignTransport('DRIVING')" ng-model="settings.transport" checked>
                   Driving &nbsp; 
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="transit" ng-change="$ctrl.assignTransport('TRANSIT')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="TRANSIT" ng-change="$ctrl.assignTransport('TRANSIT')" ng-model="settings.transport">
                   Transit &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="walk" ng-change="$ctrl.assignTransport('WALK')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="WALK" ng-change="$ctrl.assignTransport('WALK')" ng-model="settings.transport">
                   Walk &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="biking" ng-change="$ctrl.assignTransport('BIKE')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="BIKE" ng-change="$ctrl.assignTransport('BIKE')" ng-model="settings.transport">
                   Bike &nbsp;
                 </label>
               </div>

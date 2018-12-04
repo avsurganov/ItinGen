@@ -61,15 +61,23 @@ h3{
     size: 50px !important;
     color: #ebebeb !important;
     vertical-align:   middle !important;
-    font-family: "Times New Roman";
+    font-family: "Tahoma";
 }
 
 .section-title {
   color: #ff6700 !important;
+  font-family: "Tahoma";
+  font-size: 25px;
 }
 
 .card-title{
   color: #4267b2 !important;
+  font-size: 25px !important;
+  font-family: "Tahoma";
+}
+.card-text{
+  font-size: 20px;
+  font-family: "Tahoma";
 }
 .header-content-inner img {
   float: left;   

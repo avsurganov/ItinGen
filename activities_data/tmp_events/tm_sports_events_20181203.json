@@ -1,0 +1,3636 @@
+[
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZAoYGkdrCJgv",
+    "venue_id": "TMAPIKovZpZAF6tIA",
+    "end": -10,
+    "event_name": "Chicago Bears vs. Green Bay Packers",
+    "date": "12-16-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Football",
+      "Team",
+      "NFL"
+    ],
+    "price": 149.0
+  },
+  {
+    "start": 1160,
+    "event_id": "TMAPIvv1A7ZAoYGkdrfpgo",
+    "venue_id": "TMAPIKovZpZAF6tIA",
+    "end": -10,
+    "event_name": "Chicago Bears vs. Los Angeles Rams",
+    "date": "12-09-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Football",
+      "Team",
+      "NFL"
+    ],
+    "price": 84.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHQIdl",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Minnesota Wild",
+    "date": "12-27-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZAf6GkeHmz7J",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Calgary Flames",
+    "date": "12-02-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 32.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHxF7A",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Winnipeg Jets",
+    "date": "12-14-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf6GkeHBFAK",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Nashville Predators",
+    "date": "01-09-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHhIdc",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks v. Vegas Golden Knights",
+    "date": "01-12-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZAf6GkeHPF7a",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Florida Panthers",
+    "date": "12-23-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHDbAb",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. New York Islanders",
+    "date": "01-22-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIvv1A7ZAf6GkeHqzdS",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Detroit Red Wings",
+    "date": "02-10-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZAf6GkeH_IdI",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Montreal Canadiens",
+    "date": "12-09-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHWbAP",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. New Jersey Devils",
+    "date": "02-14-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHHbAj",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Vancouver Canucks",
+    "date": "02-07-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf6GkeH-F7e",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Pittsburgh Penguins",
+    "date": "12-12-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf6GkeHtI7K",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Colorado Avalanche",
+    "date": "03-24-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZAf6GkeHNb76",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. San Jose Sharks",
+    "date": "12-16-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHRI7I",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Nashville Predators",
+    "date": "12-18-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 32.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA38Gkelc0O6",
+    "venue_id": "TMAPIKovZpZAF6tIA",
+    "end": -10,
+    "event_name": "Chicago Bears vs. Kansas City Chiefs",
+    "date": "04-12-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Football",
+      "Team",
+      "NFL"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeWebAV",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Winnipeg Jets",
+    "date": "04-01-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHJb7u",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Columbus Blue Jackets",
+    "date": "02-16-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeWZIAR",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Vancouver Canucks",
+    "date": "03-18-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHzzA2",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Calgary Flames",
+    "date": "01-07-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1110,
+    "event_id": "TMAPIvv1A7ZAf6GkeHEb72",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Colorado Avalanche",
+    "date": "02-22-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHsI7s",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Philadelphia Flyers",
+    "date": "03-21-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 32.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHYI7l",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Buffalo Sabres",
+    "date": "03-07-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 32.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHTIAc",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks v. Arizona Coyotes",
+    "date": "03-11-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf6GkeHwI7y",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. St. Louis Blues",
+    "date": "04-03-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 32.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHXIAt",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Ottawa Senators",
+    "date": "02-18-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbEU-M",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Boston Celtics",
+    "date": "12-08-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbipx6",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls v. Los Angeles Lakers",
+    "date": "03-12-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 27.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbtp-H",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Minnesota Timberwolves",
+    "date": "12-26-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbOk-_",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Oklahoma City Thunder",
+    "date": "12-07-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb1pLs",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Orlando Magic",
+    "date": "12-21-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb5ULy",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Orlando Magic",
+    "date": "01-02-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 690,
+    "event_id": "TMAPIvv1A7ZAf6GkeHjzdR",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Washington Capitals",
+    "date": "01-20-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 870,
+    "event_id": "TMAPIvv1A7ZAf4GkdbuUOv",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls v. Brooklyn Nets",
+    "date": "01-06-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb-k-q",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Miami Heat",
+    "date": "01-19-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbFULi",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls v. Brooklyn Nets",
+    "date": "12-19-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbFkLn",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Sacramento Kings",
+    "date": "12-10-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbnp-T",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Boston Celtics",
+    "date": "02-23-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 870,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb8JOu",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Cleveland Cavaliers",
+    "date": "01-27-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbGULT",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Indiana Pacers",
+    "date": "01-04-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 870,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb9kOg",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Atlanta Hawks",
+    "date": "03-03-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbbU-v",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Philadelphia 76ers",
+    "date": "03-06-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbPk-i",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Philadelphia 76ers",
+    "date": "04-06-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb3JOh",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Milwaukee Bucks",
+    "date": "02-11-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbqk-2",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. New York Knicks",
+    "date": "04-09-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbCUOd",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Atlanta Hawks",
+    "date": "01-23-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb2JOA",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls v. LA Clippers",
+    "date": "01-25-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbxk-x",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Washington Wizards",
+    "date": "02-09-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbfJON",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Memphis Grizzlies",
+    "date": "02-13-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb4UOc",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Milwaukee Bucks",
+    "date": "02-25-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdboJOo",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls v. New Orleans Pelicans",
+    "date": "02-06-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb_U-A",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Detroit Pistons",
+    "date": "03-08-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdb0k-J",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Toronto Raptors",
+    "date": "03-30-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbQU-6",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Washington Wizards",
+    "date": "03-20-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4GkdbNk-0",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Utah Jazz",
+    "date": "03-23-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 23.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAf4Gkdbjk-5",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Bulls V. Portland Trail Blazers",
+    "date": "03-27-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "NBA"
+    ],
+    "price": 18.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIvv1A7ZAf6GkeHII7o",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Dallas Stars",
+    "date": "02-24-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZAf6GkeHnI74",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Chicago Blackhawks V. Dallas Stars",
+    "date": "04-05-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Hockey",
+      "Team",
+      "NHL"
+    ],
+    "price": 36.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv118Z4okaPVCd",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Tucson Roadrunners",
+    "date": "12-15-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIvv167ZAfox_ZAuA716",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Tucson Roadrunners",
+    "date": "12-16-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svK",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Tucson Roadrunners at Chicago Wolves",
+    "date": "12-15-2018",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1Ae8svf",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Tucson Roadrunners at Chicago Wolves",
+    "date": "12-16-2018",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 780,
+    "event_id": "TMAPIvv178Z44GklVsaGt",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-02-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv178Z44GklVmaGq",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-02-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv178Z44GklVcaGh",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-01-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 780,
+    "event_id": "TMAPIvv178Z44GklVwaGc",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-03-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 25.0
+  },
+  {
+    "start": 1110,
+    "event_id": "TMAPIvv178Z44GklVRaGL",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-03-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 25.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv178Z44GklVYaGN",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Monster Jam Triple Threat Series",
+    "date": "03-04-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Motorsports/Racing",
+      "Undefined",
+      "Motorsports/Racing"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIvvG18Z4GhH2AHQ",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "CBS Sports Classic",
+    "date": "12-22-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIvv178Z43GkU3O0im",
+    "venue_id": "TMAPIKovZpZAF6tIA",
+    "end": -10,
+    "event_name": "CONCACAF Gold Cup Final",
+    "date": "07-07-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Soccer",
+      "Undefined",
+      "Soccer"
+    ],
+    "price": 40.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZA4FGkdqnAe9",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "University of Illinois Fighting Illini Mens Basketball vs. Ohio State Buckeyes Men's Basketball",
+    "date": "12-05-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIvv1A7ZAf9GkdEk9_D",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "2019 Big Ten Men's Basketball Tournament All-Session Tickets",
+    "date": "03-13-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 210.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZAfzGkem2giX",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. IUPUI Jaguars Men's Basketball",
+    "date": "01-04-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZA4eGkesYVOP",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. UCLA Bruins Women's Basketball",
+    "date": "12-19-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1110,
+    "event_id": "TMAPIvv1A7ZAfsGkd5GJfu",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Wisconsin v. Notre Dame College Men's Hockey",
+    "date": "01-20-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "College"
+    ],
+    "price": 25.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjv",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "12-14-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjk",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Butler University Bulldogs Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "01-16-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 870,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjd",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Boston College Eagles Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "12-22-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj6",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Villanova Wildcats Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "01-30-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj3",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Georgetown Hoyas Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "03-06-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjZ",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Chicago State Cougars Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "12-12-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zje",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Incarnate Word Cardinals Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "12-19-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 780,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj7",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Xavier Musketeers Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "12-29-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjA",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Seton Hall Pirates Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "01-06-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 810,
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjF",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Providence College Friars Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "02-02-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zja",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Marquette Golden Eagles Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "02-12-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj8",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Creighton Blue Jays Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "02-20-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjo",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "St. Johns Red Storm Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "date": "03-03-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIZ7r9jZ1AefdZ-",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "Big Ten Mens Basketball Tournament",
+    "date": "03-13-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIZ7r9jZ1AeowOe",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Bradley Braves Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "03-02-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbE",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Michigan Wolverines Baseball at Northwestern Wildcats Mens Basketball",
+    "date": "12-04-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbs",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Indiana Hoosiers Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "01-22-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbY",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Minnesota Gophers Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "02-28-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 810,
+    "event_id": "TMAPIZ7r9jZ1AeoNbM",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Purdue Boilermakers Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "03-09-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbg",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Ohio State Buckeyes Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "03-06-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIZ7r9jZ1AeoNbO",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Wisconsin Badgers Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "02-23-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbJ",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Oklahoma Sooners Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "12-21-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIZ7r9jZ1AeoNbx",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Illinois Fighting Illini Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "01-06-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIZ7r9jZ1AeoNbt",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "DePaul Blue Demons Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "12-08-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNb-",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Chicago State Cougars Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "12-17-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIZ7r9jZ1AeoNbP",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Columbia Lions Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "12-30-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoNbw",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Iowa Hawkeyes Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "01-09-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1AeoNb0",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Penn State Nittany Lions Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "02-04-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIZ7r9jZ1AeoNbU",
+    "venue_id": "TMAPIZFr9jZeaka",
+    "end": -10,
+    "event_name": "Rutgers Scarlet Knights Mens Basketball at Northwestern Wildcats Mens Basketball",
+    "date": "02-13-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1125,
+    "event_id": "TMAPIvv178Z4fGkmi27pX",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "PBR: Unleash the Beast",
+    "date": "01-12-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Rodeo",
+      "Undefined",
+      "Bullriding"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIvv11vZv47bJo8MvG",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Texas Stars",
+    "date": "12-02-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 825,
+    "event_id": "TMAPIvv1A7ZA48GkenQV0U",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "PBR: Unleash the Beast",
+    "date": "01-13-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Rodeo",
+      "Undefined",
+      "Bullriding"
+    ],
+    "price": 10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA1A73Q",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Rockford IceHogs",
+    "date": "12-29-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA177oH",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Rockford IceHogs",
+    "date": "12-21-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIvv1k8Z4okaG7c72F",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Milwaukee Admirals",
+    "date": "01-20-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA1673V",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Rockford IceHogs",
+    "date": "01-19-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7X7oG",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. San Antonio Rampage",
+    "date": "01-05-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 13.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIvv1k8Z4okaG7I7C-",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Texas Stars",
+    "date": "12-18-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7mf21",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Manitoba Moose",
+    "date": "02-02-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7t7Ct",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Iowa Wild",
+    "date": "01-02-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7nVCV",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. San Antonio Rampage",
+    "date": "01-04-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIvv1k8Z4okaG7Rf2C",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Iowa Wild",
+    "date": "02-17-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIvv1k8Z4okaG7wV2N",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Milwaukee Admirals",
+    "date": "03-10-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7i7CW",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Grand Rapids Griffins",
+    "date": "01-16-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7T7op",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Grand Rapids Griffins",
+    "date": "02-23-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 13.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA1F7Ks",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Rockford IceHogs",
+    "date": "02-26-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIvv1k8Z4okaG7sV2_",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Texas Stars",
+    "date": "02-24-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7SV2n",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Cleveland Monsters",
+    "date": "03-15-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA1Z7oq",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Iowa Wild",
+    "date": "03-09-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 13.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIvv1k8Z4okaG7Y023",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Texas Stars",
+    "date": "02-21-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7VV8G",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. San Antonio Rampage",
+    "date": "03-16-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1kvZv47bGA1v7oJ",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Manitoba Moose",
+    "date": "04-13-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 13.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7gV8b",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Milwaukee Admirals",
+    "date": "03-30-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIvv1k8Z4okaG7zf80",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Colorado Eagles",
+    "date": "04-07-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1k8Z4okaG7M08-",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Colorado Eagles",
+    "date": "04-06-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIvv1k8Z4okaG7yf8i",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Chicago Wolves vs. Manitoba Moose",
+    "date": "04-14-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Hockey",
+      "Undefined",
+      "Minor League"
+    ],
+    "price": 12.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIZ7r9jZ1Ae8svp",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Texas Stars at Chicago Wolves",
+    "date": "12-18-2018",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8sv9",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Rockford IceHogs at Chicago Wolves",
+    "date": "12-29-2018",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svV",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Milwaukee Admirals at Chicago Wolves",
+    "date": "03-30-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svb",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "San Antonio Rampage at Chicago Wolves",
+    "date": "01-05-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svN",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Rockford IceHogs at Chicago Wolves",
+    "date": "01-19-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1Ae8sv-",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Milwaukee Admirals at Chicago Wolves",
+    "date": "01-20-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8skf",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Colorado Eagles at Chicago Wolves",
+    "date": "04-06-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8sv4",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Rockford IceHogs at Chicago Wolves",
+    "date": "12-21-2018",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8sv_",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Iowa Wild at Chicago Wolves",
+    "date": "01-02-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8sv0",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "San Antonio Rampage at Chicago Wolves",
+    "date": "01-04-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svO",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Grand Rapids Griffins at Chicago Wolves",
+    "date": "01-16-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svP",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Manitoba Moose at Chicago Wolves",
+    "date": "02-02-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1Ae8svx",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Iowa Wild at Chicago Wolves",
+    "date": "02-17-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIZ7r9jZ1Ae8svJ",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Texas Stars at Chicago Wolves",
+    "date": "02-21-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svE",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Grand Rapids Griffins at Chicago Wolves",
+    "date": "02-23-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1Ae8svt",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Texas Stars at Chicago Wolves",
+    "date": "02-24-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svI",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Rockford IceHogs at Chicago Wolves",
+    "date": "02-26-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svY",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Iowa Wild at Chicago Wolves",
+    "date": "03-09-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIZ7r9jZ1Ae8svs",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Milwaukee Admirals at Chicago Wolves",
+    "date": "03-10-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svw",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Cleveland Monsters at Chicago Wolves",
+    "date": "03-15-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svg",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "San Antonio Rampage at Chicago Wolves",
+    "date": "03-16-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1Ae8sk4",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Colorado Eagles at Chicago Wolves",
+    "date": "04-07-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae8svU",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Manitoba Moose at Chicago Wolves",
+    "date": "04-13-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 960,
+    "event_id": "TMAPIZ7r9jZ1Ae8svM",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "Manitoba Moose at Chicago Wolves",
+    "date": "04-14-2019",
+    "tags": [
+      "Hockey",
+      "Minor League",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3bab",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Greensboro Swarm at Windy City Bulls",
+    "date": "01-12-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIZ7r9jZ1Ae3bat",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Greensboro Swarm at Windy City Bulls",
+    "date": "01-01-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZA43GkdzgP_F",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "end": -10,
+    "event_name": "WWE Live Holiday Tour",
+    "date": "12-29-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Wrestling",
+      "Undefined",
+      "Wrestling"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZA4dGkdqi6AG",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019 Final",
+    "date": "03-02-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 120.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqtEAk",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Semi-Final Session 1",
+    "date": "03-01-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 90.0
+  },
+  {
+    "start": 1230,
+    "event_id": "TMAPIvv1A7ZA4dGkdqnMAF",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Semi-Final Session 2",
+    "date": "03-01-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 90.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqI6Ae",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Quarter Final",
+    "date": "02-28-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 75.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4dGkdqqM7-",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 1 Session 1",
+    "date": "02-23-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 30.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqE6AZ",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Quarter Finals",
+    "date": "02-27-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 75.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqxM7S",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 1 Session 2",
+    "date": "02-23-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 30.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4dGkdqL67J",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 2 Session 1",
+    "date": "02-24-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4dGkdq-M7c",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 3 Session 1",
+    "date": "02-26-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdq067M",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 2 Session 2",
+    "date": "02-24-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqJ67X",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 3 Session 2",
+    "date": "02-26-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 60.0
+  },
+  {
+    "start": 1020,
+    "event_id": "TMAPIvv1A7ZA4dGkdqP67H",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 3 Session 2",
+    "date": "02-25-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 60.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4dGkdqOE7I",
+    "venue_id": "TMAPIKovZpaozje",
+    "end": -10,
+    "event_name": "PSA World Championships 2019: Round 3 Session 1",
+    "date": "02-25-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Squash",
+      "Undefined",
+      "Squash"
+    ],
+    "price": 45.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv1A7ZAfzGkemGPiI",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Illinois State Redbirds",
+    "date": "12-05-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 912,
+    "event_id": "TMAPIvv1A7ZAfzGkemKgco",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Oakland University Golden Grizzlies Mens Basketball",
+    "date": "01-26-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 3.12
+  },
+  {
+    "start": 912,
+    "event_id": "TMAPIvv1A7ZAfzGkemoPc1",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Cleveland State Vikings Mens Basketball",
+    "date": "01-12-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAfzGkemugiY",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. University of the Incarnate Word Cardinals Mens Basketball",
+    "date": "12-17-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAfzGkemKAcC",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. University Of Detroit Mercy Men's Basketball",
+    "date": "01-24-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIvv1A7ZAfzGkem4AcQ",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Wright State Raiders Mens Basketball",
+    "date": "02-01-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 912,
+    "event_id": "TMAPIvv1A7ZAfzGkemp4cq",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Northern Kentucky Norse Mens Basketball",
+    "date": "02-03-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 912,
+    "event_id": "TMAPIvv1A7ZAfzGkembPcl",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Milwaukee Panthers Men's Basketball",
+    "date": "02-24-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAfzGkemCgiD",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball",
+    "date": "12-21-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZA4eGkessVOY",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Northern Kentucky Norse Womens Basketball",
+    "date": "12-28-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4eGkeswV-v",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Wright State Raiders Women's Basketball",
+    "date": "12-30-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZAfzGkem8gce",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. Youngstown State Penguins Mens Basketball",
+    "date": "01-10-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZA4eGkesV7-7",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Oakland University Golden Grizzlies Womens Basketball",
+    "date": "01-11-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4eGkesgf-1",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. University of Detroit Mercy Womens Basketball",
+    "date": "01-13-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZA4eGkesM7-8",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Cleveland State Vikings Womens Basketball",
+    "date": "02-08-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4eGkesz7-p",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Youngstown State Penguins Womens Basketball",
+    "date": "02-10-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIvv1A7ZAfzGkem9PcP",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Mens Basketball vs. University of Wisconsin At Green Bay Phoenix Men's Basketball",
+    "date": "02-22-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4eGkesy0-I",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Iupui Jaguars Womens Basketball",
+    "date": "02-23-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZA4eGkesB0-M",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Milwaukee Panthers Women's Basketball",
+    "date": "02-28-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 720,
+    "event_id": "TMAPIvv1A7ZA4eGkesD0xZ",
+    "venue_id": "TMAPIKovZpa2Bpe",
+    "end": -10,
+    "event_name": "UIC Flames Womens Basketball vs. Wisconsin Green Bay Phoenix Womens Basketball",
+    "date": "03-02-2019",
+    "tags": [
+      "Group",
+      "Sports",
+      "Basketball",
+      "Team",
+      "College"
+    ],
+    "price": 8.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3_fE",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Xavier Musketeers Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "02-22-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3_fI",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "end": -10,
+    "event_name": "Butler University Bulldogs Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "02-24-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bS",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Northwestern Wildcats Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "12-05-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bV",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Tennessee State Tigers Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "12-17-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bg",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Creighton Blue Jays Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "12-29-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bU",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Providence College Friars Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "12-31-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bM",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "St. Johns Red Storm Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "01-18-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3_bz",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Seton Hall Pirates Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "01-20-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 780,
+    "event_id": "TMAPIZ7r9jZ1Ae3_by",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Marquette Golden Eagles Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "02-03-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3__Z",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Villanova Wildcats Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "02-08-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3__v",
+    "venue_id": "TMAPIZFr9jZkked",
+    "end": -10,
+    "event_name": "Georgetown Hoyas Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "date": "02-10-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIvv178Z44GkX0nNW6",
+    "venue_id": "TMAPIKovZpZAFdJnA",
+    "end": -10,
+    "event_name": "Elite Amateur Fight League Season 3, Illinois vs Indiana",
+    "date": "12-16-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Martial Arts",
+      "Undefined",
+      "Mixed Martial Arts"
+    ],
+    "price": 15.0
+  },
+  {
+    "start": -10,
+    "event_id": "TMAPIZ7r9jZ1Aeowr9",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Southern Illinois Salukis Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "01-27-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1AeoI1F",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Benedictine University Eagles Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "12-18-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIZ7r9jZ1Aeowr_",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Drake Bulldogs Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "02-05-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1AeoI1k",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Ball State Cardinals Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "12-05-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1AeoI16",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Norfolk State Spartans Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "12-16-2018",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1200,
+    "event_id": "TMAPIZ7r9jZ1Aeowrf",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Indiana State Sycamores Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "01-02-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 780,
+    "event_id": "TMAPIZ7r9jZ1Aeowr4",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "ISU Redbirds Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "01-12-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Aeowrp",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Valparaiso Crusaders Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "01-15-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIZ7r9jZ1Aeowrb",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Northern Iowa Panthers Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "01-30-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 900,
+    "event_id": "TMAPIZ7r9jZ1AeowOZ",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Missouri State Bears Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "02-17-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPIZ7r9jZ1AeowOv",
+    "venue_id": "TMAPIZFr9jZ11av",
+    "end": -10,
+    "event_name": "Evansville Purple Aces Mens Basketball at Loyola Ramblers Mens Basketball",
+    "date": "02-20-2019",
+    "tags": [
+      "Basketball",
+      "College",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPI1AtZA4tGkdTgdlJ",
+    "venue_id": "TMAPIKovZpZAJle7A",
+    "end": -10,
+    "event_name": "Kaiju Attack! Wrestling",
+    "date": "01-20-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Wrestling",
+      "Undefined",
+      "Wrestling"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1080,
+    "event_id": "TMAPI1AtZA4tGkdTgKic",
+    "venue_id": "TMAPIKovZpZAJle7A",
+    "end": -10,
+    "event_name": "Kaiju Attack! Wrestling",
+    "date": "03-23-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Wrestling",
+      "Undefined",
+      "Wrestling"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZACFGkdZbwyg",
+    "venue_id": "TMAPIKovZpZA6keJA",
+    "end": -10,
+    "event_name": "Chicago Fire 2018 5 Game Plan",
+    "date": "12-31-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Soccer",
+      "Team",
+      "MLS"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZACFGkdeBwHH",
+    "venue_id": "TMAPIKovZpZA6keJA",
+    "end": -10,
+    "event_name": "Chicago Fire Ten Ticket Flex Plan",
+    "date": "12-31-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Soccer",
+      "Team",
+      "MLS"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv1A7ZACFGkdeIxHr",
+    "venue_id": "TMAPIKovZpZA6keJA",
+    "end": -10,
+    "event_name": "Chicago Fire 2018 Hattrick Plan",
+    "date": "12-31-2018",
+    "tags": [
+      "Group",
+      "Sports",
+      "Soccer",
+      "Team",
+      "MLS"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1170,
+    "event_id": "TMAPIvv1A7ZA4vGkeHG4bk",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "WWE Live Holiday Tour",
+    "date": "12-26-2018",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Wrestling",
+      "Undefined",
+      "Wrestling"
+    ],
+    "price": 20.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIvv178Z44GkIZt_Ns",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "end": -10,
+    "event_name": "WCRA: World Champions Rodeo Alliance Windy City Roundup",
+    "date": "01-11-2019",
+    "tags": [
+      "Undefined",
+      "Sports",
+      "Rodeo",
+      "Undefined",
+      "Rodeo"
+    ],
+    "price": 10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baN",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Capital City Go-Go at Windy City Bulls",
+    "date": "02-05-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baV",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Lakeland Magic at Windy City Bulls",
+    "date": "03-01-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3ba9",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Wisconsin Herd at Windy City Bulls",
+    "date": "01-11-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baP",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Wisconsin Herd at Windy City Bulls",
+    "date": "02-12-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3bag",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Fort Wayne Mad Ants at Windy City Bulls",
+    "date": "02-22-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baE",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Canton Charge at Windy City Bulls",
+    "date": "03-23-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baI",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Erie BayHawks at Windy City Bulls",
+    "date": "01-18-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3ba0",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Capital City Go-Go at Windy City Bulls",
+    "date": "12-15-2018",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baO",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Canton Charge at Windy City Bulls",
+    "date": "12-14-2018",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 660,
+    "event_id": "TMAPIZ7r9jZ1Ae3baM",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Agua Caliente Clippers at Windy City Bulls",
+    "date": "02-20-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3bas",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Stockton Kings at Windy City Bulls",
+    "date": "01-05-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3b1Z",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Grand Rapids Drive at Windy City Bulls",
+    "date": "02-09-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baz",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Maine Red Claws at Windy City Bulls",
+    "date": "03-13-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3ba_",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Westchester Knicks at Windy City Bulls",
+    "date": "01-21-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 1140,
+    "event_id": "TMAPIZ7r9jZ1Ae3baJ",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Delaware Blue Coats at Windy City Bulls",
+    "date": "03-15-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  },
+  {
+    "start": 840,
+    "event_id": "TMAPIZ7r9jZ1Ae3baU",
+    "venue_id": "TMAPIZFr9jZA6Ae",
+    "end": -10,
+    "event_name": "Santa Cruz Warriors at Windy City Bulls",
+    "date": "03-03-2019",
+    "tags": [
+      "Miscellaneous",
+      "Miscellaneous",
+      "Sports"
+    ],
+    "price": -10.0
+  }
+]

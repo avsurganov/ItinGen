@@ -50,7 +50,7 @@ def check_valid(cur_event, itinerary, user_data):
     else:
         coords1 = venue_to_lat_long(itinerary[-1][1])
     coords2 = venue_to_lat_long(cur_event[1])
-    if not validate_angle(coords1, center, coords2) and len(itinerary) != 0:
+    if not validate_angle(cur_event, itinerary, user_data) and len(itinerary) != 0:
         return False
     #####################################
     # check event is not double counted #
@@ -197,13 +197,30 @@ def find_angle(coords1, center, coords2):
     return acos(num/den)
 
 
-def validate_angle(coords1, center, coords2, limit=.1):
+def validate_angle_circle(coords1, center, coords2, limit=.2):
     '''
     checks that the angle is within the given part of the circle
     '''
     angle = find_angle(coords1, center, coords2)
     rad_lim = limit*pi
     if (angle <= rad_lim):
+        return True
+    else:
+        return False
+
+def validate_angle(event, itinerary, user_data):
+    if (len(itinerary) == 0):
+        return True
+    coords3 = venue_to_lat_long(event[1])
+    center = user_data.get('start_location')
+    coords2 = venue_to_lat_long(itinerary[-1][1])
+    if (len(itinerary) == 1):
+        return validate_angle_circle(coords3, center, coords2)
+    coords1 = venue_to_lat_long(itinerary[-2][1])
+    d3 = find_distance(coords1, coords2)
+    d1 = find_distance(coords2, coords3)
+    d2 = find_distance(coords1, coords3)
+    if (d2 > d1 and d2 > d3):
         return True
     else:
         return False

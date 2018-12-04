@@ -126,7 +126,7 @@ with client:
             if user_inputs.get('only_free') == True:
                 f = check_free(event)
             t = time_check_temp(event,user_inputs.get('start_time'))
-#            d = date_check_temp(event)
+            d = date_check_temp(event)
             if t and d and f:
                 venid = event.get("venue_id")
                 venue = db.venues.find_one({'venue_id': venid})
@@ -136,6 +136,7 @@ with client:
                     del(event['__v'])
                     del(venue['__v'])
                     tpool.append((event,venue))
+        print(len(tpool))            
         return tpool
 
     # gets the pool of permanent events

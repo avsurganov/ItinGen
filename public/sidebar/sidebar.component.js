@@ -6,12 +6,10 @@ angular.module('sideBar')
 	templateUrl: 'sidebar/sidebar.template.html',
 	controller: ['$scope', '$http', 'itineraryFactory', '$window', 'Auth', function sideBarController($scope, $http,itineraryFactory, $window, Auth) {
 		
-    this.itinerary = []
-    this.likedItineraries = []
+    $scope.itinerary = []
+    $scope.likedItineraries = []
     $scope.settings = itineraryFactory.getSettings();
-
-    var app = this;
-    app.isLoggedIn = false;
+    $scope.isLoggedIn = false;
 
     if (Auth.isLoggedIn()) {
       // Check if a the token expired
@@ -19,26 +17,29 @@ angular.module('sideBar')
           // Check if the returned user is undefined (expired)
 
           if (data.data.success) {
-              // $location.path('/'); // Redirect to home page
-          } else {
+            $scope.isLoggedIn = true;
             itineraryFactory.getLikedItineraries().then((req) => {
               var success = req.data.success;
+              console.log(success)
               if(success) {
-                var tmp = req.data.itineraries
-                var parsedItins = JSON.parse(tmp);
-                this.likedItineraries = parsedItins;
-              }
-              else {
-                var emptyArray = [];
-                return emptyArray;
+                console.log("got here")
+                var likedItinerariesString = req.data.itineraries;
+                if(likedItinerariesString != undefined){
+                  $scope.likedItineraries = JSON.parse(likedItinerariesString);
+                  itineraryFactory.setLikedItineraries($scope.likedItineraries);
+                  console.log("On load, found users liked Itins");
+                  console.log($scope.likedItineraries);
+                }
               }
             });
-
-            // console.log(likeditineraries);
-            // itineraryFactory.addToLikedItineraries();
-            app.isLoggedIn = true;
+          }
+          else {
+            console.log("User not in DB or token is expired");
           }
       });
+  }
+  else {
+    console.log("No token saved in browser");
   }
     // Default settings
     // this.settings = {
@@ -58,7 +59,7 @@ angular.module('sideBar')
     }
 
     $scope.$on('update', function(e) {
-       this.itinerary = itineraryFactory.getCurrentItinerary();
+       $scope.itinerary = itineraryFactory.getCurrentItinerary();
       //  $scope.$apply()
     }.bind(this))
 
@@ -68,7 +69,7 @@ angular.module('sideBar')
 
     this.logout = function(){
       Auth.logout();
-      app.isLoggedIn = false;
+      $scope.isLoggedIn = false;
     }
   
     this.facebook = function() {

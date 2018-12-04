@@ -42,7 +42,8 @@ module.exports = function(app, passport) {
                         //Found user
                         done(null, user);
                     } else {
-                        //No user, create a new one
+                        //No user, create a new 
+                        console.log("Creating new user: " + profile._json.email);
                         var newUser = new User();
                         newUser.email = profile._json.email;
                         newUser.save();

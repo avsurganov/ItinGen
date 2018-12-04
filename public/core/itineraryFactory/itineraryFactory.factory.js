@@ -54,16 +54,26 @@ angular.module('itineraryFactory')
 		currentItinerary = current;
 	}
 
+	service.setLikedItineraries = function(likedItins) {
+		likedItineraries = likedItins;
+	}
+
 	service.getLikedItineraries = function () {
 		return $http.get('/api/getliked');
 	}
 
 	service.addToLikedItineraries = function () {
-		if(currentItinerary.length > 0)
-			likedItineraries.push(currentItinerary)
-		$http.post('/api/putliked', {likedItineraries}).then((data) => {
-			console.log('putlike');
-		});
+		console.log("got to add to liked itinfactory here");
+		if(currentItinerary.length > 0){
+			likedItineraries.push(currentItinerary);
+			console.log("Adding itinerary...")
+			console.log(currentItinerary);
+			$http.post('/api/putliked', {likedItineraries}).then((data) => {
+				console.log("Adding itineraries is a " + data.data.success);
+			});
+		} else {
+			console.log("current itinerary is empty");
+		}
 	}
 
 

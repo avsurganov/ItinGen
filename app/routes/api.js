@@ -28,9 +28,10 @@ router.post('/getitinerary', function(req, res) {
 	request('http://localhost:5000/?' + query, function(err, res2, body) {  
 		if(err) res.json({success:false});
 		else {
-			console.log('in get itineraryhere');
-			console.log(body);
-			res.json({success: true, itinerary: body});
+			if(res2.statusCode == 200)
+				res.json({success: true, itinerary: body});
+			else
+				res.json({success: false});
 		}
 	});
 });
@@ -47,7 +48,9 @@ router.use(function(req, res, next) {
 			if (err) {
 				res.json({ success: false, message: 'Token invalid' }); // Token has expired or is invalid
 			} else {
-				req.decoded = decoded; 
+				req.decoded = decoded;
+				console.log("IN DECODED");
+				console.log(decoded);
 				next(); // Required to leave middleware
 			}
 		});
@@ -68,11 +71,13 @@ router.get('/getliked', function(req, res) {
 		if (err) {
 			res.json({ success: false, message: 'Something went wrong. This error has been logged and will be addressed by our staff. We apologize for this inconvenience!' });	
 		} else {
+			console.log("in get liked");
 			if (!user) {
 				console.log("IN HEREz");
 				res.json({ success: false, message: 'No user was found' }); // Return error
 			} else {
 				if(user){
+					console.log("Found user");
 					res.json({ success: true, message: 'found itineraries', itineraries: user.liked});
 				} else {
 					console.log("IN HEREz");
@@ -89,22 +94,26 @@ router.post('/putliked', (req, res) => {
 	var userEmail = req.decoded.email;
 	var itinsStr = '';
 	console.log("IN PUTLIKED");
-	if(itins.length > 1){
+	if(itins.length > 0){
 		itinsStr = JSON.stringify(itins);
 		console.log(itinsStr);
+		User.findOneAndUpdate({email : userEmail}, {email : userEmail, liked : itinsStr}, function(err) {
+			if (err) { 
+				console.log(err)
+				res.json({success : false});
+				return; 
+			}
+			res.json({success : true});
+		});
+	}
+	else {
+		res.json({success : false});
 	}
 	// let user = new User();
 	// user.liked = itins;
 	// user.userEmail = userEmail;
 	// delete user._id;
-	User.findOneAndUpdate({email : userEmail}, {email : userEmail, liked : itinsStr}, function(err) {
-		if (err) { 
-			console.log(err)
-			res.json({success : false});
-			return; 
-		}
-		res.json({success : true});
-	});
+
 });
 
 module.exports = router;

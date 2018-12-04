@@ -72,7 +72,7 @@ angular.module('itineraryFactory')
 
 	service.saveSettings = function(userSettings) {
 		userSettings.startTime = userSettings.startTimeHours + ':' + userSettings.startTimeMinute 
-		' ' + userSettings.startTimeSection
+		+ ' ' + userSettings.startTimeSection
 		settings = userSettings;
 		if(settings['startLocation'] == undefined || settings['startLocation'] == '') {
 			settings['startLocation'] = defaultLocation;

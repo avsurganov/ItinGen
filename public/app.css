@@ -64,6 +64,13 @@ h3{
     font-family: "Times New Roman";
 }
 
+.section-title {
+  color: #ff6700 !important;
+}
+
+.card-title{
+  color: #4267b2 !important;
+}
 .header-content-inner img {
   float: left;   
 }

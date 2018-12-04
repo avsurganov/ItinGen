@@ -20,14 +20,14 @@
   
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
-  <!-- <div ng-click="showDiv=true" 
+  <div ng-click="showDiv=true" 
         ng-show="!showDiv" class="ng-hide" id="intro_message" >
        <h2>Welcome to plan.it!</h2>
        <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
         <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.generate()" 
         ng-show="!showDiv">Generate</button>
-<!--  -->
-  </div> -->
+ 
+  </div> 
 </div>
 </div>
 
@@ -121,7 +121,6 @@
         </button>
       </div>
       <div class="modal-body">
-          <!-- <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
           <button ng-click="$ctrl.facebook()" type="button" class="btn btn-success btn_blue" >Continue with Facebook</button>
           </div>
       <div class="modal-footer">

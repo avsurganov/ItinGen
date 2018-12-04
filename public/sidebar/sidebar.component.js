@@ -100,9 +100,9 @@ angular.module('sideBar')
       }
     }
 
-    this.saveSettings = function() {
-      console.log('here');
-      itineraryFactory.saveSettings($scope.settings);
+    this.saveSettings = function(settings) {
+      console.log(settings);
+      itineraryFactory.saveSettings(settings);
     }
 
     this.assignTransport = function(transport) {

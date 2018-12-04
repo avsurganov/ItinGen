@@ -91,7 +91,7 @@ def validate_travel_time(itin, transport):
             travel_time = distance * 20
         elif (transport == "BIKE"):
             travel_time = distance * 10
-        if between_time < travel_time:
+        if between_time < travel_time or travel_time > 60:
             return False
     return True
 

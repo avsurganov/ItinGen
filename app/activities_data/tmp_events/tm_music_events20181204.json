@@ -464,22 +464,6 @@
     "price": 64.95
   },
   {
-    "event_id": "TMAPIvv1A7ZAGJGkdJjVCX",
-    "event_name": "Bob Seger & The Silver Bullet Band",
-    "venue_id": "TMAPIKovZpa2MCe",
-    "start": 1200,
-    "end": -10,
-    "date": "12-14-2018",
-    "tags": [
-      "Music",
-      "Rock",
-      "Pop",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 75.0
-  },
-  {
     "event_id": "TMAPIvv17jZ44GkTY5FDC",
     "event_name": "Massive Attack: MezzanineXXI",
     "venue_id": "TMAPIKovZpZA6AJ6A",
@@ -494,6 +478,22 @@
       "Undefined"
     ],
     "price": 29.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGJGkdJjVCX",
+    "event_name": "Bob Seger & The Silver Bullet Band",
+    "venue_id": "TMAPIKovZpa2MCe",
+    "start": 1200,
+    "end": -10,
+    "date": "12-14-2018",
+    "tags": [
+      "Music",
+      "Rock",
+      "Pop",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 75.0
   },
   {
     "event_id": "TMAPIvvG1jZ4Cpir7fL",
@@ -672,22 +672,6 @@
     "price": 59.5
   },
   {
-    "event_id": "TMAPIvv1A6ZA4KGkdgwaTF",
-    "event_name": "An evening with Tedeschi Trucks Band",
-    "venue_id": "TMAPIKovZpZA6AJ6A",
-    "start": 1170,
-    "end": -10,
-    "date": "01-19-2019",
-    "tags": [
-      "Music",
-      "Rock",
-      "Pop",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 19.5
-  },
-  {
     "event_id": "TMAPIvv17jZ44GkTFQUBR",
     "event_name": "Gary Clark Jr. Presented by Chase",
     "venue_id": "TMAPIKovZpZA6AJ6A",
@@ -702,6 +686,22 @@
       "Undefined"
     ],
     "price": 39.5
+  },
+  {
+    "event_id": "TMAPIvv1A6ZA4KGkdgwaTF",
+    "event_name": "An evening with Tedeschi Trucks Band",
+    "venue_id": "TMAPIKovZpZA6AJ6A",
+    "start": 1170,
+    "end": -10,
+    "date": "01-19-2019",
+    "tags": [
+      "Music",
+      "Rock",
+      "Pop",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 19.5
   },
   {
     "event_id": "TMAPIvv17jZ43GkBYJzLC",
@@ -784,22 +784,6 @@
     "price": 29.99
   },
   {
-    "event_id": "TMAPIvv1A6ZA4KGkdgYyTk",
-    "event_name": "An evening with Tedeschi Trucks Band",
-    "venue_id": "TMAPIKovZpZA6AJ6A",
-    "start": 1170,
-    "end": -10,
-    "date": "01-18-2019",
-    "tags": [
-      "Music",
-      "Rock",
-      "Pop",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 19.5
-  },
-  {
     "event_id": "TMAPIvvG1jZ412r4U_C",
     "event_name": "Straight No Chaser",
     "venue_id": "TMAPIKovZpZAFAJAA",
@@ -814,6 +798,22 @@
       "Undefined"
     ],
     "price": 31.5
+  },
+  {
+    "event_id": "TMAPIvv1A6ZA4KGkdgYyTk",
+    "event_name": "An evening with Tedeschi Trucks Band",
+    "venue_id": "TMAPIKovZpZA6AJ6A",
+    "start": 1170,
+    "end": -10,
+    "date": "01-18-2019",
+    "tags": [
+      "Music",
+      "Rock",
+      "Pop",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 19.5
   },
   {
     "event_id": "TMAPIvv178Z4pGkSw0Fk8",
@@ -1040,6 +1040,22 @@
     "price": 37.5
   },
   {
+    "event_id": "TMAPIvv178Z49GkmYhSwQ",
+    "event_name": "Monster Energy Outbreak Tour Presents - A Boogie Wit Da Hoodie",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 1140,
+    "end": -10,
+    "date": "03-22-2019",
+    "tags": [
+      "Music",
+      "Hip-Hop/Rap",
+      "French Rap",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 29.5
+  },
+  {
     "event_id": "TMAPIvv1A6ZA4tGkdW91k6",
     "event_name": "Excision",
     "venue_id": "TMAPIKovZpabk8e",
@@ -1198,22 +1214,6 @@
       "Undefined"
     ],
     "price": 37.5
-  },
-  {
-    "event_id": "TMAPIvv178Z49GkmYhSwQ",
-    "event_name": "Monster Energy Outbreak Tour Presents - A Boogie Wit Da Hoodie",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 1140,
-    "end": -10,
-    "date": "03-22-2019",
-    "tags": [
-      "Music",
-      "Hip-Hop/Rap",
-      "French Rap",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 29.5
   },
   {
     "event_id": "TMAPIvv1A7ZA4tGkeTrxtv",
@@ -1440,22 +1440,6 @@
     "price": 49.5
   },
   {
-    "event_id": "TMAPIvv1A7ZAGEGkdE9Kgw",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 750,
-    "end": -10,
-    "date": "12-02-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
     "event_id": "TMAPIvv178Z4oGkMJuM38",
     "event_name": "101WKQX The Nights We Stole Christmas with Death Cab For Cutie",
     "venue_id": "TMAPIKovZpZAFdJnA",
@@ -1486,22 +1470,6 @@
       "Undefined"
     ],
     "price": 22.5
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdEadgZ",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 600,
-    "end": -10,
-    "date": "12-02-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
   },
   {
     "event_id": "TMAPIZ7r9jZ1AeuPo9",
@@ -1560,22 +1528,6 @@
     "price": -10.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAGEGkdEQKgW",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 750,
-    "end": -10,
-    "date": "12-23-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
     "event_id": "TMAPIZ7r9jZ1AeuPob",
     "event_name": "Chicago Symphony Orchestra",
     "venue_id": "TMAPIZFr9jZdv16",
@@ -1602,22 +1554,6 @@
       "Classical/Vocal"
     ],
     "price": -10.0
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdE1dge",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 600,
-    "end": -10,
-    "date": "12-09-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
   },
   {
     "event_id": "TMAPIvv178Z4oGkSr4JQF",
@@ -1664,38 +1600,6 @@
     "price": -10.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAGEGkdEbKgU",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 750,
-    "end": -10,
-    "date": "12-09-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdEhNgT",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 750,
-    "end": -10,
-    "date": "12-30-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
     "event_id": "TMAPIvv1A7ZA4KGkeUqfia",
     "event_name": "The Sophisticated Soul Tour",
     "venue_id": "TMAPIKovZpa2Bpe",
@@ -1712,76 +1616,12 @@
     "price": 59.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAGEGkdE_Kgy",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 750,
-    "end": -10,
-    "date": "12-16-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdEuNg3",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 600,
-    "end": -10,
-    "date": "12-30-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
     "event_id": "TMAPIvv1A7ZAfyGkd1dASz",
     "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
     "venue_id": "TMAPIKovZpZAEAIlA",
     "start": 750,
     "end": -10,
     "date": "02-24-2019",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdE5Kg7",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 600,
-    "end": -10,
-    "date": "12-16-2018",
-    "tags": [
-      "Music",
-      "Religious",
-      "Gospel",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": 42.5
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAGEGkdEGNgk",
-    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
-    "venue_id": "TMAPIKovZpZAEAIlA",
-    "start": 600,
-    "end": -10,
-    "date": "12-23-2018",
     "tags": [
       "Music",
       "Religious",
@@ -2208,20 +2048,6 @@
     "price": 59.5
   },
   {
-    "event_id": "TMAPIZ7r9jZ1AefJ0t",
-    "event_name": "Corrosion of Conformity w/ Crowbar",
-    "venue_id": "TMAPIKovZpaoyCe",
-    "start": 1170,
-    "end": -10,
-    "date": "02-09-2019",
-    "tags": [
-      "Music",
-      "Rock",
-      "Hard Rock"
-    ],
-    "price": -10.0
-  },
-  {
     "event_id": "TMAPIZ7r9jZ1Aeozb_",
     "event_name": "Avery Sunshine",
     "venue_id": "TMAPIKovZpZAE667A",
@@ -2438,22 +2264,6 @@
     "price": 29.0
   },
   {
-    "event_id": "TMAPI1atZA43FS0tZeG7",
-    "event_name": "Corrosion of Conformity, Crowbar, Weedeater, Mothership",
-    "venue_id": "TMAPIKovZpaoyCe",
-    "start": 1170,
-    "end": -10,
-    "date": "02-09-2019",
-    "tags": [
-      "Music",
-      "Metal",
-      "Heavy Metal",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": -10.0
-  },
-  {
     "event_id": "TMAPI1Ae0Z44GkH9ooya",
     "event_name": "Joji",
     "venue_id": "TMAPIKovZpaoyCe",
@@ -2566,32 +2376,16 @@
     "price": -10.0
   },
   {
-    "event_id": "TMAPI16tZA4JZAZA8v86F",
-    "event_name": "Cherry Glazerr, Palehound",
+    "event_id": "TMAPI1Ae0Z49GkDDZ7T6",
+    "event_name": "Lords of Acid, Orgy, Genitorturers, Little Miss Nasty, Gabriel and the",
     "venue_id": "TMAPIKovZpaoyCe",
-    "start": 1260,
+    "start": 1200,
     "end": -10,
-    "date": "02-23-2019",
+    "date": "03-07-2019",
     "tags": [
       "Music",
-      "Rock",
-      "Alternative Rock",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPI1k18v4QZGAGAKux",
-    "event_name": "Arkells, the Greeting Committee",
-    "venue_id": "TMAPIKovZpaoyCe",
-    "start": 1140,
-    "end": -10,
-    "date": "03-14-2019",
-    "tags": [
-      "Music",
-      "Rock",
-      "Pop",
+      "Metal",
+      "Heavy Metal",
       "Undefined",
       "Undefined"
     ],
@@ -2710,6 +2504,20 @@
     "price": 47.0
   },
   {
+    "event_id": "TMAPIZ7r9jZ1Aefapp",
+    "event_name": "LP",
+    "venue_id": "TMAPIZFr9jZeadv",
+    "start": 1170,
+    "end": -10,
+    "date": "02-08-2019",
+    "tags": [
+      "Music",
+      "Other",
+      "Other"
+    ],
+    "price": -10.0
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1AefFqy",
     "event_name": "Switchfoot",
     "venue_id": "TMAPIKovZpZAan6AA",
@@ -2734,20 +2542,6 @@
       "Music",
       "Alternative",
       "Alternative Rock"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Aefapp",
-    "event_name": "LP",
-    "venue_id": "TMAPIZFr9jZeadv",
-    "start": 1170,
-    "end": -10,
-    "date": "02-08-2019",
-    "tags": [
-      "Music",
-      "Other",
-      "Other"
     ],
     "price": -10.0
   },
@@ -2974,6 +2768,20 @@
     "price": -10.0
   },
   {
+    "event_id": "TMAPIZ7r9jZ1AefkPM",
+    "event_name": "Esperanza Spalding",
+    "venue_id": "TMAPIZFr9jZeadv",
+    "start": 1200,
+    "end": -10,
+    "date": "12-05-2018",
+    "tags": [
+      "Music",
+      "Blues",
+      "Jazz Blues"
+    ],
+    "price": -10.0
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1Aef433",
     "event_name": "Gryffin",
     "venue_id": "TMAPIKovZpZAJtF7A",
@@ -3096,20 +2904,6 @@
       "Music",
       "Rock",
       "Hard Rock"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1AefNv9",
-    "event_name": "Pigeons Playing Ping Pong",
-    "venue_id": "TMAPIKovZpZAJtF7A",
-    "start": 1200,
-    "end": -10,
-    "date": "02-15-2019",
-    "tags": [
-      "Music",
-      "Rock",
-      "Rock & Roll"
     ],
     "price": -10.0
   },
@@ -4482,6 +4276,22 @@
     "price": 30.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAGEGkdE9Kgw",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 750,
+    "end": -10,
+    "date": "12-02-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
     "event_id": "TMAPIvv1F8Z44veGaZdu8G",
     "event_name": "Sister Hazel on the Backporch Stage",
     "venue_id": "TMAPIKovZpZAEAIlA",
@@ -4512,6 +4322,22 @@
       "Undefined"
     ],
     "price": 58.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdEadgZ",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 600,
+    "end": -10,
+    "date": "12-02-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
   },
   {
     "event_id": "TMAPIvv1A7ZAfwGkegV4p3",
@@ -4562,6 +4388,38 @@
     "price": 30.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAGEGkdEQKgW",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 750,
+    "end": -10,
+    "date": "12-23-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdE1dge",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 600,
+    "end": -10,
+    "date": "12-09-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
     "event_id": "TMAPIvv1A7ZA4FGkdfcfVo",
     "event_name": "Sixteen Candles",
     "venue_id": "TMAPIKovZpZAEAIlA",
@@ -4610,6 +4468,38 @@
     "price": 30.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAGEGkdEbKgU",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 750,
+    "end": -10,
+    "date": "12-09-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdEhNgT",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 750,
+    "end": -10,
+    "date": "12-30-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
     "event_id": "TMAPIvv178Z4fGkHI8bs9",
     "event_name": "Gaelic Storm",
     "venue_id": "TMAPIKovZpZAEAIlA",
@@ -4642,6 +4532,54 @@
     "price": 10.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAGEGkdE_Kgy",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 750,
+    "end": -10,
+    "date": "12-16-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdEuNg3",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 600,
+    "end": -10,
+    "date": "12-30-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdE5Kg7",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 600,
+    "end": -10,
+    "date": "12-16-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1AeuPop",
     "event_name": "Chicago Symphony Orchestra",
     "venue_id": "TMAPIZFr9jZdv16",
@@ -4654,6 +4592,22 @@
       "Classical/Vocal"
     ],
     "price": -10.0
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAGEGkdEGNgk",
+    "event_name": "World Famous Gospel Brunch at House of Blues (CHI)",
+    "venue_id": "TMAPIKovZpZAEAIlA",
+    "start": 600,
+    "end": -10,
+    "date": "12-23-2018",
+    "tags": [
+      "Music",
+      "Religious",
+      "Gospel",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": 42.5
   },
   {
     "event_id": "TMAPIvv178Z4fGkHI9IsE",
@@ -6180,6 +6134,20 @@
     "price": -10.0
   },
   {
+    "event_id": "TMAPIZ7r9jZ1Ae3F3k",
+    "event_name": "Joe Pug",
+    "venue_id": "TMAPIKovZpZAE667A",
+    "start": 1200,
+    "end": -10,
+    "date": "12-05-2018",
+    "tags": [
+      "Music",
+      "Other",
+      "Other"
+    ],
+    "price": -10.0
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1AefObE",
     "event_name": "Homewrecker",
     "venue_id": "TMAPIKovZpaFwze",
@@ -6232,6 +6200,20 @@
       "Music",
       "World",
       "World"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3F3A",
+    "event_name": "Kris Allen",
+    "venue_id": "TMAPIKovZpZAE667A",
+    "start": 1200,
+    "end": -10,
+    "date": "12-04-2018",
+    "tags": [
+      "Music",
+      "Other",
+      "Other"
     ],
     "price": -10.0
   },
@@ -7600,6 +7582,22 @@
     "start": 1200,
     "end": -10,
     "date": "02-08-2019",
+    "tags": [
+      "Music",
+      "Country",
+      "Country",
+      "Undefined",
+      "Undefined"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPI1k18v4_oGACKfJI",
+    "event_name": "Josh Abbott Band and Casey Donahew",
+    "venue_id": "TMAPIKovZpZAaJkdA",
+    "start": 1200,
+    "end": -10,
+    "date": "02-22-2019",
     "tags": [
       "Music",
       "Country",
@@ -10724,6 +10722,20 @@
     "price": -10.0
   },
   {
+    "event_id": "TMAPIZ7r9jZ1AefNv9",
+    "event_name": "Pigeons Playing Ping Pong",
+    "venue_id": "TMAPIKovZpZAJtF7A",
+    "start": 1200,
+    "end": -10,
+    "date": "02-15-2019",
+    "tags": [
+      "Music",
+      "Rock",
+      "Rock & Roll"
+    ],
+    "price": -10.0
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1AefF-3",
     "event_name": "The Funk Hunters",
     "venue_id": "TMAPIZ7r9jZaeVp",
@@ -12338,22 +12350,6 @@
     "start": 1170,
     "end": -10,
     "date": "12-21-2018",
-    "tags": [
-      "Music",
-      "Rock",
-      "Pop",
-      "Undefined",
-      "Undefined"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPI16e0Z44OJG7XosC",
-    "event_name": "Lovehouse",
-    "venue_id": "TMAPIKovZpZAFdEvA",
-    "start": 1260,
-    "end": -10,
-    "date": "12-22-2018",
     "tags": [
       "Music",
       "Rock",

@@ -1,0 +1,100 @@
+[
+	{
+		"venue_id": "yelpJDNZxz0ud7zhuPo5pqznMA",
+		"event_name": "Demera Ethiopian Restaurant",
+		"event_id": "yelpJDNZxz0ud7zhuPo5pqznMA",
+		"mon_start": 690,
+		"mon_end": 1320,
+		"tues_start": 690,
+		"tues_end": 1320,
+		"wed_start": 690,
+		"wed_end": 1320,
+		"thurs_start": 690,
+		"thurs_end": 1320,
+		"fri_start": 690,
+		"fri_end": 1380,
+		"sat_start": 690,
+		"sat_end": 1380,
+		"sun_start": 690,
+		"sun_end": 1320,
+		"tags": [
+			"ethiopian",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpOVW54jiavdQXO4SLbGx90A",
+		"event_name": "Ras Dashen Ethiopian Restaurant",
+		"event_id": "yelpOVW54jiavdQXO4SLbGx90A",
+		"mon_start": 660,
+		"mon_end": 1350,
+		"tues_start": 660,
+		"tues_end": 1350,
+		"wed_start": 660,
+		"wed_end": 1350,
+		"thurs_start": 660,
+		"thurs_end": 1380,
+		"fri_start": 660,
+		"fri_end": 1380,
+		"sat_start": 660,
+		"sat_end": 1350,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"ethiopian",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"event_name": "Ethiopian Diamond",
+		"event_id": "yelpSQbqAi053aFOfQhtPAC3mw",
+		"mon_start": 660,
+		"mon_end": 1320,
+		"tues_start": 660,
+		"tues_end": 1320,
+		"wed_start": 660,
+		"wed_end": 1320,
+		"thurs_start": 660,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1380,
+		"sat_start": 660,
+		"sat_end": 1380,
+		"sun_start": 660,
+		"sun_end": 1320,
+		"tags": [
+			"ethiopian",
+			"bars",
+			"food"
+		],
+		"price": -2
+	},
+	{
+		"venue_id": "yelpggi4ASeyeY5MEd4yjRgmZA",
+		"event_name": "Tesfa Ethiopian Cuisine",
+		"event_id": "yelpggi4ASeyeY5MEd4yjRgmZA",
+		"mon_start": 660,
+		"mon_end": 1320,
+		"tues_start": 660,
+		"tues_end": 1320,
+		"wed_start": 660,
+		"wed_end": 1320,
+		"thurs_start": 660,
+		"thurs_end": 1320,
+		"fri_start": 660,
+		"fri_end": 1320,
+		"sat_start": 660,
+		"sat_end": 1320,
+		"sun_start": 660,
+		"sun_end": 1200,
+		"tags": [
+			"ethiopian",
+			"breakfast_brunch",
+			"food"
+		],
+		"price": -2
+	}
+]

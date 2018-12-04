@@ -231,9 +231,9 @@ def master_data():
         success (int) - 0 for success and 1 for failure
     '''
     # header file paths
-    VEN = "../app/activies_data/venues/"
-    TMP = "../app/activies_data/tmp_events/"
-    EVN = "../app/activies_data/events/"
+    VEN = "../app/activities_data/venues/"
+    TMP = "../app/activities_data/tmp_events/"
+    EVN = "../app/activities_data/events/"
 
 #data
     print("\n###################")

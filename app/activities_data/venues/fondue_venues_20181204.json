@@ -1,0 +1,86 @@
+[
+	{
+		"venue_id": "yelphylBw5ND7XyPldM6BN28vw",
+		"venue_name": "Geja's Cafe",
+		"latitude": 41.9181498673941,
+		"longitude": -87.6380681991577,
+		"address1": "340 W Armitage Ave",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelptgbUDQIB1Kd-OLkPiu6NNA",
+		"venue_name": "Fondue Stube",
+		"latitude": 41.9901399,
+		"longitude": -87.69769,
+		"address1": "2717 W Peterson Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60659"
+	},
+	{
+		"venue_id": "yelp5P2AZsks8XNggmFE7gbZJw",
+		"venue_name": "The Chocolate Sanctuary",
+		"latitude": 42.3624992992584,
+		"longitude": -87.9278741073055,
+		"address1": "5101 Washington St",
+		"address2": "",
+		"address3": "",
+		"city": "Gurnee",
+		"state": "IL",
+		"zip_code": "60031"
+	},
+	{
+		"venue_id": "yelpl-TRDiLB-dVFC9j0Ycswjw",
+		"venue_name": "The Melting Pot - Downers Grove",
+		"latitude": 41.834182709425,
+		"longitude": -88.0176828048279,
+		"address1": "1205 Butterfield Rd",
+		"address2": "Ste A",
+		"address3": "",
+		"city": "Downers Grove",
+		"state": "IL",
+		"zip_code": "60515"
+	},
+	{
+		"venue_id": "yelpSjo-ngPnispik2Y5IKFDzw",
+		"venue_name": "The Melting Pot of Schaumburg",
+		"latitude": 42.0489702,
+		"longitude": -88.0859932,
+		"address1": "255 W Golf Rd",
+		"address2": "",
+		"address3": "",
+		"city": "Schaumburg",
+		"state": "IL",
+		"zip_code": "60195"
+	},
+	{
+		"venue_id": "yelpMfkINQgONzTejyMLVIYRdw",
+		"venue_name": "The Melting Pot - Naperville",
+		"latitude": 41.68147,
+		"longitude": -88.20552,
+		"address1": "4931 S Route 59",
+		"address2": "Ste 101",
+		"address3": "",
+		"city": "Naperville",
+		"state": "IL",
+		"zip_code": "60564"
+	},
+	{
+		"venue_id": "yelpgMord7OMRfea9nuSChioyQ",
+		"venue_name": "Cafe Fondue",
+		"latitude": 41.473022,
+		"longitude": -87.3383231,
+		"address1": "281 W 80th Pl",
+		"address2": "",
+		"address3": "",
+		"city": "Merrillville",
+		"state": "IN",
+		"zip_code": "46410"
+	}
+]

@@ -32,22 +32,6 @@
     "price": 84.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAf6GkeHQIdl",
-    "event_name": "Chicago Blackhawks V. Minnesota Wild",
-    "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1170,
-    "end": -10,
-    "date": "12-27-2018",
-    "tags": [
-      "Sports",
-      "Hockey",
-      "NHL",
-      "Group",
-      "Team"
-    ],
-    "price": 45.0
-  },
-  {
     "event_id": "TMAPIvv1A7ZAf6GkeHmz7J",
     "event_name": "Chicago Blackhawks V. Calgary Flames",
     "venue_id": "TMAPIKovZpa2M7e",
@@ -62,6 +46,22 @@
       "Team"
     ],
     "price": 32.0
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAf6GkeHQIdl",
+    "event_name": "Chicago Blackhawks V. Minnesota Wild",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "start": 1170,
+    "end": -10,
+    "date": "12-27-2018",
+    "tags": [
+      "Sports",
+      "Hockey",
+      "NHL",
+      "Group",
+      "Team"
+    ],
+    "price": 45.0
   },
   {
     "event_id": "TMAPIvv1A7ZAf6GkeHxF7A",
@@ -400,6 +400,22 @@
     "price": 32.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAf6GkeHXIAt",
+    "event_name": "Chicago Blackhawks V. Ottawa Senators",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "start": 1170,
+    "end": -10,
+    "date": "02-18-2019",
+    "tags": [
+      "Sports",
+      "Hockey",
+      "NHL",
+      "Group",
+      "Team"
+    ],
+    "price": 27.0
+  },
+  {
     "event_id": "TMAPIvv1A7ZAf6GkeHTIAc",
     "event_name": "Chicago Blackhawks v. Arizona Coyotes",
     "venue_id": "TMAPIKovZpa2M7e",
@@ -430,22 +446,6 @@
       "Team"
     ],
     "price": 32.0
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAf6GkeHXIAt",
-    "event_name": "Chicago Blackhawks V. Ottawa Senators",
-    "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1170,
-    "end": -10,
-    "date": "02-18-2019",
-    "tags": [
-      "Sports",
-      "Hockey",
-      "NHL",
-      "Group",
-      "Team"
-    ],
-    "price": 27.0
   },
   {
     "event_id": "TMAPIvv1A7ZAf4GkdbEU-M",
@@ -640,12 +640,12 @@
     "price": 23.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAf4Gkdb8JOu",
-    "event_name": "Chicago Bulls V. Cleveland Cavaliers",
+    "event_id": "TMAPIvv1A7ZAf4GkdbGULT",
+    "event_name": "Chicago Bulls V. Indiana Pacers",
     "venue_id": "TMAPIKovZpa2M7e",
-    "start": 870,
+    "start": 1140,
     "end": -10,
-    "date": "01-27-2019",
+    "date": "01-04-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -656,12 +656,12 @@
     "price": 18.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAf4GkdbGULT",
-    "event_name": "Chicago Bulls V. Indiana Pacers",
+    "event_id": "TMAPIvv1A7ZAf4Gkdb8JOu",
+    "event_name": "Chicago Bulls V. Cleveland Cavaliers",
     "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1140,
+    "start": 870,
     "end": -10,
-    "date": "01-04-2019",
+    "date": "01-27-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -704,6 +704,22 @@
     "price": 18.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAf4Gkdbqk-2",
+    "event_name": "Chicago Bulls V. New York Knicks",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "start": 1140,
+    "end": -10,
+    "date": "04-09-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "NBA",
+      "Group",
+      "Team"
+    ],
+    "price": 18.0
+  },
+  {
     "event_id": "TMAPIvv1A7ZAf4GkdbPk-i",
     "event_name": "Chicago Bulls V. Philadelphia 76ers",
     "venue_id": "TMAPIKovZpa2M7e",
@@ -736,44 +752,12 @@
     "price": 18.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAf4Gkdbqk-2",
-    "event_name": "Chicago Bulls V. New York Knicks",
-    "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1140,
-    "end": -10,
-    "date": "04-09-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "NBA",
-      "Group",
-      "Team"
-    ],
-    "price": 18.0
-  },
-  {
     "event_id": "TMAPIvv1A7ZAf4GkdbCUOd",
     "event_name": "Chicago Bulls V. Atlanta Hawks",
     "venue_id": "TMAPIKovZpa2M7e",
     "start": 1140,
     "end": -10,
     "date": "01-23-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "NBA",
-      "Group",
-      "Team"
-    ],
-    "price": 18.0
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAf4Gkdb2JOA",
-    "event_name": "Chicago Bulls v. LA Clippers",
-    "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1140,
-    "end": -10,
-    "date": "01-25-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -798,6 +782,22 @@
       "Team"
     ],
     "price": 23.0
+  },
+  {
+    "event_id": "TMAPIvv1A7ZAf4Gkdb2JOA",
+    "event_name": "Chicago Bulls v. LA Clippers",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "start": 1140,
+    "end": -10,
+    "date": "01-25-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "NBA",
+      "Group",
+      "Team"
+    ],
+    "price": 18.0
   },
   {
     "event_id": "TMAPIvv1A7ZAf4GkdbfJON",
@@ -832,6 +832,22 @@
     "price": 18.0
   },
   {
+    "event_id": "TMAPIvv1A7ZAf4GkdboJOo",
+    "event_name": "Chicago Bulls v. New Orleans Pelicans",
+    "venue_id": "TMAPIKovZpa2M7e",
+    "start": 1140,
+    "end": -10,
+    "date": "02-06-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "NBA",
+      "Group",
+      "Team"
+    ],
+    "price": 18.0
+  },
+  {
     "event_id": "TMAPIvv1A7ZAf4Gkdb4UOc",
     "event_name": "Chicago Bulls V. Milwaukee Bucks",
     "venue_id": "TMAPIKovZpa2M7e",
@@ -848,12 +864,12 @@
     "price": 18.0
   },
   {
-    "event_id": "TMAPIvv1A7ZAf4GkdboJOo",
-    "event_name": "Chicago Bulls v. New Orleans Pelicans",
+    "event_id": "TMAPIvv1A7ZAf4GkdbQU-6",
+    "event_name": "Chicago Bulls V. Washington Wizards",
     "venue_id": "TMAPIKovZpa2M7e",
     "start": 1140,
     "end": -10,
-    "date": "02-06-2019",
+    "date": "03-20-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -878,22 +894,6 @@
       "Team"
     ],
     "price": 23.0
-  },
-  {
-    "event_id": "TMAPIvv1A7ZAf4GkdbQU-6",
-    "event_name": "Chicago Bulls V. Washington Wizards",
-    "venue_id": "TMAPIKovZpa2M7e",
-    "start": 1140,
-    "end": -10,
-    "date": "03-20-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "NBA",
-      "Group",
-      "Team"
-    ],
-    "price": 18.0
   },
   {
     "event_id": "TMAPIvv1A7ZAf4GkdbNk-0",
@@ -1228,138 +1228,12 @@
     "price": 25.0
   },
   {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zjv",
-    "event_name": "UIC Flames Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1080,
-    "end": -10,
-    "date": "12-14-2018",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zjk",
-    "event_name": "Butler University Bulldogs Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1170,
-    "end": -10,
-    "date": "01-16-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zjd",
-    "event_name": "Boston College Eagles Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 870,
-    "end": -10,
-    "date": "12-22-2018",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
     "event_id": "TMAPIZ7r9jZ1Ae3Zj6",
     "event_name": "Villanova Wildcats Mens Basketball at DePaul Blue Demons Mens Basketball",
     "venue_id": "TMAPIKovZ917A2S0",
     "start": 1140,
     "end": -10,
     "date": "01-30-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zj3",
-    "event_name": "Georgetown Hoyas Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1170,
-    "end": -10,
-    "date": "03-06-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3ZjZ",
-    "event_name": "Chicago State Cougars Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1140,
-    "end": -10,
-    "date": "12-12-2018",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zje",
-    "event_name": "Incarnate Word Cardinals Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1170,
-    "end": -10,
-    "date": "12-19-2018",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zj7",
-    "event_name": "Xavier Musketeers Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 780,
-    "end": -10,
-    "date": "12-29-2018",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3ZjA",
-    "event_name": "Seton Hall Pirates Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": -10,
-    "end": -10,
-    "date": "01-06-2019",
-    "tags": [
-      "Sports",
-      "Basketball",
-      "College"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3ZjF",
-    "event_name": "Providence College Friars Mens Basketball at DePaul Blue Demons Mens Basketball",
-    "venue_id": "TMAPIKovZ917A2S0",
-    "start": 810,
-    "end": -10,
-    "date": "02-02-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -1382,12 +1256,26 @@
     "price": -10.0
   },
   {
-    "event_id": "TMAPIZ7r9jZ1Ae3Zj8",
-    "event_name": "Creighton Blue Jays Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjA",
+    "event_name": "Seton Hall Pirates Mens Basketball at DePaul Blue Demons Mens Basketball",
     "venue_id": "TMAPIKovZ917A2S0",
-    "start": 1200,
+    "start": -10,
     "end": -10,
-    "date": "02-20-2019",
+    "date": "01-06-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj3",
+    "event_name": "Georgetown Hoyas Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1170,
+    "end": -10,
+    "date": "03-06-2019",
     "tags": [
       "Sports",
       "Basketball",
@@ -2402,34 +2290,6 @@
     "price": -10.0
   },
   {
-    "event_id": "TMAPIZ7r9jZ1Ae3bab",
-    "event_name": "Greensboro Swarm at Windy City Bulls",
-    "venue_id": "TMAPIZFr9jZA6Ae",
-    "start": 1140,
-    "end": -10,
-    "date": "01-12-2019",
-    "tags": [
-      "Sports",
-      "Miscellaneous",
-      "Miscellaneous"
-    ],
-    "price": -10.0
-  },
-  {
-    "event_id": "TMAPIZ7r9jZ1Ae3bat",
-    "event_name": "Greensboro Swarm at Windy City Bulls",
-    "venue_id": "TMAPIZFr9jZA6Ae",
-    "start": 1020,
-    "end": -10,
-    "date": "01-01-2019",
-    "tags": [
-      "Sports",
-      "Miscellaneous",
-      "Miscellaneous"
-    ],
-    "price": -10.0
-  },
-  {
     "event_id": "TMAPIvv1A7ZA43GkdzgP_F",
     "event_name": "WWE Live Holiday Tour",
     "venue_id": "TMAPIKovZpa2M7e",
@@ -2974,6 +2834,118 @@
     "price": 8.0
   },
   {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjv",
+    "event_name": "UIC Flames Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1080,
+    "end": -10,
+    "date": "12-14-2018",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjk",
+    "event_name": "Butler University Bulldogs Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1170,
+    "end": -10,
+    "date": "01-16-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zjd",
+    "event_name": "Boston College Eagles Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 870,
+    "end": -10,
+    "date": "12-22-2018",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjZ",
+    "event_name": "Chicago State Cougars Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1140,
+    "end": -10,
+    "date": "12-12-2018",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zje",
+    "event_name": "Incarnate Word Cardinals Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1170,
+    "end": -10,
+    "date": "12-19-2018",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj7",
+    "event_name": "Xavier Musketeers Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 780,
+    "end": -10,
+    "date": "12-29-2018",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3ZjF",
+    "event_name": "Providence College Friars Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 810,
+    "end": -10,
+    "date": "02-02-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3Zj8",
+    "event_name": "Creighton Blue Jays Mens Basketball at DePaul Blue Demons Mens Basketball",
+    "venue_id": "TMAPIKovZ917A2S0",
+    "start": 1200,
+    "end": -10,
+    "date": "02-20-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
     "event_id": "TMAPIZ7r9jZ1Ae3_fE",
     "event_name": "Xavier Musketeers Womens Basketball at DePaul Blue Demons Womens Basketball",
     "venue_id": "TMAPIKovZ917A2S0",
@@ -3078,6 +3050,34 @@
     "start": 840,
     "end": -10,
     "date": "01-20-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3_by",
+    "event_name": "Marquette Golden Eagles Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "venue_id": "TMAPIZFr9jZkked",
+    "start": 780,
+    "end": -10,
+    "date": "02-03-2019",
+    "tags": [
+      "Sports",
+      "Basketball",
+      "College"
+    ],
+    "price": -10.0
+  },
+  {
+    "event_id": "TMAPIZ7r9jZ1Ae3_bM",
+    "event_name": "St. Johns Red Storm Womens Basketball at DePaul Blue Demons Womens Basketball",
+    "venue_id": "TMAPIZFr9jZkked",
+    "start": 1140,
+    "end": -10,
+    "date": "01-18-2019",
     "tags": [
       "Sports",
       "Basketball",

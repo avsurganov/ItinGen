@@ -7,7 +7,8 @@ from pymongo import MongoClient
 # main function to make itinerary
 def generate_itin(start_time, latitude, longitude, free, radius, transport):
     tries = 0
-    final_itin = []
+    final_itin = []    
+    query_size = 500
 #    time_split = start_time.split('T')
 #    units = time_split[1].split(':')
 #    time = 60*int(units[0])+int(units[1])
@@ -19,18 +20,22 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         hours +=12
     time = hours*60 + minutes
     
-    
     # check if user inputs make sense
     if time > (20*60) or fabs(latitude - 41.5) > 2 or fabs(longitude + 87.5) > 2:
         print(time)
         return []
-    while len(final_itin) < 2 and tries < 5:
-        [itin, valid] = create_itinerary(time, float(latitude), float(longitude), free, radius, transport, 500 * (tries+1))
+    while len(final_itin) < 2 and tries < 10:
+        [itin, valid] = create_itinerary(time, latitude, longitude, free, radius, transport, query_size)
         print("We")
         print(valid)
+        print(query_size)
         #print(itin)
         sys.stdout.flush()
-        if True and len(itin) > 1 and  itin[-1][3] - time > 120:
+        if not valid:
+            query_size += 250*int(tries/5)
+        if len(itin) < 2 or itin[-1][3] < 240:
+            query_size += 1000*int(tries/5)
+        elif valid:
             final_itin = itin
         tries+=1
     return final_itin

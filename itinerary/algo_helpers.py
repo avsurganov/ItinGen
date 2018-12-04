@@ -197,16 +197,27 @@ def find_angle(coords1, center, coords2):
     return acos(num/den)
 
 
-def validate_angle_circle(coords1, center, coords2, limit=.2):
-    '''
-    checks that the angle is within the given part of the circle
-    '''
-    angle = find_angle(coords1, center, coords2)
-    rad_lim = limit*pi
-    if (angle <= rad_lim):
-        return True
+#def validate_angle_circle(coords1, center, coords2, limit=.2):
+#    '''
+#    checks that the angle is within the given part of the circle
+#    '''
+#    angle = find_angle(coords1, center, coords2)
+#    rad_lim = limit*pi
+#    if (angle <= rad_lim):
+#        return True
+#    else:
+#        return False
+
+def find_longest(e1, e2, e3):
+    d1 = find_distance(e2, e3)
+    d2 = find_distance(e1, e3)
+    d3 = find_distance(e1, e2)
+    if (d1 > d2 and d1 > d3):
+        return 1
+    elif (d2 > d3):
+        return 2
     else:
-        return False
+        return 3
 
 def validate_angle(event, itinerary, user_data):
     if (len(itinerary) == 0):
@@ -215,15 +226,10 @@ def validate_angle(event, itinerary, user_data):
     center = user_data.get('start_location')
     coords2 = venue_to_lat_long(itinerary[-1][1])
     if (len(itinerary) == 1):
-        return validate_angle_circle(coords3, center, coords2)
-    coords1 = venue_to_lat_long(itinerary[-2][1])
-    d3 = find_distance(coords1, coords2)
-    d1 = find_distance(coords2, coords3)
-    d2 = find_distance(coords1, coords3)
-    if (d2 > d1 and d2 > d3):
-        return True
+        return find_longest(user_data.get('start_location'), coords2, coords3) == 2
     else:
-        return False
+        coords1 = venue_to_lat_long(itinerary[-2][1])
+        return find_longest(coords1, coords2, coords3) == 2
 
 def sort_distances(events, center):
     '''

@@ -1,0 +1,51 @@
+[
+	{
+		"venue_id": "yelpwYlHOHV87yqs4fv_4o-Fiw",
+		"event_name": "The Family House- CLOSED",
+		"event_id": "yelpwYlHOHV87yqs4fv_4o-Fiw",
+		"mon_start": 540,
+		"mon_end": 1320,
+		"tues_start": 540,
+		"tues_end": 1320,
+		"wed_start": 540,
+		"wed_end": 1320,
+		"thurs_start": 540,
+		"thurs_end": 1320,
+		"fri_start": 540,
+		"fri_end": 1320,
+		"sat_start": 540,
+		"sat_end": 1320,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"malaysian",
+			"burmese",
+			"food"
+		],
+		"price": -1
+	},
+	{
+		"venue_id": "yelpM2OfT265pnbg5RVNhU1w4g",
+		"event_name": "Pa Lian",
+		"event_id": "yelpM2OfT265pnbg5RVNhU1w4g",
+		"mon_start": 660,
+		"mon_end": 1260,
+		"tues_start": 660,
+		"tues_end": 1260,
+		"wed_start": 660,
+		"wed_end": 1260,
+		"thurs_start": 660,
+		"thurs_end": 1260,
+		"fri_start": 600,
+		"fri_end": 1260,
+		"sat_start": 600,
+		"sat_end": 1260,
+		"sun_start": 0,
+		"sun_end": 0,
+		"tags": [
+			"burmese",
+			"food"
+		],
+		"price": -1
+	}
+]

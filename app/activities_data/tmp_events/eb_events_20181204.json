@@ -100,6 +100,16 @@
     "price": 0.0
   },
   {
+    "event_id": "EB_41704111119",
+    "event_name": "Chi Hack Night",
+    "venue_id": "EB_9499898",
+    "start": 1080,
+    "end": 1290,
+    "date": "12-04-2018",
+    "tags": "",
+    "price": -10.0
+  },
+  {
     "event_id": "EB_51477974006",
     "event_name": "Edgy Tim Senior Showcase powered by EFT Sports Performance",
     "venue_id": "EB_17304126",
@@ -118,16 +128,6 @@
     "date": "12-04-2018",
     "tags": "",
     "price": 0.0
-  },
-  {
-    "event_id": "EB_41704111119",
-    "event_name": "Chi Hack Night",
-    "venue_id": "EB_9499898",
-    "start": 1080,
-    "end": 1290,
-    "date": "12-04-2018",
-    "tags": "",
-    "price": -10.0
   },
   {
     "event_id": "EB_52653257310",
@@ -460,6 +460,16 @@
     "price": 299.0
   },
   {
+    "event_id": "EB_52679397496",
+    "event_name": "Family Independence Initiative Info Session (Hegewisch)",
+    "venue_id": "EB_27946316",
+    "start": 1110,
+    "end": 1170,
+    "date": "12-04-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
     "event_id": "EB_52230945163",
     "event_name": "Intro to JavaScript: Build a Guessing Game",
     "venue_id": "EB_26787125",
@@ -475,16 +485,6 @@
     "venue_id": "EB_19239559",
     "start": 1140,
     "end": 1800,
-    "date": "12-04-2018",
-    "tags": "",
-    "price": 0.0
-  },
-  {
-    "event_id": "EB_52679397496",
-    "event_name": "Family Independence Initiative Info Session (Hegewisch)",
-    "venue_id": "EB_27946316",
-    "start": 1110,
-    "end": 1170,
     "date": "12-04-2018",
     "tags": "",
     "price": 0.0
@@ -600,6 +600,16 @@
     "price": 0.0
   },
   {
+    "event_id": "EB_41704111119",
+    "event_name": "Chi Hack Night",
+    "venue_id": "EB_9499898",
+    "start": 1080,
+    "end": 1290,
+    "date": "12-04-2018",
+    "tags": "",
+    "price": -10.0
+  },
+  {
     "event_id": "EB_51477974006",
     "event_name": "Edgy Tim Senior Showcase powered by EFT Sports Performance",
     "venue_id": "EB_17304126",
@@ -618,16 +628,6 @@
     "date": "12-04-2018",
     "tags": "",
     "price": 0.0
-  },
-  {
-    "event_id": "EB_41704111119",
-    "event_name": "Chi Hack Night",
-    "venue_id": "EB_9499898",
-    "start": 1080,
-    "end": 1290,
-    "date": "12-04-2018",
-    "tags": "",
-    "price": -10.0
   },
   {
     "event_id": "EB_52653257310",
@@ -960,6 +960,16 @@
     "price": 299.0
   },
   {
+    "event_id": "EB_52679397496",
+    "event_name": "Family Independence Initiative Info Session (Hegewisch)",
+    "venue_id": "EB_27946316",
+    "start": 1110,
+    "end": 1170,
+    "date": "12-04-2018",
+    "tags": "",
+    "price": 0.0
+  },
+  {
     "event_id": "EB_52230945163",
     "event_name": "Intro to JavaScript: Build a Guessing Game",
     "venue_id": "EB_26787125",
@@ -975,16 +985,6 @@
     "venue_id": "EB_19239559",
     "start": 1140,
     "end": 1800,
-    "date": "12-04-2018",
-    "tags": "",
-    "price": 0.0
-  },
-  {
-    "event_id": "EB_52679397496",
-    "event_name": "Family Independence Initiative Info Session (Hegewisch)",
-    "venue_id": "EB_27946316",
-    "start": 1110,
-    "end": 1170,
     "date": "12-04-2018",
     "tags": "",
     "price": 0.0

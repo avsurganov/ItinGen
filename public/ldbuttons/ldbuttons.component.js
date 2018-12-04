@@ -18,6 +18,8 @@ angular.module('ldButtons')
 					  })
 					}
 				});
+			} else {
+				$('#myModal').modal('toggle')
 			}
 			await this.nextItinerary();
 		}

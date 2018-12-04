@@ -117,7 +117,9 @@ def create_itinerary(start_time, latitude, longitude, free, radius, transport, s
     # run some final validity checks here
     user_data['date'] = get_date()
     user_data['day'] = day_to_str(datetime.datetime.today().weekday())
-    valid = validate_itin(itinerary, user_data)
+    valid = False
+    if len(itinerary) != 0:
+        valid = validate_itin(itinerary, user_data)
 
 #return the itinerary
     final_itin = []
@@ -127,5 +129,3 @@ def create_itinerary(start_time, latitude, longitude, free, radius, transport, s
         assert len(final_itin[i]) == 4, 'ERROR: Itinerary item has wrong number of items'
 
     return [final_itin, valid]
-
-

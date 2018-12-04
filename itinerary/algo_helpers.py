@@ -197,7 +197,7 @@ def find_angle(coords1, center, coords2):
     return acos(num/den)
 
 
-def validate_angle(coords1, center, coords2, limit=1):
+def validate_angle(coords1, center, coords2, limit=.1):
     '''
     checks that the angle is within the given part of the circle
     '''

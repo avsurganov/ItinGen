@@ -2,21 +2,64 @@
 angular.module('itineraryFactory')
 
 .factory('itineraryFactory', ['$http', function($http) {
-	//TODO: if logged in, make GET request to get users liked itineraries
-	// Test itinerary for development 
 
 	var likedItineraries = []
 	var currentItinerary = []
+	// default location is center of chicago
 	var defaultLocation = {lat: 41.881855, lon: -87.627115};
+	var now = new Date(Date.now())
+
+	var defaultHour = appendZero(convertFromMilitary(now.getHours()))
+	var defaultMin = appendZero(snapToNearest15(now.getMinutes()))
+	var defaultSection = amOrPm(now.getHours())
 	var settings = 
 	{
-	startTime: new Date(Date.now()),
+	startTimeHours: defaultHour,
+	startTimeMinute: defaultMin,
+	startTimeSection: defaultSection,
+	startTime: defaultHour + ':' + defaultMin + ' ' + defaultSection,
 	startLocation: defaultLocation,
 	free: true,
-	radius: 10,
+	radius: 5,
 	transport: 'DRIVING'
 	};
 	var service = {}
+
+	console.log(new Date(Date.now()))
+
+	function amOrPm (hours) {
+		if (hours < 12)
+			return 'AM'
+		else
+			return 'PM'
+	}
+
+	function convertFromMilitary(hours) {
+		var hour = hours % 12;
+		if (hour == 0)
+			return 12
+		else 
+			return hour
+	}
+
+	function snapToNearest15(minutes) {
+		console.log(minutes)
+		if (minutes < 15)
+			return 15
+		else if (minutes < 30)
+			return 30
+		else if (minutes < 45)
+			return 45
+		else 
+			return 0
+	}
+
+	function appendZero (num) {
+		if (num < 10)
+			return '0' + num
+		else 
+			return num.toString()
+	}
 
 
 	//on load or dislike an itinerary: 
@@ -28,10 +71,13 @@ angular.module('itineraryFactory')
 
 
 	service.saveSettings = function(userSettings) {
+		userSettings.startTime = userSettings.startTimeHours + ':' + userSettings.startTimeMinute 
+		' ' + userSettings.startTimeSection
 		settings = userSettings;
 		if(settings['startLocation'] == undefined || settings['startLocation'] == '') {
 			settings['startLocation'] = defaultLocation;
 		}
+
 		console.log('new settings');
 		console.log(settings);
 	}

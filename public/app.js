@@ -86,10 +86,10 @@ angular.module('ItinGen', [
       var originCoords = currentItinerary[0][1]
       var destinationCoords = currentItinerary[currentItinerary.length - 1][1]
 	  	var directionRequest = {
-			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
-			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
-			travelMode: 'DRIVING',
-			waypoints: waypoints
+  			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
+  			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
+  			travelMode: 'DRIVING',
+  			waypoints: waypoints
 	  	}
 	  	directionsService.route(directionRequest, function(result, status) {
 	  		if (status == 'OK') {

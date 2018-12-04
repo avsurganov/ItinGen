@@ -14,7 +14,7 @@ angular.module('sideBar')
     console.log($scope.settings)
     $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lon + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
       console.log(res.data.results[0].formatted_address)
-      $scope.settings.startLocation = res.data.results[0].formatted_address
+      $scope.settings.startLocationDisplay = res.data.results[0].formatted_address
     })
     
 
@@ -49,17 +49,7 @@ angular.module('sideBar')
   else {
     console.log("No token saved in browser");
   }
-    // Default settings
-    // this.settings = {
-    //   startTime: new Date(Date.now()),
-    //   startLocation: '',
-    //   free: true,
-    //   radius: 10,
-    //   transport: 'DRIVING'
-    // }
-
-    // itineraryFactory.saveSettings($scope.$parent.settings, $scope.$parent.location);
-
+  
 
 
     this.generate = function() {
@@ -111,8 +101,23 @@ angular.module('sideBar')
     }
 
     this.saveSettings = function(settings) {
-      console.log(settings);
-      itineraryFactory.saveSettings(settings);
+
+      // check for undefined fields
+       for (var field in settings) {
+        if (settings[field] == undefined) {
+          alert("Please fill out all settings fields before saving")
+          return;
+        }
+      }
+
+      console.log($scope.settings.startLocationDisplay)
+      // convert string address to latlng object for backend processing
+      $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+        settings.startLocation = res.data.results[0].geometry.location
+        console.log(settings)
+        itineraryFactory.saveSettings(settings);
+      })
+      
     }
 
     this.assignTransport = function(transport) {

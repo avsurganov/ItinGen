@@ -75,7 +75,7 @@ angular.module('ItinGen', [
       var settings = itineraryFactory.getSettings()
       console.log(settings.transport)
 	  	var waypoints = []
-	  	for (event in currentItinerary) {
+	  	for (var event in currentItinerary) {
         var index = parseInt(event) + 1
 	  		if (index != currentItinerary.length){
           var waypointData = currentItinerary[index][1]

@@ -12,7 +12,7 @@ angular.module('sideBar')
     $scope.isLoggedIn = false;
 
     console.log($scope.settings)
-    $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lon + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+    $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lng + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
       console.log(res.data.results[0].formatted_address)
       $scope.settings.startLocationDisplay = res.data.results[0].formatted_address
     })
@@ -122,9 +122,9 @@ angular.module('sideBar')
       
     }
 
-    this.assignTransport = function(transport) {
-      $scope.settings.transport = transport;
-    }
+    // this.assignTransport = function(transport) {
+    //   $scope.settings.transport = transport;
+    // }
 
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']
     this.sidebarTemplate = sidebarTemplates[0]

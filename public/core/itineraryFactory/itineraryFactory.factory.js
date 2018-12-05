@@ -12,16 +12,15 @@ angular.module('itineraryFactory')
 	var defaultHour = appendZero(convertFromMilitary(now.getHours()))
 	var defaultMin = appendZero(snapToNearest15(now.getMinutes()))
 	var defaultSection = amOrPm(now.getHours())
-	var settings = 
-	{
-	startTimeHours: defaultHour,
-	startTimeMinute: defaultMin,
-	startTimeSection: defaultSection,
-	startTime: defaultHour + ':' + defaultMin + ' ' + defaultSection,
-	startLocation: defaultLocation,
-	free: true,
-	radius: 5,
-	transport: 'DRIVING'
+	var settings = {
+		startTimeHours: defaultHour,
+		startTimeMinute: defaultMin,
+		startTimeSection: defaultSection,
+		startTime: defaultHour + ':' + defaultMin + ' ' + defaultSection,
+		startLocation: defaultLocation,
+		free: true,
+		radius: 5,
+		transport: 'DRIVING'
 	};
 	var service = {}
 

@@ -92,7 +92,7 @@ angular.module('ItinGen', [
       console.log(currentItinerary)
       if (currentItinerary.length == 0) {
         initMap(41.881855, -87.627115)
-        window.alert("Looks like not too much is happening right now! We suggest planning for the next day by going to settings and changing the start time to 6am or later.")
+        window.alert("Looks like not too much is happening right now! We suggest planning for the next day by going to settings and changing the start time to something between 6am and 8pm.")
         console.log("inside if")
         return;
       }

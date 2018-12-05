@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="frontend_spec"
+    errors="1" failures="0" hostname="" id="" package="frontend_spec" skipped="0"
+    tests="1" time="0.006000" timestamp="Wed, 05 Dec 2018 09:11:42 GMT">
+  
+    <testcase name="Testing FrontEnd" classname="frontend_spec" time="0.006000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Frontend Spec / Testing FrontEnd]:
+
+  TypeError: browser.url(...).waitForElementVisible(...).pause(...).assert.title(...).waitForElementVisible(...).waitForElementVisible(...).waitForElementInisible is not a function
+    at Object.Testing FrontEnd (/Users/elibogursky/ItinGen/e2e/frontend_spec.js:10:8)
+    at Module.call (/Users/elibogursky/ItinGen/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /Users/elibogursky/ItinGen/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/elibogursky/ItinGen/node_modules/q/q.js:834:54)
+    at /Users/elibogursky/ItinGen/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/Users/elibogursky/ItinGen/node_modules/q/q.js:796:13)
+    at /Users/elibogursky/ItinGen/node_modules/q/q.js:556:49
+    at runSingle (/Users/elibogursky/ItinGen/node_modules/q/q.js:137:13)
+    at flush (/Users/elibogursky/ItinGen/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

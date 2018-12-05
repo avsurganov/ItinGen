@@ -1,0 +1,26 @@
+[
+	{
+		"venue_id": "yelpHwOzFKTCkOE1NwGrxXxuAQ",
+		"venue_name": "Rickshaw Republic",
+		"latitude": 41.92388,
+		"longitude": -87.64711,
+		"address1": "2312 N Lincoln Ave",
+		"address2": null,
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60614"
+	},
+	{
+		"venue_id": "yelpUnRhrQEi4QBxQsRFnRvAOA",
+		"venue_name": "The Rice Table",
+		"latitude": 41.890772,
+		"longitude": -87.65644,
+		"address1": "",
+		"address2": "",
+		"address3": "",
+		"city": "Chicago",
+		"state": "IL",
+		"zip_code": "60642"
+	}
+]

@@ -83,8 +83,8 @@ parser.add_argument('-o', '--offset', dest='offset',
                      help='Result page offset (default: %(default)s)')
 input_values = parser.parse_args()
 
-VEN = "../app/activities_data/venues/"
-EVN = "../app/activities_data/events/"
+VEN = "app/activities_data/venues/"
+EVN = "app/activities_data/events/"
 venuefname = VEN + input_values.categories + '_venues_' + get_date() + '.json'
 eventfname = EVN + input_values.categories + '_events_' + get_date() + '.json'
 

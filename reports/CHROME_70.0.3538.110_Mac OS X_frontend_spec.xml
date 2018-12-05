@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="frontend_spec"
-    errors="0" failures="1" hostname="" id="" package="frontend_spec" skipped="0"
-    tests="1" time="5.409" timestamp="Fri, 30 Nov 2018 11:41:55 GMT">
+    errors="0" failures="0" hostname="" id="" package="frontend_spec" skipped="0"
+    tests="1" time="5.674" timestamp="Wed, 05 Dec 2018 09:16:02 GMT">
   
-    <testcase name="Testing FrontEnd" classname="frontend_spec" time="5.409" assertions="7">
+    <testcase name="Testing FrontEnd" classname="frontend_spec" time="5.674" assertions="5">
 
     
 
@@ -16,11 +16,6 @@
     
 
     
-
-    
-
-      <failure message="Timed out while waiting for element &lt;.p-4&gt; to be visible for 1000 milliseconds.">    at Object.Testing FrontEnd (/Users/avsurganov/Documents/Rails/ItinGen/e2e/frontend_spec.js:12:8)
-    at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
 
     
     </testcase>

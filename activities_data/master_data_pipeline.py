@@ -4,9 +4,9 @@ import datetime
 import sys
 import os
 # api functions
-sys.path.insert(0, "eventbrite")
+sys.path.insert(0, "activities_data/eventbrite")
 from EB_api import *
-sys.path.insert(0, "ticketmaster")
+sys.path.insert(0, "activities_data/ticketmaster")
 from tm_api import *
 # we do not actually need to import the yelp file for now
 # can be run from the command line
@@ -231,9 +231,9 @@ def master_data():
         success (int) - 0 for success and 1 for failure
     '''
     # header file paths
-    VEN = "../app/activities_data/venues/"
-    TMP = "../app/activities_data/tmp_events/"
-    EVN = "../app/activities_data/events/"
+    VEN = "app/activities_data/venues/"
+    TMP = "app/activities_data/tmp_events/"
+    EVN = "app/activities_data/events/"
 
 #data
     print("\n###################")
@@ -268,16 +268,16 @@ def master_data():
         json.dump(tm_m, fp, indent=2)
 
 
-    print("\n#############")
-    print("# YELP DATA #")
-    print("#############\n")
-    # yelp script already does the correct writing into the folders
-    # just need to call the script
-    # this runs on UNIX
-    # eventually will switch this out for a better way to do all of the
-    # category calls but for now we do not have enough API keys
-    # this call should automatically place into correct folder
-    for c in categories:
-        os.system("python3 yelp/get_yelpdata.py -c " + c)
+#    print("\n#############")
+#    print("# YELP DATA #")
+#    print("#############\n")
+#    # yelp script already does the correct writing into the folders
+#    # just need to call the script
+#    # this runs on UNIX
+#    # eventually will switch this out for a better way to do all of the
+#    # category calls but for now we do not have enough API keys
+#    # this call should automatically place into correct folder
+#    for c in categories:
+#        os.system("python3 activities_data/yelp/get_yelpdata.py -c " + c)
 
 master_data()

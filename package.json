@@ -8,6 +8,9 @@
     "start": "node server.js",
     "seed": "node app/helpers/seed.js",
     "flask": "python3 itinerary/server.py",
+    "data_pipeline": "python3 activities_data/master_data_pipeline.py",
+    "data_tests": "python3 activities_data/yelp/unittests.py",
+    "algo_tests": "python3 itinerary/helper_tests.py; python3 itinerary/validation_tests.py",
     "e2e": "nightwatch -t e2e/frontend_spec.js"
   },
   "author": "",

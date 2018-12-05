@@ -205,4 +205,21 @@ Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the
    * We updated the color scheme. 
    * We added a fire logo.
 - Data Team:
-   * Our final version of the algorithm does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to the core features of the software to be worth the computational and performance cost.      
+   * Our final version of the algorithm does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to the core features of the software to be worth the computational and performance cost.
+   
+2. A final design review document for the TA
+1) refer to your first and second milestone document, and discuss:
+1.a what proposed functionality is implemented
+   User can click generate button to view new itinerary. Itinerary contains information pulled from Yelp, EventBrite, and Ticketmaster. Users can login with a facebook account, once we have added them to the list of test users. Once logged in, users can like itineraries and save them. They can then view liked itineraries and examined the details. Users can click home to return to looking at a single itinerary. Users can click the dislike button to generate a new itinerary, without adding it to their liked itineraries. Users can specify search paramters to search for itineraries including: Start Time (between 6am and 8pm as that is the best window for events), Start Location, Radius they are willing to travel, Method of transportation, and whether they want their itinerary to only include free events.
+   
+1.b what proposed functionality is not implemented and why
+   We didn't implement the ability to dislike or "unlike" itineraries because we didnt think it was important to the user experience. We didnt implement the overlapping view of itineraries because we were unable to. Therefore, Users are also unable to show or hide various itineraries to focus on. Once users like an itinerary and then generate a new one, they can no longer view the liked itinerary on the map as we had originally planned. We did not allow users to specify a type of event or a prearranged event that they would prefer to see in their itinerary because it was too slow to include in our algorithm. We also did not allow users to specify cost because Yelp didn't give us cost specific information other than dollar sign measures. The itinerary generator does not learn from user inputs because it was too expensive to continue making database calls for that implementation. 
+1.c what functionality is implemented but not proposed and why
+   That ability to use facebook login was not proposed. We added a cute logo and changed the name to plan.it. We added a parameter to chose between driving, public transit, walking, and biking which was not proposed. We added several help modals that appear on hover to help the user that were not proposed.
+
+2) describe what each team member has contributed to the project
+   See Above
+
+3. A checkpoint of your source code implementation (Just take a checkpoint, and tell us where it is)
+
+[Note: if you expect the testing team to download your code/installation-package from your code repository, you need to make sure they have the permission.]

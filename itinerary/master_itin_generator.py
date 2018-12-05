@@ -16,6 +16,8 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
     hours = int(start_time[0:2]) % 12
     minutes = int(start_time[3:5])
     time_of_day = start_time[6:8]
+    if hours == 12:
+        hours -= 12
     if time_of_day == 'PM':
         hours +=12
     time = hours*60 + minutes
@@ -41,5 +43,5 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         tries+=1
     return final_itin
 
-itin = generate_itin('09:00 AM', 41.881855, -87.627115, False, 10.0, 'WALK')
-print(itin)
+#itin = generate_itin('09:00 AM', 41.881855, -87.627115, False, 10.0, 'WALKING')
+#print(itin)

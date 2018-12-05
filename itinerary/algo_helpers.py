@@ -312,9 +312,9 @@ def determine_start_time(itinerary, event, user_data):
         travel_time = int(distance * 3)
     elif (transport == 'TRANSIT'):
         travel_time = int(distance * 12)
-    elif (transport == 'WALK'):
+    elif (transport == 'WALKING'):
         travel_time = int(distance * 20)
-    elif (transport == 'BIKE'):
+    elif (transport == 'BICYCLING'):
         travel_time = int(distance * 10)
 
     # validate start time of the next event

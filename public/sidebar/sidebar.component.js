@@ -54,12 +54,6 @@ angular.module('sideBar')
 
     this.generate = function() {
       $scope.$parent.updateMapWithNewItinerary();
-      var hide = document.getElementById("intro_message");
-      hide.style.display = "none";
-      var like_b = document.getElementById("like");
-      like_b.style.display = "inline";
-      var dislike_b = document.getElementById("dislike");
-      dislike_b.style.display = "inline";
     }
 
     $scope.$on('update', function(e) {
@@ -109,7 +103,22 @@ angular.module('sideBar')
     this.saveSettings = function(settings) {
 
       // check for undefined fields
-      
+      if ((settings.startTimeHours == "08") && (settings.startTimeSection == "PM")){
+        alert("Please Select a time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "09") && (settings.startTimeSection == "PM")){
+        alert("Please Select a time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "10") && (settings.startTimeSection == "PM")){
+        alert("Please Select a time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "11") && (settings.startTimeSection == "PM")){
+        alert("Please Select a time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "PM")){
+        alert("Please Select a time earlier than 8pm");
+      }
+      else {
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
@@ -119,7 +128,7 @@ angular.module('sideBar')
         itineraryFactory.saveSettings(settings);
         alert("Settings successfully saved!")
       })
-      
+      }
     }
 
     this.assignTransport = function(transport) {

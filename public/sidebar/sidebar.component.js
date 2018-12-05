@@ -92,6 +92,7 @@ angular.module('sideBar')
       if($scope.isLoggedIn){
         this.sidebarTemplate = sidebarTemplates[1]
         this.likedItineraries = itineraryFactory.getcurrentLikedItineraries();
+        $scope.$apply()
       } 
     }
 

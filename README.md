@@ -1,3 +1,5 @@
+ATTENTION ALL TESTERS: USE THESE FACEBOOK CREDENTIALS TO USE OUR APP. YOU HAVE TO LOGIN AS THIS ACCOUNT ON FACEBOOK. THE USERNAME: userplanit@gmail.com. THE PASSWORD: planITtest1. USE THESE FACEBOOK CREDENTIALS TO LOGIN TO OUR APP AND THEN YOU CAN LIKE AND SAVE ITINERARIES.
+
 # plan.it
 
 plan.it is a web based application that allows users to randomly generate optimized itineraries for their schedules to explore a new city or rediscover a city they have been living in for years.
@@ -136,6 +138,12 @@ npm start
 
 Then, in Chrome, go to localhost:3000.
 
+1) An installation guide
+   See Above
+2) A brief functionality description
+   Plan.it is an itinerary generator that will generate itineraries to help you explore. You can specify parameters for generating itineraries, and like itineraries to save them for future reference.
+3) A brief tutorial about how to use your software
+   Once you are on the webpace, you can hover over all the buttons and setting options for helpful descriptions. You can click generate, given that it is between 6am and 8pm (as that is the best time for optimal itineraries). You can click on the hamburger menu and click settings to set parameters. The modals will help tell you what each parameter is for. In the hamburger menu, if you are logged in, you can switch between viewing liked itineraries with the liked itineraries button and viewing one itinerary with the home button. The green thumb will add an itinerary to your liked itineraries and generate a new itinerary. The red thumb will just generate a new itinerary and will not add the current one to your liked itineraries. 
 
 ## Known Bugs and Other Instructions
 
@@ -146,6 +154,7 @@ Then, in Chrome, go to localhost:3000.
 - User-inputted start locations outside of Chicago are not supported.
 - If something loads incorrectly and there is no generate button and no like buttons, you can click home to make the generate button re-appear
 - If you generate an itinerary with invavlid values, such as the time being between 8pm and 6am, then click home, then generate an itinerary using the dislike or like button, the generate button will appear below the generated itinerary. We are aware of this bug, but decided it did not interfere with the user experience and was not worth fixing.
+- A few select custom locations will not generate an intinerary because our algorithim does not recognize them
 
 
 
@@ -207,6 +216,7 @@ Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the
 - Data Team:
    * Our final version of the algorithm does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to the core features of the software to be worth the computational and performance cost.
    
+
 2. A final design review document for the TA
 1) refer to your first and second milestone document, and discuss:
 1.a what proposed functionality is implemented
@@ -221,5 +231,5 @@ Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the
    See Above
 
 3. A checkpoint of your source code implementation (Just take a checkpoint, and tell us where it is)
+   master branch commit 5329e1de9a96739485d3f8b2f13bd26225d9f178 (does not include final readme edits)
 
-[Note: if you expect the testing team to download your code/installation-package from your code repository, you need to make sure they have the permission.]

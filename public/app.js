@@ -33,6 +33,7 @@ angular.module('ItinGen', [
 
     function initMap(x, y) {
       var center = {lat: x, lng: y}
+      itineraryFactory.setUserLocation(center)
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.map = new google.maps.Map(document.getElementById('map'), {
@@ -43,6 +44,7 @@ angular.module('ItinGen', [
     }
     function onPositionRecieved(position){
       var coords = position.coords;
+
       initMap(coords.latitude, coords.longitude);
     }
     // error if initial position not recieved
@@ -73,8 +75,10 @@ angular.module('ItinGen', [
 
 	function drawNewItinerary() {
       var settings = itineraryFactory.getSettings()
-      console.log(settings.transport)
+      var transportSetting = settings.transport
 	  	var waypoints = []
+      if (transportSetting == "TRANSIT")
+        transportSetting = "DRIVING"
 	  	for (var event in currentItinerary) {
         var index = parseInt(event) + 1
 	  		if (index != currentItinerary.length){
@@ -97,7 +101,7 @@ angular.module('ItinGen', [
 	  	var directionRequest = {
   			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
   			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
-  			travelMode: settings.transport,
+  			travelMode: transportSetting,
   			waypoints: waypoints
 	  	}
 	  	directionsService.route(directionRequest, function(result, status) {

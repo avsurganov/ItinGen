@@ -6,7 +6,7 @@ angular.module('itineraryFactory')
 	var likedItineraries = []
 	var currentItinerary = []
 	// default location is center of chicago
-	var defaultLocation = {lat: 41.881855, lon: -87.627115};
+	var defaultLocation = {lat: 41.881855, lng: -87.627115};
 	var now = new Date(Date.now())
 
 	var defaultHour = appendZero(convertFromMilitary(now.getHours()))

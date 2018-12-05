@@ -10,6 +10,7 @@ angular.module('sideBar')
     $scope.likedItineraries = []
     $scope.settings = itineraryFactory.getSettings();
     $scope.isLoggedIn = false;
+    var state = "IL"
 
     console.log($scope.settings)
     $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lng + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
@@ -115,6 +116,11 @@ angular.module('sideBar')
       // convert string address to latlng object for backend processing
       if ($scope.settings.startLocationSelect == "givenLocation") {
         $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+         var boundLocation = res.data.results[0].formatted_address.search(state)
+         if (boundLocation == -1) {
+            alert("You're start location must be within the state of Illinois")
+            return;
+         }
           $scope.settings.startLocation = res.data.results[0].geometry.location
           console.log(settings)
           itineraryFactory.saveSettings(settings);

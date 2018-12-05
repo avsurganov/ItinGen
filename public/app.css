@@ -196,13 +196,16 @@ left: 30%;
   display: none !important;
 }
 
+.modal-top {
+  z-index: 10000 !important;
+}
 .rate {
 position: absolute;
 bottom: 20px;
 
 }
 .rate {
-z-index: 10;
+z-index: 1;
 }
 
 .rate-btn {
@@ -215,6 +218,16 @@ background-color: transparent;
   display: none;
 }
 
+.no-itin {
+  display: none !important;
+}
+
+
+
+.s_message {
+  padding: 5px;
+  color: white !important;
+}
 #like{
 height: 80px;
 background-image: url("https://i.imgur.com/MvzsVKy.png");
@@ -252,10 +265,6 @@ font-family : inherit;
 font-size   : 100%;
 }
 
-.settings {
-  margin-top: 10px;
-}
-
 output { 
 position: absolute;
 background-image: linear-gradient(top, #444444, #999999);
@@ -287,7 +296,7 @@ margin-top: -1px;
 .logo {
   padding-top: 5px;
   display: block; 
-  z-index: 2;
+  z-index: 1;
   vertical-align: top;
   position: absolute;
   right: 5%;

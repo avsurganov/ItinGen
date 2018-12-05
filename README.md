@@ -69,12 +69,28 @@ pip3 install Flask
 
 ### Initializing the App
 #### Ubuntu
+
+'''bash
+git clone -b master https://github.com/maxxliu/ItinGen.git
+cd ItinGen
+'''
 In one terminal window, run this command:
 ```bash
 npm run flask
 ```
+If npm run flask doesn't work due to missing pymongo module then type the following
+'''bash
+pip3 install pymongo --user
+'''
 
-In another terminal window, run these commands:
+If pip3 is a command thats not found, then you don't have python, so run the following:
+'''bash
+sudo apt update
+sudo apt install python3-pip
+pip3 --version
+'''
+
+Then in another terminal window, run these commands:
 ```bash
 npm install
 npm run seed
@@ -102,7 +118,7 @@ Then, in Chrome, go to localhost:3000.
 ### Tips for Using
 - Use the app in Chrome. This is the most reliable browser, and some UI features may not work properly in Safari or Firefox.
 - Do not spam the like or dislike buttons. Itinerary generation is not instantaneous. If you don't have an itinerary after 10-20 seconds, then try again.
-- Itineraries will only be generated for start times earlier than 7pm. This means that if you try to generate an itinerary with the default settings an it's after 7pm, you will not see any itinerary generated. 
+- Itineraries will only be generated for start times between 6am and 8pm. This means that if you try to generate an itinerary with the default settings outside that range, you will not see any itinerary generated. 
 - User-inputted start locations outside of Chicago are not supported.
 
 
@@ -111,7 +127,6 @@ Then, in Chrome, go to localhost:3000.
 ### Front End
 - Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
   ```
-  npm run karma
   npm run e2e
   ```
 ### Back End

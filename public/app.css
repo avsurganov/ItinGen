@@ -215,6 +215,10 @@ background-color: transparent;
   display: none;
 }
 
+.s_message {
+  padding: 5px;
+  color: white !important;
+}
 #like{
 height: 80px;
 background-image: url("https://i.imgur.com/MvzsVKy.png");

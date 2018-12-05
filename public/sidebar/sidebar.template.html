@@ -20,14 +20,11 @@
   
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
-  <div ng-click="showDiv=true" 
-  <!--sidebar body-->
-
   <div  id="intro_message" >
        <h2>Welcome to plan.it!</h2>
        <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>       
         <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.generate()" 
-        ng-show="!showDiv" data-toggle="popover" data-content="If it is after 7pm, please go into settings and change the start time to a time earlier than 8pm before clicking this button!">Generate</button>
+        ng-show="!showDiv">Generate</button>
  
   </div> 
 </div>

@@ -99,7 +99,11 @@ angular.module('sideBar')
       let i;
       for (i = 0; i < numEventsInItinerary; i++) {
         var elementClasses = document.getElementById('collapseDetail' + index + i).classList
-        if (elementClasses.length == 1)
+        if (elementClasses.length == 0){
+          var show = document.getElementById("none_itin");
+          show.style.display = "inline";
+        }
+        else if (elementClasses.length == 1)
           $('#collapseDetail' + index + i).collapse('show')
         else
           $('#collapseDetail' + index + i).collapse('hide')
@@ -109,7 +113,22 @@ angular.module('sideBar')
     this.saveSettings = function(settings) {
 
       // check for undefined fields
-      
+            if ((settings.startTimeHours == "08") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "09") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "10") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "11") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+      else {
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
@@ -119,6 +138,7 @@ angular.module('sideBar')
         itineraryFactory.saveSettings(settings);
         alert("Settings successfully saved!")
       })
+    }
       
     }
 

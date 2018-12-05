@@ -87,6 +87,7 @@ angular.module('ItinGen', [
       waypoints.pop()
         console.log(currentItinerary)
       if (currentItinerary.length == 0) {
+        window.alert("Unfortuantely we were unable to generate a valid itinerary this time. Please try again by clicking the dislike button.")
         console.log("inside if")
         return;
       }

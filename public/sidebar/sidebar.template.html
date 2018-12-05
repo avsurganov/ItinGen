@@ -25,12 +25,11 @@
 
   <div  id="intro_message" >
        <h2>Welcome to plan.it!</h2>
-       <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
+       <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>       
         <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.generate()" 
-        ng-show="!showDiv">Generate</button>
+        ng-show="!showDiv" data-toggle="popover" data-content="If it is after 7pm, please go into settings and change the start time to a time earlier than 8pm before clicking this button!">Generate</button>
  
   </div> 
-</div>
 </div>
 
 <!-- modal for Settings with default values -->
@@ -146,10 +145,10 @@
 
 <!-- Modal for Logging in -->
 
-<div class="modal" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
+<div class="modal modal-top" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
   <div class="modal-dialog modal-dialog-centere" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-content modal-top">
+      <div class="modal-header modal-top">
         <h5 class="modal-title" id="loginTitle">Log in with Facebook!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -164,3 +163,7 @@
     </div>
   </div>
 </div><!-- End Modal for Logging in -->
+
+<div class="no_itin" id= "none_itin" hidden="true">
+  <h6>We were unable to generate time</h6>
+</div>

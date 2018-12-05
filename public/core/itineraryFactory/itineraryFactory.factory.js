@@ -66,8 +66,7 @@ angular.module('itineraryFactory')
 
 	//on load or dislike an itinerary: 
 	service.getNewItinerary = function() {
-		console.log(settings);
-		console.log(userLocation)
+	
 		return $http.post('/api/getitinerary', {settings});
 	}
 

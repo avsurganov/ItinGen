@@ -102,7 +102,7 @@ Then, in Chrome, go to localhost:3000.
 ### Tips for Using
 - Use the app in Chrome. This is the most reliable browser, and some UI features may not work properly in Safari or Firefox.
 - Do not spam the like or dislike buttons. Itinerary generation is not instantaneous. If you don't have an itinerary after 10-20 seconds, then try again.
-- Itineraries will only be generated for start times earlier than 7pm. This means that if you try to generate an itinerary with the default settings an it's after 7pm, you will not see any itinerary generated. 
+- Itineraries will only be generated for start times between 6am and 8pm. This means that if you try to generate an itinerary with the default settings outside that range, you will not see any itinerary generated. 
 - User-inputted start locations outside of Chicago are not supported.
 
 
@@ -111,7 +111,6 @@ Then, in Chrome, go to localhost:3000.
 ### Front End
 - Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
   ```
-  npm run karma
   npm run e2e
   ```
 ### Back End

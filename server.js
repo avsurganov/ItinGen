@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static(__dirname + './public'));
 app.use('/api', appRoutes);
 
-mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
+mongoose.connect('mongodb://administrator:administrator60@ds125684.mlab.com:25684/itingen', (err) => {
 	if (err){
 		console.log("Not connected to database" + err);
 	}

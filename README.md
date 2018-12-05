@@ -46,9 +46,9 @@ pip3 install Flask
 ```
 
 #### macOS
-Install node by visiting the website (https://nodejs.org) and installing.
+Install node by visiting the website (https://nodejs.org) and installing. Follow the instructions on the website
 
-Install npm ...
+Node.js and npm are packaged together. So getting Node.js means you will also npm.
 
 Check to see if NPM and Node.js were installed correctly by running:
 ```bash

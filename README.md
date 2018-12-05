@@ -137,7 +137,7 @@ npm start
 ```
 
 Then, in Chrome, go to localhost:3000.
-
+### Brief Functionality Description and Brief Tutorial
 1) An installation guide
    See Above
 2) A brief functionality description
@@ -218,7 +218,7 @@ Clare wrote the logic to create a pool of viable itinerary events. Eli wrote the
 - Data Team:
    * Our final version of the algorithm does not include generating itineraries based on the other itineraries that a user has saved. This is because accounting for liked itineraries required a large volume of database queries for information about their liked itineraries each time a new itinerary was generated. This proved costly and we decided that it wasn't important enough to the core features of the software to be worth the computational and performance cost.
    
-
+### Milestone 5 Part 2
 2. A final design review document for the TA
 1) refer to your first and second milestone document, and discuss:
 1.a what proposed functionality is implemented

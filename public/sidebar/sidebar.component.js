@@ -54,6 +54,12 @@ angular.module('sideBar')
 
     this.generate = function() {
       $scope.$parent.updateMapWithNewItinerary();
+      var hide = document.getElementById("intro_message");
+      hide.style.display = "none";
+      var like_b = document.getElementById("like");
+      like_b.style.display = "inline";
+      var dislike_b = document.getElementById("dislike");
+      dislike_b.style.display = "inline";
     }
 
     $scope.$on('update', function(e) {

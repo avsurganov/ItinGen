@@ -132,7 +132,7 @@ Then, in Chrome, go to localhost:3000.
 
 ### Tips for Using
 - Use the app in Chrome. This is the most reliable browser, and some UI features may not work properly in Safari or Firefox.
-- Do not spam the like or dislike buttons. Itinerary generation is not instantaneous. If you don't have an itinerary after 10-20 seconds, then try again.
+- Do not spam the like or dislike buttons. Itinerary generation is not necessarily instantaneous.
 - Itineraries will only be generated for start times between 6am and 8pm. This means that if you try to generate an itinerary with the default settings outside that range, you will not see any itinerary generated. 
 - User-inputted start locations outside of Chicago are not supported.
 - If something loads incorrectly and there is no generate button and no like buttons, you can click home to make the generate button re-appear
@@ -153,7 +153,14 @@ Then, in Chrome, go to localhost:3000.
   ```
 
 ### Data & Algorithm
-- Unit Tests for the data aggregation scripts and the generation algorithm and the respective instructions on how to use them will be found in the `itinerary` directory.  
+- To run tests for data aggregation, run:
+   ```
+   npm run data_tests
+   ```
+- To run test for the algorithm, run:
+   ```
+   npm run algo_tests
+   ```
   
 
 

@@ -90,14 +90,6 @@ class TestDistanceHelpers(unittest.TestCase):
         self.assertLess(find_distance(v1, v2), 50)
         self.assertLess(find_distance(v3, v1), 50)
         self.assertGreater(find_distance(v2, v4), 50)
-    def test_validate_angle(self):
-        v1 = venue_to_lat_long(venue1)
-        v2 = venue_to_lat_long(venue2)
-        v3 = venue_to_lat_long(venue3)
-        v4 = venue_to_lat_long(venue4)
-        self.assertTrue(validate_angle(v1, v2, v3))
-        self.assertTrue(validate_angle(v1, v4, v3))
-        self.assertTrue(validate_angle(v4, v2, v3))
 
 
 

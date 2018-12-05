@@ -21,7 +21,7 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
     time = hours*60 + minutes
     
     # check if user inputs make sense
-    if time > (20*60) or fabs(latitude - 41.5) > 2 or fabs(longitude + 87.5) > 2:
+    if time > (20*60) or time < (6*60) or fabs(latitude - 41.5) > 2 or fabs(longitude + 87.5) > 2:
         print(time)
         return []
     while len(final_itin) < 2 and tries < 10:

@@ -99,7 +99,11 @@ angular.module('sideBar')
       let i;
       for (i = 0; i < numEventsInItinerary; i++) {
         var elementClasses = document.getElementById('collapseDetail' + index + i).classList
-        if (elementClasses.length == 1)
+        if (elementClasses.length == 0){
+          var show = document.getElementById("none_itin");
+          show.style.display = "inline";
+        }
+        else if (elementClasses.length == 1)
           $('#collapseDetail' + index + i).collapse('show')
         else
           $('#collapseDetail' + index + i).collapse('hide')
@@ -109,10 +113,41 @@ angular.module('sideBar')
     this.saveSettings = function(settings) {
 
       // check for undefined fields
-      
+            if ((settings.startTimeHours == "08") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "09") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "10") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "11") && (settings.startTimeSection == "PM")){
+        alert("Please select a start time earlier than 8pm");
+      }
+            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "AM")){
+        alert("Please select a start time later than 6am");
+      }
+                 else if ((settings.startTimeHours == "01") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "02") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "03") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "04") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "05") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+      else {
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
+
       if ($scope.settings.startLocationSelect == "givenLocation") {
         $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
           $scope.settings.startLocation = res.data.results[0].geometry.location

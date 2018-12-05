@@ -17,7 +17,6 @@ const Tevent = require('../models/tevent');
 const Venue = require('../models/venue');
 
 Itinerary.collection.drop();
-User.collection.drop();
 Pevent.collection.drop();
 Tevent.collection.drop();
 Venue.collection.drop();
@@ -153,15 +152,15 @@ User.create(
 
   .then(user => {
     console.log(`${user.length} users created`);
+    mongoose.connection.close();
   })
 
   .catch((err) => {
     console.log(err);
+    mongoose.connection.close();
+
   })
 
-  .finally(() => {
-    mongoose.connection.close();
-  });
 
   var itin = new Itinerary();
   itin.activities = [];

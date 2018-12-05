@@ -84,14 +84,14 @@ def validate_travel_time(itin, transport):
         distance = find_distance(venue_to_lat_long(prev_venue),venue_to_lat_long(next_venue))
         travel_time = 0
         if (transport == "DRIVING"):
-            travel_time = distance * 2
+            travel_time = int(distance * 3)
         elif (transport == "TRANSIT"):
-            travel_time = distance * 12
+            travel_time = int(distance * 12)
         elif (transport == "WALK"):
-            travel_time = distance * 20
+            travel_time = int(distance * 20)
         elif (transport == "BIKE"):
-            travel_time = distance * 10
-        if between_time < travel_time or travel_time > 60:
+            travel_time = int(distance * 10)
+        if between_time < travel_time: #or travel_time > 60:
             return False
     return True
 

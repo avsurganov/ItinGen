@@ -74,6 +74,8 @@ pip3 install Flask
 git clone -b master https://github.com/maxxliu/ItinGen.git
 cd ItinGen
 ```
+For all terminals and for all commands, you should be in the ItinGen directory of the master branch of our repository.
+
 In one terminal window, run this command:
 ```bash
 npm run flask

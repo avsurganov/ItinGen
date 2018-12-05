@@ -85,7 +85,9 @@ angular.module('ItinGen', [
 	  	}
 
       waypoints.pop()
-      if (currentItinerary == []) {
+      console.log(currentItinerary)
+      if (currentItinerary.length == 0) {
+        console.log("inside if")
         return;
       }
       var originCoords = currentItinerary[0][1]

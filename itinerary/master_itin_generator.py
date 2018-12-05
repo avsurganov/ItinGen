@@ -9,9 +9,7 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
     tries = 0
     final_itin = []    
     query_size = 500
-#    time_split = start_time.split('T')
-#    units = time_split[1].split(':')
-#    time = 60*int(units[0])+int(units[1])
+
 
     hours = int(start_time[0:2]) % 12
     minutes = int(start_time[3:5])

@@ -11,9 +11,11 @@ var path = require('path');
 var passport = require('passport');
 var social = require('./app/passport/passport')(app, passport);
 var appRoutes = require('./app/routes/api');
+var cors = require('cors');
 port = process.env.PORT || 8080;
 console.log(port)
 
+app.use(cors());
 app.use(morgan('dev'));
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');

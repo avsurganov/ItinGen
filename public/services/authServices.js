@@ -65,8 +65,11 @@ angular.module('authServices', [])
 
     // Function to check for token in local storage and attach to header if so
     authInterceptorsFactory.request = function(config) {
+  
+        // Don't add token header when making request to google
+        var isGoogleRequest = config.url.search('googleapis')
         var token = AuthToken.getToken(); // Check if a token is in local storage
-        if (token) config.headers['x-access-token'] = token; //If exists, attach to headers
+        if (token && isGoogleRequest == -1) config.headers['x-access-token'] = token; //If exists, attach to headers
 
         return config; // Return config object for use in app.js (config file)
     };

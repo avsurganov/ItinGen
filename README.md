@@ -9,7 +9,6 @@ plan.it is a web based application that allows users to randomly generate optimi
 - [Setup](#setup)
     * [Install Prerequisites](#install-prerequisites)
     * [Initializing the App](#initializing-the-app)
-  -[Brief Functionality Description and Brief Tutorial] (#brief-functionality-description-and-brief-tutorial)
 - [Known Bugs and Other Instructions](#known-bugs-and-other-instructions)    
 - [Running Unit Tests](#running-unit-tests)
 - [Suggested Acceptance Tests](#suggested-acceptance-tests)

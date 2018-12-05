@@ -28,7 +28,7 @@ module.exports = function(app, passport) {
     passport.use(new FacebookStrategy({
             clientID: '357949704772980', // Replace with your Facebook Developer App client ID
             clientSecret: '63b37d927bd048fc98b9209d1f078a72', // Replace with your Facebook Developer client secret
-            callbackURL: "https://itingen2.herokuapp.com/auth/facebook/callback", // Replace with your Facebook Developer App callback URL
+            callbackURL: "https://www.itingen2.herokuapp.com/auth/facebook/callback", // Replace with your Facebook Developer App callback URL
             profileFields: ['id', 'displayName', 'email']
         },
         function(accessToken, refreshToken, profile, done) {

@@ -7,6 +7,7 @@ plan.it is a web based application that allows users to randomly generate optimi
 - [Setup](#setup)
     * [Install Prerequisites](#install-prerequisites)
     * [Initializing the App](#initializing-the-app)
+- [Known Bugs and Other Instructions] (#known-bugs-/-other-instructions)    
 - [Running Unit Tests](#running-unit-tests)
 - [Suggested Acceptance Tests](#suggested-acceptance-tests)
 - [Who Did What](#who-did-what)
@@ -44,8 +45,30 @@ You will also need to install Flask
 pip3 install Flask
 ```
 
+#### macOS
+Install node by visiting the website (https://nodejs.org) and installing.
+
+Install npm ...
+
+Check to see if NPM and Node.js were installed correctly by running:
+```bash
+node -v
+npm -v
+```
+
+Install MongoDB by running: 
+
+If you have problems with Mongo, do this:
+
+Install Flask by running: 
+```bash
+pip3 install Flask
+```
+
+
 
 ### Initializing the App
+#### Ubuntu
 In one terminal window, run this command:
 ```bash
 npm run flask
@@ -57,6 +80,32 @@ npm install
 npm run seed
 npm start
 ```
+
+#### macOS
+In one terminal window in ItinGen/itinerary run this command:
+```bash
+python server.py
+```
+
+In another terminal window, run these commands:
+```bash
+npm install
+npm run seed
+npm start
+```
+
+Then, in Chrome, go to localhost:3000.
+
+
+## Known Bugs / Other Instructions
+
+### Tips for Using
+- Use the app in Chrome. This is the most reliable browser, and some UI features may not work properly in Safari or Firefox.
+- Do not spam the like or dislike buttons. Itinerary generation is not instantaneous. If you don't have an itinerary after 10-20 seconds, then try again.
+- Itineraries will only be generated for start times earlier than 7pm. This means that if you try to generate an itinerary with the default settings an it's after 7pm, you will not see any itinerary generated. 
+- User-inputted start locations outside of Chicago are not supported.
+
+
 
 ## Running Unit Tests
 ### Front End

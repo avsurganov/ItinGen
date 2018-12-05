@@ -10,9 +10,10 @@ angular.module('sideBar')
     $scope.likedItineraries = []
     $scope.settings = itineraryFactory.getSettings();
     $scope.isLoggedIn = false;
+    var state = "IL"
 
     console.log($scope.settings)
-    $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lon + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+    $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + $scope.settings.startLocation.lat + ',' + $scope.settings.startLocation.lng + '&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
       console.log(res.data.results[0].formatted_address)
       $scope.settings.startLocationDisplay = res.data.results[0].formatted_address
     })
@@ -83,14 +84,21 @@ angular.module('sideBar')
       };
 
     this.home = function() {
+      if (itineraryFactory.getCurrentItinerary().length == 0){
+        var hide = document.getElementById("intro_message");
+        hide.style.display = "inline";
+      };
        this.sidebarTemplate = sidebarTemplates[0]
       //  this.itinerary = itineraryFactory.getNewItinerary()
     }
 
     this.getLikedItineraries = function() {
+      var hide = document.getElementById("intro_message");
+      hide.style.display = "none";
       if($scope.isLoggedIn){
         this.sidebarTemplate = sidebarTemplates[1]
         this.likedItineraries = itineraryFactory.getcurrentLikedItineraries();
+        $scope.$apply()
       } 
     }
 
@@ -109,37 +117,33 @@ angular.module('sideBar')
     this.saveSettings = function(settings) {
 
       // check for undefined fields
-      if ((settings.startTimeHours == "08") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
-      }
-            else if ((settings.startTimeHours == "09") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
-      }
-            else if ((settings.startTimeHours == "10") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
-      }
-            else if ((settings.startTimeHours == "11") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
-      }
-            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
-      }
-      else {
+      
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
-      $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
-        settings.startLocation = res.data.results[0].geometry.location
-        console.log(settings)
-        itineraryFactory.saveSettings(settings);
-        alert("Settings successfully saved!")
-      })
+      if ($scope.settings.startLocationSelect == "givenLocation") {
+        $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+         var boundLocation = res.data.results[0].formatted_address.search(state)
+         if (boundLocation == -1) {
+            alert("You're start location must be within the state of Illinois")
+            return;
+         }
+          $scope.settings.startLocation = res.data.results[0].geometry.location
+          console.log(settings)
+          itineraryFactory.saveSettings(settings);
+          alert("Settings successfully saved!")
+        })
+      } else {
+          console.log(settings)
+          itineraryFactory.saveSettings(settings);
+          alert("Settings successfully saved!")
       }
+      
     }
 
-    this.assignTransport = function(transport) {
-      $scope.settings.transport = transport;
-    }
+    // this.assignTransport = function(transport) {
+    //   $scope.settings.transport = transport;
+    // }
 
     var sidebarTemplates = ['sidebar/itineraries.htm', 'sidebar/likeditineraries.htm']
     this.sidebarTemplate = sidebarTemplates[0]

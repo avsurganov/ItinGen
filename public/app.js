@@ -33,6 +33,7 @@ angular.module('ItinGen', [
 
     function initMap(x, y) {
       var center = {lat: x, lng: y}
+      itineraryFactory.setUserLocation(center)
      	directionsService = new google.maps.DirectionsService();
      	directionsDisplay = new google.maps.DirectionsRenderer();
       $scope.map = new google.maps.Map(document.getElementById('map'), {
@@ -43,6 +44,7 @@ angular.module('ItinGen', [
     }
     function onPositionRecieved(position){
       var coords = position.coords;
+
       initMap(coords.latitude, coords.longitude);
     }
     // error if initial position not recieved
@@ -72,8 +74,12 @@ angular.module('ItinGen', [
 
 
 	function drawNewItinerary() {
+      var settings = itineraryFactory.getSettings()
+      var transportSetting = settings.transport
 	  	var waypoints = []
-	  	for (event in currentItinerary) {
+      if (transportSetting == "TRANSIT")
+        transportSetting = "DRIVING"
+	  	for (var event in currentItinerary) {
         var index = parseInt(event) + 1
 	  		if (index != currentItinerary.length){
           var waypointData = currentItinerary[index][1]
@@ -83,12 +89,19 @@ angular.module('ItinGen', [
 	  	}
 
       waypoints.pop()
+      console.log(currentItinerary)
+      if (currentItinerary.length == 0) {
+        initMap(41.881855, -87.627115)
+        window.alert("Looks like not too much is happening right now! We suggest planning for the next day by going to settings and changing the start time to something between 6am and 8pm.")
+        console.log("inside if")
+        return;
+      }
       var originCoords = currentItinerary[0][1]
       var destinationCoords = currentItinerary[currentItinerary.length - 1][1]
 	  	var directionRequest = {
   			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
   			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
-  			travelMode: 'DRIVING',
+  			travelMode: transportSetting,
   			waypoints: waypoints
 	  	}
 	  	directionsService.route(directionRequest, function(result, status) {

@@ -196,13 +196,16 @@ left: 30%;
   display: none !important;
 }
 
+.modal-top {
+  z-index: 10000 !important;
+}
 .rate {
 position: absolute;
 bottom: 20px;
 
 }
 .rate {
-z-index: 10;
+z-index: 1;
 }
 
 .rate-btn {
@@ -214,6 +217,12 @@ background-color: transparent;
 .btn-hide {
   display: none;
 }
+
+.no-itin {
+  display: none !important;
+}
+
+
 
 .s_message {
   padding: 5px;
@@ -287,8 +296,13 @@ margin-top: -1px;
 .logo {
   padding-top: 5px;
   display: block; 
-  z-index: 2;
+  z-index: 1;
   vertical-align: top;
   position: absolute;
   right: 5%;
 }
+
+ .popover {
+        width: 300px !important;
+        top: 0px !important;
+    }

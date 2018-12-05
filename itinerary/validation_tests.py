@@ -57,8 +57,8 @@ class TestDistanceValidation(unittest.TestCase):
         self.assertTrue(validate_travel_time(itin2, "DRIVING"))
         self.assertFalse(validate_travel_time(itin3, "TRANSIT"))
         self.assertTrue(validate_travel_time(itin5, "TRANSIT"))
-        self.assertFalse(validate_travel_time(itin6, "WALK"))
-        self.assertTrue(validate_travel_time(itin7, "WALK"))
+        self.assertFalse(validate_travel_time(itin6, "WALKING"))
+        self.assertTrue(validate_travel_time(itin7, "WALKING"))
         self.assertFalse(validate_travel_time(itin11, "TRANSIT"))
 
 # tests functions that check that events are valid in the itin

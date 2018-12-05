@@ -5,24 +5,26 @@ angular.module('itineraryFactory')
 
 	var likedItineraries = []
 	var currentItinerary = []
+	var userLocationCoords;
 	// default location is center of chicago
-	var defaultLocation = {lat: 41.881855, lon: -87.627115};
+	var chicagoCenterCoords = {lat: 41.881855, lng: -87.627115};
 	var now = new Date(Date.now())
 
 	var defaultHour = appendZero(convertFromMilitary(now.getHours()))
 	var defaultMin = appendZero(snapToNearest15(now.getMinutes()))
 	var defaultSection = amOrPm(now.getHours())
-	var settings = 
-	{
-	startTimeHours: defaultHour,
-	startTimeMinute: defaultMin,
-	startTimeSection: defaultSection,
-	startTime: defaultHour + ':' + defaultMin + ' ' + defaultSection,
-	startLocation: defaultLocation,
-	free: true,
-	radius: 5,
-	transport: 'DRIVING'
+	var settings = {
+		startTimeHours: defaultHour,
+		startTimeMinute: defaultMin,
+		startTimeSection: defaultSection,
+		startTime: defaultHour + ':' + defaultMin + ' ' + defaultSection,
+		startLocation: chicagoCenterCoords,
+		startLocationSelect: "chicagoCenter",
+		free: "true",
+		radius: 5,
+		transport: 'DRIVING'
 	};
+
 	var service = {}
 
 	console.log(new Date(Date.now()))
@@ -64,7 +66,7 @@ angular.module('itineraryFactory')
 
 	//on load or dislike an itinerary: 
 	service.getNewItinerary = function() {
-		console.log(settings);
+	
 		return $http.post('/api/getitinerary', {settings});
 	}
 
@@ -73,10 +75,12 @@ angular.module('itineraryFactory')
 	service.saveSettings = function(userSettings) {
 		userSettings.startTime = userSettings.startTimeHours + ':' + userSettings.startTimeMinute 
 		+ ' ' + userSettings.startTimeSection
-		settings = userSettings;
-		if(settings['startLocation'] == undefined || settings['startLocation'] == '') {
-			settings['startLocation'] = defaultLocation;
-		}
+		if (userSettings.startLocationSelect == "chicagoCenter")
+			userSettings.startLocation = chicagoCenterCoords
+		else if (userSettings.startLocationSelect == "currentLocation" && userLocationCoords != undefined)
+			userSettings.startLocation = userLocationCoords
+		settings = userSettings 
+		
 
 		console.log('new settings');
 		console.log(settings);
@@ -111,6 +115,10 @@ angular.module('itineraryFactory')
 
 	service.getLikedItineraries = function () {
 		return $http.get('/api/getliked');
+	}
+
+	service.setUserLocation = function (location) {
+		userLocationCoords = location
 	}
 
 	service.addToLikedItineraries = function () {

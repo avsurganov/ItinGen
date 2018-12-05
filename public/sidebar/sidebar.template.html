@@ -5,7 +5,7 @@
       <div class="p-4 light_back">
         <button class="btn btn-primary menu_button" ng-click="$ctrl.home()">Home </button>
         <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()" ng-if="isLoggedIn">Liked Itineraries</button>
-        <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
+        <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#settingsModal">
           Settings
     </button>
         <button class="btn btn-primary menu_button" ng-show="!isLoggedIn" data-toggle="modal" data-target="#fbLoginWindow">Log In</button>
@@ -20,9 +20,6 @@
   
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
-  <div ng-click="showDiv=true" 
-  <!--sidebar body-->
-
   <div  id="intro_message" >
        <h2>Welcome to plan.it!</h2>
        <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>       
@@ -30,24 +27,21 @@
         ng-show="!showDiv">Generate</button>
  
   </div> 
-  <div id="sad_message" class = "s_message">
-    <p><br><br><br><br><br>If you clicked generate and nothing happened and the current time is after 7pm, please go into settings above and change the start time to a time earlier than 8pm, then click dislike to regenerate.</p>
-</div>
 </div>
 
 <!-- modal for Settings with default values -->
 <!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModalTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Set your custom itinerary generation parameters!</h5>
+        <h5 class="modal-title" id="settingsModalTitle">Set your custom itinerary generation parameters!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form name = "frmhot">
+        <form>
           <div class="form-inline">
             <!-- class="col-2 col-form-label" -->
             <p data-toggle="popover" data-content="Enter in the time you want your itinerary to begin. The start time cannot be later than 7pm, as there will not be enough events to generate a sufficient itinerary.">&#9432;&nbsp;&nbsp;</p><label for="example-time-input" >Start Time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -78,49 +72,60 @@
             </select>
             </div>      
           </div>
-          <div class="form-inline">
+          <div class="form-inline settings">
             <p data-toggle="popover" data-content="Enter in where you want your itinerary to start and end">&#9432;&nbsp;</p>
             <label for="formGroupExampleInput">Start Location&nbsp;&nbsp;</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location" ng-model="settings.startLocationDisplay" required>
+            <select ng-model="settings.startLocationSelect" required>
+              <option value="currentLocation"> Use my current location</option>
+              <option value="chicagoCenter">Use the center of Chicago</option>
+              <option value="givenLocation">Other</option>
+            </select>
+
+            <input ng-if="settings.startLocationSelect == 'givenLocation'" type="text" class="form-control" id="formGroupExampleInput" placeholder="Your start location" ng-model="settings.startLocationDisplay" required>
           </div>
-          <div class="form-check">
+          <div class="form-check settings">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="" ng-model="settings.free" required>
-              Only Include Free Events
+              Only include free events
+              <select name="sectionSelect" ng-model="settings.free" required>
+                <option value="true">Yes, show me free events only</option>
+                <option value="false">No, show me anything</option>
+              </select>
+              
             </label>
-            <label>&nbsp;</label>
+
             <br>
           </div>
-            <div class="form-group">
+            <div class="form-group form-inline settings">
 
-              <legend data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">Maximum Radius: {{settings.radius}} &nbsp;&nbsp;&#9432;&nbsp;</legend>
+              <p data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">&nbsp;&nbsp;&#9432;&nbsp;</p>
+              <label>  Maximum Radius: {{settings.radius}} </label>
               <input type="range" class="form-control-range" id="formControlRange" min="2" max = "50" name ="radius" ng-model="settings.radius" required>
               
             </div>
           <!-- Radio Buttons for Transportation -->
-          <fieldset class="form-inline">
+          <fieldset class="form-inline settings">
               <legend>Transportation</legend>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="DRIVING" ng-change="$ctrl.assignTransport('DRIVING')" ng-model="settings.transport" checked>
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="DRIVING" ng-model="settings.transport" checked>
                   Driving &nbsp; 
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="TRANSIT" ng-change="$ctrl.assignTransport('TRANSIT')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="TRANSIT" ng-model="settings.transport">
                   Transit &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="WALK" ng-change="$ctrl.assignTransport('WALK')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="WALKING" ng-model="settings.transport">
                   Walk &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="BIKE" ng-change="$ctrl.assignTransport('BIKE')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="BICYCLING" ng-model="settings.transport">
                   Bike &nbsp;
                 </label>
               </div>
@@ -143,10 +148,10 @@
 
 <!-- Modal for Logging in -->
 
-<div class="modal fade" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
+<div class="modal modal-top" id="fbLoginWindow" tabindex="-1" role="dialog" aria-labelledby="loginWindowTitle aria-hidden="true">
   <div class="modal-dialog modal-dialog-centere" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-content modal-top">
+      <div class="modal-header modal-top">
         <h5 class="modal-title" id="loginTitle">Log in with Facebook!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -161,3 +166,7 @@
     </div>
   </div>
 </div><!-- End Modal for Logging in -->
+
+<div class="no_itin" id= "none_itin" hidden="true">
+  <h6>We were unable to generate time</h6>
+</div>

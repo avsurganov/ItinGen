@@ -18,7 +18,7 @@ router.post('/getitinerary', function(req, res) {
 	var startLocation = userSettings.startLocation;
 	console.log(startLocation);
 	var lat = startLocation.lat;
-	var lon = startLocation.lon;
+	var lon = startLocation.lng;
 	var free = userSettings.free;
 	var radius = userSettings.radius;
 	var transport = userSettings.transport;

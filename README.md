@@ -7,7 +7,7 @@ plan.it is a web based application that allows users to randomly generate optimi
 - [Setup](#setup)
     * [Install Prerequisites](#install-prerequisites)
     * [Initializing the App](#initializing-the-app)
-- [Known Bugs and Other Instructions] (#known-bugs-/-other-instructions)    
+- [Known Bugs and Other Instructions](#known-bugs-and-other-instructions)    
 - [Running Unit Tests](#running-unit-tests)
 - [Suggested Acceptance Tests](#suggested-acceptance-tests)
 - [Who Did What](#who-did-what)
@@ -97,7 +97,7 @@ npm start
 Then, in Chrome, go to localhost:3000.
 
 
-## Known Bugs / Other Instructions
+## Known Bugs and Other Instructions
 
 ### Tips for Using
 - Use the app in Chrome. This is the most reliable browser, and some UI features may not work properly in Safari or Firefox.

@@ -43,5 +43,5 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         tries+=1
     return final_itin
 
-#itin = generate_itin('09:00 AM', 41.881855, -87.627115, False, 10.0, 'WALK')
+#itin = generate_itin('09:00 AM', 41.881855, -87.627115, False, 10.0, 'WALKING')
 #print(itin)

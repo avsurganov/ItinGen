@@ -57,7 +57,7 @@ user_data6 = {
               'start_location': [41.792210, -87.599940],
               'distance_radius': 1,
               'only_free': 0,
-              'transportation': "WALK",
+              'transportation': "WALKING",
               'date': '11-20-2018',
               'day': 'mon'
 }

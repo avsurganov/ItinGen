@@ -87,9 +87,9 @@ def validate_travel_time(itin, transport):
             travel_time = int(distance * 3)
         elif (transport == "TRANSIT"):
             travel_time = int(distance * 12)
-        elif (transport == "WALK"):
+        elif (transport == "WALKING"):
             travel_time = int(distance * 20)
-        elif (transport == "BIKE"):
+        elif (transport == "BICYCLING"):
             travel_time = int(distance * 10)
         if between_time < travel_time: #or travel_time > 60:
             return False

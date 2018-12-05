@@ -191,6 +191,11 @@ left: 30%;
 
 }
 
+.modal-backdrop.show {
+  opacity: 0 !important;
+  display: none !important;
+}
+
 .rate {
 position: absolute;
 bottom: 20px;

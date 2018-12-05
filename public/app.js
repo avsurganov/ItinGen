@@ -87,7 +87,8 @@ angular.module('ItinGen', [
       waypoints.pop()
       console.log(currentItinerary)
       if (currentItinerary.length == 0) {
-        window.alert("Unfortuantely we were unable to generate a valid itinerary this time. Please try again by clicking the dislike button.")
+        initMap(41.881855, -87.627115)
+        window.alert("Looks like not too much is happening right now! We suggest planning for the next day by going to settings and changing the start time to 6am or later.")
         console.log("inside if")
         return;
       }

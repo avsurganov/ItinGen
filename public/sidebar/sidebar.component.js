@@ -125,9 +125,24 @@ angular.module('sideBar')
             else if ((settings.startTimeHours == "11") && (settings.startTimeSection == "PM")){
         alert("Please select a start time earlier than 8pm");
       }
-            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "PM")){
-        alert("Please select a start time earlier than 8pm");
+            else if ((settings.startTimeHours == "12") && (settings.startTimeSection == "AM")){
+        alert("Please select a start time later than 6am");
       }
+                 else if ((settings.startTimeHours == "01") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "02") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "03") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "04") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
+                 else if ((settings.startTimeHours == "05") && (settings.startTimeSection == "AM")){
+                 alert("Please select a start time later than 6am");
+                 }
       else {
 
       console.log($scope.settings.startLocationDisplay)

@@ -97,6 +97,16 @@ npm run seed
 npm start
 ```
 
+If you don't get a message saying successfully connected to the database, you will need a third window. 
+In the second window, in ItinGen, run the following:
+```bash
+sudo mkdir -p /data/db/
+sudo chown id /data/db
+```
+where id is your user id
+
+Then in the third window, run npm install then npm start
+
 #### macOS
 In one terminal window in ItinGen/itinerary run this command:
 ```bash

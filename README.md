@@ -88,7 +88,7 @@ If pip3 is a command thats not found, then you don't have python, so run the fol
 sudo apt update
 sudo apt install python3-pip
 pip3 --version
-'''
+```
 
 Then in another terminal window, run these commands:
 ```bash

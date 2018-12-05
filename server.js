@@ -12,7 +12,7 @@ var passport = require('passport');
 var social = require('./app/passport/passport')(app, passport);
 var appRoutes = require('./app/routes/api');
 var cors = require('cors');
-port = process.env.PORT || 8080;
+port = process.env.PORT || 5000;
 console.log(port)
 
 app.use(cors());
@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + './public'));
 app.use('/api', appRoutes);
 
 mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
@@ -38,7 +38,7 @@ mongoose.connect('mongodb://localhost:27017/itingen', (err) => {
 });
 
 app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname + '/public/index.html'));
+	res.sendFile(path.join(__dirname + './public/index.html'));
 });
 
 app.listen(port, () => {

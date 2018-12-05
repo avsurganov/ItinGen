@@ -301,3 +301,8 @@ margin-top: -1px;
   position: absolute;
   right: 5%;
 }
+
+ .popover {
+        width: 300px !important;
+        top: 0px !important;
+    }

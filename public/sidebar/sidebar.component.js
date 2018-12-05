@@ -84,11 +84,17 @@ angular.module('sideBar')
       };
 
     this.home = function() {
+      if (itineraryFactory.getCurrentItinerary().length == 0){
+        var hide = document.getElementById("intro_message");
+        hide.style.display = "inline";
+      };
        this.sidebarTemplate = sidebarTemplates[0]
       //  this.itinerary = itineraryFactory.getNewItinerary()
     }
 
     this.getLikedItineraries = function() {
+      var hide = document.getElementById("intro_message");
+      hide.style.display = "none";
       if($scope.isLoggedIn){
         this.sidebarTemplate = sidebarTemplates[1]
         this.likedItineraries = itineraryFactory.getcurrentLikedItineraries();

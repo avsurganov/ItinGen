@@ -150,11 +150,7 @@ Then, in Chrome, go to localhost:3000.
 
 
 ## Running Unit Tests
-### Front End
-- Front end tests are in `public/core/itinerary/factory`. To run front end tests, do:
-  ```
-  npm run e2e
-  ```
+
 ### Back End
 - To run database validation tests (back end) for the application, simply run:
   ```bash

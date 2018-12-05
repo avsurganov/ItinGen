@@ -58,13 +58,22 @@ npm -v
 
 Install MongoDB by running: 
 
+```
+npm i mongodb
+mkdir <insert directory name>
+mongod --dbpath <path to directory made in previous command>
+```
 If you have problems with Mongo, do this:
+
+View the mongodb installation documentation (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 
 Install Flask by running: 
 ```bash
 pip3 install Flask
 ```
+### Windows
 
+Unfortunately, the process for getting the appropriate software is extremely involved with windows. If you are using windows and wish to utilize our app, contact the developers using this github repo 
 
 
 ### Initializing the App

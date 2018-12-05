@@ -102,10 +102,13 @@ In the second window, in ItinGen, run the following:
 ```bash
 sudo mkdir -p /data/db/
 sudo chown id /data/db
+mongod
 ```
 where id is your user id
 
-Then in the third window, run npm install then npm start
+Then in the third window, run npm install then npm start.
+
+So im summary, one window should be continuously running after typing "npm run flask", one window should be continuously running after typing "mongod", and a third window should be continuously running after typing "npm start". Then, in the Chrome browser, go to localhost:3000 and click refresh.
 
 #### macOS
 In one terminal window in ItinGen/itinerary run this command:
@@ -130,6 +133,8 @@ Then, in Chrome, go to localhost:3000.
 - Do not spam the like or dislike buttons. Itinerary generation is not instantaneous. If you don't have an itinerary after 10-20 seconds, then try again.
 - Itineraries will only be generated for start times between 6am and 8pm. This means that if you try to generate an itinerary with the default settings outside that range, you will not see any itinerary generated. 
 - User-inputted start locations outside of Chicago are not supported.
+- If something loads incorrectly and there is no generate button and no like buttons, you can click home to make the generate button re-appear
+- If you generate an itinerary with invavlid values, such as the time being between 8pm and 6am, then click home, then generate an itinerary using the dislike or like button, the generate button will appear below the generated itinerary. We are aware of this bug, but decided it did not interfere with the user experience and was not worth fixing.
 
 
 

@@ -252,6 +252,10 @@ font-family : inherit;
 font-size   : 100%;
 }
 
+.settings {
+  margin-top: 10px;
+}
+
 output { 
 position: absolute;
 background-image: linear-gradient(top, #444444, #999999);

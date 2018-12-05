@@ -72,6 +72,8 @@ angular.module('ItinGen', [
 
 
 	function drawNewItinerary() {
+      var settings = itineraryFactory.getSettings()
+      console.log(settings.transport)
 	  	var waypoints = []
 	  	for (event in currentItinerary) {
         var index = parseInt(event) + 1
@@ -88,7 +90,7 @@ angular.module('ItinGen', [
 	  	var directionRequest = {
   			origin: {lat: originCoords.latitude, lng: originCoords.longitude},
   			destination: {lat: destinationCoords.latitude, lng: destinationCoords.longitude},
-  			travelMode: 'DRIVING',
+  			travelMode: settings.transport,
   			waypoints: waypoints
 	  	}
 	  	directionsService.route(directionRequest, function(result, status) {

@@ -5,7 +5,7 @@
       <div class="p-4 light_back">
         <button class="btn btn-primary menu_button" ng-click="$ctrl.home()">Home </button>
         <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()" ng-if="isLoggedIn">Liked Itineraries</button>
-        <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
+        <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#settingsModal">
           Settings
     </button>
         <button class="btn btn-primary menu_button" ng-show="!isLoggedIn" data-toggle="modal" data-target="#fbLoginWindow">Log In</button>
@@ -35,11 +35,11 @@
 
 <!-- modal for Settings with default values -->
 <!-- Modal -->
-<div class="modal modal_no_backdrop" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModalTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Set your custom itinerary generation parameters!</h5>
+        <h5 class="modal-title" id="settingsModalTitle">Set your custom itinerary generation parameters!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -76,27 +76,32 @@
             </select>
             </div>      
           </div>
-          <div class="form-inline">
+          <div class="form-inline settings">
             <p data-toggle="popover" data-content="Enter in where you want your itinerary to start and end">&#9432;&nbsp;</p>
             <label for="formGroupExampleInput">Start Location&nbsp;&nbsp;</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location" ng-model="settings.startLocationDisplay" required>
           </div>
-          <div class="form-check">
+          <div class="form-check settings">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="" ng-model="settings.free" required>
-              Only Include Free Events
+              Only include free events
+              <select name="sectionSelect" ng-model="settings.free" required>
+                <option value="true">Yes, show me free events only</option>
+                <option value="false">No, show me anything</option>
+              </select>
+              
             </label>
-            <label>&nbsp;</label>
+
             <br>
           </div>
-            <div class="form-group">
+            <div class="form-group form-inline settings">
 
-              <legend data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">Maximum Radius: {{settings.radius}} &nbsp;&nbsp;&#9432;&nbsp;</legend>
+              <p data-toggle="popover" data-content="Select the maximum range in miles that you are willing to travel">&nbsp;&nbsp;&#9432;&nbsp;</p>
+              <label>  Maximum Radius: {{settings.radius}} </label>
               <input type="range" class="form-control-range" id="formControlRange" min="2" max = "50" name ="radius" ng-model="settings.radius" required>
               
             </div>
           <!-- Radio Buttons for Transportation -->
-          <fieldset class="form-inline">
+          <fieldset class="form-inline settings">
               <legend>Transportation</legend>
               <div class="form-check">
                 <label class="form-check-label">
@@ -112,13 +117,13 @@
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="WALK" ng-change="$ctrl.assignTransport('WALK')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="WALK" ng-change="$ctrl.assignTransport('WALKING')" ng-model="settings.transport">
                   Walk &nbsp;
                 </label>
               </div>
               <div class="form-check">
               <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="BIKE" ng-change="$ctrl.assignTransport('BIKE')" ng-model="settings.transport">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="BIKE" ng-change="$ctrl.assignTransport('BICYCLING')" ng-model="settings.transport">
                   Bike &nbsp;
                 </label>
               </div>

@@ -29,7 +29,6 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         print("We")
         print(valid)
         print(query_size)
-        #print(itin)
         sys.stdout.flush()
         if not valid:
             query_size += 250*int(tries/5)
@@ -40,5 +39,5 @@ def generate_itin(start_time, latitude, longitude, free, radius, transport):
         tries+=1
     return final_itin
 
-#itin = generate_itin('2018-11-30T08:21:50.182Z', 41.881855, -87.627115, False, 10.0, 'driving')
+#itin = generate_itin('09:00 AM', 41.881855, -87.627115, False, 10.0, 'BIKE')
 #print(itin)

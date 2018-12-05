@@ -4,7 +4,7 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-4 light_back">
         <button class="btn btn-primary menu_button" ng-click="$ctrl.home()">Home </button>
-        <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()">Liked Itineraries</button>
+        <button class="btn btn-primary menu_button" ng-click="$ctrl.getLikedItineraries()" ng-if="isLoggedIn">Liked Itineraries</button>
         <button type="button" class="btn btn-primary menu_button" data-toggle="modal" data-target="#exampleModalLong">
           Settings
     </button>
@@ -21,13 +21,17 @@
     <ng-include src="$ctrl.sidebarTemplate"></ng-include>
   <!--sidebar body-->
   <div ng-click="showDiv=true" 
-        ng-show="!showDiv" class="ng-hide" id="intro_message" >
+  <!--sidebar body-->
+
+  <div  id="intro_message" >
        <h2>Welcome to plan.it!</h2>
-       <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>
+       <h3> Set your parameters in the settings menu above and click the generate button below to create your first itinerary. Your next adventure awaits!</h3>       
         <button id="Generate" type="button" class="generate_button" ng-click="$ctrl.generate()" 
         ng-show="!showDiv">Generate</button>
  
   </div> 
+  <div id="sad_message" class = "s_message">
+    <p><br><br><br><br><br>If you clicked generate and nothing happened and the current time is after 7pm, please go into settings above and change the start time to a time earlier than 8pm, then click dislike to regenerate.</p>
 </div>
 </div>
 
@@ -43,10 +47,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form name = "frmhot">
           <div class="form-inline">
             <!-- class="col-2 col-form-label" -->
-            <p data-toggle="popover" data-content="Enter in the time you want your itinerary to begin">&#9432;&nbsp;&nbsp;</p><label for="example-time-input" >Start Time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <p data-toggle="popover" data-content="Enter in the time you want your itinerary to begin. The start time cannot be later than 7pm, as there will not be enough events to generate a sufficient itinerary.">&#9432;&nbsp;&nbsp;</p><label for="example-time-input" >Start Time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
             <div style="float:right;">
             <select name="hourSelect" ng-model="settings.startTimeHours" ng-required='required'>
                 <option value="01">01</option>

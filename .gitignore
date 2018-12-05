@@ -1,3 +1,5 @@
 node_modules/
 tmp/
 log/
+itinerary/__pycache__
+.DS_Store

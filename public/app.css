@@ -191,6 +191,11 @@ left: 30%;
 
 }
 
+.modal-backdrop.show {
+  opacity: 0 !important;
+  display: none !important;
+}
+
 .rate {
 position: absolute;
 bottom: 20px;
@@ -206,7 +211,14 @@ border-width: 0px;
 background-color: transparent;
 }
 
+.btn-hide {
+  display: none;
+}
 
+.s_message {
+  padding: 5px;
+  color: white !important;
+}
 #like{
 height: 80px;
 background-image: url("https://i.imgur.com/MvzsVKy.png");

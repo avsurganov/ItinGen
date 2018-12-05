@@ -153,10 +153,11 @@ Then, in Chrome, go to localhost:3000.
 - Itineraries will only be generated for start times between 6am and 8pm. This means that if you try to generate an itinerary with the default settings outside that range, you will not see any itinerary generated. 
 - User-inputted start locations outside of Chicago are not supported.
 - If something loads incorrectly and there is no generate button and no like buttons, you can click home to make the generate button re-appear
-- If you generate an itinerary with invavlid values, such as the time being between 8pm and 6am, then click home, then generate an itinerary using the dislike or like button, the generate button will appear below the generated itinerary. We are aware of this bug, but decided it did not interfere with the user experience and was not worth fixing.
+- If you generate an itinerary with invalid values, such as the time being between 8pm and 6am, then click home, then generate an itinerary using the dislike or like button, the generate button will appear below the generated itinerary. We are aware of this bug, but decided it did not interfere with the user experience and was not worth fixing.
 - A few select custom locations will not generate an intinerary because our algorithim does not recognize them
 - The first time you login, facebook will ask you to approve the app. This means you technically have to click the login button twice, once before facebook asks you, once after
 - The first time you login with facebook, the liked itineraries may not show up. All you have to do is refresh the page and then click liked itineraries, and they should show up.
+- Very rarely, our algorithim will pull an event with a title that contiains a non-ASCII character which causes the itinerary to not generate, making the user have to re-generate an itinerary
 
 
 

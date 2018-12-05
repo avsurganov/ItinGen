@@ -206,6 +206,9 @@ border-width: 0px;
 background-color: transparent;
 }
 
+.btn-hide {
+  display: none;
+}
 
 #like{
 height: 80px;

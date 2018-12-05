@@ -113,12 +113,18 @@ angular.module('sideBar')
 
       console.log($scope.settings.startLocationDisplay)
       // convert string address to latlng object for backend processing
-      $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
-        settings.startLocation = res.data.results[0].geometry.location
-        console.log(settings)
-        itineraryFactory.saveSettings(settings);
-        alert("Settings successfully saved!")
-      })
+      if ($scope.settings.startLocationSelect == "givenLocation") {
+        $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+$scope.settings.startLocationDisplay +'&key=AIzaSyArSWwjXq_NL9lBNgYfwPtFInt4hM4Iia0').then((res) => {
+          $scope.settings.startLocation = res.data.results[0].geometry.location
+          console.log(settings)
+          itineraryFactory.saveSettings(settings);
+          alert("Settings successfully saved!")
+        })
+      } else {
+          console.log(settings)
+          itineraryFactory.saveSettings(settings);
+          alert("Settings successfully saved!")
+      }
       
     }
 

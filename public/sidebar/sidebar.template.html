@@ -79,7 +79,13 @@
           <div class="form-inline settings">
             <p data-toggle="popover" data-content="Enter in where you want your itinerary to start and end">&#9432;&nbsp;</p>
             <label for="formGroupExampleInput">Start Location&nbsp;&nbsp;</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Current Location" ng-model="settings.startLocationDisplay" required>
+            <select ng-model="settings.startLocationSelect" required>
+              <option value="currentLocation"> Use my current location</option>
+              <option value="chicagoCenter">Use the center of Chicago</option>
+              <option value="givenLocation">Other</option>
+            </select>
+
+            <input ng-if="settings.startLocationSelect == 'givenLocation'" type="text" class="form-control" id="formGroupExampleInput" placeholder="Your start location" ng-model="settings.startLocationDisplay" required>
           </div>
           <div class="form-check settings">
             <label class="form-check-label">

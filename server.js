@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
-app.use(express.static(__dirname + './public'));
+app.use(express.static('./public'));
 app.use('/api', appRoutes);
 
 mongoose.connect('mongodb://administrator:administrator60@ds125684.mlab.com:25684/itingen', (err) => {
@@ -38,7 +38,7 @@ mongoose.connect('mongodb://administrator:administrator60@ds125684.mlab.com:2568
 });
 
 app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname + './public/index.html'));
+	res.sendFile(path.join('./public/index.html'));
 });
 
 app.listen(port, () => {

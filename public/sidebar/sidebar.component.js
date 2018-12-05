@@ -81,6 +81,7 @@ angular.module('sideBar')
   
     this.facebook = function() {
       $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/facebook';
+      //console.log($window.location.protocol + '//' + $window.location.host + '/auth/facebook')
       };
 
     this.home = function() {
@@ -101,11 +102,15 @@ angular.module('sideBar')
       let i;
       for (i = 0; i < numEventsInItinerary; i++) {
         var elementClasses = document.getElementById('collapseDetail' + index + i).classList
-        if (elementClasses.length == 1)
+        if (elementClasses.length == 1) {
           $('#collapseDetail' + index + i).collapse('show')
+          itineraryFactory.setCurrentItinerary(this.likedItineraries[index])
+          $scope.$parent.drawNewItinerary()
+        }
         else
           $('#collapseDetail' + index + i).collapse('hide')
       }
+
     }
 
     this.saveSettings = function(settings) {

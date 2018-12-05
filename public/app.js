@@ -73,7 +73,8 @@ angular.module('ItinGen', [
 
 
 
-	function drawNewItinerary() {
+	$scope.drawNewItinerary = function() {
+      currentItinerary = itineraryFactory.getCurrentItinerary()
       var settings = itineraryFactory.getSettings()
       var transportSetting = settings.transport
 	  	var waypoints = []
@@ -118,9 +119,9 @@ angular.module('ItinGen', [
         if(success) {
           let itineraryString = data.data.itinerary;
           let itinerary = JSON.parse(itineraryString)
-          currentItinerary = itinerary;
+          //currentItinerary = itinerary;
           itineraryFactory.setCurrentItinerary(itinerary)
-          drawNewItinerary()
+          $scope.drawNewItinerary()
           $scope.$broadcast('update')
         } else {
           console.log("Failed to get new itinerary");

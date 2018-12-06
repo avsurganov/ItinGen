@@ -19,8 +19,15 @@ plan.it is a web based application that allows users to randomly generate optimi
 - [Changes](#changes)
 
 ## Setup
+If you have issues with any of the following installation steps, please contact Leslie at ljonesdove@uchicago.edu
+
 ### Install Prerequisites 
 (NPM/Node.js/MongoDB/Flask)
+
+This sources code:
+
+clone to your local machine with:
+git clone https://github.com/maxxliu/ItinGen.git
 #### Ubuntu
 You will need to add the Node.js PPA by running this command:
 ```bash
